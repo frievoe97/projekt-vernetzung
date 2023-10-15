@@ -1,4 +1,4 @@
-name: Upload the Website to the server of the domain friedrichvoelkers.de
+name: Upload the Website to the server of the domain pj-friedrichvoelkers.de
 
 on:
   push:
