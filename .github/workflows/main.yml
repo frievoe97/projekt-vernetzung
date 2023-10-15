@@ -27,5 +27,5 @@ jobs:
           dryRun: false
           forceUpload: true
           localDir: "./dist"
-          remoteDir: "/website"
+          remoteDir: "/projekt-vernetzung"
           exclude: ".git*,.DS_Store"
