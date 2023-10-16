@@ -23,7 +23,7 @@ const missionTexts = [
 
 function Mission() {
   return (
-    <div className="p-4 text-center">
+    <div className="p-4 text-center mx-24">
       <h1 className="text-4xl font-bold mt-0 md:mt-8">Unsere Mission</h1>
       <div className="mt-8 space-y-8">
         {missionTexts.map((mission, index) => (
@@ -34,7 +34,7 @@ function Mission() {
             <div className="md:w-1/2 text-left md:text-right md:pr-8">
               <h2 className="text-2xl font-semibold">{mission.title}</h2>
             </div>
-            <div className="md:w-1/2 text-left md:text-right mt-4 md:mt-0">
+            <div className="md:w-1/2 text-left md:text-left mt-4 md:mt-0">
               {mission.text.map((paragraph, paraIndex) => (
                 <p key={paraIndex}>{paragraph}</p>
               ))}

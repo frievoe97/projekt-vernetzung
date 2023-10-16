@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Anlaufstellen from "./components/Anlaufstellen";
@@ -25,3 +25,9 @@ function App() {
 }
 
 export default App;
+
+// 5BC0EB
+// FFE156
+// 4357AD
+// C1666B
+// F7EDF0
