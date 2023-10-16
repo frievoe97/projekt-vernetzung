@@ -1,18 +1,49 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  // Funktion zum Verarbeiten des Formulars
+  function sendEmail(e) {
+    e.preventDefault();
+
+    // Hier füge deine Template IDs hinzu
+    const templateParams = {
+      from_name: e.target.firstName.value + " " + e.target.lastName.value,
+      phone: e.target.phone.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    // Hier füge deine Template ID und deinen Service ID hinzu
+    emailjs
+      .send(
+        "service_w239ezy",
+        "template_wjgvztk",
+        templateParams,
+        "user_QbuqseBrsJXfIF3I62607"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.error(error.text);
+        }
+      );
+  }
+
   return (
-    <div className="p-4">
-      <h1 className="text-4xl font-bold mt-0 md:mt-8">Werde Partner</h1>
+    <div className="container mx-4 md:mx-auto lg:mx-auto">
+      <h1 className="text-4xl font-bold mt-0 md:mt-8">Werde Partner*in</h1>
       <p className="text-gray-600 mt-4">
         Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
         Formular aus, und einer unserer Mitarbeiter wird sich mit dir in
         Verbindung setzen. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit.
       </p>
-      <form className="mt-8 space-y-4 mx-4 md:mx-16">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
+      <form className="flex flex-col mt-4 space-y-4">
+        <div className="flex flex-row space-x-4">
+          <div className="grow ">
             <label htmlFor="firstName" className="block font-semibold">
               Vorname
             </label>
@@ -20,11 +51,11 @@ function Contact() {
               type="text"
               id="firstName"
               name="firstName"
-              className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
+              className="w-full h-8 border-2"
               required
             />
           </div>
-          <div>
+          <div className="grow">
             <label htmlFor="lastName" className="block font-semibold">
               Nachname
             </label>
@@ -32,7 +63,7 @@ function Contact() {
               type="text"
               id="lastName"
               name="lastName"
-              className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
+              className="w-full h-8 border-2"
               required
             />
           </div>
@@ -45,7 +76,7 @@ function Contact() {
             type="tel"
             id="phone"
             name="phone"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
+            className="w-full h-8 border-2"
             required
           />
         </div>
@@ -57,7 +88,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
+            className="w-full h-8 border-2"
             required
           />
         </div>
@@ -69,14 +100,14 @@ function Contact() {
             id="message"
             name="message"
             rows="4"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
+            className="w-full h-32 border-2"
             required
           ></textarea>
         </div>
-        <div className="text-right">
+        <div className="text-center md:text-right">
           <button
             type="submit"
-            className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:bg-blue-600"
+            className="button border-1 bg-white border-black "
           >
             Absenden
           </button>

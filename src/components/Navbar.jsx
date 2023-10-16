@@ -65,9 +65,13 @@ const Navbar = () => {
   return (
     <nav className="bg-blue_light border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          Projekt Vernetzen
-        </span>
+        <Link
+          className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          to="/"
+        >
+          Projekt Vernetzen e. V.
+        </Link>
+
         <button
           onClick={toggleMenu}
           type="button"
@@ -98,7 +102,7 @@ const Navbar = () => {
           }`}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="z-10 flex flex-col font-medium p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {menuItems.map((item, index) => (
               <li key={index}>
                 {item.subItems ? (
@@ -106,7 +110,7 @@ const Navbar = () => {
                     onClick={() => toggleSubmenu(index)}
                     id={`dropdownNavbarLink${index}`}
                     data-dropdown-toggle={`dropdownNavbar${index}`}
-                    className={` flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
+                    className={`z-10 flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
                   >
                     {item.text}{" "}
                     <svg
@@ -143,7 +147,7 @@ const Navbar = () => {
                   >
                     {/* Style für die dropdown Liste */}
                     <ul
-                      className="text-blue_light py-2 text-sm text-gray-700 dark:text-gray-400 md:absolute md:bg-white md:border md:border-black md:mt-4 z-2"
+                      className="z-20 text-blue_light py-2 text-sm text-gray-700 dark:text-gray-400 md:absolute md:bg-white md:border md:border-black md:mt-4"
                       aria-labelledby={`dropdownLargeButton${index}`}
                     >
                       {item.subItems.map((subItem, subIndex) => (
