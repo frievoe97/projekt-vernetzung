@@ -4,10 +4,10 @@ import React, { createContext, useContext, useReducer } from "react";
 
 // Aktionstypen definieren
 const SET_ANLAUFSTELLEN_DATA = "SET_ANLAUFSTELLEN_DATA";
-const SET_ZUSATZDATEN = "SET_ZUSATZDATEN"; // Neue Aktion für zusätzliche Daten
-const SET_HOME_DATA = "SET_HOME_DATA"; // Neue Aktion für zusätzliche Daten
-const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA"; // Neue Aktion für zusätzliche Daten
-const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA"; // Neue Aktion für zusätzliche Daten
+const SET_ZUSATZDATEN = "SET_ZUSATZDATEN";
+const SET_HOME_DATA = "SET_HOME_DATA";
+const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA";
+const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -17,11 +17,11 @@ const reducer = (state, action) => {
     case SET_ZUSATZDATEN:
       return { ...state, zusatzDaten: action.payload };
     case SET_HOME_DATA:
-      return { ...state, homeData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
+      return { ...state, homeData: action.payload };
     case SET_SLIDE_SHOW_DATA:
-      return { ...state, slideshowData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
+      return { ...state, slideshowData: action.payload };
     case SET_GLOSSAR_DATA:
-      return { ...state, glossaryData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
+      return { ...state, glossaryData: action.payload };
     default:
       return state;
   }
@@ -120,52 +120,52 @@ const initialState = {
     {
       term: "Patriarchat",
       definition:
-        "Das Patriarchat ist ein gesellschaftliches System, in dem Männer die dominante und vorherrschende Rolle in Politik, Wirtschaft, Kultur und anderen Bereichen einnehmen und Frauen systematisch unterdrückt werden.",
+        "Das Patriarchat ist ein gesellschaftliches System, in dem Männer die dominante und vorherrschende Rolle in Politik, Wirtschaft, Kultur und anderen Bereichen einnehmen und Frauen systematisch unterdrückt werden. Dieses System neigt dazu, männliche Privilegien zu fördern und Frauen in vielen Aspekten des Lebens zu benachteiligen, indem es Geschlechterstereotype aufrechterhält und Geschlechterungleichheit verstärkt.",
     },
     {
       term: "Gaslighting",
       definition:
-        "Gaslighting ist eine Form emotionaler Missbrauch, bei dem eine Person versucht, die Realität einer anderen Person zu verzerren und sie dazu zu bringen, an ihrem eigenen Verstand zu zweifeln.",
+        "Gaslighting ist eine Form emotionaler Missbrauch, bei dem eine Person versucht, die Realität einer anderen Person zu verzerren und sie dazu zu bringen, an ihrem eigenen Verstand zu zweifeln. Dies geschieht oft durch wiederholte Lügen, Manipulationen und das Infragestellen der Wahrnehmung der betroffenen Person. Gaslighting kann schwerwiegende psychische Auswirkungen haben und ist ein Verhalten, das dringend abgelehnt werden sollte.",
     },
     {
       term: "toxische Maskulinität",
       definition:
-        "Toxische Maskulinität bezieht sich auf eine gesellschaftliche Konstruktion von Männlichkeit, die schädlich ist, da sie Männer dazu ermutigt, Aggression, Dominanz und emotionale Zurückhaltung zu zeigen, anstatt gesunde emotionale Ausdrucksfähigkeit.",
+        "Toxische Maskulinität bezieht sich auf eine gesellschaftliche Konstruktion von Männlichkeit, die schädlich ist, da sie Männer dazu ermutigt, Aggression, Dominanz und emotionale Zurückhaltung zu zeigen, anstatt gesunde emotionale Ausdrucksfähigkeit. Dieses Konzept kritisiert die Idee, dass Männer stets stoisch und unempfindlich sein sollten und fördert stattdessen die Vorstellung von Männlichkeit, die sich auf Empathie, Vulnerabilität und positive zwischenmenschliche Beziehungen stützt.",
     },
     {
       term: "Feminismus",
       definition:
-        "Feminismus ist eine soziale und politische Bewegung, die sich für die Gleichstellung der Geschlechter und die Beseitigung von Geschlechterdiskriminierung einsetzt.",
+        "Feminismus ist eine soziale und politische Bewegung, die sich für die Gleichstellung der Geschlechter und die Beseitigung von Geschlechterdiskriminierung einsetzt. Der Feminismus strebt an, soziale, politische und wirtschaftliche Veränderungen herbeizuführen, um Frauen die gleichen Chancen und Rechte wie Männern zu ermöglichen. Feministinnen setzen sich für die Beseitigung von Geschlechterstereotypen, die Anerkennung von Frauenrechten und die Stärkung von Frauen in verschiedenen Lebensbereichen ein.",
     },
     {
       term: "Belästigung",
       definition:
-        "Belästigung umfasst unerwünschtes, aufdringliches Verhalten, das das Wohlbefinden und die Sicherheit von Personen bedroht, insbesondere von Frauen, und oft auf Geschlecht, Rasse oder sexuelle Orientierung basiert.",
+        "Belästigung umfasst unerwünschtes, aufdringliches Verhalten, das das Wohlbefinden und die Sicherheit von Personen bedroht, insbesondere von Frauen, und oft auf Geschlecht, Rasse oder sexuelle Orientierung basiert. Dieses Verhalten kann verbal, physisch oder online auftreten und reicht von sexueller Belästigung bis zu rassistischer oder sexistischer Diskriminierung. Die Bekämpfung von Belästigung ist entscheidend für die Schaffung einer sicheren und inklusiven Gesellschaft.",
     },
     {
       term: "Frauenrechte",
       definition:
-        "Frauenrechte sind Menschenrechte, die speziell auf die Gleichstellung und den Schutz der Rechte von Frauen abzielen, einschließlich Rechten auf Bildung, Gesundheit, Arbeit und politische Teilhabe.",
+        "Frauenrechte sind Menschenrechte, die speziell auf die Gleichstellung und den Schutz der Rechte von Frauen abzielen, einschließlich Rechten auf Bildung, Gesundheit, Arbeit und politische Teilhabe. Die Anerkennung und Durchsetzung von Frauenrechten sind entscheidend, um die Geschlechterungleichheit zu beseitigen und sicherzustellen, dass Frauen in allen Aspekten des Lebens gleichberechtigt sind.",
     },
     {
       term: "Empowerment",
       definition:
-        "Empowerment bezieht sich auf die Befähigung von Personen, insbesondere Frauen, durch Bildung, Ressourcen und Selbstbewusstsein, um Kontrolle über ihr eigenes Leben und ihre Entscheidungen zu übernehmen.",
+        "Empowerment bezieht sich auf die Befähigung von Personen, insbesondere Frauen, durch Bildung, Ressourcen und Selbstbewusstsein, um Kontrolle über ihr eigenes Leben und ihre Entscheidungen zu übernehmen. Es zielt darauf ab, individuelle und kollektive Stärke zu fördern und Menschen die Fähigkeit zu geben, aktiv an gesellschaftlichen Veränderungen teilzunehmen und ihre eigenen Ziele zu verfolgen.",
     },
     {
       term: "Sexismus",
       definition:
-        "Sexismus ist die Diskriminierung oder Vorurteile aufgrund des Geschlechts und kann sich in verschiedenen Formen manifestieren, wie Stereotypisierung, Vorurteile und Benachteiligung von Frauen.",
+        "Sexismus ist die Diskriminierung oder Vorurteile aufgrund des Geschlechts und kann sich in verschiedenen Formen manifestieren, wie Stereotypisierung, Vorurteile und Benachteiligung von Frauen. Sexismus kann subtil oder offensichtlich sein und hat weitreichende Auswirkungen auf das Leben von Frauen in Bereichen wie Bildung, Beruf und sozialer Interaktion. Die Bekämpfung von Sexismus ist ein wichtiger Schritt zur Schaffung einer gerechten und inklusiven Gesellschaft.",
     },
     {
       term: "Intersectionality",
       definition:
-        "Intersectionality ist ein Konzept, das die Wechselwirkungen zwischen verschiedenen Formen der Diskriminierung und Unterdrückung, einschließlich Geschlecht, Rasse, Klasse und sexueller Orientierung, berücksichtigt.",
+        "Intersectionality ist ein Konzept, das die Wechselwirkungen zwischen verschiedenen Formen der Diskriminierung und Unterdrückung, einschließlich Geschlecht, Rasse, Klasse und sexueller Orientierung, berücksichtigt. Es erkennt an, dass Menschen mehreren Unterdrückungsformen gleichzeitig ausgesetzt sein können und dass diese Faktoren miteinander verflochten sind. Intersectionality betont die Notwendigkeit, soziale Gerechtigkeit auf eine umfassende und inklusive Weise anzugehen.",
     },
     {
       term: "Feministische Solidarität",
       definition:
-        "Feministische Solidarität bedeutet, dass Frauen und Feministinnen zusammenarbeiten, um gemeinsame Ziele zu erreichen, und sich gegenseitig unterstützen, um Geschlechtergleichheit und soziale Gerechtigkeit voranzutreiben.",
+        "Feministische Solidarität bedeutet, dass Frauen und Feministinnen zusammenarbeiten, um gemeinsame Ziele zu erreichen, und sich gegenseitig unterstützen, um Geschlechtergleichheit und soziale Gerechtigkeit voranzutreiben. Dies schließt die Anerkennung der Vielfalt feministischer Perspektiven und Erfahrungen ein und betont die Bedeutung von gemeinsamer Arbeit zur Überwindung von Diskriminierung und Ungerechtigkeit aufgrund des Geschlechts.",
     },
   ],
 };
