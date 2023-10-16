@@ -25,6 +25,8 @@ function Anlaufstellen() {
       )
   );
 
+  const exampleTags = ["Telefon", "Berlin", "Online"];
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && searchTerm) {
       setSearchTags((prev) => [...prev, searchTerm]);
@@ -47,10 +49,11 @@ function Anlaufstellen() {
 
   const tagsRef = useRef(null);
 
+  // Currently not working...
   useEffect(() => {
     if (tagsRef.current && searchTags.length > 0) {
       const width = window.getComputedStyle(tagsRef.current).width;
-      tagsRef.current.style.paddingLeft = `${width + 16}px`; // 16px for some spacing
+      tagsRef.current.style.paddingLeft = `${width + 200}px`; // 16px for some spacing
     } else if (tagsRef.current) {
       tagsRef.current.style.paddingLeft = "16px"; // reset to default padding
     }
@@ -87,6 +90,19 @@ function Anlaufstellen() {
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
           />
+        </div>
+      </div>
+      <div className="flex flex-row max-w-2xl mx-auto mb-8">
+        <p className="mr-3"> Suche nach Stichwörtern wie...</p>
+        <div className="flex flex-wrap">
+          {exampleTags.map((tag) => (
+            <span
+              key={tag}
+              className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600 mr-2"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
       <div className="max-w-2xl mx-auto grid gap-8 ">
