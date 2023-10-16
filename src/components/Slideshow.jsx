@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import AnimatedButton from "./utils/AnimatedButton";
+
 const Slideshow = ({ data }) => {
   if (!data || data.length === 0) {
     return null; // Rückgabewert, wenn keine Daten vorhanden sind
@@ -44,6 +46,7 @@ const Slideshow = ({ data }) => {
                 <button className="bg-white text-black font-semibold px-4 py-2 rounded mt-2 w-fit">
                   {item.buttonText}
                 </button>
+                {/* <AnimatedButton /> */}
               </div>
             </div>
           </div>
