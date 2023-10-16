@@ -1,38 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
-
-const anlaufstellenData = [
-  {
-    id: 1,
-    name: "WEISSER RING",
-    description: "Eine kurze Beschreibung der Anlaufstelle 1.",
-    link: "https://example.com/anlaufstelle1",
-    tags: ["Hilfe", "Opfer", "Beratung"],
-  },
-  {
-    id: 2,
-    name: "Notfall Telefon",
-    description: "Eine kurze Beschreibung der Anlaufstelle 2.",
-    link: "https://example.com/anlaufstelle2",
-    tags: ["Notfall", "Telefon", "Unterstützung"],
-  },
-  {
-    id: 3,
-    name: "Verein gegen sexuelle Übergriffe",
-    description: "Eine kurze Beschreibung der Anlaufstelle 3.",
-    link: "https://example.com/anlaufstelle3",
-    tags: ["Verein", "Schutz", "Übergriffe"],
-  },
-  // Weitere Anlaufstellen hier
-];
+import { useGlobalState } from "../data/GlobalState";
 
 function Anlaufstellen() {
+  const { state } = useGlobalState();
   const [searchTerm, setSearchTerm] = useState("");
   const [searchTags, setSearchTags] = useState([]);
   const [placeholder, setplaceholder] = useState(
     "Suche Anlaufstelle oder Tag..."
   );
 
-  const filteredAnlaufstellen = anlaufstellenData.filter(
+  const filteredAnlaufstellen = state.anlaufstellenData.filter(
     (anlaufstelle) =>
       (searchTerm &&
         (anlaufstelle.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -107,6 +84,7 @@ function Anlaufstellen() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
+            ref={inputRef}
           />
         </div>
       </div>

@@ -33,15 +33,15 @@ function Contact() {
   }
 
   return (
-    <div className="container mx-4 md:mx-auto lg:mx-auto">
-      <h1 className="text-4xl font-bold mt-0 md:mt-8">Werde Partner*in</h1>
+    <div className="container  mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl ">
+      <h1 className="text-4xl font-bold mt-8">Werde Partner*in</h1>
       <p className="text-gray-600 mt-4">
         Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
         Formular aus, und einer unserer Mitarbeiter wird sich mit dir in
         Verbindung setzen. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit.
       </p>
-      <form className="flex flex-col mt-4 space-y-4">
+      <form className="flex flex-col mt-4 space-y-4 ">
         <div className="flex flex-row space-x-4">
           <div className="grow ">
             <label htmlFor="firstName" className="block font-semibold">

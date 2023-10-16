@@ -23,8 +23,8 @@ const missionTexts = [
 
 function Mission() {
   return (
-    <div className="p-4 text-center mx-24">
-      <h1 className="text-4xl font-bold mt-0 md:mt-8">Unsere Mission</h1>
+    <div className="p-4 text-center mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
+      <h1 className="text-4xl font-bold mt-8">Unsere Mission</h1>
       <div className="mt-8 space-y-8">
         {missionTexts.map((mission, index) => (
           <div

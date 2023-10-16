@@ -6,6 +6,8 @@ import Anlaufstellen from "./components/Anlaufstellen";
 import Mission from "./components/Mission";
 import Contact from "./components/Contact";
 import Interviews from "./components/Interviews";
+import ExampleGlobalData from "./components/ExampleGlobalData";
+import { GlobalStateProvider } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider
 
 function App() {
   const [acceptCookies, setAcceptCookies] = useState(true);
@@ -18,13 +20,17 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/anlaufstellen" element={<Anlaufstellen />} />
-          <Route path="/unsere-mission" element={<Mission />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/interviews" element={<Interviews />} />
-        </Routes>
+        {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
+        <GlobalStateProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/anlaufstellen" element={<Anlaufstellen />} />
+            <Route path="/unsere-mission" element={<Mission />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/interviews" element={<Interviews />} />
+            <Route path="/example" element={<ExampleGlobalData />} />
+          </Routes>
+        </GlobalStateProvider>{" "}
       </Layout>
       {acceptCookies == true && (
         <div className="flex justify-between items-center gap-2 bg-gray-100 px-4 py-2 fixed bottom-0 left-0 w-full">
@@ -49,9 +55,3 @@ function App() {
 }
 
 export default App;
-
-// 5BC0EB
-// FFE156
-// 4357AD
-// C1666B
-// F7EDF0
