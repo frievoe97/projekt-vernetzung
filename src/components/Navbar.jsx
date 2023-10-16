@@ -63,7 +63,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-blue_light border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0">
+    <nav className="z-30 bg-blue_light border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
