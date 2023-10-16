@@ -34,8 +34,9 @@ const initialState = {
       id: 1,
       name: "WEISSER RING",
       image:
-        "https://images.pexels.com/photos/7176317/pexels-photo-7176317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Eine kurze Beschreibung der Anlaufstelle 1.",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Weisser_Ring_Logo.svg/500px-Weisser_Ring_Logo.svg.png",
+      description:
+        "Wir helfen Ihnen, wenn Sie Opfer von Kriminalität und Gewalt geworden sind: Über das Opfer-Telefon 116 006, die Onlineberatung oder bundesweit persönlich vor Ort.",
       link: "https://example.com/anlaufstelle1",
       tags: ["Hilfe", "Opfer", "Beratung"],
       date: "28.05.19",
@@ -46,8 +47,9 @@ const initialState = {
       id: 2,
       name: "Notfall Telefon",
       image:
-        "https://images.pexels.com/photos/7176317/pexels-photo-7176317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Eine kurze Beschreibung der Anlaufstelle 2.",
+        "https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg",
+      description:
+        "Das Hilfe-Telefon berät anonym, kostenfrei und mehrsprachig. Nicht besetzt an bundesweiten Feiertagen und am 24. und 31. Dezember. Außerhalb unserer Telefonzeiten können Sie uns eine Nachricht schreiben.",
       link: "https://example.com/anlaufstelle2",
       tags: ["Notfall", "Telefon", "Unterstützung"],
       date: "28.05.19",
@@ -56,10 +58,10 @@ const initialState = {
     },
     {
       id: 3,
-      name: "Verein gegen sexuelle Übergriffe",
-      image:
-        "https://images.pexels.com/photos/7176317/pexels-photo-7176317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Eine kurze Beschreibung der Anlaufstelle 3.",
+      name: "LARA - Fachstelle gegen sexualisierte Gewalt an Frauen*",
+      image: "https://lara-berlin.de/fileadmin/Struktur/LOGO_LARA_lang.jpg",
+      description:
+        "Wir bieten unbürokratische Hilfen für Frauen, trans*, inter* und nicht-binäre Personen nach dem 14. Lebensjahr, die eine Vergewaltigung, sexuelle An- und Übergriffe und sexuelle Belästigung in der Partner*innenschaft, am Arbeitsplatz, durch Freund*innen, Kurzbekanntschaften oder Fremde erfahren haben.",
       link: "https://example.com/anlaufstelle3",
       tags: ["Verein", "Schutz", "Übergriffe"],
       date: "28.05.19",

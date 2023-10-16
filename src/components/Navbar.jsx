@@ -61,12 +61,15 @@ const Navbar = () => {
   return (
     <nav className="z-30 bg-blue_light border-black fixed top-0 left-0 right-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link
-          className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-          to="/"
-        >
-          Projekt Vernetzen e.V.
-        </Link>
+        <div className="flex flex-row">
+          <img className="w-10 mr-5" src="/logo.png" alt="" />
+          <Link
+            className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            to="/"
+          >
+            Projekt Vernetzen e.V.
+          </Link>
+        </div>
 
         <button
           onClick={toggleMenu}

@@ -93,28 +93,32 @@ function Anlaufstellen() {
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6 "
+            className="bg-white rounded-lg shadow-md p-6 grid grid-cols-2 gap-4"
           >
-            <h2 className="text-xl font-medium mb-4 text-center">
+            <h2 className="col-span-2 text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}
             </h2>
-            <div className="flex flex-wrap items-center mb-4">
+            <div className="col-span-1">
               <img
                 src={anlaufstelle.image}
                 alt={anlaufstelle.name}
-                className="w-1/3 max-h-72 object-cover mr-4"
+                className="w-full max-h-72 object-cover mb-4"
               />
-              <p className="text-gray-600 flex-grow">
+            </div>
+            <div className="col-span-1">
+              <p className="text-gray-600 mb-4 text-justify">
                 {anlaufstelle.description}
               </p>
+              <div className="text-justify">
+                <a
+                  href={anlaufstelle.link}
+                  className="text-blue-500 hover:underline block"
+                >
+                  Weitere Informationen
+                </a>
+              </div>
             </div>
-            <a
-              href={anlaufstelle.link}
-              className="text-blue-500 hover:underline text-center block mb-4"
-            >
-              Weitere Informationen
-            </a>
-            <div className="flex flex-wrap justify-center space-x-2">
+            <div className="col-span-2 flex flex-wrap justify-center space-x-2 w-full">
               {anlaufstelle.tags.map((tag) => (
                 <span
                   key={tag}
