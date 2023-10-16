@@ -33,8 +33,8 @@ function Contact() {
   }
 
   return (
-    <div className="container  mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl ">
-      <h1 className="text-4xl font-bold mt-8">Werde Partner*in</h1>
+    <div className="container bg-yellow mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
+      <h1 className="text-4xl font-bold pt-8">Werde Partner*in</h1>
       <p className="text-gray-600 mt-4">
         Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
         Formular aus, und einer unserer Mitarbeiter wird sich mit dir in
@@ -51,7 +51,7 @@ function Contact() {
               type="text"
               id="firstName"
               name="firstName"
-              className="w-full h-8 border-2"
+              className="w-full h-8 border-black rounded border-2"
               required
             />
           </div>
@@ -63,7 +63,7 @@ function Contact() {
               type="text"
               id="lastName"
               name="lastName"
-              className="w-full h-8 border-2"
+              className="w-full h-8 border-black rounded border-2"
               required
             />
           </div>
@@ -76,7 +76,7 @@ function Contact() {
             type="tel"
             id="phone"
             name="phone"
-            className="w-full h-8 border-2"
+            className="w-full h-8 border-black rounded border-2"
             required
           />
         </div>
@@ -88,7 +88,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            className="w-full h-8 border-2"
+            className="w-full h-8 border-black rounded border-2"
             required
           />
         </div>
@@ -100,14 +100,14 @@ function Contact() {
             id="message"
             name="message"
             rows="4"
-            className="w-full h-32 border-2"
+            className="w-full h-32 border-black rounded border-2"
             required
           ></textarea>
         </div>
         <div className="text-center md:text-right">
           <button
             type="submit"
-            className="button border-1 bg-white border-black "
+            className="button bg-white border-black rounded border-2"
           >
             Absenden
           </button>

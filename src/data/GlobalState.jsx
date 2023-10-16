@@ -7,6 +7,7 @@ const SET_ANLAUFSTELLEN_DATA = "SET_ANLAUFSTELLEN_DATA";
 const SET_ZUSATZDATEN = "SET_ZUSATZDATEN"; // Neue Aktion für zusätzliche Daten
 const SET_HOME_DATA = "SET_HOME_DATA"; // Neue Aktion für zusätzliche Daten
 const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA"; // Neue Aktion für zusätzliche Daten
+const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA"; // Neue Aktion für zusätzliche Daten
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -19,6 +20,8 @@ const reducer = (state, action) => {
       return { ...state, homeData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
     case SET_SLIDE_SHOW_DATA:
       return { ...state, slideshowData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
+    case SET_GLOSSAR_DATA:
+      return { ...state, glossaryData: action.payload }; // Neue Aktion zum Setzen von Zusatzdaten
     default:
       return state;
   }
@@ -112,6 +115,58 @@ const initialState = {
       buttonText: "Mehr Informationen",
     },
     // Weitere Daten für Ihre Slideshow
+  ],
+  glossaryData: [
+    {
+      term: "Patriarchat",
+      definition:
+        "Das Patriarchat ist ein gesellschaftliches System, in dem Männer die dominante und vorherrschende Rolle in Politik, Wirtschaft, Kultur und anderen Bereichen einnehmen und Frauen systematisch unterdrückt werden.",
+    },
+    {
+      term: "Gaslighting",
+      definition:
+        "Gaslighting ist eine Form emotionaler Missbrauch, bei dem eine Person versucht, die Realität einer anderen Person zu verzerren und sie dazu zu bringen, an ihrem eigenen Verstand zu zweifeln.",
+    },
+    {
+      term: "toxische Maskulinität",
+      definition:
+        "Toxische Maskulinität bezieht sich auf eine gesellschaftliche Konstruktion von Männlichkeit, die schädlich ist, da sie Männer dazu ermutigt, Aggression, Dominanz und emotionale Zurückhaltung zu zeigen, anstatt gesunde emotionale Ausdrucksfähigkeit.",
+    },
+    {
+      term: "Feminismus",
+      definition:
+        "Feminismus ist eine soziale und politische Bewegung, die sich für die Gleichstellung der Geschlechter und die Beseitigung von Geschlechterdiskriminierung einsetzt.",
+    },
+    {
+      term: "Belästigung",
+      definition:
+        "Belästigung umfasst unerwünschtes, aufdringliches Verhalten, das das Wohlbefinden und die Sicherheit von Personen bedroht, insbesondere von Frauen, und oft auf Geschlecht, Rasse oder sexuelle Orientierung basiert.",
+    },
+    {
+      term: "Frauenrechte",
+      definition:
+        "Frauenrechte sind Menschenrechte, die speziell auf die Gleichstellung und den Schutz der Rechte von Frauen abzielen, einschließlich Rechten auf Bildung, Gesundheit, Arbeit und politische Teilhabe.",
+    },
+    {
+      term: "Empowerment",
+      definition:
+        "Empowerment bezieht sich auf die Befähigung von Personen, insbesondere Frauen, durch Bildung, Ressourcen und Selbstbewusstsein, um Kontrolle über ihr eigenes Leben und ihre Entscheidungen zu übernehmen.",
+    },
+    {
+      term: "Sexismus",
+      definition:
+        "Sexismus ist die Diskriminierung oder Vorurteile aufgrund des Geschlechts und kann sich in verschiedenen Formen manifestieren, wie Stereotypisierung, Vorurteile und Benachteiligung von Frauen.",
+    },
+    {
+      term: "Intersectionality",
+      definition:
+        "Intersectionality ist ein Konzept, das die Wechselwirkungen zwischen verschiedenen Formen der Diskriminierung und Unterdrückung, einschließlich Geschlecht, Rasse, Klasse und sexueller Orientierung, berücksichtigt.",
+    },
+    {
+      term: "Feministische Solidarität",
+      definition:
+        "Feministische Solidarität bedeutet, dass Frauen und Feministinnen zusammenarbeiten, um gemeinsame Ziele zu erreichen, und sich gegenseitig unterstützen, um Geschlechtergleichheit und soziale Gerechtigkeit voranzutreiben.",
+    },
   ],
 };
 

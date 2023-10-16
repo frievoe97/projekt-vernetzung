@@ -7,6 +7,7 @@ import Mission from "./components/Mission";
 import Contact from "./components/Contact";
 import Interviews from "./components/Interviews";
 import ExampleGlobalData from "./components/ExampleGlobalData";
+import Glossar from "./components/Glossar";
 import { GlobalStateProvider } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider
 
 function App() {
@@ -29,11 +30,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/interviews" element={<Interviews />} />
             <Route path="/example" element={<ExampleGlobalData />} />
+            <Route path="/glossar" element={<Glossar />} />
           </Routes>
         </GlobalStateProvider>{" "}
       </Layout>
       {acceptCookies == true && (
-        <div className="flex justify-between items-center gap-2 bg-gray-100 px-4 py-2 fixed bottom-0 left-0 w-full">
+        <div className="flex justify-between items-center gap-2 bg-gray-100 px-6 py-4 fixed bottom-0 left-0 w-full">
           <p className="text-sm text-gray-700">
             Wir verwenden Cookies, um Ihnen das beste Erlebnis auf unserer
             Website zu bieten. Lerne&nbsp;

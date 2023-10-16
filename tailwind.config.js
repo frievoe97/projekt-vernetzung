@@ -7,7 +7,7 @@ export default {
   theme: {
     colors: {
       blue_light: "#5BC0EB",
-      yellow: "#FFE156",
+      yellow: "#FFEFCA",
       blue_dark: "#4357AD",
       red: "#C1666B",
       lavendar: "#F7EDF0",
@@ -18,7 +18,6 @@ export default {
       gray: colors.gray,
       emerald: colors.emerald,
       indigo: colors.indigo,
-      yellow: colors.yellow,
     },
     extend: {},
   },

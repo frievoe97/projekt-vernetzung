@@ -5,7 +5,7 @@ function Interviews() {
   const { state } = useGlobalState();
 
   return (
-    <div className="p-4 space-y-8 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
+    <div className="p-4 space-y-8 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl bg-yellow">
       {state.anlaufstellenData.map((interview, index) => (
         <div
           key={index}

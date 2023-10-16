@@ -25,18 +25,22 @@ const Slideshow = ({ data }) => {
         {data.map((item, index) => (
           <div key={index} className="relative max-w-full overflow-hidden">
             <div className="relative">
-              <img
-                src={item.imageSrc}
-                alt={item.title}
-                className="w-full h-auto max-h-400px object-cover"
-                style={{ maxHeight: "400px" }}
-              />
+              <div style={{ height: "300px" }}>
+                <img
+                  src={item.imageSrc}
+                  alt={item.title}
+                  className="w-full h-full object-cover object-center"
+                  style={{ Height: "100%" }}
+                />
+              </div>
 
               <div className="absolute inset-0 flex flex-col justify-end text-black p-4">
                 <h2 className="text-2xl font-semibold bg-white p-2 rounded w-fit">
                   {item.title}
                 </h2>
-                <p className="mt-2 bg-white p-2 rounded w-fit">{item.text}</p>
+                <p className="mt-2 bg-white p-2 rounded w-fit text-left">
+                  {item.text}
+                </p>
                 <button className="bg-white text-black font-semibold px-4 py-2 rounded mt-2 w-fit">
                   {item.buttonText}
                 </button>

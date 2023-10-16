@@ -45,36 +45,38 @@ function Anlaufstellen() {
     }
   };
 
-  const inputRef = useRef(null);
+  const tagsRef = useRef(null);
 
   useEffect(() => {
-    if (inputRef.current && searchTags.length > 0) {
-      const tagsWidth = inputRef.current.getBoundingClientRect().width;
-      inputRef.current.style.paddingLeft = `${tagsWidth + 16}px`; // 16px for some spacing
-    } else if (inputRef.current) {
-      inputRef.current.style.paddingLeft = "16px"; // reset to default padding
+    if (tagsRef.current && searchTags.length > 0) {
+      const width = window.getComputedStyle(tagsRef.current).width;
+      tagsRef.current.style.paddingLeft = `${width + 16}px`; // 16px for some spacing
+    } else if (tagsRef.current) {
+      tagsRef.current.style.paddingLeft = "16px"; // reset to default padding
     }
   }, [searchTags]);
 
   return (
-    <div className="p-6 text-center z-0">
+    <div className="p-6 text-center z-0 bg-yellow">
       <h1 className="text-4xl font-bold mt-8 mb-6">Anlaufstellen</h1>
-      <div className="max-w-2xl mx-auto mb-6 relative">
-        <div className="flex items-center border border-gray-300 p-3 rounded-md w-full relative">
-          {searchTags.map((tag, index) => (
-            <span
-              key={index}
-              className="pl-2 bg-gray-200 rounded-2xl text-sm text-gray-600 mr-2"
-            >
-              {tag}
-              <button
-                onClick={() => removeTag(index)}
-                className="px-2 py-1 ml-2 rounded-2xl text-gray-400 hover:text-gray-500 focus:outline-none z-0"
+      <div className="max-w-2xl mx-auto mb-8 relative">
+        <div className="flex items-center border-2 border-black p-4 rounded-md w-full relative">
+          <div className="flex items-center space-x-2 ">
+            {searchTags.map((tag, index) => (
+              <span
+                key={index}
+                className="pl-2 bg-gray-200 rounded-2xl text-sm text-gray-600 flex items-center"
               >
-                &times;
-              </button>
-            </span>
-          ))}
+                {tag}
+                <button
+                  onClick={() => removeTag(index)}
+                  className="px-2 py-1 ml-2 rounded-2xl text-gray-400 hover:text-gray-500 focus:outline-none z-0"
+                >
+                  &times;
+                </button>
+              </span>
+            ))}
+          </div>
           <input
             type="text"
             placeholder={
@@ -84,22 +86,28 @@ function Anlaufstellen() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
-            ref={inputRef}
           />
         </div>
       </div>
-      <div className="max-w-2xl mx-auto grid gap-6">
+      <div className="max-w-2xl mx-auto grid gap-8 ">
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6"
+            className="bg-white rounded-lg shadow-md p-6 "
           >
             <h2 className="text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}
             </h2>
-            <p className="text-gray-600 mb-4 text-center">
-              {anlaufstelle.description}
-            </p>
+            <div className="flex flex-wrap items-center mb-4">
+              <img
+                src={anlaufstelle.image}
+                alt={anlaufstelle.name}
+                className="w-1/3 max-h-72 object-cover mr-4"
+              />
+              <p className="text-gray-600 flex-grow">
+                {anlaufstelle.description}
+              </p>
+            </div>
             <a
               href={anlaufstelle.link}
               className="text-blue-500 hover:underline text-center block mb-4"
