@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalState } from "../data/GlobalState";
+import yaml from "js-yaml";
 
 function Anlaufstellen() {
-  const { state } = useGlobalState();
+  const { state, dispatch } = useGlobalState(); // Zugriff auf den globalen Zustand und den Dispatch
+  console.log(state);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchTags, setSearchTags] = useState([]);
   const [placeholder, setplaceholder] = useState(
@@ -58,6 +60,20 @@ function Anlaufstellen() {
       tagsRef.current.style.paddingLeft = "16px"; // reset to default padding
     }
   }, [searchTags]);
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml"
+    )
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: "SET_ANLAUFSTELLEN_DATA",
+          payload: parsedData.anlaufstellenData,
+        });
+      });
+  }, [dispatch]);
 
   return (
     <div className="p-6 text-center z-0 bg-yellow">

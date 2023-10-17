@@ -9,7 +9,7 @@ function ExampleGlobalData() {
   const handleDatenÄndern = () => {
     // Hier setzen Sie die zusätzlichen globalen Daten mithilfe der Aktion SET_ZUSATZDATEN
     dispatch({ type: "SET_ZUSATZDATEN", payload: neueDaten });
-    setNeueDaten(""); // Zurücksetzen des Eingabefelds
+    // setNeueDaten(""); // Zurücksetzen des Eingabefelds
   };
 
   return (
