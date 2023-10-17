@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
@@ -8,15 +8,31 @@ import Contact from "./components/Contact";
 import Interviews from "./components/Interviews";
 import ExampleGlobalData from "./components/ExampleGlobalData";
 import Glossar from "./components/Glossar";
-import { GlobalStateProvider } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider
+import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
+import yaml from "js-yaml";
 
 function App() {
   const [acceptCookies, setAcceptCookies] = useState(true);
+  const { state, dispatch } = useGlobalState(); // Zugriff auf den globalen Zustand und den Dispatch
 
   // Funktion, um den Zustand von acceptCookies zu aktualisieren
   const handleAcceptCookies = () => {
     setAcceptCookies(false);
   };
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml"
+    )
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: "SET_ANLAUFSTELLEN_DATA",
+          payload: parsedData.anlaufstellenData,
+        });
+      });
+  }, [dispatch]);
 
   return (
     <Router>
@@ -34,7 +50,7 @@ function App() {
           </Routes>
         </GlobalStateProvider>{" "}
       </Layout>
-      {acceptCookies == true && (
+      {acceptCookies && (
         <div className="flex justify-between items-center gap-2 bg-gray-100 px-6 py-4 fixed bottom-0 left-0 w-full">
           <p className="text-sm text-gray-700">
             Wir verwenden Cookies, um Ihnen das beste Erlebnis auf unserer

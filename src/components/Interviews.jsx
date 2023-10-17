@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useGlobalState } from "../data/GlobalState";
+import yaml from "js-yaml";
 
 function Interviews() {
-  const { state } = useGlobalState();
+  const { state, dispatch } = useGlobalState();
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml"
+    )
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: "SET_ANLAUFSTELLEN_DATA",
+          payload: parsedData.anlaufstellenData,
+        });
+      });
+  }, [dispatch]);
 
   return (
     <div className="p-4 space-y-8 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl bg-yellow">
