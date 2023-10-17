@@ -33,9 +33,12 @@ const Navbar = () => {
 
   // Funktion zum Umschalten der Untermenüs
   const toggleSubmenu = (index) => {
+    console.log("toggleSubmenu", index);
+    console.log(openMenu);
     setOpenSubmenu((prevOpenSubmenu) =>
       prevOpenSubmenu === index ? null : index
     );
+    updateWindowWidth();
   };
 
   const menuItems = [

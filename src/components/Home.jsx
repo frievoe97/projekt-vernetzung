@@ -4,6 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useGlobalState } from "../data/GlobalState";
 
 import Slideshow from "./Slideshow";
+import ContactBanner from "./ContactBanner";
 import TextTicker from "./TextTicker";
 
 function Home() {
@@ -57,7 +58,7 @@ function Home() {
                   <h2 className="text-2xl font-semibold mb-4">{item.title}</h2>
                   <p className="mt-0 text-justify">{item.text}</p>
                   <motion.button
-                    className="bg-black text-white font-semibold px-6 py-3 rounded-lg mt-4 hover:bg-gray-800 transition duration-300 ease-in-out"
+                    className="mt-6 px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     initial={{ opacity: 0 }}
@@ -72,6 +73,7 @@ function Home() {
           </VisibilitySensor>
         ))}
       </div>
+      <ContactBanner />
       <Slideshow data={state.slideshowData} />
     </div>
   );

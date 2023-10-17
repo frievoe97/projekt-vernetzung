@@ -105,24 +105,24 @@ function Anlaufstellen() {
           ))}
         </div>
       </div>
-      <div className="max-w-2xl mx-auto grid gap-8 ">
+      <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8">
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6 grid grid-cols-2 gap-4"
+            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/2 lg:w-1/2 xl:w-1/3"
           >
-            <h2 className="col-span-2 text-xl font-medium mb-4 text-center">
+            <h2 className="text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}
             </h2>
-            <div className="col-span-1">
+            <div className="w-full mb-4">
               <img
                 src={anlaufstelle.image}
                 alt={anlaufstelle.name}
-                className="w-full max-h-72 object-cover mb-4"
+                className="w-full max-h-72 object-cover"
               />
             </div>
-            <div className="col-span-1">
-              <p className="text-gray-600 mb-4 text-justify">
+            <div className="w-full mb-4">
+              <p className="text-gray-600 text-justify">
                 {anlaufstelle.description}
               </p>
               <div className="text-justify">
@@ -134,11 +134,11 @@ function Anlaufstellen() {
                 </a>
               </div>
             </div>
-            <div className="col-span-2 flex flex-wrap justify-center space-x-2 w-full">
+            <div className="w-full flex flex-wrap justify-center space-x-2">
               {anlaufstelle.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600"
+                  className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600 mb-2"
                 >
                   {tag}
                 </span>
