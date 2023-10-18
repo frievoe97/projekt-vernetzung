@@ -7,6 +7,66 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+# Dokumentation für die Webseite des Projekts Vernetzung
+
+Willkommen zur offiziellen Dokumentation des Projekts Vernetzung. Dieses Projekt basiert auf React und Vite und dient der nahtlosen Integration verschiedener Komponenten und Technologien.
+
+## Einrichtung des Projekts
+
+### Voraussetzungen
+
+Um das Projekt auf Ihrem lokalen System auszuführen, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
+
+- Node.js (empfohlen wird Version 14 oder höher)
+- npm oder yarn
+
+### Projektinstallation
+
+Folgen Sie diesen Schritten, um das Projekt auf Ihrem lokalen Entwicklungssystem einzurichten:
+
+1. Klonen Sie das Projekt-Repository.
+
+2. Navigieren Sie in das Hauptverzeichnis des Projekts.
+
+3. Installieren Sie die erforderlichen Abhängigkeiten.
+
+## Verfügbare Skripte
+
+Dieses Projekt stellt verschiedene npm-Skripte zur Verfügung, die Ihnen bei der Entwicklung und Bereitstellung helfen. Hier sind einige der wichtigsten Skripte:
+
+- `npm run dev`: Startet die Entwicklungsumgebung mithilfe von Vite und ermöglicht Live-Reload während der Entwicklung.
+
+- `npm run build`: Erzeugt eine optimierte Produktionsversion des Projekts.
+
+- `npm run lint`: Führt ESLint über den gesamten Projektcode aus, um potenzielle Probleme zu identifizieren.
+
+- `npm run preview`: Startet eine lokale Vorschau der Produktionsversion des Projekts.
+
+## Abhängigkeiten
+
+Dieses Projekt nutzt eine Reihe von Abhängigkeiten, um reibungslose Funktionalität zu gewährleisten. Hier sind einige der Hauptabhängigkeiten:
+
+- `react`: Eine JavaScript-Bibliothek zur Entwicklung von Benutzeroberflächen.
+
+- `react-router-dom`: Eine Bibliothek zur Navigation in React-Anwendungen.
+
+- `framer-motion`: Eine Animationsbibliothek für React.
+
+- `tailwindcss`: Ein CSS-Framework zur schnellen Gestaltung von Benutzeroberflächen.
+
+- Andere Abhängigkeiten sind in der `package.json`-Datei aufgeführt.
+
+## Entwicklungsumgebung
+
+Dieses Projekt verwendet Vite als Entwicklungsumgebung und Build-Tool, um effiziente Entwicklung und Bereitstellung zu gewährleisten.
+
+## Lizenz
+
+Dieses Projekt unterliegt der MIT-Lizenz. Weitere Details finden Sie in der `LICENSE`-Datei.
+
+## Kontakt
+
+Bei Fragen, Anregungen oder Problemen können Sie uns jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
 
 # Daten ändern
 
