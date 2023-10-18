@@ -5,11 +5,9 @@ import { useGlobalState } from "../data/GlobalState";
 
 import Slideshow from "./Slideshow";
 import ContactBanner from "./ContactBanner";
-import TextTicker from "./TextTicker";
 
 function Home() {
   const { state } = useGlobalState();
-  console.log(state);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleVisibilityChange = (isVisible) => {

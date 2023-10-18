@@ -32,13 +32,14 @@ const Navbar = () => {
   };
 
   // Funktion zum Umschalten der Untermenüs
-  const toggleSubmenu = (index) => {
-    console.log("toggleSubmenu", index);
-    console.log(openMenu);
+  // disableMenu -> dont toggle the menu off, when you click the arrow for the subitems...
+  const toggleSubmenu = (index, disableMenu) => {
     setOpenSubmenu((prevOpenSubmenu) =>
       prevOpenSubmenu === index ? null : index
     );
-    updateWindowWidth();
+    if (disableMenu != false) {
+      updateWindowWidth();
+    }
   };
 
   const menuItems = [
@@ -109,7 +110,7 @@ const Navbar = () => {
               <li key={index}>
                 {item.subItems ? (
                   <button
-                    onClick={() => toggleSubmenu(index)}
+                    onClick={() => toggleSubmenu(index, false)}
                     id={`dropdownNavbarLink${index}`}
                     data-dropdown-toggle={`dropdownNavbar${index}`}
                     className={`z-10 flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:hover:text-black md:p-0 md:w-auto dark:text-white md:dark:hover:text-black dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:underline`}
@@ -135,7 +136,7 @@ const Navbar = () => {
                   <Link
                     className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:hover:text-black hover:underline"
                     to={item.url}
-                    onClick={() => toggleSubmenu(index)}
+                    onClick={() => toggleSubmenu(index, true)}
                   >
                     {item.text}
                   </Link>
@@ -158,7 +159,7 @@ const Navbar = () => {
                           <Link
                             className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-black hover:text-black"
                             to={subItem.url}
-                            onClick={() => toggleSubmenu(index)}
+                            onClick={() => toggleSubmenu(index, true)}
                           >
                             {subItem.text}
                           </Link>

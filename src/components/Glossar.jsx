@@ -45,7 +45,7 @@ function GlossaryItem({ term, definition, searchTerm }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   const [expanded, setExpanded] = useState(false); // Standardmäßig zugeklappt
 
-  // Überprüfe, ob ein Suchbegriff vorhanden ist und setze "expanded" entsprechend
+  //   Überprüfe, ob ein Suchbegriff vorhanden ist und setze "expanded" entsprechend
   useEffect(() => {
     if (searchTerm) {
       setExpanded(true);

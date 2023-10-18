@@ -20,20 +20,6 @@ function App() {
     setAcceptCookies(false);
   };
 
-  useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml"
-    )
-      .then((response) => response.text())
-      .then((yamlText) => {
-        const parsedData = yaml.load(yamlText);
-        dispatch({
-          type: "SET_ANLAUFSTELLEN_DATA",
-          payload: parsedData.anlaufstellenData,
-        });
-      });
-  }, [dispatch]);
-
   return (
     <Router>
       <Layout>
