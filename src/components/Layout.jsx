@@ -5,7 +5,7 @@ import EmergencyButton from "./EmergencyButton";
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-yellow">
+    <div className="flex flex-col min-h-screen bg-color_4">
       <Navbar />
       <main className="flex-grow pt-16">{children}</main>
       <Footer />

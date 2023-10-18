@@ -82,11 +82,11 @@ function Anlaufstellen() {
   }, [dispatch]);
 
   return (
-    <div className="p-6 text-center z-0 bg-yellow">
+    <div className="p-6 text-center z-0 bg-color_4">
       <h1 className="text-4xl font-bold mt-8 mb-6">Anlaufstellen</h1>
       <div className="max-w-2xl mx-auto mb-8 relative">
         <div className="flex items-center border-2 border-black p-4 rounded-md w-full relative">
-          <div className="flex items-center space-x-2 ">
+          <div className="flex items-center space-x-2">
             {searchTags.map((tag, index) => (
               <span
                 key={index}
@@ -127,11 +127,11 @@ function Anlaufstellen() {
           ))}
         </div>
       </div>
-      <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8">
+      <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8 ">
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/2 lg:w-1/2 xl:w-1/3"
+            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/2 lg:w-1/2 xl:w-1/3 shadow-2xl"
           >
             <h2 className="text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}

@@ -1,12 +1,12 @@
 slideshowData:
-  - imageSrc: "https://images.pexels.com/photos/4098368/pexels-photo-4098368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  - image: "https://images.pexels.com/photos/4098368/pexels-photo-4098368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     title: "Beratung für Opfer"
     text: >
       Unsere Beratungsangebote bieten Unterstützung und Hilfe für Opfer von
       Machtmissbrauch.
     buttonText: "Mehr Informationen"
 
-  - imageSrc: "https://images.pexels.com/photos/7176317/pexels-photo-7176317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  - image: "https://images.pexels.com/photos/7176317/pexels-photo-7176317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     title: "Fachliche Unterstützung"
     text: >
       Erfahrene Fachleute stehen Ihnen zur Verfügung, um Sie bei der Bewältigung

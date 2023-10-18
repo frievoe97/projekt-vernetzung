@@ -41,7 +41,7 @@ function Glossary() {
   }, [searchTerm, state.glossaryData]);
 
   return (
-    <div className="p-6 text-center z-0 bg-yellow">
+    <div className="p-6 text-center z-0 bg-color_4">
       <h1 className="text-4xl font-bold mt-8 mb-6">Glossar</h1>
       <input
         type="text"

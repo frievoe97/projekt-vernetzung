@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import AnimatedButton from "./utils/AnimatedButton";
-
 const Slideshow = ({ data }) => {
   if (!data || data.length === 0) {
     return null; // Rückgabewert, wenn keine Daten vorhanden sind
@@ -29,7 +27,7 @@ const Slideshow = ({ data }) => {
             <div className="relative">
               <div style={{ height: "300px" }}>
                 <img
-                  src={item.imageSrc}
+                  src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover object-center"
                   style={{ Height: "100%" }}

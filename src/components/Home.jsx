@@ -46,7 +46,7 @@ function Home() {
   }, [dispatch]);
 
   return (
-    <div className="text-center bg-yellow">
+    <div className="text-center bg-color_4">
       <h1 className="text-4xl font-bold pt-8">
         Machtmissbrauch passiert überall
       </h1>
@@ -78,7 +78,7 @@ function Home() {
                   <motion.img
                     src={item.imageSrc}
                     alt={`Bild ${index + 1}`}
-                    className="max-w-full max-h-72 h-auto mx-auto"
+                    className="max-w-full max-h-72 h-auto mx-auto shadow-2xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isVisible ? 1 : 0 }}
                     transition={{ duration: 0.5 }}
