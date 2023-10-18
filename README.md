@@ -12,4 +12,4 @@ Currently, two official plugins are available:
 
 ## Anlaufstellen/Interviews
 
-Die Daten sind gespeichert in [src/data/anlaufstellenData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/anlaufstellenData.yaml)
+Die Daten sind gespeichert in [src/data/anlaufstellenData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/anlaufstellenData.yaml). Jede Anlaufstelle hat eine id (darf nicht doppelt sein, am besten fortlaufend), einen Namen, ein Bild (URL), eine Beschreibung, einen Link, Tags (für die Suchfilter), ein Datum (für das Interview) und eine Kurzbeschreibung für das Interview.
