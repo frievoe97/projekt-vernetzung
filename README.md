@@ -6,3 +6,10 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# Daten ändern
+
+## Anlaufstellen/Interviews
+
+Die Daten sind gespeichert in (src/data/anlaufstellenData.yaml)[https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/anlaufstellenData.yaml]
