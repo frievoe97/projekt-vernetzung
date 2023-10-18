@@ -4,10 +4,6 @@ import yaml from "js-yaml";
 
 function Anlaufstellen() {
   const { state, dispatch } = useGlobalState(); // Zugriff auf den globalen Zustand und den Dispatch
-<<<<<<< HEAD
-=======
-  console.log(state);
->>>>>>> 70975234aba1604402ada22a2b8009c6ee165e9d
   const [searchTerm, setSearchTerm] = useState("");
   const [searchTags, setSearchTags] = useState([]);
   const [placeholder, setplaceholder] = useState(
