@@ -48,14 +48,14 @@ function Home() {
   return (
     <div className="text-center bg-color_4">
       <h1 className="text-4xl font-bold pt-8">
-        Machtmissbrauch passiert überall
+        Machtmissbrauch passiert überall!
       </h1>
       <p className="text-lg mt-4">
         Wir möchten Betroffene, ihr Umfeld und die Öffentlichkeit informieren,
         sensibilisieren und Hilfestellung bieten.
       </p>
       {/* <TextTicker /> */}
-      <div className="space-y-32 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
+      <div className="space-y-8 md:space-y-32 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
         {state.homeData.map((item, index) => (
           <VisibilitySensor
             key={index}

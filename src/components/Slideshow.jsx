@@ -29,7 +29,7 @@ const Slideshow = ({ data }) => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-center bg-color_1 contrast-50"
                   style={{ Height: "100%" }}
                 />
               </div>
@@ -39,7 +39,7 @@ const Slideshow = ({ data }) => {
                   {item.name}
                 </h2>
                 <p className="mt-2 bg-white p-2 rounded w-fit text-left">
-                  {item.text}
+                  {item.description}
                 </p>
                 <button className="bg-white text-black font-semibold px-4 py-2 rounded mt-2 w-fit">
                   Mehr Informationen

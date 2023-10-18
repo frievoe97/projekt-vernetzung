@@ -1,0 +1,22 @@
+# Currently not used (hardcoded...)
+menuItems:
+  - text: "Home"
+    url: "/"
+  - text: "Über Uns"
+    subItems:
+      - text: "Unsere Mission"
+        url: "/unsere-mission"
+      - text: "Machtmissbrauch"
+        url: "/"
+      - text: "Warum Jetzt?"
+        url: "/"
+      - text: "Warum Wir?"
+        url: "/"
+      - text: "Kontakt"
+        url: "/contact"
+  - text: "Glossar"
+    url: "/glossar"
+  - text: "Anlaufstellen"
+    url: "/anlaufstellen"
+  - text: "Interviews"
+    url: "/interviews"

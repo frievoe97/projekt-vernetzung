@@ -33,7 +33,7 @@ function Contact() {
   }
 
   return (
-    <div className="container bg-color_4 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
+    <div className="container bg-color_4 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl mb-4">
       <h1 className="text-4xl font-bold pt-8">Werde Partner*in</h1>
       <p className="text-lg text-gray-600 mt-4">
         Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
@@ -41,9 +41,9 @@ function Contact() {
         Verbindung setzen. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit.
       </p>
-      <form className="flex flex-col mt-4 space-y-4 ">
-        <div className="flex flex-row space-x-4">
-          <div className="grow ">
+      <form className="flex flex-col mt-4 space-y-4">
+        <div className="flex flex-col space-y-4">
+          <div className="grow">
             <label htmlFor="firstName" className="block font-semibold">
               Vorname
             </label>
@@ -52,7 +52,6 @@ function Contact() {
               id="firstName"
               name="firstName"
               className="w-full h-8 border-black rounded border-2 bg-transparent"
-              required
             />
           </div>
           <div className="grow">
@@ -64,20 +63,18 @@ function Contact() {
               id="lastName"
               name="lastName"
               className="w-full h-8 border-black rounded border-2 bg-transparent"
-              required
             />
           </div>
         </div>
         <div>
           <label htmlFor="phone" className="block font-semibold">
-            Telefon (erforderlich)
+            Telefon
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
             className="w-full h-8 border-black rounded border-2 bg-transparent"
-            required
           />
         </div>
         <div>
