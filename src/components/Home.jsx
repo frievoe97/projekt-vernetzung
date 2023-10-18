@@ -6,14 +6,44 @@ import { useGlobalState } from "../data/GlobalState";
 import Slideshow from "./Slideshow";
 import ContactBanner from "./ContactBanner";
 
+import yaml from "js-yaml";
+
 function Home() {
-  const { state } = useGlobalState();
+  const { state, dispatch } = useGlobalState();
   console.log(state);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleVisibilityChange = (isVisible) => {
     setIsVisible(isVisible);
   };
+
+  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: actionType,
+          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
+        });
+      });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/homeData.yaml",
+      dispatch,
+      "SET_HOME_DATA",
+      "homeData" // Übergeben Sie den Namen des Schlüssels
+    );
+
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/slideshowData.yaml",
+      dispatch,
+      "SET_SLIDE_SHOW_DATA",
+      "slideshowData" // Übergeben Sie den Namen des Schlüssels
+    );
+  }, [dispatch]);
 
   return (
     <div className="text-center bg-yellow">

@@ -5,18 +5,25 @@ import yaml from "js-yaml";
 function Interviews() {
   const { state, dispatch } = useGlobalState();
 
-  useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml"
-    )
+  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+    fetch(url)
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
         dispatch({
-          type: "SET_ANLAUFSTELLEN_DATA",
-          payload: parsedData.anlaufstellenData,
+          type: actionType,
+          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
         });
       });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml",
+      dispatch,
+      "SET_ANLAUFSTELLEN_DATA",
+      "anlaufstellenData" // Übergeben Sie den Namen des Schlüssels
+    );
   }, [dispatch]);
 
   return (

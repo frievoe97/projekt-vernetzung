@@ -4,10 +4,33 @@ import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
+import yaml from "js-yaml";
+
 function Glossary() {
-  const { state } = useGlobalState();
+  const { state, dispatch } = useGlobalState();
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredItems, setFilteredItems] = useState(state.glossaryData);
+
+  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: actionType,
+          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
+        });
+      });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/glossaryData.yaml",
+      dispatch,
+      "SET_GLOSSAR_DATA",
+      "glossaryData"
+    );
+  }, [dispatch]);
 
   useEffect(() => {
     // Filtere die Elemente basierend auf dem Suchbegriff
