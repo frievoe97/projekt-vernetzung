@@ -8,6 +8,7 @@ import ContactBanner from "./ContactBanner";
 
 function Home() {
   const { state } = useGlobalState();
+  console.log(state);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleVisibilityChange = (isVisible) => {
