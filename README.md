@@ -66,7 +66,7 @@ Dieses Projekt unterliegt der MIT-Lizenz. Weitere Details finden Sie in der `LIC
 
 ## Kontakt
 
-Bei Fragen, Anregungen oder Problemen können Sie uns jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
+Bei Fragen, Anregungen oder Problemen können Sie mich jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
 
 # Daten ändern
 
