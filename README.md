@@ -1,4 +1,4 @@
-[https://](https://projekt-vernetzung.friedrichvoelkers.de)
+[Website](https://projekt-vernetzung.friedrichvoelkers.de)
 
 # React + Vite
 
