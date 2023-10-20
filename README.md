@@ -94,17 +94,11 @@ Auf der Startseite gibt es einmal die Beiträge ("Alle Branchen und Lebensbereic
 Für die Bearbeitung der Beiträge müsst ihr die Datei [homeData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/homeData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
 
 ```yaml
-  - imageSrc: "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    title: "Alle Branchen und Lebensbereiche betroffen"
+  - imageSrc: "https://example-image/image01.png"
+    title: "Titel des Beitrags"
     text: >
-      Nicht jeder Fall von Machtmissbrauch gleicht den zuletzt medial stark
-      thematisierten Extremen. Viel passiert “im Kleinen”. Zudem bleiben drastische
-      Fälle, aus Angst der Betroffenen zu Sprechen, im Dunkeln. Dabei gleichen sich
-      übergeordnete Strukturen, die Machtmissbrauch befördern, aber auch von
-      Täter:innen angewandte Strategien über verschiedene Bereiche hinweg. Eine
-      vorbeugende gesellschaftliche und individuelle Auseinandersetzung mit diesen
-      Mustern ist wichtig, um frühzeitiger für Betroffene eingreifen zu können.
-    buttonText: "Mehr erfahren"
+      Hier könnt ihr den Text zu dem Beitrag hinzufügen
+    buttonText: "Text des Buttons"
 ```
 
 
