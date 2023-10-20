@@ -87,6 +87,27 @@ Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievo
 
 Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/projekt-vernetzung/tree/main/src/data) gespeidchert.
 
+## Inhalte der Startseite
+
+Auf der Startseite gibt es einmal die Beiträge ("Alle Branchen und Lebensbereiche betroffen", "Was tun wir?" etc.) und die Slideshow unten auf der Seite. 
+
+Für die Bearbeitung der Beiträge müsst ihr die Datei [homeData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/homeData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
+
+```yaml
+  - imageSrc: "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    title: "Alle Branchen und Lebensbereiche betroffen"
+    text: >
+      Nicht jeder Fall von Machtmissbrauch gleicht den zuletzt medial stark
+      thematisierten Extremen. Viel passiert “im Kleinen”. Zudem bleiben drastische
+      Fälle, aus Angst der Betroffenen zu Sprechen, im Dunkeln. Dabei gleichen sich
+      übergeordnete Strukturen, die Machtmissbrauch befördern, aber auch von
+      Täter:innen angewandte Strategien über verschiedene Bereiche hinweg. Eine
+      vorbeugende gesellschaftliche und individuelle Auseinandersetzung mit diesen
+      Mustern ist wichtig, um frühzeitiger für Betroffene eingreifen zu können.
+    buttonText: "Mehr erfahren"
+```
+
+
 
 
 
