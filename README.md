@@ -117,6 +117,8 @@ Durch die Auswahl Dashboard bei dem Reiter Projects wird die Aufgabe automatisch
 
 Durch die Auswahl des Milestones wird die Aufgabe einem [Meilenstein](https://github.com/frievoe97/projekt-vernetzung/milestones) hinzugefpügt. Ich habe mich dazu entschieden bis jetzt zwei Meilensteine zu erstellen. Einmal [First Release](https://github.com/frievoe97/projekt-vernetzung/milestone/1) und [Future Release](https://github.com/frievoe97/projekt-vernetzung/milestone/2) mit dem Gedanken, dass in [First Release](https://github.com/frievoe97/projekt-vernetzung/milestone/1) alle Aufgaben gesammelt werden, die erledigt werden müssen bis die Seite zum ersten Mal online geht und in [Future Release](https://github.com/frievoe97/projekt-vernetzung/milestone/2) alle Aufgaben gesammelt werden, die auch noch erledigt werden können, wenn die Seite bereits online ist.
 
+<!---
+
 # Konfiguration der Seite
 
 [Website](https://projekt-vernetzung.friedrichvoelkers.de)
@@ -191,37 +193,4 @@ Dieses Projekt unterliegt der MIT-Lizenz. Weitere Details finden Sie in der `LIC
 
 Bei Fragen, Anregungen oder Problemen können Sie mich jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--->
