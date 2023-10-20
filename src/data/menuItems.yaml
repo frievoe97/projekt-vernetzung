@@ -7,7 +7,7 @@ menuItems:
       - text: "Unsere Mission"
         url: "/unsere-mission"
       - text: "Machtmissbrauch"
-        url: "/"
+        url: "/machtmissbrauch"
       - text: "Warum Jetzt?"
         url: "/"
       - text: "Warum Wir?"
