@@ -1,12 +1,8 @@
 interviewExample:
   - id: 1
     name: "WEISSER RING"
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Weisser_Ring_Logo.svg/500px-Weisser_Ring_Logo.svg.png"
-    description: "Wir helfen Ihnen, wenn Sie Opfer von Kriminalität und Gewalt geworden sind: Über das Opfer-Telefon 116 006, die Onlineberatung oder bundesweit persönlich vor Ort."
-    link: "https://example.com/anlaufstelle1"
-    tags:
-      - "Hilfe"
-      - "Opfer"
-      - "Beratung"
     date: "28.05.19"
-    interviewShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+
+  - id: 2 
+    name: "WEISSER RING"
+    date: "28.05.19"
