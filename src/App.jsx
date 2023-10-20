@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Adding a # to the URL (feels like an ugly fix but its working...)
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Anlaufstellen from "./components/Anlaufstellen";
