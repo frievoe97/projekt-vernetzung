@@ -79,3 +79,44 @@ Die Daten sind gespeichert in [src/data/anlaufstellenData.yaml](https://github.c
 ## Farben
 
 Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievoe97/projekt-vernetzung/blob/main/tailwind.config.js) und sind im HEX-Code angegeben. Aktuell werden die Farben blue_light, yellow, blue_dark, red und lavendar verwendet. Für die Farbänderung muss der sechstellige HEX-Code geändert werden. Wichtig ist, dass dieser in Anführungszeichen steht und mit einem '#' beginnt.
+
+
+
+
+# Bearbeitung des Inhalts
+
+Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/projekt-vernetzung/tree/main/src/data) gespeidchert.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
