@@ -101,6 +101,24 @@ Für die Bearbeitung der Beiträge müsst ihr die Datei [homeData.yaml](https://
     buttonText: "Text des Buttons"
 ```
 
+Für die Bearbeitung der Slideshow müsst ihr die Datei [slideshowData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/slideshowData.yaml) anpassen. Jede Slide hat folgendes Format:
+
+```yaml
+  - image: "https://example-image/image01.png"
+    name: "Titel der Slide"
+    description: >
+      Kurze Beschreibung unter dem Titel
+```
+
+## Inhalte der Seite "Unsere Mission"
+
+Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/missionData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
+
+```yaml
+- title: "Titel des Beitrags"
+  text: >
+    Text des Beitrags
+```
 
 
 
