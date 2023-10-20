@@ -37,6 +37,7 @@ function Interviews() {
   return (
     <div className="space-y-8 bg-color_4">
       <Slideshow data={state.anlaufstellenData} />
+      <h1 className="text-center text-4xl font-bold mt-8 mb-6">Interviews</h1>
       <div className="p-4 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
         {state.anlaufstellenData.map((interview, index) => (
           <div

@@ -24,25 +24,38 @@ const EmergencyButton = () => {
 
       {showEmergencyDialog && (
         <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-75">
-          <div className="bg-white rounded-lg p-8 max-w-screen-md">
-            <button
-              className="text-gray-600 hover:text-red-500"
-              onClick={closeEmergencyDialog}
-            >
-              <FontAwesomeIcon icon={faTimes} size="lg" />
-            </button>
-            <h2 className="text-2xl font-semibold mb-4">Notrufnummern</h2>
-            <ul className="space-y-2">
-              <li>
-                <strong>Polizei:</strong> 110
+          <div className="bg-white rounded-lg p-8 max-w-screen-md shadow-md">
+            <div className="flex flex-row">
+              <h2 className="text-3xl font-semibold mb-4 text-center text-gray-800">
+                Notrufnummern
+              </h2>
+              <button
+                className="text-gray-600 hover:text-red-500"
+                onClick={closeEmergencyDialog}
+              >
+                <FontAwesomeIcon icon={faTimes} size="lg" />
+              </button>
+            </div>
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-center">
+                <span className="w-fit text-gray-600 font-semibold">
+                  Polizei:
+                </span>
+                &nbsp; 110
               </li>
-              <li>
-                <strong>Feuerwehr:</strong> 112
+              <li className="flex items-center">
+                <span className="w-fit text-gray-600 font-semibold">
+                  Feuerwehr:
+                </span>
+                &nbsp; 112
               </li>
-              <li>
-                <strong>Ärztlicher Notdienst:</strong> 116 117
+              <li className="flex items-center">
+                <span className="w-fit text-gray-600 font-semibold">
+                  Ärztlicher Notdienst:
+                </span>
+                &nbsp; 116 117
               </li>
-              {/* Füge weitere Notrufnummern hinzu */}
+              {/* Fügen Sie weitere Notrufnummern hinzu */}
             </ul>
           </div>
         </div>
