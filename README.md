@@ -87,6 +87,8 @@ Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievo
 
 Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/projekt-vernetzung/tree/main/src/data) gespeidchert.
 
+Die Dateien in denen die Daten gespeichert sind, sind sogenannte .yaml Dateien. Dort können mehrere EInträge gespeichert werden, welche beim Öffnen der Seite automatisch eingelgesen werden. Wichtig ist, dass jeder Eintrag mit einem Bindestrich beginnt und auf die EInrückungstiefe und die Sonderzeichen (Anführungszeichen, Doppelpunkt, Bindestrich und das Größer Als Zeichen bei längeren Texten).
+
 ## Inhalte der Startseite
 
 Auf der Startseite gibt es einmal die Beiträge ("Alle Branchen und Lebensbereiche betroffen", "Was tun wir?" etc.) und die Slideshow unten auf der Seite. 
@@ -119,6 +121,66 @@ Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.
   text: >
     Text des Beitrags
 ```
+
+## Inhalte des Glossars
+
+Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/glossaryData.yaml) anpassen. Jeder Glossareintrag hat folgendes Format:
+
+```yaml
+  - term: "Begriff"
+    definition: >
+      Definition des Eintrags
+```
+
+## Inhalte der Anlaufstellen, der Interviews und der Slideshow auf der Interviewseite
+
+Aktuell sind dort alle Daten in einer Datei gespeichert, da man alle Anlaufstellen über die Suche finden soll und es zu allen Anlaufstellen auch Interviews geben soll. Falls es in der Zukunft Anlaufstellen gibt, die nur auf einer der Seiten angezeigt werden sollen, kann man das trotzdem in einer Datei speichern.
+
+Für die Bearbeitung der Anlaufstellen müsst ihr die Datei [anlaufstellenData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/anlaufstellenData.yaml) ändern. Jede Anlaufstelle hat folgendes Format:
+
+```yaml
+- id: 1
+    name: "Name der Anlaufstelle"
+    image: "https://example-image/image01.png"
+    description: "Kurze Beschreibung der Anlaufstelle, welche auf der Seite Anlaufstellen steht"
+    link: "https://example.com/anlaufstelle1"
+    tags:
+      - "Hilfe"
+      - "Opfer"
+      - "Beratung"
+    date: "Datum für das Interview z. B. 12. Oktober 2023"
+    interviewShort: "Kurzbeschreibung des Interviews"
+```
+
+Die "tags" sind Suchbegriffe, über die die Anlaufstellen leichter zu finden sind in der Suche. Dort könnte zum Beispiel sowas stehen wie die Örtlichkeit (Berlin, Deutschlandweit, Online etc.) oder die Art der Beratung.
+
+Ich würde in Zukunft noch einen Eintrag für ein ausführliches Interview hinzufügen.
+
+## Inhalte der Navigationsleiste
+
+Die Einträge in der Navigationsleiste sind in der Datei [menuItems.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/menuItems.yaml) gespeichert.
+
+Menüitems können entweder direkt zu einer Seite verlinken oder ein Untermenü besitzen. Jeder Menüpunkt hat auch das Attribut "url". Hier wird festgelegt wohin man geleitet wird, wenn auf den Menüpunkt geklickt wird. Damit das funktioniert muss auch an anderer Stelle in dem Code was geändert werden. Deswegen könnt ihr hier erstmal nur den Namen und die Struktur ändern.
+
+Für einfache Menüpunkte muss ein Eintrag folgendes Format haben:
+
+```yaml
+  - text: "Name des Menüpunkts"
+    url: "/link"
+```
+
+Für Menüpunkte mit einem Untermenü muss ein Eintrag folgendes Format haben:
+
+```yaml
+  - text: "Name des Oberpunkts"
+    subItems:
+      - text: "Erster Untermenü Eintrag"
+        url: "/link-1"
+      - text: "Zweiter Untermenü Eintrag"
+        url: "/link-1"
+```
+
+
 
 
 
