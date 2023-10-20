@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Anlaufstellen from "./components/Anlaufstellen";
@@ -9,37 +9,14 @@ import Interviews from "./components/Interviews";
 import ExampleGlobalData from "./components/ExampleGlobalData";
 import Glossar from "./components/Glossar";
 import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
-import yaml from "js-yaml";
 
 function App() {
   const [acceptCookies, setAcceptCookies] = useState(true);
-  const { state, dispatch } = useGlobalState(); // Zugriff auf den globalen Zustand und den Dispatch
 
   // Funktion, um den Zustand von acceptCookies zu aktualisieren
   const handleAcceptCookies = () => {
     setAcceptCookies(false);
   };
-
-  // const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
-  //   fetch(url)
-  //     .then((response) => response.text())
-  //     .then((yamlText) => {
-  //       const parsedData = yaml.load(yamlText);
-  //       dispatch({
-  //         type: actionType,
-  //         payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
-  //       });
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   fetchAndParseYamlData(
-  //     "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml",
-  //     dispatch,
-  //     "SET_ANLAUFSTELLEN_DATA",
-  //     "anlaufstellenData" // Übergeben Sie den Namen des Schlüssels
-  //   );
-  // }, [dispatch]);
 
   return (
     <Router>
