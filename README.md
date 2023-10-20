@@ -1,5 +1,7 @@
 # Daten ändern
 
+Für das Ändern der Daten könnt ihr einfach auf die verlinkte Datei klicken, rechts oben auf das Stiftsymbol klicken, Bearbeitung vornehmen, auf "Commit changes..." klicken, eine kurze Beschreibung der Änderungen unter "Commit message" eintragen und auf "Commit changes" klicken.
+
 ## Bearbeitung der Farben
 
 Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievoe97/projekt-vernetzung/blob/main/tailwind.config.js) und sind im HEX-Code angegeben. Aktuell werden die Farben color_1, color_2, color_3 und color_4 verwendet. Für die Farbänderung muss der sechstellige HEX-Code geändert werden. Wichtig ist, dass dieser in Anführungszeichen steht und mit einem '#' beginnt.
