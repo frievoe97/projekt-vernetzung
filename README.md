@@ -1,95 +1,16 @@
-[Website](https://projekt-vernetzung.friedrichvoelkers.de)
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-# Dokumentation für die Webseite des Projekts Vernetzung
-
-Willkommen zur offiziellen Dokumentation des Projekts Vernetzung. Dieses Projekt basiert auf React und Vite und dient der nahtlosen Integration verschiedener Komponenten und Technologien.
-
-## Einrichtung des Projekts
-
-### Voraussetzungen
-
-Um das Projekt auf Ihrem lokalen System auszuführen, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
-
-- Node.js (empfohlen wird Version 14 oder höher)
-- npm oder yarn
-
-### Projektinstallation
-
-Folgen Sie diesen Schritten, um das Projekt auf Ihrem lokalen Entwicklungssystem einzurichten:
-
-1. Klonen Sie das Projekt-Repository.
-
-2. Navigieren Sie in das Hauptverzeichnis des Projekts.
-
-3. Installieren Sie die erforderlichen Abhängigkeiten.
-
-## Verfügbare Skripte
-
-Dieses Projekt stellt verschiedene npm-Skripte zur Verfügung, die Ihnen bei der Entwicklung und Bereitstellung helfen. Hier sind einige der wichtigsten Skripte:
-
-- `npm run dev`: Startet die Entwicklungsumgebung mithilfe von Vite und ermöglicht Live-Reload während der Entwicklung.
-
-- `npm run build`: Erzeugt eine optimierte Produktionsversion des Projekts.
-
-- `npm run lint`: Führt ESLint über den gesamten Projektcode aus, um potenzielle Probleme zu identifizieren.
-
-- `npm run preview`: Startet eine lokale Vorschau der Produktionsversion des Projekts.
-
-## Abhängigkeiten
-
-Dieses Projekt nutzt eine Reihe von Abhängigkeiten, um reibungslose Funktionalität zu gewährleisten. Hier sind einige der Hauptabhängigkeiten:
-
-- `react`: Eine JavaScript-Bibliothek zur Entwicklung von Benutzeroberflächen.
-
-- `react-router-dom`: Eine Bibliothek zur Navigation in React-Anwendungen.
-
-- `framer-motion`: Eine Animationsbibliothek für React.
-
-- `tailwindcss`: Ein CSS-Framework zur schnellen Gestaltung von Benutzeroberflächen.
-
-- Andere Abhängigkeiten sind in der `package.json`-Datei aufgeführt.
-
-## Entwicklungsumgebung
-
-Dieses Projekt verwendet Vite als Entwicklungsumgebung und Build-Tool, um effiziente Entwicklung und Bereitstellung zu gewährleisten.
-
-## Lizenz
-
-Dieses Projekt unterliegt der MIT-Lizenz. Weitere Details finden Sie in der `LICENSE`-Datei.
-
-## Kontakt
-
-Bei Fragen, Anregungen oder Problemen können Sie mich jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
-
 # Daten ändern
 
-## Anlaufstellen/Interviews
+## Bearbeitung der Farben
 
-Die Daten sind gespeichert in [src/data/anlaufstellenData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/anlaufstellenData.yaml). Jede Anlaufstelle hat eine id (darf nicht doppelt sein, am besten fortlaufend), einen Namen, ein Bild (URL), eine Beschreibung, einen Link, Tags (für die Suchfilter), ein Datum (für das Interview) und eine Kurzbeschreibung für das Interview.
+Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievoe97/projekt-vernetzung/blob/main/tailwind.config.js) und sind im HEX-Code angegeben. Aktuell werden die Farben color_1, color_2, color_3 und color_4 verwendet. Für die Farbänderung muss der sechstellige HEX-Code geändert werden. Wichtig ist, dass dieser in Anführungszeichen steht und mit einem '#' beginnt.
 
-## Farben
-
-Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievoe97/projekt-vernetzung/blob/main/tailwind.config.js) und sind im HEX-Code angegeben. Aktuell werden die Farben blue_light, yellow, blue_dark, red und lavendar verwendet. Für die Farbänderung muss der sechstellige HEX-Code geändert werden. Wichtig ist, dass dieser in Anführungszeichen steht und mit einem '#' beginnt.
-
-
-
-
-# Bearbeitung des Inhalts
+## Bearbeitung des Inhalts
 
 Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/projekt-vernetzung/tree/main/src/data) gespeidchert.
 
 Die Dateien in denen die Daten gespeichert sind, sind sogenannte .yaml Dateien. Dort können mehrere EInträge gespeichert werden, welche beim Öffnen der Seite automatisch eingelgesen werden. Wichtig ist, dass jeder Eintrag mit einem Bindestrich beginnt und auf die EInrückungstiefe und die Sonderzeichen (Anführungszeichen, Doppelpunkt, Bindestrich und das Größer Als Zeichen bei längeren Texten).
 
-## Inhalte der Startseite
+### Inhalte der Startseite
 
 Auf der Startseite gibt es einmal die Beiträge ("Alle Branchen und Lebensbereiche betroffen", "Was tun wir?" etc.) und die Slideshow unten auf der Seite. 
 
@@ -112,7 +33,7 @@ Für die Bearbeitung der Slideshow müsst ihr die Datei [slideshowData.yaml](htt
       Kurze Beschreibung unter dem Titel
 ```
 
-## Inhalte der Seite "Unsere Mission"
+### Inhalte der Seite "Unsere Mission"
 
 Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/missionData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
 
@@ -122,7 +43,7 @@ Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.
     Text des Beitrags
 ```
 
-## Inhalte des Glossars
+### Inhalte des Glossars
 
 Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/glossaryData.yaml) anpassen. Jeder Glossareintrag hat folgendes Format:
 
@@ -132,7 +53,7 @@ Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData
       Definition des Eintrags
 ```
 
-## Inhalte der Anlaufstellen, der Interviews und der Slideshow auf der Interviewseite
+### Inhalte der Anlaufstellen, der Interviews und der Slideshow auf der Interviewseite
 
 Aktuell sind dort alle Daten in einer Datei gespeichert, da man alle Anlaufstellen über die Suche finden soll und es zu allen Anlaufstellen auch Interviews geben soll. Falls es in der Zukunft Anlaufstellen gibt, die nur auf einer der Seiten angezeigt werden sollen, kann man das trotzdem in einer Datei speichern.
 
@@ -156,7 +77,7 @@ Die "tags" sind Suchbegriffe, über die die Anlaufstellen leichter zu finden sin
 
 Ich würde in Zukunft noch einen Eintrag für ein ausführliches Interview hinzufügen.
 
-## Inhalte der Navigationsleiste
+### Inhalte der Navigationsleiste
 
 Die Einträge in der Navigationsleiste sind in der Datei [menuItems.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/menuItems.yaml) gespeichert.
 
@@ -180,6 +101,79 @@ Für Menüpunkte mit einem Untermenü muss ein Eintrag folgendes Format haben:
         url: "/link-1"
 ```
 
+# Konfiguration der Seite
+
+[Website](https://projekt-vernetzung.friedrichvoelkers.de)
+
+## React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Dokumentation für die Webseite des Projekts Vernetzung
+
+Willkommen zur offiziellen Dokumentation des Projekts Vernetzung. Dieses Projekt basiert auf React und Vite und dient der nahtlosen Integration verschiedener Komponenten und Technologien.
+
+### Einrichtung des Projekts
+
+#### Voraussetzungen
+
+Um das Projekt auf Ihrem lokalen System auszuführen, müssen Sie sicherstellen, dass folgende Voraussetzungen erfüllt sind:
+
+- Node.js (empfohlen wird Version 14 oder höher)
+- npm oder yarn
+
+#### Projektinstallation
+
+Folgen Sie diesen Schritten, um das Projekt auf Ihrem lokalen Entwicklungssystem einzurichten:
+
+1. Klonen Sie das Projekt-Repository.
+
+2. Navigieren Sie in das Hauptverzeichnis des Projekts.
+
+3. Installieren Sie die erforderlichen Abhängigkeiten.
+
+### Verfügbare Skripte
+
+Dieses Projekt stellt verschiedene npm-Skripte zur Verfügung, die Ihnen bei der Entwicklung und Bereitstellung helfen. Hier sind einige der wichtigsten Skripte:
+
+- `npm run dev`: Startet die Entwicklungsumgebung mithilfe von Vite und ermöglicht Live-Reload während der Entwicklung.
+
+- `npm run build`: Erzeugt eine optimierte Produktionsversion des Projekts.
+
+- `npm run lint`: Führt ESLint über den gesamten Projektcode aus, um potenzielle Probleme zu identifizieren.
+
+- `npm run preview`: Startet eine lokale Vorschau der Produktionsversion des Projekts.
+
+### Abhängigkeiten
+
+Dieses Projekt nutzt eine Reihe von Abhängigkeiten, um reibungslose Funktionalität zu gewährleisten. Hier sind einige der Hauptabhängigkeiten:
+
+- `react`: Eine JavaScript-Bibliothek zur Entwicklung von Benutzeroberflächen.
+
+- `react-router-dom`: Eine Bibliothek zur Navigation in React-Anwendungen.
+
+- `framer-motion`: Eine Animationsbibliothek für React.
+
+- `tailwindcss`: Ein CSS-Framework zur schnellen Gestaltung von Benutzeroberflächen.
+
+- Andere Abhängigkeiten sind in der `package.json`-Datei aufgeführt.
+
+### Entwicklungsumgebung
+
+Dieses Projekt verwendet Vite als Entwicklungsumgebung und Build-Tool, um effiziente Entwicklung und Bereitstellung zu gewährleisten.
+
+### Lizenz
+
+Dieses Projekt unterliegt der MIT-Lizenz. Weitere Details finden Sie in der `LICENSE`-Datei.
+
+### Kontakt
+
+Bei Fragen, Anregungen oder Problemen können Sie mich jederzeit unter [friedrich.voelkers@me.com](mailto:friedrich.voelkers@me.com) kontaktieren.
 
 
 
