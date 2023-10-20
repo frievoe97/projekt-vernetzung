@@ -2,53 +2,34 @@ interviewExample:
   - id: 1
     name: "WEISSER RING"
     date: "28.05.19"
-    Fragen und Antworten:
-      - Frage:
-          Frage: Welche ist die Hauptmission Ihrer Organisation?
+    FragenUndAntworten:
+      - Frage: "Welche ist die Hauptmission Ihrer Organisation?"
         Antwort: |
           Die Hauptmission des "WEISSER RING" besteht darin, Opfern von Kriminalität und Gewalt in Deutschland zu helfen. Unser Ziel ist es, den Betroffenen umfassende Unterstützung, Schutz und Gerechtigkeit zu bieten. Wir setzen uns für die Rechte der Opfer ein und arbeiten eng mit Strafverfolgungsbehörden und anderen Organisationen zusammen, um sicherzustellen, dass Opfer die Hilfe erhalten, die sie benötigen.
-
-      - Frage:
-          Frage: Wie unterstützt Ihre Organisation Opfer von Kriminalität und Gewalt?
+      - Frage: "Wie unterstützt Ihre Organisation Opfer von Kriminalität und Gewalt?"
         Antwort: |
           Unsere Organisation unterstützt Opfer von Kriminalität und Gewalt auf vielfältige Weise. Wir bieten persönliche Beratung, psychologische Unterstützung, rechtliche Beratung und finanzielle Hilfe an. Darüber hinaus helfen wir Opfern bei der Bewältigung traumatischer Erfahrungen und unterstützen sie bei der Wiedereingliederung in die Gesellschaft. Unsere Hilfe ist individuell angepasst und darauf ausgerichtet, den Bedürfnissen der Opfer gerecht zu werden.
-
-      - Frage:
-          Frage: Welche Dienstleistungen bietet Ihre Organisation an?
+      - Frage: "Welche Dienstleistungen bietet Ihre Organisation an?"
         Antwort: |
           Unser Leistungsspektrum umfasst eine breite Palette von Dienstleistungen, darunter finanzielle Unterstützung für Opfer, Opferberatung und -betreuung, Begleitung zu Gerichtsverhandlungen, therapeutische Unterstützung, Unterbringung in sicheren Häusern und Präventionsarbeit. Wir sind bestrebt, Opfern in jeder Phase ihres Genesungsprozesses zu helfen und ihnen die benötigte Unterstützung anzubieten.
-
-      - Frage:
-          Frage: Welche Herausforderungen sehen Sie bei der Unterstützung von Opfern?
+      - Frage: "Welche Herausforderungen sehen Sie bei der Unterstützung von Opfern?"
         Antwort: |
           Die Unterstützung von Opfern von Kriminalität und Gewalt ist mit verschiedenen Herausforderungen verbunden. Eine große Herausforderung besteht darin, sicherzustellen, dass Opfer wissen, wo sie Hilfe finden können, und dass sie sich trauen, Unterstützung anzufordern. Darüber hinaus müssen wir uns mit bürokratischen Hürden und der finanziellen Belastung auseinandersetzen, die Opfer oft tragen müssen. Die gesellschaftliche Stigmatisierung von Opfern kann ebenfalls eine große Hürde sein. Wir arbeiten hart daran, diese Herausforderungen zu bewältigen und Opfern zu helfen.
-
-      - Frage:
-          Frage: Wie können Menschen, die Hilfe benötigen, mit Ihrer Organisation in Kontakt treten?
+      - Frage: "Wie können Menschen, die Hilfe benötigen, mit Ihrer Organisation in Kontakt treten?"
         Antwort: |
           Opfer und Menschen, die Hilfe benötigen, können sich jederzeit an uns wenden. Wir haben eine bundesweite Hotline, auf der rund um die Uhr geschulte Mitarbeiter erreichbar sind. Darüber hinaus bieten wir persönliche Beratungsgespräche in unseren örtlichen Büros an. Unsere Website enthält auch Informationen und Ressourcen, die Opfern helfen können, die richtige Unterstützung zu finden. Wir legen großen Wert auf leicht zugängliche Hilfe für Opfer.
-
-      - Frage:
-          Frage: Welche Schritte unternimmt Ihre Organisation, um die Privatsphäre und Sicherheit der Opfer zu gewährleisten?
+      - Frage: "Welche Schritte unternimmt Ihre Organisation, um die Privatsphäre und Sicherheit der Opfer zu gewährleisten?"
         Antwort: |
           Der Schutz der Privatsphäre und Sicherheit der Opfer hat für uns oberste Priorität. Wir arbeiten eng mit Strafverfolgungsbehörden zusammen, um sicherzustellen, dass Opfer geschützt sind. Unsere sicheren Häuser bieten einen geschützten Raum für Opfer, die in akuter Gefahr sind. Darüber hinaus respektieren wir die Anonymität und den Datenschutz der Opfer und halten strenge Datenschutzrichtlinien ein.
-
-      - Frage:
-          Frage: Können Sie einige Erfolgsgeschichten oder positive Auswirkungen Ihrer Arbeit teilen?
+      - Frage: "Können Sie einige Erfolgsgeschichten oder positive Auswirkungen Ihrer Arbeit teilen?"
         Antwort: |
           Ja, im Laufe der Jahre haben wir zahlreiche Erfolgsgeschichten erlebt, in denen Opfer von Kriminalität und Gewalt Unterstützung und Gerechtigkeit gefunden haben. Einige unserer Erfolge umfassen die erfolgreiche Wiedereingliederung von Opfern in die Gesellschaft, die Verurteilung von Tätern und die finanzielle Hilfe, die Opfern bei der Bewältigung ihrer traumatischen Erfahrungen geholfen hat. Jede Erfolgsgeschichte ist für uns eine Bestätigung unserer Arbeit und unserer Mission.
-
-      - Frage:
-          Frage: Welche Präventionsmaßnahmen oder Bildungsprogramme bietet Ihre Organisation an?
+      - Frage: "Welche Präventionsmaßnahmen oder Bildungsprogramme bietet Ihre Organisation an?"
         Antwort: |
           Prävention ist ein wichtiger Teil unserer Arbeit. Wir bieten Bildungsprogramme und Schulungen an Schulen und in Gemeinden an, um das Bewusstsein für Kriminalität und Gewalt zu schärfen und Präventionsstrategien zu vermitteln. Wir glauben, dass die Prävention von Verbrechen genauso wichtig ist wie die Unterstützung von Opfern, und setzen uns aktiv für eine sicherere Gesellschaft ein.
-
-      - Frage:
-          Frage: Wie kann die Öffentlichkeit Ihre Organisation unterstützen oder Spenden leisten?
+      - Frage: "Wie kann die Öffentlichkeit Ihre Organisation unterstützen oder Spenden leisten?"
         Antwort: |
           Die Unterstützung der Öffentlichkeit ist für unsere Arbeit von entscheidender Bedeutung. Menschen können uns durch Spenden, Freiwilligenarbeit oder die Teilnahme an unseren Veranstaltungen unterstützen. Darüber hinaus helfen Spenden, Opfern finanzielle Unterstützung und Hilfe zu bieten. Besuchen Sie unsere Website, um mehr über Möglichkeiten zur Unterstützung zu erfahren.
-
-      - Frage:
-          Frage: Welche langfristigen Ziele hat Ihre Organisation im Kampf gegen Kriminalität und Gewalt?
+      - Frage: "Welche langfristigen Ziele hat Ihre Organisation im Kampf gegen Kriminalität und Gewalt?"
         Antwort: |
           Langfristig setzen wir uns das Ziel, die Prävalenz von Kriminalität und Gewalt zu reduzieren und eine Gesellschaft zu schaffen, in der Opfer Unterstützung und Gerechtigkeit finden. Wir werden weiterhin für die Rechte der Opfer kämpfen und uns dafür einsetzen, dass Verbrechen verhindert und Täter zur Rechenschaft gezogen werden. Unsere Vision ist eine Welt ohne Kriminalität und Gewalt, und wir werden hart dafür arbeiten, dieses Ziel zu erreichen.
