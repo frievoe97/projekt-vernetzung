@@ -14,6 +14,8 @@ Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/pro
 
 Die Dateien in denen die Daten gespeichert sind, sind sogenannte .yaml Dateien. Dort können mehrere EInträge gespeichert werden, welche beim Öffnen der Seite automatisch eingelgesen werden. Wichtig ist, dass jeder Eintrag mit einem Bindestrich beginnt und auf die EInrückungstiefe und die Sonderzeichen (Anführungszeichen, Doppelpunkt, Bindestrich und das Größer Als Zeichen bei längeren Texten).
 
+Besonders wichtig ist es bei den Texten, dass diese entweder komplett in einer Zeile und in Anführungszeichen stehen oder mit einem Größer Als Zeichen eingeleitet werden und dann ohne Anführungszeichen mit Zeilenumbrüchen in der nächsten Zeile beginnen.
+
 ### Inhalte der Startseite
 
 Auf der Startseite gibt es einmal die Beiträge ("Alle Branchen und Lebensbereiche betroffen", "Was tun wir?" etc.) und die Slideshow unten auf der Seite. 
