@@ -47,7 +47,7 @@ function Interviews() {
         {state.anlaufstellenData.map((interview, index) => (
           <div
             key={index}
-            className={`border-t-2 border-color_2 py-6 ${
+            className={`border-t-2 border-black py-6 ${
               index % 2 === 0
                 ? "flex flex-col md:flex-row-reverse"
                 : "flex flex-col md:flex-row"
@@ -71,7 +71,7 @@ function Interviews() {
                     convertToSlug(interview.name) + "-" + interview.id
                   }`}
                 >
-                  Weiterlesen
+                  weiterlesen...
                 </Link>
               </button>
             </div>

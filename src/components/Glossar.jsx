@@ -43,13 +43,15 @@ function Glossary() {
   return (
     <div className="p-4 md:p-6 text-center z-0 bg-color_4">
       <h1 className="text-4xl font-bold mt-8 mb-6">Glossar</h1>
-      <input
-        type="text"
-        placeholder="Suche nach Begriffen..."
-        className="w-full px-4 py-2 mb-0 rounded-lg mx-auto md:px-6 lg:px-8 max-w-screen-xl my-16"
-        onChange={(e) => setSearchTerm(e.target.value)}
-        value={searchTerm}
-      />
+      <div className="px-6">
+        <input
+          type="text"
+          placeholder="Suche nach Begriffen..."
+          className="w-full px-4 py-2 mb-0 rounded-lg mx-auto md:px-6 lg:px-8 max-w-screen-xl md:my-16 border-2 border-black"
+          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
+        />
+      </div>
       <div className="grid text-left gap-0 md:gap-6 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-4 md:my-16">
         {filteredItems.map((item, index) => (
           <GlossaryItem

@@ -8,6 +8,9 @@ const SET_HOME_DATA = "SET_HOME_DATA";
 const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA";
 const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA";
 const SET_INTERVIEW_EXAMPLE = "SET_INTERVIEW_EXAMPLE";
+const SET_MISSION_DATA = "SET_MISSION_DATA";
+const SET_MENU_ITEMS = "SET_MENU_ITEMS";
+const SET_MACHTMISSBRAUCH_DATA = "SET_MACHTMISSBRAUCH_DATA";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -22,6 +25,12 @@ const reducer = (state, action) => {
       return { ...state, glossaryData: action.payload };
     case SET_INTERVIEW_EXAMPLE:
       return { ...state, interviewExample: action.payload };
+    case SET_MISSION_DATA:
+      return { ...state, missionData: action.payload };
+    case SET_MENU_ITEMS:
+      return { ...state, menuItems: action.payload };
+    case SET_MACHTMISSBRAUCH_DATA:
+      return { ...state, machtmissbrauchData: action.payload };
     default:
       return state;
   }
@@ -34,6 +43,9 @@ const initialState = {
   slideshowData: [],
   glossaryData: [],
   interviewExample: [],
+  missionData: [],
+  menuItems: [],
+  machtmissbrauchData: [],
 };
 
 // Context erstellen

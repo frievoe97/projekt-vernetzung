@@ -11,6 +11,7 @@ import Glossar from "./components/Glossar";
 import InterviewDetail from "./components/InterviewDetail";
 import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
 import ScrollToTop from "./components/utils/ScrollToTop";
+import Machtmissbrauch from "./components/Machtmissbrauch";
 
 function App() {
   const [acceptCookies, setAcceptCookies] = useState(false);
@@ -38,6 +39,7 @@ function App() {
             />
             <Route path="/example" element={<ExampleGlobalData />} />
             <Route path="/glossar" element={<Glossar />} />
+            <Route path="/machtmissbrauch" element={<Machtmissbrauch />} />
           </Routes>
         </GlobalStateProvider>{" "}
       </Layout>

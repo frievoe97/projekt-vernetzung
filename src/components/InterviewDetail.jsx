@@ -68,53 +68,49 @@ function InterviewDetail() {
     return <p>Interview nicht gefunden.</p>;
   }
 
-  const firstInterview = state.interviewExample[0]["FragenUndAntworten"];
+  //   const firstInterview = state.interviewExample[0]["FragenUndAntworten"];
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden mx-auto">
       <div className="w-full max-h-64 overflow-hidden relative">
         <img
           src={interview.image}
           alt={interview.name}
-          className="w-full h-full object-cover object-center contrast-50"
+          className="w-full h-full object-cover object-center contrast-50 min-h-[200px]"
         />
-        <div className="absolute left-0  bottom-0 flex items-center justify-center text-black w-fit h-fit bg-white rounded  ">
+        {/* <div className="absolute left-0  bottom-0 flex items-center justify-center text-black w-fit h-fit bg-white rounded  ">
           <h1 className="text-2xl font-bold p-4">{interview.name}</h1>
-        </div>
+        </div> */}
       </div>
       <div className="mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
-        <button className="text-black overflow-hidden transition-border-color hover:border-none bg-transparent">
-          <Link className="text-black hover:text-black" to={`/interviews`}>
-            <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
-            Zurück
-          </Link>
-        </button>
-        <div className="bg-color_4  rounded-lg p-4">
-          <h2 className="text-2xl font-bold mb-2">{interview.name}</h2>
-          <p className="text-gray-500 text mb-2">Datum: {interview.date}</p>
-          <div className="space-y-8 text-lg">
-            {firstInterview.map((item) => (
-              //   <div key={item.id}>
-              //     <p>ID: {item.id}</p>
-              //     <p>Name: {item.name}</p>
-              //   </div>
-              <div>
-                {" "}
-                <div key={item.Frage} className="font-bold">
-                  {item.Frage}
+        <div className="px-4 md:border-2 md:border-black md:rounded-xl md:shadow-xl md:py-8 md:mx-8">
+          <button className="text-black overflow-hidden transition-border-color hover:border-transparent bg-transparent">
+            <Link className="text-black hover:text-black" to={`/interviews`}>
+              <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
+              Zurück
+            </Link>
+          </button>
+          <div className="bg-transparent  rounded-lg p-4">
+            <h2 className="text-2xl font-bold mb-2">{interview.name}</h2>
+            <p className="text-gray-500 text mb-2">Datum: {interview.date}</p>
+            <div className="space-y-8 text-lg">
+              {interview.FragenUndAntworten.map((item) => (
+                <div>
+                  <div key={item.Frage} className="font-bold">
+                    {item.Frage}
+                  </div>
+                  <div className="text-justify">{item.Antwort}</div>
                 </div>
-                <div className="text-justify">{item.Antwort}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+          <button className="mt-6 px-6 py-3 ml-4 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
+            <Link className="text-black hover:text-black" to={`/interviews`}>
+              <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
+              Zurück zu allen Interviews
+            </Link>
+          </button>
         </div>
-
-        <button className="mt-6 px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
-          <Link className="text-black hover:text-black" to={`/interviews`}>
-            <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
-            Zurück zu allen Interviews
-          </Link>
-        </button>
       </div>
     </div>
   );

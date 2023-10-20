@@ -127,11 +127,11 @@ function Anlaufstellen() {
           ))}
         </div>
       </div>
-      <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8 ">
+      <div className="max-w-full mx-auto flex flex-wrap justify-center gap-8 ">
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/2 lg:w-1/2 xl:w-1/3 shadow-2xl"
+            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/3 lg:w-1/3 xl:w-1/4 shadow-2xl"
           >
             <h2 className="text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}

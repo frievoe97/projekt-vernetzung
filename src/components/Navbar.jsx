@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { useGlobalState } from "../data/GlobalState";
+
+import yaml from "js-yaml";
 
 const Navbar = () => {
+  const { state, dispatch } = useGlobalState();
   const [openMenu, setOpenMenu] = useState(false); // Zustand für das Hauptmenü
   const [openSubmenu, setOpenSubmenu] = useState(null); // Zustand für die Untermenüs
 
@@ -43,25 +47,26 @@ const Navbar = () => {
     }
   };
 
-  const menuItems = [
-    { text: "Home", url: "/" },
-    {
-      text: "Über Uns",
-      subItems: [
-        { text: "Unsere Mission", url: "/unsere-mission" },
-        { text: "Machtmissbrauch", url: "/" },
-        { text: "Warum Jetzt?", url: "/" },
-        { text: "Warum Wir?", url: "/" },
-        { text: "Kontakt", url: "/contact" },
-      ],
-    },
-    {
-      text: "Glossar",
-      url: "/glossar",
-    },
-    { text: "Anlaufstellen", url: "/anlaufstellen" },
-    { text: "Interviews", url: "/interviews" },
-  ];
+  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: actionType,
+          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
+        });
+      });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/menuItems.yaml",
+      dispatch,
+      "SET_MENU_ITEMS",
+      "menuItems" // Übergeben Sie den Namen des Schlüssels
+    );
+  }, [dispatch]);
 
   return (
     <nav className="z-30 bg-color_1 border-black fixed top-0 left-0 right-0 shadow-2xl">
@@ -72,7 +77,7 @@ const Navbar = () => {
             className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             to="/"
           >
-            Projekt Vernetzen e.V.
+            Projekt Vernetzung e.V.
           </Link>
         </div>
 
@@ -107,7 +112,7 @@ const Navbar = () => {
           id="navbar-dropdown"
         >
           <ul className="z-10 flex flex-col font-medium p-4 md:p-0 border border-gray-100 bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {menuItems.map((item, index) => (
+            {state.menuItems.map((item, index) => (
               <li key={index}>
                 {item.subItems ? (
                   <button
