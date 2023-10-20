@@ -10,7 +10,6 @@ import yaml from "js-yaml";
 
 function Home() {
   const { state, dispatch } = useGlobalState();
-  console.log(state);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleVisibilityChange = (isVisible) => {

@@ -63,8 +63,12 @@ function InterviewDetail() {
 
   //   console.log(state.interviewExample);
 
+  if (!state.interviewExample) {
+    // Hier kannst du eine Meldung anzeigen, wenn das Interview nicht gefunden wurde.
+    return <p>Interview nicht gefunden.</p>;
+  }
+
   const firstInterview = state.interviewExample[0]["FragenUndAntworten"];
-  console.log(firstInterview);
 
   return (
     <div className="relative overflow-hidden">

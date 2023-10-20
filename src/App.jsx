@@ -10,6 +10,7 @@ import ExampleGlobalData from "./components/ExampleGlobalData";
 import Glossar from "./components/Glossar";
 import InterviewDetail from "./components/InterviewDetail";
 import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
   const [acceptCookies, setAcceptCookies] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <Layout>
         {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
         <GlobalStateProvider>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/anlaufstellen" element={<Anlaufstellen />} />
