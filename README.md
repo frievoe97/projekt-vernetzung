@@ -49,6 +49,16 @@ Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.
     Text des Beitrags
 ```
 
+### Inhalte der Seite Machtmissbrauch
+
+Die Beiträge auf der Seite Machtmissbrauch könnt ihr in der Datei [machtmissbrauchData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/machtmissbrauchData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
+
+```yaml
+  - Titel: "Titel"
+    Text: >
+      Text
+```
+
 ### Inhalte des Glossars
 
 Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/glossaryData.yaml) anpassen. Jeder Glossareintrag hat folgendes Format:
