@@ -4,6 +4,8 @@
 
 Die Farben sind gespeichert unter [tailwind.config.js](https://github.com/frievoe97/projekt-vernetzung/blob/main/tailwind.config.js) und sind im HEX-Code angegeben. Aktuell werden die Farben color_1, color_2, color_3 und color_4 verwendet. Für die Farbänderung muss der sechstellige HEX-Code geändert werden. Wichtig ist, dass dieser in Anführungszeichen steht und mit einem '#' beginnt.
 
+In Zukunft würde ich den Farben auch bessere Namen geben, aber falls die sich nochmal ändern ist es so vielleicht einfacher.
+
 ## Bearbeitung des Inhalts
 
 Alle textlichen Inhalte sind in diesem [Ordner](https://github.com/frievoe97/projekt-vernetzung/tree/main/src/data) gespeidchert.
@@ -100,6 +102,20 @@ Für Menüpunkte mit einem Untermenü muss ein Eintrag folgendes Format haben:
       - text: "Zweiter Untermenü Eintrag"
         url: "/link-1"
 ```
+
+# Workflow für Änderungswünsche
+
+Jedes Projekt auf GitHub besitzt den Reiter [Issues](https://github.com/frievoe97/projekt-vernetzung/issues). Dort trage ich alles ein was noch erledigt werden soll. Dort könnt ihr über den Button [New issue](https://github.com/frievoe97/projekt-vernetzung/issues/new/choose) ein neues To-Do hinzufügen und diesem einen Titel und eine Beschreibung hinzufügen.
+
+Auf der rechten Seite gibt es noch ein paar Einstellungsmöglichkeiten wie Assignees (Wer soll die Aufgabe erledigen), Labels (Art der Aufgabe), Projekcts (Hier bitte einfach Dashboard auswählen) und Milestone (Hier bitte auch zutreffendes auswählen).
+
+## Dashboard
+
+Durch die Auswahl Dashboard bei dem Reiter Projects wird die Aufgabe automatisch dem [Dashboard](https://github.com/users/frievoe97/projects/1) hinzugefügt. Hier erhält man eine Übersicht, welche Aufgabe noch zu erledigen ist, welche gerade erledigt wird und welche bereits fertig sind.
+
+## Milestones
+
+Durch die Auswahl des Milestones wird die Aufgabe einem [Meilenstein](https://github.com/frievoe97/projekt-vernetzung/milestones) hinzugefpügt. Ich habe mich dazu entschieden bis jetzt zwei Meilensteine zu erstellen. Einmal [First Release](https://github.com/frievoe97/projekt-vernetzung/milestone/1) und [Future Release](https://github.com/frievoe97/projekt-vernetzung/milestone/2) mit dem Gedanken, dass in [First Release](https://github.com/frievoe97/projekt-vernetzung/milestone/1) alle Aufgaben gesammelt werden, die erledigt werden müssen bis die Seite zum ersten Mal online geht und in [Future Release](https://github.com/frievoe97/projekt-vernetzung/milestone/2) alle Aufgaben gesammelt werden, die auch noch erledigt werden können, wenn die Seite bereits online ist.
 
 # Konfiguration der Seite
 
