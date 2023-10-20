@@ -1,4 +1,3 @@
-# Currently not used (hardcoded...)
 menuItems:
   - text: "Home"
     url: "/"
