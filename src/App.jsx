@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Interviews from "./components/Interviews";
 import ExampleGlobalData from "./components/ExampleGlobalData";
 import Glossar from "./components/Glossar";
+import InterviewDetail from "./components/InterviewDetail";
 import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
             <Route path="/unsere-mission" element={<Mission />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/interviews" element={<Interviews />} />
+            <Route
+              path="/interviews/:organizationName"
+              element={<InterviewDetail />}
+            />
             <Route path="/example" element={<ExampleGlobalData />} />
             <Route path="/glossar" element={<Glossar />} />
           </Routes>

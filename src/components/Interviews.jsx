@@ -1,10 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useGlobalState } from "../data/GlobalState";
 import Slideshow from "./Slideshow";
 import yaml from "js-yaml";
 
 function Interviews() {
   const { state, dispatch } = useGlobalState();
+
+  function convertToSlug(inputString) {
+    // Ersetze Leerzeichen durch Bindestriche und konvertiere zu Kleinbuchstaben
+    return inputString.replace(/\s+/g, "-").toLowerCase();
+  }
 
   const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
     fetch(url)
@@ -35,15 +41,16 @@ function Interviews() {
   }, [dispatch]);
 
   return (
-    <div className="space-y-8 bg-color_4">
-      <Slideshow data={state.anlaufstellenData} />
+    <div className="bg-color_4 p-4 md:px-6 lg:px-8">
       <h1 className="text-center text-4xl font-bold mt-8 mb-6">Interviews</h1>
-      <div className="p-4 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl">
+      <div className="max-w-screen-xl mx-auto">
         {state.anlaufstellenData.map((interview, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
+            className={`border-t-2 border-color_2 py-6 ${
+              index % 2 === 0
+                ? "flex flex-col md:flex-row-reverse"
+                : "flex flex-col md:flex-row"
             } space-y-4 md:space-x-4 md:space-y-0 items-center`}
           >
             <div className="md:w-1/2 p-4">
@@ -57,6 +64,15 @@ function Interviews() {
               <p className="text-gray-500">{interview.date}</p>
               <h2 className="text-xl font-bold">{interview.name}</h2>
               <p>{interview.interviewShort}</p>
+              <button className="mt-6 px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
+                <Link
+                  to={`/interviews/${
+                    convertToSlug(interview.name) + "-" + interview.id
+                  }`}
+                >
+                  Weiterlesen
+                </Link>
+              </button>
             </div>
           </div>
         ))}
