@@ -18,7 +18,11 @@ export default {
       color_3: "#F6F0FF",
       color_4: "#E6F4F1",
     },
-    extend: {},
+    extend: {
+      screens: {
+        md: "840px",
+      },
+    },
   },
   plugins: [],
 };

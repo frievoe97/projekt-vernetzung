@@ -7,6 +7,7 @@ const SET_ANLAUFSTELLEN_DATA = "SET_ANLAUFSTELLEN_DATA";
 const SET_HOME_DATA = "SET_HOME_DATA";
 const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA";
 const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA";
+const SET_INTERVIEW_EXAMPLE = "SET_INTERVIEW_EXAMPLE";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -19,6 +20,8 @@ const reducer = (state, action) => {
       return { ...state, slideshowData: action.payload };
     case SET_GLOSSAR_DATA:
       return { ...state, glossaryData: action.payload };
+    case SET_INTERVIEW_EXAMPLE:
+      return { ...state, interviewExample: action.payload };
     default:
       return state;
   }
@@ -30,6 +33,7 @@ const initialState = {
   homeData: [],
   slideshowData: [],
   glossaryData: [],
+  interviewExample: [],
 };
 
 // Context erstellen

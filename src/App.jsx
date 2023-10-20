@@ -12,7 +12,7 @@ import InterviewDetail from "./components/InterviewDetail";
 import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
 
 function App() {
-  const [acceptCookies, setAcceptCookies] = useState(true);
+  const [acceptCookies, setAcceptCookies] = useState(false);
 
   // Funktion, um den Zustand von acceptCookies zu aktualisieren
   const handleAcceptCookies = () => {

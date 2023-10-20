@@ -41,16 +41,16 @@ function Glossary() {
   }, [searchTerm, state.glossaryData]);
 
   return (
-    <div className="p-6 text-center z-0 bg-color_4">
+    <div className="p-4 md:p-6 text-center z-0 bg-color_4">
       <h1 className="text-4xl font-bold mt-8 mb-6">Glossar</h1>
       <input
         type="text"
         placeholder="Suche nach Begriffen..."
-        className="w-full px-4 py-2 mb-4 rounded-lg mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16"
+        className="w-full px-4 py-2 mb-0 rounded-lg mx-auto md:px-6 lg:px-8 max-w-screen-xl my-16"
         onChange={(e) => setSearchTerm(e.target.value)}
         value={searchTerm}
       />
-      <div className="grid text-left gap-6 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
+      <div className="grid text-left gap-0 md:gap-6 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-4 md:my-16">
         {filteredItems.map((item, index) => (
           <GlossaryItem
             key={index}
@@ -90,7 +90,9 @@ function GlossaryItem({ term, definition, searchTerm }) {
         </button>
       </div>
       <section {...getCollapseProps()}>
-        {isExpanded && <p className="text-gray-600">{definition}</p>}
+        {isExpanded && (
+          <p className="text-gray-600 text-justify">{definition}</p>
+        )}
       </section>
     </div>
   );

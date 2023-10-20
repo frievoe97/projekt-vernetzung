@@ -43,7 +43,7 @@ function Interviews() {
   return (
     <div className="bg-color_4 p-4 md:px-6 lg:px-8">
       <h1 className="text-center text-4xl font-bold mt-8 mb-6">Interviews</h1>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
         {state.anlaufstellenData.map((interview, index) => (
           <div
             key={index}
@@ -66,6 +66,7 @@ function Interviews() {
               <p>{interview.interviewShort}</p>
               <button className="mt-6 px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
                 <Link
+                  className="text-black hover:text-black "
                   to={`/interviews/${
                     convertToSlug(interview.name) + "-" + interview.id
                   }`}

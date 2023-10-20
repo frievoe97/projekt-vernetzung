@@ -20,7 +20,7 @@ const Slideshow = ({ data }) => {
   };
 
   return (
-    <div className="max-w-full w-full -mb-1.5">
+    <div className="max-w-full w-full -mb-2">
       <Slider {...settings}>
         {data.map((item, index) => (
           <div key={index} className="relative max-w-full overflow-hidden">

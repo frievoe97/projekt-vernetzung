@@ -6,7 +6,8 @@ const Navbar = () => {
   const [openSubmenu, setOpenSubmenu] = useState(null); // Zustand für die Untermenüs
 
   const updateWindowWidth = () => {
-    if (window.innerWidth <= 768) {
+    // console.log(window.innerWidth);
+    if (window.innerWidth <= 840) {
       setOpenMenu(false);
     } else {
       setOpenMenu(true);
@@ -173,7 +174,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <hr></hr>
     </nav>
   );
 };
