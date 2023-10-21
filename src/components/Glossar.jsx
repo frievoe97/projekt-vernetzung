@@ -72,65 +72,45 @@ function GlossaryItem({ term, definition, searchTerm }) {
   const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
 
   useEffect(() => {
-    if (searchTerm) {
+    if (searchTerm.length >= 3) {
       setExpanded(true);
     } else {
       setExpanded(false);
     }
   }, [searchTerm]);
 
+  const highlightSearchTerm = (text) => {
+    // Falls searchTerm vorhanden ist, hebe es im Text hervor
+    if (searchTerm.length >= 3) {
+      const regex = new RegExp(`(${searchTerm})`, "gi");
+      return text.replace(regex, "<strong>$1</strong>");
+    }
+    return text;
+  };
+
   return (
     <div className="p-6 border-b-2 border-black">
-      <div className="flex justify-between items-center">
+      <div
+        className="flex justify-between items-center"
+        {...getToggleProps({
+          onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+        })}
+      >
         <h2 className="text-2xl font-semibold mb-2 text-gray-800">{term}</h2>
-        <button
-          {...getToggleProps({
-            onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-          })}
-        >
+        <button className="bg-transparent">
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>
       </div>
       <section {...getCollapseProps()}>
-        <p className="text-gray-600 text-justify">{definition}</p>
+        <p
+          className="text-gray-600 text-justify"
+          dangerouslySetInnerHTML={{
+            __html: highlightSearchTerm(definition),
+          }}
+        />
       </section>
     </div>
   );
 }
 
 export default Glossary;
-
-/*
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-  const [expanded, setExpanded] = useState(false); // Standardmäßig zugeklappt
-
-  //   Überprüfe, ob ein Suchbegriff vorhanden ist und setze "expanded" entsprechend
-  useEffect(() => {
-    if (searchTerm) {
-      setExpanded(true);
-    } else {
-      setExpanded(false);
-    }
-  }, [searchTerm]);
-
-  return (
-    <div className="p-6 border-b-2 border-black">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">{term}</h2>
-        <button
-          {...getToggleProps({
-            onClick: () => setExpanded(!expanded),
-          })}
-        >
-          <FontAwesomeIcon icon={expanded ? faAngleDown : faAngleLeft} />
-        </button>
-      </div>
-      <section {...getCollapseProps()}>
-        {isExpanded && (
-          <p className="text-gray-600 text-justify">{definition}</p>
-        )}
-      </section>
-    </div>
-  );
-
-*/
