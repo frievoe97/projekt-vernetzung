@@ -49,6 +49,16 @@ Die Beiträge auf der Seite unsere Mission könnt ihr in der Datei [missionData.
     Text des Beitrags
 ```
 
+### Inhalte der Seite Machtmissbrauch
+
+Die Beiträge auf der Seite Machtmissbrauch könnt ihr in der Datei [machtmissbrauchData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/machtmissbrauchData.yaml) anpassen. Jeder Beitrag hat folgendes Format:
+
+```yaml
+  - Titel: "Titel"
+    Text: >
+      Text
+```
+
 ### Inhalte des Glossars
 
 Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData.yaml](https://github.com/frievoe97/projekt-vernetzung/blob/main/src/data/glossaryData.yaml) anpassen. Jeder Glossareintrag hat folgendes Format:
@@ -59,7 +69,7 @@ Die Glossareinträge auf der Seite Glossar könnt ihr in der Datei [glossaryData
       Definition des Eintrags
 ```
 
-### Inhalte der Anlaufstellen, der Interviews und der Slideshow auf der Interviewseite
+### Inhalte der Anlaufstellen und der Interviews.
 
 Aktuell sind dort alle Daten in einer Datei gespeichert, da man alle Anlaufstellen über die Suche finden soll und es zu allen Anlaufstellen auch Interviews geben soll. Falls es in der Zukunft Anlaufstellen gibt, die nur auf einer der Seiten angezeigt werden sollen, kann man das trotzdem in einer Datei speichern.
 
@@ -77,11 +87,18 @@ Für die Bearbeitung der Anlaufstellen müsst ihr die Datei [anlaufstellenData.y
       - "Beratung"
     date: "Datum für das Interview z. B. 12. Oktober 2023"
     interviewShort: "Kurzbeschreibung des Interviews"
+    interview:
+      - Frage: "Frage 1"
+        Antwort: >
+          Antwort 1
+      - Frage: "Frage 2"
+        Antwort: >
+          Antwort 2
 ```
 
 Die "tags" sind Suchbegriffe, über die die Anlaufstellen leichter zu finden sind in der Suche. Dort könnte zum Beispiel sowas stehen wie die Örtlichkeit (Berlin, Deutschlandweit, Online etc.) oder die Art der Beratung.
 
-Ich würde in Zukunft noch einen Eintrag für ein ausführliches Interview hinzufügen.
+Die Interviews können bei dem Punkt interview hinzugefügt werden. Ein Interview besteht immer aus Einträgen die eine Frage und eine Antwort haben. In diesem Beispiel sind jetzt zwei Einträge vorhanden.
 
 ### Inhalte der Navigationsleiste
 
