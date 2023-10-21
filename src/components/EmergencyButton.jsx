@@ -16,7 +16,7 @@ const EmergencyButton = () => {
   return (
     <div className="fixed right-0 bottom-24 p-4 pr-0">
       <button
-        className="bg-red-500 text-black p-4 text-lg shadow-md hover:bg-red-600 rounded-none rounded-l-lg"
+        className="bg-gray-100 text-black p-4 text-lg shadow-md hover:bg-red-600 rounded-none rounded-l-lg"
         onClick={openEmergencyDialog}
       >
         <FontAwesomeIcon icon={faPhone} />
