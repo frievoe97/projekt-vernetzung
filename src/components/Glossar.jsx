@@ -41,13 +41,14 @@ function Glossary() {
   }, [searchTerm, state.glossaryData]);
 
   return (
-    <div className="p-4 md:p-6 text-center z-0 bg-color_4">
+    // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
+    <div className="p-4 md:p-6 text-center z-0 bg-transparent">
       <h1 className="text-4xl font-bold mt-8 mb-6">Glossar</h1>
       <div className="px-6">
         <input
           type="text"
           placeholder="Suche nach Begriffen..."
-          className="w-full px-4 py-2 mb-0 rounded-lg mx-auto md:px-6 lg:px-8 max-w-screen-xl md:my-16 border-2 border-black"
+          className="w-full px-4 py-2 mb-0 rounded-lg mx-auto md:px-6 lg:px-8 max-w-screen-xl md:my-16 border-2 border-black bg-transparent"
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
         />

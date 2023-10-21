@@ -82,7 +82,7 @@ function Anlaufstellen() {
   }, [dispatch]);
 
   return (
-    <div className="p-6 text-center z-0 bg-color_4">
+    <div className="p-6 text-center z-0 bg-transparent">
       <h1 className="text-4xl font-bold mt-8 mb-6">Anlaufstellen</h1>
       <div className="max-w-2xl mx-auto mb-8 relative">
         <div className="flex items-center border-2 border-black p-4 rounded-md w-full relative">
@@ -107,7 +107,7 @@ function Anlaufstellen() {
             placeholder={
               searchTags.length ? "" : "Suche Anlaufstelle oder Tag..."
             }
-            className="grow outline-none z-0 relative bg-transparent"
+            className="grow outline-none z-0 relative bg-transparent border-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -120,7 +120,7 @@ function Anlaufstellen() {
           {exampleTags.map((tag) => (
             <span
               key={tag}
-              className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600 mr-2"
+              className="bg-transparent rounded-full px-3 py-1 text-sm text-gray-600 mr-2 border-2 border-black"
             >
               {tag}
             </span>
@@ -131,7 +131,7 @@ function Anlaufstellen() {
         {filteredAnlaufstellen.map((anlaufstelle) => (
           <div
             key={anlaufstelle.id}
-            className="bg-white rounded-lg shadow-md p-6 w-full md:w-1/3 lg:w-1/3 xl:w-1/4 shadow-2xl"
+            className="p-6 w-full md:w-1/3 lg:w-1/3 xl:w-1/4 border-2 rounded-xl border-black transform hover:scale-105 transition-transform duration-300 hover:shadow-3xl"
           >
             <h2 className="text-xl font-medium mb-4 text-center">
               {anlaufstelle.name}
@@ -140,7 +140,7 @@ function Anlaufstellen() {
               <img
                 src={anlaufstelle.image}
                 alt={anlaufstelle.name}
-                className="w-full max-h-72 object-cover"
+                className="w-full max-h-72 object-cover mix-blend-multiply"
               />
             </div>
             <div className="w-full mb-4">
@@ -160,7 +160,7 @@ function Anlaufstellen() {
               {anlaufstelle.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600 mb-2"
+                  className="bg-transparent rounded-full px-3 py-1 text-sm text-gray-600 mr-2 border-2 border-black"
                 >
                   {tag}
                 </span>

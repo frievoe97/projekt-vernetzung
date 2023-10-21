@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
 import { useGlobalState } from "../data/GlobalState";
+import ButtonBigRounded from "./elements/ButtonBigRounded";
 
 import Slideshow from "./Slideshow";
 import ContactBanner from "./ContactBanner";
@@ -45,7 +46,7 @@ function Home() {
   }, [dispatch]);
 
   return (
-    <div className="text-center bg-color_4">
+    <div className="text-center bg-transparent">
       <h1 className="text-4xl font-bold pt-8">
         Machtmissbrauch passiert überall!
       </h1>
@@ -86,16 +87,7 @@ function Home() {
                 <div className="w-full md:w-1/2 p-4 pt-0">
                   <h2 className="text-2xl font-semibold mb-4">{item.title}</h2>
                   <p className="mt-0 text-justify">{item.text}</p>
-                  <motion.button
-                    className="mt-6 px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: isVisible ? 1 : 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    {item.buttonText}
-                  </motion.button>
+                  <ButtonBigRounded buttonText="Mehr erfahren" link="/" />
                 </div>
               </motion.div>
             )}

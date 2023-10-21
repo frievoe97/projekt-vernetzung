@@ -10,6 +10,7 @@ import { useGlobalState } from "../data/GlobalState";
 import yaml from "js-yaml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import ButtonBigRounded from "./elements/ButtonBigRounded";
 
 function InterviewDetail() {
   const { state, dispatch } = useGlobalState();
@@ -36,13 +37,6 @@ function InterviewDetail() {
       dispatch,
       "SET_ANLAUFSTELLEN_DATA",
       "anlaufstellenData" // Übergeben Sie den Namen des Schlüssels
-    );
-
-    fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviewExample.yaml",
-      dispatch,
-      "SET_INTERVIEW_EXAMPLE",
-      "interviewExample" // Übergeben Sie den Namen des Schlüssels
     );
   }, [dispatch]);
 
@@ -94,9 +88,9 @@ function InterviewDetail() {
             <h2 className="text-2xl font-bold mb-2">{interview.name}</h2>
             <p className="text-gray-500 text mb-2">Datum: {interview.date}</p>
             <div className="space-y-8 text-lg">
-              {interview.FragenUndAntworten.map((item) => (
+              {interview["interview"].map((item) => (
                 <div>
-                  <div key={item.Frage} className="font-bold">
+                  <div key={item} className="font-bold">
                     {item.Frage}
                   </div>
                   <div className="text-justify">{item.Antwort}</div>
@@ -104,12 +98,10 @@ function InterviewDetail() {
               ))}
             </div>
           </div>
-          <button className="mt-6 px-6 py-3 ml-4 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
-            <Link className="text-black hover:text-black" to={`/interviews`}>
-              <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
-              Zurück zu allen Interviews
-            </Link>
-          </button>
+          <ButtonBigRounded
+            buttonText="Zurück zu allen Interviews"
+            link="/interviews"
+          />
         </div>
       </div>
     </div>

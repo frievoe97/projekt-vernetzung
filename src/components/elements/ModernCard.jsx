@@ -1,13 +1,15 @@
 import React from "react";
-import { Card } from "flowbite-react";
 
-export default function CustomCard({ imgSrc, imgAlt, title, text }) {
+function ModernCard({ imgSrc, title, text }) {
   return (
-    <div>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        {title}
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">{text}</p>
+    <div className="max-w-xs rounded overflow-hidden shadow-lg p-4">
+      <img className="w-full h-auto" src={imgSrc} alt="Card Image" />
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{title}</div>
+        <p className="text-gray-700 text-base">{text}</p>
+      </div>
     </div>
   );
 }
+
+export default ModernCard;

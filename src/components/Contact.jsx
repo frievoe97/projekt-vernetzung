@@ -33,7 +33,7 @@ function Contact() {
   }
 
   return (
-    <div className="container bg-color_4 mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl mb-4">
+    <div className="container bg-transparent mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl mb-4">
       <h1 className="text-4xl font-bold mt-8 mb-6">Werde Partner*in</h1>
       <p className="text-lg text-gray-600 mt-4">
         Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
