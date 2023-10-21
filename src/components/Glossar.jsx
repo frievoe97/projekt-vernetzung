@@ -68,6 +68,39 @@ function Glossary() {
 }
 
 function GlossaryItem({ term, definition, searchTerm }) {
+  const [isExpanded, setExpanded] = useState(false);
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
+
+  useEffect(() => {
+    if (searchTerm) {
+      setExpanded(true);
+    } else {
+      setExpanded(false);
+    }
+  }, [searchTerm]);
+
+  return (
+    <div className="p-6 border-b-2 border-black">
+      <div className="flex justify-between items-center">
+        <h2 className="text-2xl font-semibold mb-2 text-gray-800">{term}</h2>
+        <button
+          {...getToggleProps({
+            onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+          })}
+        >
+          <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
+        </button>
+      </div>
+      <section {...getCollapseProps()}>
+        <p className="text-gray-600 text-justify">{definition}</p>
+      </section>
+    </div>
+  );
+}
+
+export default Glossary;
+
+/*
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   const [expanded, setExpanded] = useState(false); // Standardmäßig zugeklappt
 
@@ -99,6 +132,5 @@ function GlossaryItem({ term, definition, searchTerm }) {
       </section>
     </div>
   );
-}
 
-export default Glossary;
+*/
