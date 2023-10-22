@@ -1,5 +1,5 @@
 menuItems:
-  - text: "Home"
+  - text: "Startseite"
     url: "/"
   - text: "Über Uns"
     subItems:
