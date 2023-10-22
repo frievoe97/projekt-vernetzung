@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalState } from "../data/GlobalState";
+import AnlaufstellenCard from "./elements/AnlaufstellenCard";
 import yaml from "js-yaml";
 
 function Anlaufstellen() {
@@ -10,20 +11,34 @@ function Anlaufstellen() {
     "Suche Anlaufstelle oder Tag..."
   );
 
+  // Erstelle ein Array mit den Suchkriterien
+  const searchCriteria = [...searchTags.map((tag) => tag.toLowerCase())];
+
+  // Füge searchTerm zu den Suchkriterien hinzu, wenn es nicht leer ist
+  if (searchTerm.trim() !== "") {
+    searchCriteria.push(searchTerm.toLowerCase());
+  }
+
   const filteredAnlaufstellen = state.anlaufstellenData.filter(
-    (anlaufstelle) =>
-      (searchTerm &&
-        (anlaufstelle.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          anlaufstelle.tags.some((tag) =>
-            tag.toLowerCase().includes(searchTerm.toLowerCase())
-          ))) ||
-      searchTags.every(
-        (tag) =>
-          anlaufstelle.name.toLowerCase().includes(tag.toLowerCase()) ||
-          anlaufstelle.tags.some((t) =>
-            t.toLowerCase().includes(tag.toLowerCase())
-          )
-      )
+    (anlaufstelle) => {
+      // Prüfen, ob mindestens ein Suchkriterium vorhanden ist
+      const hasSearchCriteria = searchCriteria.length > 0;
+
+      // Prüfen, ob die Anlaufstelle alle Suchkriterien enthält
+      const matchesSearchCriteria =
+        hasSearchCriteria &&
+        searchCriteria.every(
+          (criteria) =>
+            anlaufstelle.description.toLowerCase().includes(criteria) ||
+            anlaufstelle.name.toLowerCase().includes(criteria) ||
+            anlaufstelle.tags.some((tag) =>
+              tag.toLowerCase().includes(criteria)
+            )
+        );
+
+      // Nur Anlaufstellen beibehalten, die alle Suchkriterien erfüllen
+      return hasSearchCriteria ? matchesSearchCriteria : true;
+    }
   );
 
   const exampleTags = ["Telefon", "Berlin", "Online"];
@@ -107,7 +122,7 @@ function Anlaufstellen() {
             placeholder={
               searchTags.length ? "" : "Suche Anlaufstelle oder Tag..."
             }
-            className="grow outline-none z-0 relative bg-transparent border-none"
+            className="grow z-0 relative bg-transparent border-none border-transparent outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -129,44 +144,10 @@ function Anlaufstellen() {
       </div>
       <div className="max-w-full mx-auto flex flex-wrap justify-center gap-8 ">
         {filteredAnlaufstellen.map((anlaufstelle) => (
-          <div
+          <AnlaufstellenCard
             key={anlaufstelle.id}
-            className="p-6 w-full md:w-1/3 lg:w-1/3 xl:w-1/4 border-2 rounded-xl border-black transform hover:scale-105 transition-transform duration-300 hover:shadow-3xl"
-          >
-            <h2 className="text-xl font-medium mb-4 text-center">
-              {anlaufstelle.name}
-            </h2>
-            <div className="w-full mb-4">
-              <img
-                src={anlaufstelle.image}
-                alt={anlaufstelle.name}
-                className="w-full max-h-72 object-cover mix-blend-multiply"
-              />
-            </div>
-            <div className="w-full mb-4">
-              <p className="text-gray-600 text-justify">
-                {anlaufstelle.description}
-              </p>
-              <div className="text-justify">
-                <a
-                  href={anlaufstelle.link}
-                  className="text-blue-500 hover:underline block"
-                >
-                  Weitere Informationen
-                </a>
-              </div>
-            </div>
-            <div className="w-full flex flex-wrap justify-center space-x-2">
-              {anlaufstelle.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-transparent rounded-full px-3 py-1 text-sm text-gray-600 mr-2 border-2 border-black"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
+            anlaufstelle={anlaufstelle}
+          />
         ))}
       </div>
     </div>
