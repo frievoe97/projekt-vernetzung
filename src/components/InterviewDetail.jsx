@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   HashRouter as Router,
   Route,
@@ -9,7 +9,7 @@ import {
 import { useGlobalState } from "../data/GlobalState";
 import yaml from "js-yaml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import ButtonBigRounded from "./elements/ButtonBigRounded";
 
 function InterviewDetail() {
@@ -70,30 +70,30 @@ function InterviewDetail() {
         <img
           src={interview.image}
           alt={interview.name}
-          className="w-full h-full object-cover object-center contrast-50 min-h-[200px]"
+          className="w-full h-full object-cover object-center contrast-50 min-h-[200px] mix-blend-multiply"
         />
         {/* <div className="absolute left-0  bottom-0 flex items-center justify-center text-black w-fit h-fit bg-white rounded  ">
           <h1 className="text-2xl font-bold p-4">{interview.name}</h1>
         </div> */}
       </div>
-      <div className="mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
+      <div className="mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-4 md:my-16">
         <div className="px-4 md:border-2 md:border-black md:rounded-xl md:shadow-xl md:py-8 md:mx-8">
-          <button className="text-black overflow-hidden transition-border-color hover:border-transparent bg-transparent">
+          <button className="text-black overflow-hidden transition-border-color hover:border-transparent bg-transparent px-0 md:p-4">
             <Link className="text-black hover:text-black" to={`/interviews`}>
               <FontAwesomeIcon icon={faAngleLeft} className="mr-4" />
               Zurück
             </Link>
           </button>
-          <div className="bg-transparent  rounded-lg p-4">
+          <div className="bg-transparent  rounded-lg md:p-4">
             <h2 className="text-2xl font-bold mb-2">{interview.name}</h2>
             <p className="text-gray-500 text mb-2">Datum: {interview.date}</p>
             <div className="space-y-8 text-lg">
               {interview["interview"].map((item) => (
                 <div>
-                  <div key={item} className="font-bold">
+                  <p key={item} className="font-bold mb-4">
                     {item.Frage}
-                  </div>
-                  <div className="text-justify">{item.Antwort}</div>
+                  </p>
+                  <p className="text-justify">{item.Antwort}</p>
                 </div>
               ))}
             </div>

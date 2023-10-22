@@ -12,9 +12,11 @@ import yaml from "js-yaml";
 function Home() {
   const { state, dispatch } = useGlobalState();
   const [isVisible, setIsVisible] = useState(false);
+  const motionRefs = useRef([]);
 
-  const handleVisibilityChange = (isVisible) => {
+  const handleVisibilityChange = (index, isVisible) => {
     setIsVisible(isVisible);
+    motionRefs.current[index].style.opacity = isVisible ? 1 : 0;
   };
 
   const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
@@ -24,7 +26,7 @@ function Home() {
         const parsedData = yaml.load(yamlText);
         dispatch({
           type: actionType,
-          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
+          payload: parsedData[dataKey],
         });
       });
   };
@@ -59,11 +61,12 @@ function Home() {
         {state.homeData.map((item, index) => (
           <VisibilitySensor
             key={index}
-            onChange={(isVisible) => handleVisibilityChange(isVisible)}
+            onChange={(isVisible) => handleVisibilityChange(index, isVisible)}
             partialVisibility={true}
           >
             {({ isVisible }) => (
               <motion.div
+                ref={(element) => (motionRefs.current[index] = element)}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                 animate={{
                   opacity: isVisible ? 1 : 0,

@@ -17,17 +17,17 @@ const EmergencyButton = () => {
   const emergencyNumbers = [
     {
       title: "Polizei",
-      number: "110",
+      number: "030/1234",
       description: "Bei kriminellen Vorfällen und Sicherheitsbedenken.",
     },
     {
       title: "Feuerwehr",
-      number: "112",
+      number: "0160/54325",
       description: "Bei Feuer- und Brandsituationen sowie anderen Notfällen.",
     },
     {
       title: "Ärztlicher Notdienst",
-      number: "116 117",
+      number: "1183322",
       description:
         "Bei gesundheitlichen Notfällen außerhalb der regulären Praxiszeiten.",
     },
@@ -71,9 +71,7 @@ const EmergencyButton = () => {
                       {emergency.title}:
                     </span>
                     &nbsp;
-                    <a href={`tel:${emergency.number + 123}`}>
-                      {emergency.number}
-                    </a>
+                    <a href={`tel:${emergency.number}`}>{emergency.number}</a>
                   </div>
                   <span className="text-gray-500 w-full">
                     {emergency.description}
