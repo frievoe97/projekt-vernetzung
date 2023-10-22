@@ -43,7 +43,7 @@ const EmergencyButton = () => {
       </button>
 
       {showEmergencyDialog && (
-        <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-75">
+        <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-75 px-4">
           <div className="bg-white rounded-lg p-8 max-w-screen-md shadow-md">
             <div className="flex flex-row items-center mb-4">
               <button
@@ -52,7 +52,7 @@ const EmergencyButton = () => {
               >
                 <FontAwesomeIcon icon={faTimes} size="lg" />
               </button>
-              <h2 className="text-3xl font-semibold text-center text-gray-800">
+              <h2 className="text-3xl font-semibold md:text-center text-gray-800 text-left">
                 Sofortige Hilfe benötigt?
               </h2>
             </div>
