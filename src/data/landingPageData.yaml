@@ -54,6 +54,12 @@ homeData:
       Betroffene eingreifen zu können.
     buttonText: Mehr erfahren
 
+contactBannerData:
+  title: Du hast Fragen?
+  subtitle: Wir sind hier, um Ihnen zu helfen. Kontaktieren Sie uns gerne.
+  buttonText: Kontaktieren Sie uns
+  buttonLink: /contact    
+
 slideshowData:
   - image: >-
       https://images.pexels.com/photos/4098368/pexels-photo-4098368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
@@ -67,10 +73,3 @@ slideshowData:
     description: >-
       Erfahrene Fachleute stehen Ihnen zur Verfügung, um Sie bei der Bewältigung
       von Machtmissbrauch zu unterstützen.
-
-contactBannerData:
-  title: Du hast Fragen?
-  subtitle: Wir sind hier, um Ihnen zu helfen. Kontaktieren Sie uns gerne.
-  buttonText: Kontaktieren Sie uns
-  buttonLink: /contact
-
