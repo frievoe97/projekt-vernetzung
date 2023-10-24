@@ -29,19 +29,19 @@ const Slideshow = ({ data }) => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover object-center bg-color_1 contrast-50"
+                  className="w-full h-full object-cover object-center contrast-50"
                   style={{ Height: "100%" }}
                 />
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-end text-black p-4">
+              <div className="absolute inset-0 flex flex-col justify-end text-color_font p-4">
                 <h2 className="text-2xl font-semibold bg-white p-2 rounded w-fit">
                   {item.name}
                 </h2>
                 <p className="mt-2 bg-white p-2 rounded w-fit text-left">
                   {item.description}
                 </p>
-                <button className="bg-white text-black font-semibold px-4 py-2 rounded mt-2 w-fit">
+                <button className="bg-white text-color_font font-semibold px-4 py-2 rounded mt-2 w-fit">
                   Mehr Informationen
                 </button>
                 {/* <AnimatedButton /> */}

@@ -97,7 +97,7 @@ function Anlaufstellen() {
   }, [dispatch]);
 
   return (
-    <div className="p-6 text-center z-0 bg-transparent">
+    <div className="p-6 text-center z-0 bg-transparent text-color_font">
       <h1 className="text-4xl font-bold mt-8 mb-6">Anlaufstellen</h1>
       <div className="max-w-2xl mx-auto mb-8 relative">
         <div className="flex items-center border-2 border-black p-4 rounded-md w-full relative">
@@ -105,7 +105,7 @@ function Anlaufstellen() {
             {searchTags.map((tag, index) => (
               <span
                 key={index}
-                className="pl-2 bg-gray-200 rounded-2xl text-sm text-gray-600 flex items-center"
+                className="pl-2 bg-gray-200 rounded-2xl text-sm flex items-center"
               >
                 {tag}
                 <button
@@ -135,7 +135,7 @@ function Anlaufstellen() {
           {exampleTags.map((tag) => (
             <span
               key={tag}
-              className="bg-transparent rounded-full px-3 py-1 text-sm text-gray-600 mr-2 border-2 border-black"
+              className="bg-transparent rounded-full px-3 py-1 text-sm text-color_font mr-2 border-2 border-black"
             >
               {tag}
             </span>

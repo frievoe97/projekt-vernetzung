@@ -41,7 +41,7 @@ function Interviews() {
   }, [dispatch]);
 
   return (
-    <div className="bg-transparent p-4 md:px-6 lg:px-8">
+    <div className="bg-transparent p-4 md:px-6 lg:px-8 text-color_font">
       <h1 className="text-center text-4xl font-bold mt-8 mb-6">Interviews</h1>
       <div className="mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl my-16">
         {state.anlaufstellenData.map((interview, index) => (
@@ -61,7 +61,7 @@ function Interviews() {
               />
             </div>
             <div className="md:w-1/2 p-4">
-              <p className="text-gray-500">{interview.date}</p>
+              <p className="text-color_font_light">{interview.date}</p>
               <h2 className="text-xl font-bold">{interview.name}</h2>
               <p>{interview.interviewShort}</p>
               <ButtonBigRounded

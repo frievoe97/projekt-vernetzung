@@ -11,7 +11,7 @@ interface AnimatedButtonProps {
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({ text, link }) => {
   return (
     <Link to={link} className="relative inline-block btn btn-1">
-      <span className="text-black">{text}</span>
+      <span className="text-color_font">{text}</span>
       <svg
         className="btn-svg"
         xmlns="http://www.w3.org/2000/svg"

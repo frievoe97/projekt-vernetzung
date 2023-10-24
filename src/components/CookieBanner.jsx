@@ -24,7 +24,7 @@ function CookieBanner() {
       </p>
       <button
         onClick={handleAcceptCookies}
-        className="text-black bg-green-500 hover:bg-green-600 font-bold py-2 px-4 border-2 border-black rounded"
+        className="text-color_font bg-green-500 hover:bg-green-600 font-bold py-2 px-4 border-2 border-black rounded"
       >
         Accept
       </button>

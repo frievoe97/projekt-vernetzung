@@ -4,33 +4,36 @@ import React, { createContext, useContext, useReducer } from "react";
 
 // Aktionstypen definieren
 const SET_ANLAUFSTELLEN_DATA = "SET_ANLAUFSTELLEN_DATA";
-const SET_HOME_DATA = "SET_HOME_DATA";
-const SET_SLIDE_SHOW_DATA = "SET_SLIDE_SHOW_DATA";
 const SET_GLOSSAR_DATA = "SET_GLOSSAR_DATA";
-const SET_INTERVIEW_EXAMPLE = "SET_INTERVIEW_EXAMPLE";
 const SET_MISSION_DATA = "SET_MISSION_DATA";
-const SET_MENU_ITEMS = "SET_MENU_ITEMS";
 const SET_MACHTMISSBRAUCH_DATA = "SET_MACHTMISSBRAUCH_DATA";
+const SET_LANDING_PAGE_DATA = "SET_LANDING_PAGE_DATA";
+const SET_HEADER_DATA = "SET_HEADER_DATA";
+const SET_CONTACT_PAGE_DATA = "SET_CONTACT_PAGE_DATA";
+const SET_WARUM_JETZT_PAGE_DATA = "SET_WARUM_JETZT_PAGE_DATA";
+const SET_WARUM_WIR_PAGE_DATA = "SET_WARUM_WIR_PAGE_DATA";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
   switch (action.type) {
     case SET_ANLAUFSTELLEN_DATA:
       return { ...state, anlaufstellenData: action.payload };
-    case SET_HOME_DATA:
-      return { ...state, homeData: action.payload };
-    case SET_SLIDE_SHOW_DATA:
-      return { ...state, slideshowData: action.payload };
     case SET_GLOSSAR_DATA:
-      return { ...state, glossaryData: action.payload };
-    case SET_INTERVIEW_EXAMPLE:
-      return { ...state, interviewExample: action.payload };
+      return { ...state, glossaryPageData: action.payload };
     case SET_MISSION_DATA:
-      return { ...state, missionData: action.payload };
-    case SET_MENU_ITEMS:
-      return { ...state, menuItems: action.payload };
+      return { ...state, missionPageData: action.payload };
     case SET_MACHTMISSBRAUCH_DATA:
-      return { ...state, machtmissbrauchData: action.payload };
+      return { ...state, machtmissbrauchPageData: action.payload };
+    case SET_LANDING_PAGE_DATA:
+      return { ...state, landingPageData: action.payload };
+    case SET_HEADER_DATA:
+      return { ...state, headerData: action.payload };
+    case SET_CONTACT_PAGE_DATA:
+      return { ...state, contactPageData: action.payload };
+    case SET_WARUM_JETZT_PAGE_DATA:
+      return { ...state, warumJetztPageData: action.payload };
+    case SET_WARUM_WIR_PAGE_DATA:
+      return { ...state, warumWirPageData: action.payload };
     default:
       return state;
   }
@@ -39,13 +42,14 @@ const reducer = (state, action) => {
 // Initialer globaler Zustand
 const initialState = {
   anlaufstellenData: [],
-  homeData: [],
-  slideshowData: [],
-  glossaryData: [],
-  interviewExample: [],
-  missionData: [],
-  menuItems: [],
-  machtmissbrauchData: [],
+  glossaryPageData: {},
+  missionPageData: {},
+  machtmissbrauchPageData: {},
+  landingPageData: {},
+  headerData: {},
+  contactPageData: {},
+  warumJetztPageData: {},
+  warumWirPageData: {},
 };
 
 // Context erstellen

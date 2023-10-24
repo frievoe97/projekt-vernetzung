@@ -14,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <Link to={link} className="inline-block relative overflow-hidden group">
-      <button className="px-6 py-3 text-black border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
+      <button className="px-6 py-3 text-color_font border-2 border-black rounded-full overflow-hidden transition-border-color hover:border-gray-400 hover:bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 hover:animate-circle bg-transparent">
         {icon && (
           <span className="mr-2">
             <FontAwesomeIcon icon={icon} />

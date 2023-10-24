@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { useGlobalState } from "../data/GlobalState";
+import yaml from "js-yaml";
 
 function Contact() {
+  const { state, dispatch } = useGlobalState();
+
   // Funktion zum Verarbeiten des Formulars
   function sendEmail(e) {
     e.preventDefault();
@@ -32,15 +36,39 @@ function Contact() {
       );
   }
 
+  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+        dispatch({
+          type: actionType,
+          payload: parsedData, // Verwenden Sie den übergebenen dataKey als Schlüssel
+        });
+      });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/contactPageData.yaml",
+      dispatch,
+      "SET_CONTACT_PAGE_DATA",
+      "contactPageData.yaml"
+    );
+  }, [dispatch]);
+
   return (
-    <div className="container bg-transparent mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl mb-4">
-      <h1 className="text-4xl font-bold mt-8 mb-6">Werde Partner*in</h1>
-      <p className="text-lg text-gray-600 mt-4">
-        Wenn du mit uns zusammenarbeiten möchtest, fülle das untenstehende
-        Formular aus, und einer unserer Mitarbeiter wird sich mit dir in
-        Verbindung setzen. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit.
-      </p>
+    <div className="container bg-transparent mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl mb-4 text-color_font">
+      {state.contactPageData.header && (
+        <h1 className="text-4xl font-bold mt-8 mb-6">
+          {state.contactPageData.header}
+        </h1>
+      )}
+
+      {state.contactPageData.subheader && (
+        <p className="text-lg  mt-4">{state.contactPageData.subheader}</p>
+      )}
+
       <form className="flex flex-col mt-4 space-y-4">
         <div className="flex flex-col space-y-4">
           <div className="grow">

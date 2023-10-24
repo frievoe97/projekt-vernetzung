@@ -47,44 +47,48 @@ const Navbar = () => {
     }
   };
 
-  const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
+  const fetchAndParseYamlData = (url, dispatch, actionType) => {
     fetch(url)
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
         dispatch({
           type: actionType,
-          payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
+          payload: parsedData, // Verwenden Sie den übergebenen dataKey als Schlüssel
         });
       });
   };
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/menuItems.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/headerData.yaml",
       dispatch,
-      "SET_MENU_ITEMS",
-      "menuItems" // Übergeben Sie den Namen des Schlüssels
+      "SET_HEADER_DATA",
+      "headerData" // Übergeben Sie den Namen des Schlüssels
     );
   }, [dispatch]);
 
+  if (!state.headerData.menuItems || !state.headerData.headerTitle) {
+    return <h1>Loading...</h1>;
+  }
+
   return (
-    <nav className="z-30 bg-color_1 border-black fixed top-0 left-0 right-0 shadow-2xl">
+    <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex flex-row">
           <img className="w-10 mr-5" src="/logo.png" alt="" />
           <Link
-            className="text-black hover:text-black self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            className="text-color_header_font hover:text-color_header_font self-center text-2xl font-semibold whitespace-nowrap"
             to="/"
           >
-            Projekt Vernetzung e.V.
+            {state.headerData.headerTitle}
           </Link>
         </div>
 
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-color_1 focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border-none"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text-color_header_font rounded-lg md:hidden  focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border-none"
           aria-controls="navbar-dropdown"
           aria-expanded={openMenu}
         >
@@ -112,14 +116,14 @@ const Navbar = () => {
           id="navbar-dropdown"
         >
           <ul className="z-10 flex flex-col font-medium p-4 md:p-0 border border-gray-100 bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {state.menuItems.map((item, index) => (
+            {state.headerData.menuItems.map((item, index) => (
               <li key={index}>
                 {item.subItems ? (
                   <button
                     onClick={() => toggleSubmenu(index, false)}
                     id={`dropdownNavbarLink${index}`}
                     data-dropdown-toggle={`dropdownNavbar${index}`}
-                    className={`z-10 flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:hover:text-black md:p-0 md:w-auto dark:text-white md:dark:hover:text-black dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:underline`}
+                    className={`z-10 flex text-color_header_font items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:p-0 md:w-auto hover:underline`}
                   >
                     {item.text}{" "}
                     <svg
@@ -140,7 +144,7 @@ const Navbar = () => {
                   </button>
                 ) : (
                   <Link
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:hover:text-black hover:underline"
+                    className="block py-2 pl-3 pr-4 text-color_header_font hover:text-color_header_font rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  dark:hover:bg-gray-700  md:dark:hover:bg-transparent hover:underline"
                     to={item.url}
                     onClick={() => toggleSubmenu(index, true)}
                   >
@@ -157,13 +161,13 @@ const Navbar = () => {
                   >
                     {/* Style für die dropdown Liste */}
                     <ul
-                      className="z-20 text-black py-2 text-sm text-gray-700 dark:text-gray-400 md:absolute md:bg-white md:border md:border-black md:mt-4"
+                      className="z-20 text-color_header_font py-2 text-sm  md:absolute md:bg-white md:border md:border-black md:mt-4"
                       aria-labelledby={`dropdownLargeButton${index}`}
                     >
                       {item.subItems.map((subItem, subIndex) => (
                         <li key={subIndex}>
                           <Link
-                            className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-black hover:text-black"
+                            className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-color_header_font hover:text-color_header_font"
                             to={subItem.url}
                             onClick={() => toggleSubmenu(index, true)}
                           >

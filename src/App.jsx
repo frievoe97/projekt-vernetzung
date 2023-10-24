@@ -6,24 +6,19 @@ import Anlaufstellen from "./components/Anlaufstellen";
 import Mission from "./components/Mission";
 import Contact from "./components/Contact";
 import Interviews from "./components/Interviews";
-import ExampleGlobalData from "./components/ExampleGlobalData";
 import Glossar from "./components/Glossar";
 import InterviewDetail from "./components/InterviewDetail";
-import { GlobalStateProvider, useGlobalState } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
+import { GlobalStateProvider } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
 import ScrollToTop from "./components/utils/ScrollToTop";
 import Machtmissbrauch from "./components/Machtmissbrauch";
 import WarumJetzt from "./components/WarumJetzt";
 import Examples from "./components/Examples";
 import CookieBanner from "./components/CookieBanner";
+import NotFoundComponent from "./components/NotFoundComponent";
+import WarumWir from "./components/WarumWir";
+import Test from "./components/Test";
 
 function App() {
-  const [acceptCookies, setAcceptCookies] = useState(false);
-
-  // Funktion, um den Zustand von acceptCookies zu aktualisieren
-  const handleAcceptCookies = () => {
-    setAcceptCookies(false);
-  };
-
   return (
     <Router>
       <Layout>
@@ -44,6 +39,18 @@ function App() {
             <Route path="/glossar" element={<Glossar />} />
             <Route path="/machtmissbrauch" element={<Machtmissbrauch />} />
             <Route path="/warum-jetzt" element={<WarumJetzt />} />
+            <Route path="/warum-wir" element={<WarumWir />} />
+            <Route path="/test" element={<Test />} />
+            <Route
+              path="*"
+              element={
+                <NotFoundComponent
+                  text={"Die angeforderte Seite existiert nicht."}
+                  buttonText={"Zurück zur Startseite"}
+                  link={"/"}
+                />
+              }
+            />
           </Routes>
         </GlobalStateProvider>{" "}
       </Layout>
