@@ -1,0 +1,23 @@
+headerTitle: "Projekt Vernetzung e.V."
+
+menuItems:
+  - text: "Startseite"
+    url: "/"
+  - text: "Über Uns"
+    subItems:
+      - text: "Unsere Mission"
+        url: "/unsere-mission"
+      - text: "Machtmissbrauch"
+        url: "/machtmissbrauch"
+      - text: "Warum Jetzt?"
+        url: "/warum-jetzt"
+      - text: "Warum Wir?"
+        url: "/warum-wir"
+      - text: "Kontakt"
+        url: "/contact"
+  - text: "Glossar"
+    url: "/glossar"
+  - text: "Anlaufstellen"
+    url: "/anlaufstellen"
+  - text: "Interviews"
+    url: "/interviews"
