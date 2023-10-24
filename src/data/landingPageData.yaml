@@ -67,3 +67,10 @@ slideshowData:
     description: >-
       Erfahrene Fachleute stehen Ihnen zur Verfügung, um Sie bei der Bewältigung
       von Machtmissbrauch zu unterstützen.
+
+contactBannerData:
+  title: Du hast Fragen?
+  subtitle: Wir sind hier, um Ihnen zu helfen. Kontaktieren Sie uns gerne.
+  buttonText: Kontaktieren Sie uns
+  buttonLink: /contact
+
