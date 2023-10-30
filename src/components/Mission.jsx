@@ -5,11 +5,54 @@ import yaml from "js-yaml";
 function Mission() {
   const { state, dispatch } = useGlobalState();
 
+  function convertTextWithSectionsToHTML(text) {
+    // Teilen Sie den Text in Abschnitte auf, die mit '__' beginnen und enden.
+    const sections = text.split(/(__.*?__)/);
+
+    // Entfernen Sie leere Strings aus den Abschnitten und filtern Sie sie.
+    const filteredSections = sections.filter(
+      (section) => section.trim() !== ""
+    );
+
+    if (filteredSections.length === 0) {
+      return text; // Keine Abschnitte gefunden, geben Sie den Text unverändert zurück.
+    }
+
+    // Fügen Sie vor und nach den Abschnitten <li>-Elemente hinzu.
+    const htmlSections = filteredSections.map((section, index) => {
+      if (section.startsWith("__") && section.endsWith("__")) {
+        // Dies ist ein Abschnitt, fügen Sie ihn als <li> in das <ul> ein.
+        return `<li key=${index}>${section.slice(2, -2)}</li>`;
+      } else {
+        // Dies ist normaler Text, geben Sie ihn unverändert zurück.
+        return section;
+      }
+    });
+
+    // Überprüfen Sie, ob das erste und das letzte Element in der gefilterten Liste Abschnitte sind.
+    const hasFirstSection = filteredSections[0].startsWith("__");
+    const hasLastSection =
+      filteredSections[filteredSections.length - 1].endsWith("__");
+
+    // Erstellen Sie das HTML mit <ul> nur vor dem ersten <li> und nach dem letzten <li>.
+    let htmlText = "";
+    if (hasFirstSection) {
+      htmlText += "<ul>";
+    }
+    htmlText += htmlSections.join("");
+    if (hasLastSection) {
+      htmlText += "</ul>";
+    }
+
+    return htmlText;
+  }
+
   const fetchAndParseYamlData = (url, dispatch, actionType, dataKey) => {
     fetch(url)
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
+        console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData, // Verwenden Sie den übergebenen dataKey als Schlüssel
@@ -49,7 +92,15 @@ function Mission() {
                 <h2 className="text-2xl font-semibold">{mission.title}</h2>
               </div>
               <div className="md:w-1/2 text-left md:text-left m-4 md:mt-0">
-                <p className="text-justify">{mission.text}</p>
+                {/* <div className="text-justify">
+                  {convertTextWithSectionsToHTML(mission.text)}
+                </div> */}
+                <div
+                  className="text-justify"
+                  dangerouslySetInnerHTML={{
+                    __html: convertTextWithSectionsToHTML(mission.text),
+                  }}
+                />
               </div>
             </div>
           ))}
