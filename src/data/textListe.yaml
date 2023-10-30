@@ -1,0 +1,27 @@
+texte:
+  - text: |
+      Dies ist der erste längere Text. Er enthält mehrere Zeilen und dient dazu, die Funktionalität Ihrer Anwendung zu testen.
+      Hier können Sie Absätze und Abschnitte hinzufügen und sicherstellen, dass alles ordnungsgemäß gerendert wird.
+
+      Zum Beispiel könnten Sie hier eine Liste von Aufgaben erstellen:
+      - Aufgabe 1
+      - Aufgabe 2
+      - Aufgabe 3
+
+      Sie können auch Links, Zitate und andere Formatierungen hinzufügen, um sicherzustellen, dass Ihre Anwendung alles korrekt darstellen kann.
+  - text: |
+      Dies ist der zweite längere Text. Er enthält auch mehrere Absätze und zeigt, wie Absatzumbrüche und Leerzeichen in Ihrem Text korrekt gerendert werden.
+
+      Hier ist ein weiterer Abschnitt Ihres Textes. Sie können ihn verwenden, um verschiedene Formatierungen und Textelemente zu testen.
+
+      [Hier ist ein Beispiel-Link](https://example.com).
+  - text: |
+      Dies ist der dritte längere Text. In diesem Text finden Sie eine Liste von Dingen, die Sie in Ihrer Anwendung berücksichtigen können:
+
+      1. Benutzerfreundliche Benutzeroberfläche erstellen.
+      2. Daten aus verschiedenen Quellen integrieren.
+      3. Sicherheitsmaßnahmen implementieren.
+      4. Performanzoptimierung vornehmen.
+      5. Benutzerfeedback sammeln und analysieren.
+
+      Denken Sie daran, dass Ihre Anwendung nicht nur die Texte anzeigen sollte, sondern auch gut auf längere Texte und Listen vorbereitet sein sollte.
