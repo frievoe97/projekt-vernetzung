@@ -203,3 +203,357 @@ anlaufstellenData:
       - Frage: "Frage 2"
         Antwort: |
           Antwort 2
+
+googleDoc:
+  Beratungsstellen:
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Hirsch-Sprätz
+    Organisation / Projekt: '**Mobbingberatungsstellen BER-Bbg (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Monika
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Organisation / Projekt: siehe links
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Weißer Ring e.V.
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Kieser
+    Organisation / Projekt: '**WorkWatch e.V. (LINK)'
+    Vorname: Albrecht
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Antidiskriminierungsstelle des Bundes
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Website (LINK)**Instagram (LINK)'
+    Vorname: HateAid
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Berliner Krisendienst
+  - Branche: Weiterbildungsstätte
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Organisation / Projekt: '**Geförderte Weiterbildung für Berliner:innen (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Mental Health First Aid
+  - Branche: Missbrauchsbeauftragte
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    - Kindheit
+    Organisation / Projekt: Unabhängige Beauftrage der Bundesregierung
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: UBSKM
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Organisation / Projekt: Wiesbaden (aber Telefonberatung überall)
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Zora
+  - Branche: Opferbartung
+    Kategorie Machtmissbrauch:
+    - Kindheit
+    Social Media-Präsenz: '** Website (LINK)'
+    Vorname: Childhood house
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Hilfetelefon Gewalt gegen Frauen
+  - Branche: Opferberatung
+    Kategorie Machtmissbrauch:
+    - Sport
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: safesport
+  Einzelpersonen:
+  - Branche: Musik
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Merz
+    Organisation / Projekt: '#musicmetoo (LINK)'
+    Publikationen: '**Gewalt & Diskirminierung im dt. Jazz und an Misikhochschulen (LINK)'
+    Social Media-Präsenz: '**Website (LINK)**Instagram (LINK)'
+    Vorname: Friede
+  - Branche: Kunst
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Hoss
+    Organisation / Projekt: The Siren's Collective (LINK)
+    Publikationen: '**Archive (LINK)**Podcast (LINK)'
+    Social Media-Präsenz: '**Website (LINK)**Instagram (LINK)'
+    Vorname: Kim
+  - Branche: Kunst
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: van Wersch
+    Organisation / Projekt: The Siren's Collective (LINK)
+    Publikationen: '**Archive (LINK)**Podcast (LINK)'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Lise
+  - Branche: PR
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Hell
+    Organisation / Projekt: '**hell.karrer Agentur (LINK)**Frauen100 (LINK)**#PetitionC190
+      (LINK)'
+    Vorname: Janina
+  - Branche: PR
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Karrer
+    Organisation / Projekt: '**hell.karrer Agentur (LINK)**Frauen100 (LINK)**#PetitionC190
+      (LINK)'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Felicitas
+  - Branche: Schauspiel
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Karven
+    Organisation / Projekt: '**#PetitionC190 (LINK)'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Ursula
+  - Branche: Unternehmertum
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Haushalt
+    Nachname: Bora
+    Organisation / Projekt: '#DieNaechste (LINK)'
+    Publikationen: '**FOCUS Titelstory (LINK)**LINK zu Medienberichten'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Sarah
+  - Branche: PR
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Haushalt
+    Nachname: Brand
+    Organisation / Projekt: '#DieNaechste (LINK)'
+    Publikationen: '**FOCUS Titelstory (LINK)**LINK zu Medienberichten'
+    Social Media-Präsenz: '**LinkedIn (LINK)'
+    Vorname: Iris
+  - Branche: Management
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Haushalt
+    Nachname: Haerken
+    Organisation / Projekt: '#DieNaechste (LINK)'
+    Publikationen: '**FOCUS Titelstory (LINK)**LINK zu Medienberichten'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Anna Sophie
+  - Branche: Influencer:in
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Wittwer
+    Organisation / Projekt: '#TikToxic (LINK)'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Tara-Louise
+  - Branche: Wissenschaft
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Saxler
+    Organisation / Projekt: '#meetooscience (LINK)'
+    Social Media-Präsenz: '**Profil (LINK)'
+    Vorname: Franziska
+  - Branche: Wissenschaft
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Striewe
+    Organisation / Projekt: '#meetooscience (LINK)'
+    Social Media-Präsenz: '**Profil (LINK)'
+    Vorname: Victoria
+  - Branche: Influencerin
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Passmann
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Sophie
+  - Branche: Influencer
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Rezo
+  - Branche: Non-Profit
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Lunz
+    Organisation / Projekt: Centre for Feminist Foreign Policy (LINK)
+    Publikationen: '**Diverse Presseartikel (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Kristina
+  - Branche: Influencer
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Grischkat
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Fabian
+  - Branche: MdB
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Schauws
+    Vorname: Ulle
+  - Branche: Unternehmertum
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Haushalt
+    Nachname: Knaap
+    Vorname: Stefanie
+  - Branche: Aktivist
+    Kategorie Machtmissbrauch:
+    - Sexuell
+    Nachname: Malessa
+    Social Media-Präsenz: faqyou
+    Vorname: Roman
+  - Branche: Speakerin
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Gardini
+    Vorname: Silvia
+  Forschung:
+  - Branche: Forschung
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Suskind
+    Organisation / Projekt: Longwood University in Farmville, Virginia
+    Publikationen: '**LINK to Psychology Today'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Dorothy
+  - Branche: Forschung
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Zapf
+    Organisation / Projekt: Goethe-Universität Frankfurt
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Dieter
+  - Branche: Forschung
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Organisation / Projekt: Intl. Labor Organization
+    Publikationen: '**LINK to Study'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: ILO / Gallup / Lloyd’s Register Foundation
+  Journalist:innen & Autor:innen:
+  - Branche: Journalismus
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Loeffler
+    Vorname: Juliane
+  - Branche: Journalismus
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Backhaus
+    Vorname: Maike
+  - Branche: Journalismus
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Drepper
+    Vorname: Daniel
+  - Branche: Journalismus
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: von Salzen
+    Vorname: Claudia
+  - Branche: Journalismus
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: Stendera
+    Vorname: Pia
+  - Branche: Journalismus
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Arbeit
+    - Uni
+    Nachname: von Holt
+    Vorname: Lena
+  - Branche: Publizistik
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Bücker
+    Vorname: Theresa
+  - Branche: Publizistik
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Hirsbrunner
+    Vorname: Stefanie
+  Justist:innen:
+  - Branche: Recht
+    Kategorie Machtmissbrauch:
+    - Haushalt
+    Nachname: Hedayati
+    Organisation / Projekt: '**Website Kanzlei (LINK)'
+    Publikationen: '**Buch "Die stille Gewalt" (LINK)'
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: Asha
+  - Branche: Recht
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Clemm
+    Organisation / Projekt: Anwaltskanzlei (LINK)
+    Publikationen: '**Buch "Gegen Frauenhass" (LINK)**Buch "AktenEinsicht" (LINK)'
+    Social Media-Präsenz: '**Website (LINK)**Instagram (LINK)**Twitter (LINK)'
+    Vorname: Christina
+  - Branche: Recht
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Rendl
+    Organisation / Projekt: '**Frauendomäne (LINK)**Aufbau *vera Vertrtauensstelle in
+      Österreich (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Sophie
+  Netzwerke:
+  - Branche: Informationsaustausch
+    Contacted: Ja
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Social Media-Präsenz: '**Instagram (LINK)'
+    Vorname: jede7te
+  Psycholog:innen:
+  - Branche: Psychologie
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Bethlehem
+    Organisation / Projekt: '**Präsidentin der Berufsverbands deutscher Psycholog:innen
+      (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Thordis
+  - Branche: Psychologie
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Berwanger
+    Organisation / Projekt: '**Vizepräsidentin der Berufsverbands deutscher Psycholog:innen
+      (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Susanne
+  - Branche: Psychologie
+    Kategorie Machtmissbrauch:
+    - Allgemein
+    Nachname: Schellong
+    Publikationen: '**Artikel Tagesspiegel (LINK)'
+    Social Media-Präsenz: '**Website (LINK)'
+    Vorname: Julia
+  
+
