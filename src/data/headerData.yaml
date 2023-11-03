@@ -1,8 +1,8 @@
 headerTitle: "Projekt Vernetzung e.V."
 
 menuItems:
-  - text: "Startseite"
-    url: "/"
+#  - text: "Startseite"
+#    url: "/"
   - text: "Über Uns"
     url: "ueber-uns"
 #    subItems:
@@ -18,7 +18,7 @@ menuItems:
 #        url: "/contact"
   - text: "Glossar"
     url: "/glossar"
-  - text: "Anlaufstellen"
+  - text: "Interviews & Beiträge"
     url: "/anlaufstellen"
-  - text: "Interviews"
-    url: "/interviews"
+#  - text: "Interviews"
+#    url: "/interviews"
