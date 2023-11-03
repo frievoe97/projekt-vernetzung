@@ -1,53 +1,39 @@
 header: Glossar
-
 subheader: >
   Enthüllung des Unrechts: Ein Glossar für den Kampf gegen Machtmisshandlung
-  
 glossaryData:
   - term: "Allgemeine Begrifflichkeiten"
-    definition: >
-      Das Patriarchat ist ein gesellschaftliches System, in dem Männer die dominante
-      und vorherrschende Rolle in Politik, Wirtschaft, Kultur und anderen Bereichen
-      einnehmen und Frauen systematisch unterdrückt werden. Dieses System neigt dazu,
-      männliche Privilegien zu fördern und Frauen in vielen Aspekten des Lebens zu
-      benachteiligen, indem es Geschlechterstereotype aufrechterhält und
-      Geschlechterungleichheit verstärkt.
+    definition:
+      - title: "Machtmissbrauch"
+        text: "Machtmissbrauch ist der Missbrauch einer (ggf. nur gefühlten) Machtposition, um anderen Personen - über welche man Macht ausüben kann - zu schaden, sie zu schikanieren oder zu benachteiligen oder um sich selbst oder Günstlingen persönliche Vorteile zu verschaffen. Es gibt im deutschen Recht keine juristische Definition von Machtmissbrauch."
+        link: ""
 
+      - title: "Frauenhass"
+        text: "Sexismus ist die Grundlage für Frauenhass: eine emotionale Gewohnheit der Verachtung gegenüber Frauen, die zielgerichtet und aggressiv ist und letztlich auch Gewalt legitimiert. Mit Frauen sind nicht nur biologische Frauen gemeint, sondern alle, die sich als Frau identifizieren oder weiblich gelesen werden."
+        link: ""
+
+      - title: "Pathologischer Narzissmus (narzisstische Persönlichkeitsstörung)"
+        text: "Ein ausgeprägter Narzisst schaut häufig auf Mitmenschen herab und missbraucht sie gleichzeitig zum Erfüllen eigener Ziele. Gefühle, Wünsche und Bedürfnisse der anderen Person sind dabei zweitrangig. Der krankhafte Narzissmus ist somit eine Herausforderung in Partnerschaften und Freundschaften, in Ehen und Familien, im Berufsleben und in sonstigen zwischenmenschlichen Verbindungen. Er ist meist der Nährboden für unangenehme Auseinandersetzungen, unüberwindbare Konflikte, Feindschaften und Straftaten."
+        link: ""
+
+      - title: "Sexismus"
+        text: "Sexismus zeigt sich in vorurteilsbesetzten Einstellungen und diskriminierenden Verhaltensweisen gegenüber Personen aufgrund ihrer Geschlechtszugehörigkeit. In der am weitesten verbreiteten Version ist Sexismus die Diskriminierung von Frauen. Traditioneller Sexismus zeigt sich in der Unterstützung traditioneller Geschlechterrollen, ist von der Minderwertigkeit des weiblichen Geschlechts überzeugt und betont generell persönlichkeitsspezifische Unterschiede zwischen Männern und Frauen. Zum Beispiel: Die Frau ist emotional und fürsorglich, der Mann nach Außen gerichtet und tatkräftig."
+        link: ""
+  
   - term: "Psychische Gewalt"
-    definition: >
-      Gaslighting ist eine Form emotionaler Missbrauch, bei dem eine Person versucht,
-      die Realität einer anderen Person zu verzerren und sie dazu zu bringen, an
-      ihrem eigenen Verstand zu zweifeln. Dies geschieht oft durch wiederholte Lügen,
-      Manipulationen und das Infragestellen der Wahrnehmung der betroffenen Person.
-      Gaslighting kann schwerwiegende psychische Auswirkungen haben und ist ein
-      Verhalten, das dringend abgelehnt werden sollte.
-
+    definition:
+      - title: "Love Bombing"
+        text: "Love Bombing beschreibt ein Dating Phänomen ähnlich dem Gaslighting, hinter dem nicht die Absicht steht, eine liebevolle und respektvolle Beziehung zu führen. Vielmehr geht es der ausführenden Person darum, im Mittelpunkt zu stehen und Aufmerksamkeit zu erhalten. Im Grunde geht es dabei darum, das Gegenüber abhängig zu machen und dazu zu bringen, sich so zu verhalten wie man es sich wünscht."
+        link: ""
+        
   - term: "Körperliche Gewalt"
-    definition: >
-      Toxische Maskulinität bezieht sich auf eine gesellschaftliche Konstruktion von
-      Männlichkeit, die schädlich ist, da sie Männer dazu ermutigt, Aggression,
-      Dominanz und emotionale Zurückhaltung zu zeigen, anstatt gesunde emotionale
-      Ausdrucksfähigkeit. Dieses Konzept kritisiert die Idee, dass Männer stets
-      stoisch und unempfindlich sein sollten und fördert stattdessen die Vorstellung
-      von Männlichkeit, die sich auf Empathie, Vulnerabilität und positive
-      zwischenmenschliche Beziehungen stützt.
-
+    definition:
+      - title: "Femizide"
+        text: "Ein Femizid ist die Ermordung von Frauen aufgrund ihres Geschlechts. Jeden dritten Tag geschieht in Deutschland ein Femizid – weltweit sogar alle elf Minuten."
+        link: ""
+        
   - term: "Gewalt in der Arbeitswelt"
-    definition: >
-      Feminismus ist eine soziale und politische Bewegung, die sich für die
-      Gleichstellung der Geschlechter und die Beseitigung von Geschlechterdiskriminierung
-      einsetzt. Der Feminismus strebt an, soziale, politische und wirtschaftliche
-      Veränderungen herbeizuführen, um Frauen die gleichen Chancen und Rechte wie
-      Männern zu ermöglichen. Feministinnen setzen sich für die Beseitigung von
-      Geschlechterstereotypen, die Anerkennung von Frauenrechten und die Stärkung
-      von Frauen in verschiedenen Lebensbereichen ein.
+    definition: []
 
   - term: "Häusliche Gewalt"
-    definition: >
-      Belästigung umfasst unerwünschtes, aufdringliches Verhalten, das das
-      Wohlbefinden und die Sicherheit von Personen bedroht, insbesondere von Frauen,
-      und oft auf Geschlecht, Rasse oder sexuelle Orientierung basiert. Dieses
-      Verhalten kann verbal, physisch oder online auftreten und reicht von sexueller
-      Belästigung bis zu rassistischer oder sexistischer Diskriminierung. Die
-      Bekämpfung von Belästigung ist entscheidend für die Schaffung einer sicheren
-      und inklusiven Gesellschaft.
+    definition: []
