@@ -4,7 +4,7 @@ subheader: >
   Enthüllung des Unrechts: Ein Glossar für den Kampf gegen Machtmisshandlung
   
 glossaryData:
-  - term: "Patriarchat"
+  - term: "Allgemeine Begrifflichkeiten"
     definition: >
       Das Patriarchat ist ein gesellschaftliches System, in dem Männer die dominante
       und vorherrschende Rolle in Politik, Wirtschaft, Kultur und anderen Bereichen
@@ -13,7 +13,7 @@ glossaryData:
       benachteiligen, indem es Geschlechterstereotype aufrechterhält und
       Geschlechterungleichheit verstärkt.
 
-  - term: "Gaslighting"
+  - term: "Psychische Gewalt"
     definition: >
       Gaslighting ist eine Form emotionaler Missbrauch, bei dem eine Person versucht,
       die Realität einer anderen Person zu verzerren und sie dazu zu bringen, an
@@ -22,7 +22,7 @@ glossaryData:
       Gaslighting kann schwerwiegende psychische Auswirkungen haben und ist ein
       Verhalten, das dringend abgelehnt werden sollte.
 
-  - term: "toxische Maskulinität"
+  - term: "Körperliche Gewalt"
     definition: >
       Toxische Maskulinität bezieht sich auf eine gesellschaftliche Konstruktion von
       Männlichkeit, die schädlich ist, da sie Männer dazu ermutigt, Aggression,
@@ -32,7 +32,7 @@ glossaryData:
       von Männlichkeit, die sich auf Empathie, Vulnerabilität und positive
       zwischenmenschliche Beziehungen stützt.
 
-  - term: "Feminismus"
+  - term: "Gewalt in der Arbeitswelt"
     definition: >
       Feminismus ist eine soziale und politische Bewegung, die sich für die
       Gleichstellung der Geschlechter und die Beseitigung von Geschlechterdiskriminierung
@@ -42,7 +42,7 @@ glossaryData:
       Geschlechterstereotypen, die Anerkennung von Frauenrechten und die Stärkung
       von Frauen in verschiedenen Lebensbereichen ein.
 
-  - term: "Belästigung"
+  - term: "Häusliche Gewalt"
     definition: >
       Belästigung umfasst unerwünschtes, aufdringliches Verhalten, das das
       Wohlbefinden und die Sicherheit von Personen bedroht, insbesondere von Frauen,
@@ -51,46 +51,3 @@ glossaryData:
       Belästigung bis zu rassistischer oder sexistischer Diskriminierung. Die
       Bekämpfung von Belästigung ist entscheidend für die Schaffung einer sicheren
       und inklusiven Gesellschaft.
-
-  - term: "Frauenrechte"
-    definition: >
-      Frauenrechte sind Menschenrechte, die speziell auf die Gleichstellung und den
-      Schutz der Rechte von Frauen abzielen, einschließlich Rechten auf Bildung,
-      Gesundheit, Arbeit und politische Teilhabe. Die Anerkennung und Durchsetzung
-      von Frauenrechten sind entscheidend, um die Geschlechterungleichheit zu beseitigen
-      und sicherzustellen, dass Frauen in allen Aspekten des Lebens gleichberechtigt sind.
-
-  - term: "Empowerment"
-    definition: >
-      Empowerment bezieht sich auf die Befähigung von Personen, insbesondere Frauen,
-      durch Bildung, Ressourcen und Selbstbewusstsein, um Kontrolle über ihr eigenes
-      Leben und ihre Entscheidungen zu übernehmen. Es zielt darauf ab, individuelle
-      und kollektive Stärke zu fördern und Menschen die Fähigkeit zu geben, aktiv
-      an gesellschaftlichen Veränderungen teilzunehmen und ihre eigenen Ziele zu verfolgen.
-
-  - term: "Sexismus"
-    definition: >
-      Sexismus ist die Diskriminierung oder Vorurteile aufgrund des Geschlechts und
-      kann sich in verschiedenen Formen manifestieren, wie Stereotypisierung,
-      Vorurteile und Benachteiligung von Frauen. Sexismus kann subtil oder offensichtlich
-      sein und hat weitreichende Auswirkungen auf das Leben von Frauen in Bereichen
-      wie Bildung, Beruf und sozialer Interaktion. Die Bekämpfung von Sexismus ist ein
-      wichtiger Schritt zur Schaffung einer gerechten und inklusiven Gesellschaft.
-
-  - term: "Intersectionality"
-    definition: >
-      Intersectionality ist ein Konzept, das die Wechselwirkungen zwischen verschiedenen
-      Formen der Diskriminierung und Unterdrückung, einschließlich Geschlecht, Rasse,
-      Klasse und sexueller Orientierung, berücksichtigt. Es erkennt an, dass Menschen
-      mehreren Unterdrückungsformen gleichzeitig ausgesetzt sein können und dass diese
-      Faktoren miteinander verflochten sind. Intersectionality betont die Notwendigkeit,
-      soziale Gerechtigkeit auf eine umfassende und inklusive Weise anzugehen.
-
-  - term: "Feministische Solidarität"
-    definition: >
-      Feministische Solidarität bedeutet, dass Frauen und Feministinnen zusammenarbeiten,
-      um gemeinsame Ziele zu erreichen, und sich gegenseitig unterstützen, um
-      Geschlechtergleichheit und soziale Gerechtigkeit voranzutreiben. Dies schließt
-      die Anerkennung der Vielfalt feministischer Perspektiven und Erfahrungen ein
-      und betont die Bedeutung von gemeinsamer Arbeit zur Überwindung von Diskriminierung
-      und Ungerechtigkeit aufgrund des Geschlechts.
