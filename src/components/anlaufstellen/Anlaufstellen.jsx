@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useGlobalState } from "../data/GlobalState";
-import AnlaufstellenCard from "./elements/AnlaufstellenCard";
+import { useGlobalState } from "../../data/GlobalState";
+import AnlaufstellenCard from "../elements/AnlaufstellenCard";
 import yaml from "js-yaml";
 
 function Anlaufstellen() {
@@ -80,6 +80,7 @@ function Anlaufstellen() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
+        console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel

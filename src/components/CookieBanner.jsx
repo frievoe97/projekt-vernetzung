@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CookieBanner() {
-  const [acceptCookies, setAcceptCookies] = useState(false);
+  const [acceptCookies, setAcceptCookies] = useState(true);
 
   const handleAcceptCookies = () => {
     setAcceptCookies(true);

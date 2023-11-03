@@ -1,0 +1,31 @@
+.custom-shadow {
+  position: relative;
+}
+
+.custom-shadow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Breite des Schattens anpassen */
+  background: linear-gradient(to right, #bea5a9, transparent);
+}
+
+.custom-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Breite des Schattens anpassen */
+  background: linear-gradient(to left, #bea5a9, transparent);
+}
+
+.custom-shadow::before {
+  left: 0;
+  transform: skewX(-0deg);
+}
+
+.custom-shadow::after {
+  right: 0;
+  transform: skewX(0deg);
+}
