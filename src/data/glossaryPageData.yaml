@@ -5,35 +5,64 @@ glossaryData:
   - term: "Allgemeine Begrifflichkeiten"
     definition:
       - title: "Machtmissbrauch"
-        text: "Machtmissbrauch ist der Missbrauch einer (ggf. nur gefühlten) Machtposition, um anderen Personen - über welche man Macht ausüben kann - zu schaden, sie zu schikanieren oder zu benachteiligen oder um sich selbst oder Günstlingen persönliche Vorteile zu verschaffen. Es gibt im deutschen Recht keine juristische Definition von Machtmissbrauch."
+        text: >
+          Machtmissbrauch ist der Missbrauch einer (ggf. nur gefühlten)
+          Machtposition, um anderen Personen - über welche man Macht ausüben
+          kann - zu schaden, sie zu schikanieren oder zu benachteiligen oder
+          um sich selbst oder Günstlingen persönliche Vorteile zu verschaffen.
+          Es gibt im deutschen Recht keine juristische Definition von Machtmissbrauch.
         link: ""
-
       - title: "Frauenhass"
-        text: "Sexismus ist die Grundlage für Frauenhass: eine emotionale Gewohnheit der Verachtung gegenüber Frauen, die zielgerichtet und aggressiv ist und letztlich auch Gewalt legitimiert. Mit Frauen sind nicht nur biologische Frauen gemeint, sondern alle, die sich als Frau identifizieren oder weiblich gelesen werden."
+        text: >
+          Sexismus ist die Grundlage für Frauenhass: eine emotionale Gewohnheit
+          der Verachtung gegenüber Frauen, die zielgerichtet und aggressiv ist
+          und letztlich auch Gewalt legitimiert. Mit Frauen sind nicht nur
+          biologische Frauen gemeint, sondern alle, die sich als Frau
+          identifizieren oder weiblich gelesen werden.
         link: ""
-
       - title: "Pathologischer Narzissmus (narzisstische Persönlichkeitsstörung)"
-        text: "Ein ausgeprägter Narzisst schaut häufig auf Mitmenschen herab und missbraucht sie gleichzeitig zum Erfüllen eigener Ziele. Gefühle, Wünsche und Bedürfnisse der anderen Person sind dabei zweitrangig. Der krankhafte Narzissmus ist somit eine Herausforderung in Partnerschaften und Freundschaften, in Ehen und Familien, im Berufsleben und in sonstigen zwischenmenschlichen Verbindungen. Er ist meist der Nährboden für unangenehme Auseinandersetzungen, unüberwindbare Konflikte, Feindschaften und Straftaten."
+        text: >
+          Ein ausgeprägter Narzisst schaut häufig auf Mitmenschen herab und
+          missbraucht sie gleichzeitig zum Erfüllen eigener Ziele. Gefühle,
+          Wünsche und Bedürfnisse der anderen Person sind dabei zweitrangig.
+          Der krankhafte Narzissmus ist somit eine Herausforderung in
+          Partnerschaften und Freundschaften, in Ehen und Familien, im Berufsleben
+          und in sonstigen zwischenmenschlichen Verbindungen. Er ist meist der
+          Nährboden für unangenehme Auseinandersetzungen, unüberwindbare
+          Konflikte, Feindschaften und Straftaten.
         link: ""
-
       - title: "Sexismus"
-        text: "Sexismus zeigt sich in vorurteilsbesetzten Einstellungen und diskriminierenden Verhaltensweisen gegenüber Personen aufgrund ihrer Geschlechtszugehörigkeit. In der am weitesten verbreiteten Version ist Sexismus die Diskriminierung von Frauen. Traditioneller Sexismus zeigt sich in der Unterstützung traditioneller Geschlechterrollen, ist von der Minderwertigkeit des weiblichen Geschlechts überzeugt und betont generell persönlichkeitsspezifische Unterschiede zwischen Männern und Frauen. Zum Beispiel: Die Frau ist emotional und fürsorglich, der Mann nach Außen gerichtet und tatkräftig."
+        text: >
+          Sexismus zeigt sich in vorurteilsbesetzten Einstellungen und
+          diskriminierenden Verhaltensweisen gegenüber Personen aufgrund ihrer
+          Geschlechtszugehörigkeit. In der am weitesten verbreiteten Version ist
+          Sexismus die Diskriminierung von Frauen. Traditioneller Sexismus zeigt
+          sich in der Unterstützung traditioneller Geschlechterrollen, ist von der
+          Minderwertigkeit des weiblichen Geschlechts überzeugt und betont
+          generell persönlichkeitsspezifische Unterschiede zwischen Männern und
+          Frauen. Zum Beispiel: Die Frau ist emotional und fürsorglich, der Mann
+          nach Außen gerichtet und tatkräftig.
         link: ""
-  
   - term: "Psychische Gewalt"
     definition:
       - title: "Love Bombing"
-        text: "Love Bombing beschreibt ein Dating Phänomen ähnlich dem Gaslighting, hinter dem nicht die Absicht steht, eine liebevolle und respektvolle Beziehung zu führen. Vielmehr geht es der ausführenden Person darum, im Mittelpunkt zu stehen und Aufmerksamkeit zu erhalten. Im Grunde geht es dabei darum, das Gegenüber abhängig zu machen und dazu zu bringen, sich so zu verhalten wie man es sich wünscht."
+        text: >
+          Love Bombing beschreibt ein Dating Phänomen ähnlich dem Gaslighting,
+          hinter dem nicht die Absicht steht, eine liebevolle und respektvolle
+          Beziehung zu führen. Vielmehr geht es der ausführenden Person darum,
+          im Mittelpunkt zu stehen und Aufmerksamkeit zu erhalten. Im Grunde geht
+          es dabei darum, das Gegenüber abhängig zu machen und dazu zu bringen,
+          sich so zu verhalten wie man es sich wünscht.
         link: ""
-        
   - term: "Körperliche Gewalt"
     definition:
       - title: "Femizide"
-        text: "Ein Femizid ist die Ermordung von Frauen aufgrund ihres Geschlechts. Jeden dritten Tag geschieht in Deutschland ein Femizid – weltweit sogar alle elf Minuten."
+        text: >
+          Ein Femizid ist die Ermordung von Frauen aufgrund ihres Geschlechts.
+          Jeden dritten Tag geschieht in Deutschland ein Femizid – weltweit sogar
+          alle elf Minuten.
         link: ""
-        
   - term: "Gewalt in der Arbeitswelt"
     definition: []
-
   - term: "Häusliche Gewalt"
     definition: []
