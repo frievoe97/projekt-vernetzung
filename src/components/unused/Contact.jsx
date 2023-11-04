@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
 
 function Contact() {

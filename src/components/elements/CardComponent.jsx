@@ -1,9 +1,11 @@
 import React from "react";
-import Tags from "./Tags"; // Annahme: Hier wird die TagComponent importiert
+import Tags from "./Tags";
+import ButtonSmallRounded from "./ButtonSmallRounded";
+import "./CardComponent.css";
 
 const CardComponent = ({ imageUrl, title, text, link, tags }) => {
   return (
-    <div className="w-80 md:w-96 p-4 shrink-0 mx-auto md:mx-0">
+    <div className="min-w-80 md:w-96 p-4 shrink-0 mx-auto md:mx-0">
       <div className="bg-fm_weiss rounded-xl shadow-lg drop-shadow-xl overflow-hidden">
         <div className="w-full h-40 overflow-hidden">
           <img
@@ -13,12 +15,15 @@ const CardComponent = ({ imageUrl, title, text, link, tags }) => {
           />
         </div>
 
-        <div className="p-4">
-          <h2 className="text-lg font-semibold mb-4 text-base">{title}</h2>
+        <div className="p-4 ">
+          <h1 className="text-lg font-semibold mb-4 text-base text-left custom-break-word">
+            {title}
+          </h1>
+
           <p className="text-black mb-4">{text}</p>
-          <a href={link} className="text-base text-black hover:text-black">
-            Mehr erfahren
-          </a>
+          <div className="flex">
+            <ButtonSmallRounded buttonText="Mehr erfahren" link="/" />
+          </div>
         </div>
       </div>
     </div>

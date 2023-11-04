@@ -53,8 +53,12 @@ function Anlaufstellen_V2() {
    */
   const removeTag = (tag) => {
     // Filtert das Tag aus dem aktuellen Zustand 'searchData' und aktualisiert ihn
-    const filteredArray = searchData.tags.filter((element) => element !== tag);
+    const filteredArray = searchData.tags.filter(
+      (element) => element.toLowerCase() !== tag.toLowerCase()
+    );
+
     setSearchData({ tags: filteredArray, inputText: "" });
+    console.log("Updated Tags ", filteredArray);
   };
 
   /**
@@ -68,9 +72,9 @@ function Anlaufstellen_V2() {
   };
 
   // Wenn 'searchData' sich ändert, führe useEffect aus
-  useEffect(() => {
-    console.log("searchData has changed:", searchData);
-  }, [searchData]);
+  //   useEffect(() => {
+  //     console.log("searchData has changed:", searchData);
+  //   }, [searchData]);
 
   // Lade die Daten aus der YAML-Datei, wenn die Komponente montiert wird
   useEffect(() => {
@@ -121,6 +125,7 @@ function Anlaufstellen_V2() {
       <SearchBar
         onTagsChange={handleTagsChange}
         allTags={allTags}
+        searchData={searchData}
         addTagFromSuggestion={addTagFromSuggestion}
       />
 

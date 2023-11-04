@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CardComponent from "../elements/CardComponent";
 import { useGlobalState } from "../../data/GlobalState";
 import Tags from "../elements/Tags";
@@ -80,9 +80,9 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
   const { state, dispatch } = useGlobalState();
 
   // Wird aufgerufen, wenn sich searchData ändert
-  useEffect(() => {
-    console.log("searchData has changed:", searchData);
-  }, [searchData]);
+  //   useEffect(() => {
+  //     console.log("searchData has changed:", searchData);
+  //   }, [searchData]);
 
   // Wenn die Daten aus 'state.anlaufstellenData.googleDoc' noch nicht geladen sind, wird "Loading..." angezeigt
   if (state.anlaufstellenData.googleDoc === undefined) {
@@ -92,7 +92,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
   return (
     <div className="w-full px-0 md:px-12">
       <div className="w-full">
-        <h2 className="text-xl text-left font-bold w-fit flex flex-col md:flex-row items-start ml-4 md:ml-0">
+        <h2 className="text-xl text-left font-bold w-fit flex flex-col md:flex-row items-center ml-4 md:ml-0">
           Passend zu deiner Suche haben wir folgende Anlaufstellen gefunden:{" "}
           {objectToArray(searchData).map((tag, index) => (
             <Tags

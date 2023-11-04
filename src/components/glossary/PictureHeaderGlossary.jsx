@@ -1,16 +1,15 @@
 import React from "react";
 
-function PictureHeaderGlossary() {
+const PictureHeaderGlossary = () => {
+  const imageUrl =
+    "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-2.jpeg?raw=true";
+
   return (
     <div
-      className="bg-cover bg-center flex items-center justify-center saturate-100"
-      style={{
-        backgroundImage:
-          "url('https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-2.jpeg?raw=true')",
-        backgroundPosition: "center bottom", // Hier die Änderung
-      }}
+      className="py-0 md:py-8 md:px-4"
+      style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="p-4 md:rounded-lg md:m-8 mb-16 bg-fm_weiss shadow-2xl text-justify md:text-center p-8">
+      <div className="max-w-screen-xl mx-auto bg-white p-4 text-justify md:text-center rounded">
         <h1 className="text-2xl font-bold text-fm_blau mb-4">Glossar</h1>
         <h2 className="text-lg font-semibold">
           Hier möchten wir dir die wichtigsten Begriffe im Kontext von
@@ -45,6 +44,6 @@ function PictureHeaderGlossary() {
       </div>
     </div>
   );
-}
+};
 
 export default PictureHeaderGlossary;

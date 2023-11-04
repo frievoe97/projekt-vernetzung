@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Verwende react-router, um zur Kontaktseite zu navigieren
-import ButtonBigRounded from "./elements/ButtonBigRounded";
+import ButtonBigRounded from "../elements/ButtonBigRounded";
 
 const ContactBanner = ({ data }) => {
   return (

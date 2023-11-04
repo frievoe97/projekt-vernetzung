@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
 
 function Example() {

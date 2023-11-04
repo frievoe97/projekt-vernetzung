@@ -6,12 +6,12 @@ import {
   Routes,
   useParams,
 } from "react-router-dom";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import ButtonBigRounded from "./elements/ButtonBigRounded";
-import NotFoundComponent from "./NotFoundComponent";
+import ButtonBigRounded from "../elements/ButtonBigRounded";
+import NotFoundComponent from "../NotFoundComponent";
 
 function InterviewDetail() {
   const { state, dispatch } = useGlobalState();

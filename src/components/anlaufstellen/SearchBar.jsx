@@ -1,39 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Tags from "../elements/Tags";
 
-function SearchBar({ onTagsChange, allTags, addTagFromSuggestion }) {
-  const [currentTags, setCurrentTags] = useState([]);
+/**
+ * Die `SearchBar`-Komponente ermöglicht die Eingabe von Suchbegriffen und Tags zur Filterung von Anlaufstellen.
+ *
+ * @param {object} props - Die Eigenschaften (props) der Komponente.
+ * @param {function} props.onTagsChange - Eine Callback-Funktion, die aufgerufen wird, wenn sich die ausgewählten Tags ändern.
+ * @param {array} props.allTags - Eine Liste aller verfügbaren Tags.
+ * @param {function} props.addTagFromSuggestion - Eine Callback-Funktion zum Hinzufügen von Tags aus Vorschlägen.
+ * @param {object} props.searchData - Die aktuellen Suchdaten, einschließlich ausgewählter Tags und Suchtext.
+ * @param {array} props.searchData.tags - Eine Liste der ausgewählten Tags.
+ * @param {string} props.searchData.inputText - Der aktuelle Suchtext.
+ * @returns {JSX.Element} - Die gerenderte `SearchBar`-Komponente.
+ */
+function SearchBar({
+  onTagsChange,
+  allTags,
+  addTagFromSuggestion,
+  searchData,
+}) {
+  // Zustand für die Eingabe des Suchtexts
   const [inputText, setInputText] = useState("");
+  // Zustand für den Platzhaltertext im Eingabefeld
   const [placeholder, setPlaceholder] = useState(
     "Suche nach der passenden Anlaufstelle"
   );
 
+  /**
+   * Handler-Funktion, die aufgerufen wird, wenn sich der Wert im Eingabefeld ändert.
+   *
+   * @param {object} event - Das Ereignisobjekt des Input-Feldes.
+   */
   const handleChange = (event) => {
     const { value } = event.target;
     setInputText(value);
-    setTimeout(() => onTagsChange(currentTags, value), 0);
   };
 
+  /**
+   * Handler-Funktion, die aufgerufen wird, wenn eine Taste gedrückt wird.
+   * Wenn Enter oder Komma gedrückt wird, wird ein Tag hinzugefügt.
+   *
+   * @param {object} event - Das Ereignisobjekt der Tastatureingabe.
+   */
   const handleKeyDown = (event) => {
     if (event.key === "Enter" || event.key === ",") {
       const newInputText = inputText.trim();
-      if (!newInputText || currentTags.includes(newInputText)) {
+      if (!newInputText || searchData.tags.includes(newInputText)) {
         return;
       }
-      const newTags = [...currentTags, newInputText];
-      setCurrentTags(newTags);
+      const newTags = [...searchData.tags, newInputText];
       setInputText("");
-      setPlaceholder("");
+      setPlaceholder("Suche nach der passenden Anlaufstelle");
+      // Verzögerte Ausführung der `onTagsChange`-Funktion, um das Hinzufügen des Tags im UI abzuschließen
       setTimeout(() => onTagsChange(newTags, ""), 0);
     }
   };
 
-  useEffect(() => {
-    onTagsChange(currentTags, null);
-  }, [currentTags]);
-
   return (
-    <div className="w-full  mb-4">
+    <div className="w-full mb-4">
       <div className="pt-4 max-w-screen-xl px-2 md:px-16 mx-auto">
         <h2 className="text-xl md:my-8 font-bold">
           Finde die passende Anlaufstelle!
@@ -63,7 +87,7 @@ function SearchBar({ onTagsChange, allTags, addTagFromSuggestion }) {
         <div className="w-full">
           <input
             type="text"
-            className="w-full mb-0 md:mb-8 rounded-full border-2 bg-transparent"
+            className="w-full mb-2 md:mb-8 rounded-full border-2 bg-transparent placeholder-black"
             placeholder={placeholder}
             value={inputText}
             onChange={handleChange}

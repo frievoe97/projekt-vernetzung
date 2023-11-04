@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";

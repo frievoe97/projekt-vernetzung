@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
-import { useGlobalState } from "../data/GlobalState";
-import ButtonBigRounded from "./elements/ButtonBigRounded";
+import { useGlobalState } from "../../data/GlobalState";
+import ButtonBigRounded from "../elements/ButtonBigRounded";
 
 import Slideshow from "./Slideshow";
 import ContactBanner from "./ContactBanner";

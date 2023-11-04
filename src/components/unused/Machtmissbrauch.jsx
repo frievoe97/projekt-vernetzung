@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";

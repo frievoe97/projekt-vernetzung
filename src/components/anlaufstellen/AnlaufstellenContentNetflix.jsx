@@ -17,7 +17,7 @@ const AnlaufstellenContentNetflix = () => {
   }
 
   return (
-    <div className="w-full px-0 md:px-12">
+    <div className="w-full px-0">
       <div className="">
         <div className="w-full">
           {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
@@ -25,11 +25,11 @@ const AnlaufstellenContentNetflix = () => {
               {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
               {row.Name.length > 0 && (
                 <>
-                  <h2 className="text-xl text-left font-bold my-2 ml-4 md:ml-0">
+                  <h2 className="text-xl text-left font-bold my-2 ml-4">
                     {row.Kategorie}
                   </h2>
 
-                  <div className="flex overflow-x-auto items-stretch flex-row scroll-container pb-4">
+                  <div className="flex overflow-x-auto items-stretch flex-row scroll-container py-4">
                     {row.Name.map((card, index) => (
                       <CardComponent
                         key={index}

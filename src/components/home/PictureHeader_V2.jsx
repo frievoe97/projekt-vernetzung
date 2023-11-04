@@ -6,11 +6,11 @@ const PictureHeader_V2 = () => {
 
   return (
     <div
-      className="h-300px bg-cover bg-center flex justify-center items-center text-white text-24"
+      className="py-0 md:py-8 md:px-4"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="md:rounded-lg md:m-8 bg-fm_weiss shadow-2xl text-justify md:text-center p-8 max-w-screen-xl">
-        <h1 className="text-2xl font-bold text-fm_blau mb-4">
+      <div className="max-w-screen-xl mx-auto bg-white p-4 text-justify md:text-center rounded">
+        <h1 className="text-2xl font-bold text-left md:text-center text-fm_blau mb-4">
           Machtmissbrauch passiert überall.
         </h1>
         <h2 className="text-lg font-semibold">

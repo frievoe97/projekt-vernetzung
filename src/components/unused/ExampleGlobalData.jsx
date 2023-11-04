@@ -1,6 +1,6 @@
 // Beispielkomponente, um auf zusätzliche globale Daten zuzugreifen und sie zu ändern
 import React, { useState } from "react";
-import { useGlobalState } from "../data/GlobalState";
+import { useGlobalState } from "../../data/GlobalState";
 
 function ExampleGlobalData() {
   const { state, dispatch } = useGlobalState();
