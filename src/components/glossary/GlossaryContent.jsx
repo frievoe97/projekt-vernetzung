@@ -77,30 +77,25 @@ function GlossaryItem({ term, definition, searchTerm, data }) {
   return (
     <div className="p-4 md:p-6 border-b-2 border-black">
       <div
-        className="flex justify-between items-center"
+        className={`p-1 flex rounded justify-between items-center ${
+          isExpanded ? "shadow-xl bg-fm_helles_beige " : ""
+        }`}
         {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
       >
-        <h2 className="text-2xl font-semibold mb-2">{term}</h2>
+        <h2 className="text-2xl font-semibold my-2 ml-2">{term}</h2>
         <button className="bg-transparent">
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>
       </div>
-      <section {...getCollapseProps()}>
+      <section className="" {...getCollapseProps()}>
         {data.definition.map((data, index) => (
           <div key={index} className="my-4 mb-8">
             <h2 className="font-bold text-fm_blau mb-2">{data.title}</h2>
             <p className="mb-2 text-justify">{data.text}</p>
             <a>Weiterlesen</a>
           </div>
-
-          //   <p
-          //     className="text-justify"
-          //     dangerouslySetInnerHTML={{
-          //       __html: highlightSearchTerm(definition),
-          //     }}
-          //   />
         ))}
       </section>
     </div>

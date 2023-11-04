@@ -90,7 +90,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
   }
 
   return (
-    <div className="w-full bg-fm_weiss px-0 md:px-12">
+    <div className="w-full px-0 md:px-12">
       <div className="w-full">
         <h2 className="text-xl text-left font-bold w-fit flex flex-col md:flex-row items-start ml-4 md:ml-0">
           Passend zu deiner Suche haben wir folgende Anlaufstellen gefunden:{" "}

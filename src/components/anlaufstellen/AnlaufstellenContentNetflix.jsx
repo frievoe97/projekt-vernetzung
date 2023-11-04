@@ -17,14 +17,11 @@ const AnlaufstellenContentNetflix = () => {
   }
 
   return (
-    <div className="w-full bg-fm_weiss px-0 md:px-12">
+    <div className="w-full px-0 md:px-12">
       <div className="">
         <div className="w-full">
           {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
-            <div
-              key={rowIndex}
-              className="mb-0 divide-y-2 divide-fm_dunkelgrau"
-            >
+            <div key={rowIndex} className="mb-0 divide-y-2 divide-black">
               {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
               {row.Name.length > 0 && (
                 <>

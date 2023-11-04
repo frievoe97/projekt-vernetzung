@@ -33,7 +33,7 @@ function SearchBar({ onTagsChange, allTags, addTagFromSuggestion }) {
   }, [currentTags]);
 
   return (
-    <div className="w-full bg-fm_weiss mb-4">
+    <div className="w-full  mb-4">
       <div className="pt-4 max-w-screen-xl px-2 md:px-16 mx-auto">
         <h2 className="text-xl md:my-8 font-bold">
           Finde die passende Anlaufstelle!
@@ -63,7 +63,7 @@ function SearchBar({ onTagsChange, allTags, addTagFromSuggestion }) {
         <div className="w-full">
           <input
             type="text"
-            className="w-full mb-0 md:mb-8 rounded-full"
+            className="w-full mb-0 md:mb-8 rounded-full border-2 bg-transparent"
             placeholder={placeholder}
             value={inputText}
             onChange={handleChange}

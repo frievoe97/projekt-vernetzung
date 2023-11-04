@@ -2,15 +2,16 @@ import React from "react";
 
 function PictureHeader() {
   return (
-    <div
-      className="bg-cover bg-center flex items-center justify-center saturate-100"
-      style={{
-        backgroundImage:
-          "url('https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true')",
-        backgroundPosition: "center bottom", // Hier die Änderung
-      }}
-    >
-      <div className="md:rounded-lg md:m-8 mb-16 bg-fm_weiss shadow-2xl text-center p-8 max-w-screen-xl">
+    <div className="bg-fm_weiss relative">
+      <div
+        className="bg-cover bg-center h-20 md:h-full"
+        style={{
+          backgroundImage:
+            "url('https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true')",
+          backgroundPosition: "center bottom", // Hier die Änderung
+        }}
+      />
+      <div className="md:rounded-lg md:m-8 bg-fm_weiss shadow-2xl text-justify md:text-center p-8 max-w-screen-xl">
         <h1 className="text-2xl font-bold text-fm_blau mb-4">
           Machtmissbrauch passiert überall.
         </h1>
@@ -26,7 +27,7 @@ function PictureHeader() {
           Indem wir fachübergreifendes Wissen bündeln, möchten wir für
           Betroffene, ihr Umfeld sowie die Öffentlichkeit:
         </p>
-        <ul className="list-disc ml-6 mt-2">
+        <ul className="list-disc ml-4 md:ml-6 mt-2">
           <li className="text-left w-fit mx-auto">
             das Problem in seiner Drastik in allen Lebensbereichen und Branchen
             unserer Gesellschaft darstellen,

@@ -14,7 +14,7 @@ function Tags({ tag, onRemoveTag, onClickTag, removable = false }) {
   return (
     <div className="tag-container w-fit">
       <div
-        className="flex flex-row flex-nowrap items-center rounded-full m-1 ml-0 md:m-2 bg-fm_helles_beige"
+        className="flex flex-row flex-nowrap items-center rounded-full m-1 ml-0 md:m-2 bg-fm_weiss"
         onClick={handleClickTag}
       >
         <p className={removable ? "ml-2" : "mx-2"}>{tag}</p>

@@ -10,7 +10,7 @@ function PictureHeaderGlossary() {
         backgroundPosition: "center bottom", // Hier die Änderung
       }}
     >
-      <div className="p-4 rounded-lg m-8 mb-16 bg-fm_weiss shadow-2xl text-center p-8 max-w-screen-xl">
+      <div className="p-4 md:rounded-lg md:m-8 mb-16 bg-fm_weiss shadow-2xl text-justify md:text-center p-8">
         <h1 className="text-2xl font-bold text-fm_blau mb-4">Glossar</h1>
         <h2 className="text-lg font-semibold">
           Hier möchten wir dir die wichtigsten Begriffe im Kontext von

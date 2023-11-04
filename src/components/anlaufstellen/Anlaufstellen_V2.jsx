@@ -116,7 +116,7 @@ function Anlaufstellen_V2() {
   }, [state.anlaufstellenData]);
 
   return (
-    <div className="text-center text-color_font mt-0 pt-20">
+    <div className="text-center text-color_font mt-0 pt-20 bg-fm_helles_beige">
       {/* Rendere die Suchleiste und übergebe die entsprechenden Funktionen und Daten */}
       <SearchBar
         onTagsChange={handleTagsChange}
