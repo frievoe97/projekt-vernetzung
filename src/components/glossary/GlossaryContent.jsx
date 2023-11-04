@@ -33,9 +33,9 @@ function GlossaryContent() {
 
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
-    <div className="p-4 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
+    <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
       {state.glossaryPageData.glossaryData && (
-        <div className="grid text-left gap-0 md:gap-6 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-4 md:my-16">
+        <div className="grid text-left gap-0 md:gap-6 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-16">
           {state.glossaryPageData.glossaryData.map((item, index) => {
             return (
               <GlossaryItem
@@ -75,7 +75,7 @@ function GlossaryItem({ term, definition, searchTerm, data }) {
   };
 
   return (
-    <div className="p-6 border-b-2 border-black">
+    <div className="p-4 md:p-6 border-b-2 border-black">
       <div
         className="flex justify-between items-center"
         {...getToggleProps({
@@ -91,7 +91,7 @@ function GlossaryItem({ term, definition, searchTerm, data }) {
         {data.definition.map((data, index) => (
           <div key={index} className="my-4 mb-8">
             <h2 className="font-bold text-fm_blau mb-2">{data.title}</h2>
-            <p className="mb-2">{data.text}</p>
+            <p className="mb-2 text-justify">{data.text}</p>
             <a>Weiterlesen</a>
           </div>
 

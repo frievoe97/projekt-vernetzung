@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactCardFlip from "react-card-flip";
+import Slider from "react-slick";
 
 // Daten für die Karten
 const data = [
@@ -34,6 +35,17 @@ const data = [
     text: "Gerade Betroffene weniger sichtbarer Formen von Gewalt haben es schwerer, sich als solche zu identifizieren und die eigenen Erlebnisse in Worte zu fassen. Erfahrungsberichte anderer fassen das Erlebte in Worte und bieten so häufig erste Anlaufstellen für Austausch. Wir zeigen dir, welche Anlaufstellen es gibt.",
   },
 ];
+
+const settings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  dots: false,
+};
 
 const IconTextRows = () => {
   // State zum Verfolgen der angeklickten Karte
@@ -96,7 +108,24 @@ const IconTextRows = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 gap-0 block md:hidden border-2 border-black">
+        <div className="block md:hidden">
+          <Slider {...settings}>
+            {data.map((item, index) => (
+              <div key={index}>
+                <img
+                  className="w-24 object-cover mx-auto pt-4"
+                  src={item.iconPath}
+                  alt={`Icon ${index + 1}`}
+                />
+                <div className="flex-1 p-4">
+                  <p className="text-left font-bold mb-2">{item.title}</p>
+                  <p className="text-justify">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+        {/* <div className="grid grid-cols-2 gap-0 block md:hidden border-2 border-black">
           {data.map((item, index) => (
             <div
               key={index}
@@ -136,7 +165,7 @@ const IconTextRows = () => {
               </ReactCardFlip>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
