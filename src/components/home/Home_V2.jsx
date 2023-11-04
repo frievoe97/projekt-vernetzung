@@ -33,7 +33,7 @@ function Home_V2() {
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
-      <PictureHeader_V2 />
+      <PictureHeader_V2 data={state.startseiteData.pictureHeader} />
       <TextWithImage />
       <Wissensvermittlung />
       <MotivationAusEigenerErfahrung />

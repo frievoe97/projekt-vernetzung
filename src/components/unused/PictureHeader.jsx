@@ -1,14 +1,16 @@
 import React from "react";
 
-const PictureHeader_V2 = () => {
-  const imageUrl =
-    "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true"; // Hier die URL zum Hintergrundbild eintragen
-
+function PictureHeader() {
   return (
-    <div
-      className="h-300px bg-cover bg-center flex justify-center items-center text-white text-24"
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
+    <div className="bg-fm_weiss relative">
+      <div
+        className="bg-cover bg-center "
+        style={{
+          backgroundImage:
+            "url('https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true')",
+          backgroundPosition: "center bottom", // Hier die Änderung
+        }}
+      />
       <div className="md:rounded-lg md:m-8 bg-fm_weiss shadow-2xl text-justify md:text-center p-8 max-w-screen-xl">
         <h1 className="text-2xl font-bold text-fm_blau mb-4">
           Machtmissbrauch passiert überall.
@@ -42,6 +44,6 @@ const PictureHeader_V2 = () => {
       </div>
     </div>
   );
-};
+}
 
-export default PictureHeader_V2;
+export default PictureHeader;

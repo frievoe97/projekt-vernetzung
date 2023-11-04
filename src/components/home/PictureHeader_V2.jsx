@@ -1,8 +1,23 @@
 import React from "react";
 
-const PictureHeader_V2 = () => {
-  const imageUrl =
-    "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true"; // Hier die URL zum Hintergrundbild eintragen
+/**
+ * Diese Komponente rendert einen Bildkopf (Header) mit dynamischen Daten.
+ * @param {Object} data - Die Daten für den Bildkopf, einschließlich Titel, Untertitel, Beschreibung und Liste von Elementen.
+ * @param {string} data.imageUrl - Die URL für das Hintergrundbild.
+ * @param {string} data.text.title - Der Titel des Bildkopfs.
+ * @param {string} data.text.subtitle - Der Untertitel des Bildkopfs.
+ * @param {string} data.text.description - Die Beschreibung des Bildkopfs.
+ * @param {string[]} data.text.listItems - Eine Liste von Elementen für den Bildkopf.
+ * @returns {JSX.Element|null} - Die gerenderte Bildkopf-Komponente oder null, wenn keine Daten vorhanden sind.
+ */
+function PictureHeader_V2({ data }) {
+  // Überprüfe, ob die Daten vorhanden sind
+  if (!data) {
+    return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
+  }
+
+  const { title, subtitle, description, listItems } = data.text;
+  const imageUrl = data.imageUrl;
 
   return (
     <div
@@ -11,37 +26,24 @@ const PictureHeader_V2 = () => {
     >
       <div className="max-w-screen-xl mx-auto bg-white p-4 text-justify md:text-center rounded">
         <h1 className="text-2xl font-bold text-left md:text-center text-fm_blau mb-4">
-          Machtmissbrauch passiert überall.
+          {title}
         </h1>
-        <h2 className="text-lg font-semibold">
-          Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel.
-        </h2>
-        <p className="mt-4">
-          Als Beitrag zu mehr Prävention möchten wir hier die vielen
-          verschiedenen Facetten von Machtmissbrauch und dessen systemische und
-          gesellschaftliche Voraussetzungen abbilden.
-        </p>
+        <h2 className="text-lg font-semibold">{subtitle}</h2>
+        <p className="mt-4">{description}</p>
         <p className="mt-4">
           Indem wir fachübergreifendes Wissen bündeln, möchten wir für
           Betroffene, ihr Umfeld sowie die Öffentlichkeit:
         </p>
         <ul className="list-disc ml-4 md:ml-6 mt-2">
-          <li className="text-left w-fit mx-auto">
-            das Problem in seiner Drastik in allen Lebensbereichen und Branchen
-            unserer Gesellschaft darstellen,
-          </li>
-          <li className="text-left w-fit mx-auto">
-            möglichst präventiv und umfassend informieren, sensibilisieren und
-            Handlungsoptionen aufzeigen,
-          </li>
-          <li className="text-left w-fit mx-auto">
-            gemeinsam mit Dritten erörtern, was sich ändern muss und was Jede:r
-            einzelne beitragen kann.
-          </li>
+          {listItems.map((item, index) => (
+            <li key={index} className="text-left w-fit mx-auto">
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
   );
-};
+}
 
 export default PictureHeader_V2;
