@@ -1,0 +1,11 @@
+pictureHeader:
+  imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true"
+  text:
+    title: "Machtmissbrauch passiert überall."
+    subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel."
+    description: >
+      Als Beitrag zu mehr Prävention möchten wir hier die vielen verschiedenen Facetten von Machtmissbrauch und dessen systemische und gesellschaftliche Voraussetzungen abbilden.
+    listItems:
+      - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
+      - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
+      - "gemeinsam mit Dritten erörtern, was sich ändern muss und was Jede:r einzelne beitragen kann."

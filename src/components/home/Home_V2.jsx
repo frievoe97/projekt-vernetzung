@@ -15,6 +15,7 @@ function Home_V2() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
+        console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData,
