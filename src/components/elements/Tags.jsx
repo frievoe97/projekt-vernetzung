@@ -1,29 +1,31 @@
 import React from "react";
 import { MdClose } from "react-icons/md"; // Importiere das Schließensymbol
 
-function Tags({ tag, onRemoveTag, removable = false }) {
-  const handleRemoveTag = (tag) => {
+function Tags({ tag, onRemoveTag, onClickTag, removable = false }) {
+  const handleRemoveTag = () => {
     onRemoveTag(tag);
   };
 
+  const handleClickTag = () => {
+    if (onClickTag == undefined) return;
+    onClickTag(tag);
+  };
+
   return (
-    <div className="tags-container">
-      <div className="flex flex-wrap">
-        <div
-          className={`bg-fm_grau text-fm_weiss px-2 py-1 rounded-full mr-2 mb-2 text-sm font-bold relative ${
-            removable ? "pr-10" : "pr-2"
-          }`}
-        >
-          {tag}
-          {removable && (
-            <button
-              className="text-red-500 absolute right-0 top-0 h-full px-auto px-2 py-0 rounded-full border-0 border-black"
-              onClick={() => handleRemoveTag(tag)}
-            >
-              <MdClose />
-            </button>
-          )}
-        </div>
+    <div className="tag-container w-fit">
+      <div
+        className="flex flex-row flex-nowrap items-center rounded-full m-1 ml-0 md:m-2 bg-fm_helles_beige"
+        onClick={handleClickTag}
+      >
+        <p className={removable ? "ml-2" : "mx-2"}>{tag}</p>
+        {removable && (
+          <button
+            className="p-0 rounded-full mx-1 bg-fm_grau border-none hover:border-none"
+            onClick={handleRemoveTag}
+          >
+            <MdClose />
+          </button>
+        )}
       </div>
     </div>
   );

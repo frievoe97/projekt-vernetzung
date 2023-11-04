@@ -38,7 +38,7 @@ function Mission_V2() {
   }, [dispatch]);
 
   return (
-    <div className="text-center text-color_font bg-transparent pt-20">
+    <div className="text-center text-color_font bg-transparent pt-16">
       <MissionTitel />
       <IconSection />
       <WarumJetztWarumWir />

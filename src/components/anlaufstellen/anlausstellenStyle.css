@@ -29,3 +29,10 @@
   right: 0;
   transform: skewX(0deg);
 }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Horizontales Scrollen ermöglichen */
+  overflow-y: hidden; /* Vertikales Scrollen ausblenden */
+  white-space: nowrap; /* Verhindert das Umbrechen des Inhalts */
+}
