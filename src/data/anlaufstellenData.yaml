@@ -226,6 +226,36 @@ googleDoc:
         Tags: []
       - Name: Psychotherapeut:innen
         Tags: []
+      - Name: Rotes Kreuz
+        Tags:
+          - Kategorie
+          - Name
+          - Opferhilfe
+          - Erste Hilfe
+      - Name: Caritas
+        Tags:
+          - Kategorie
+          - Name
+          - Opferhilfe
+          - Erste Hilfe
+          - Körperliche Gewalt
+          - Psychische Gewalt
+      - Name: Frauennotruf
+        Tags:
+          - Kategorie
+          - Name
+          - Opferhilfe
+          - Erste Hilfe
+          - Gewalt gegen Frauen
+          - Sexuelle Belästigung
+      - Name: Gewerkschaft
+        Tags:
+          - Kategorie
+          - Name
+          - Opferhilfe
+          - Erste Hilfe
+          - Gewalt am Arbeitsplatz
+          - Mobbing
   - Kategorie: Gewalt gegen Frauen
     Name:
       - Name: Hilfetelefon Gewalt gegen Frauen

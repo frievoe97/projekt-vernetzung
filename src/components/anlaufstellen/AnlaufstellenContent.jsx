@@ -281,38 +281,32 @@ const AnlaufstellenContent = () => {
     <div className="w-full bg-fm_altrosa p-12">
       <div className="">
         <div className="w-full">
-          {Object.keys(state.anlaufstellenData.googleDoc).map(
-            (row, rowIndex) => (
-              <div key={rowIndex} className="mb-0">
-                <h2 className="text-xl text-left font-bold my-2">{row}</h2>
-                {/* custom-shadow */}
-                <div className="">
-                  <div className="flex overflow-x-auto items-stretch flex-row">
-                    {state.anlaufstellenData.googleDoc[row].map(
-                      (card, index) => (
-                        <CardComponent
-                          key={index}
-                          imageUrl={
-                            "https://picsum.photos/200/300?random=" +
-                            (rowIndex + 1) * (index + 1)
-                          }
-                          title={
-                            card.Vorname && card.Nachname
-                              ? card.Vorname + " " + card.Nachname
-                              : card.Vorname || card.Nachname || ""
-                          }
-                          text={card.text}
-                          link={card.link}
-                          tags={card["Kategorie Machtmissbrauch"]}
-                          removable={false}
-                        />
-                      )
-                    )}
-                  </div>
+          {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
+            <div key={rowIndex} className="mb-0">
+              <h2 className="text-xl text-left font-bold my-2">
+                {row.Kategorie}
+              </h2>
+              {/* custom-shadow */}
+              <div className="">
+                <div className="flex overflow-x-auto items-stretch flex-row">
+                  {row.Name.map((card, index) => (
+                    <CardComponent
+                      key={index}
+                      imageUrl={
+                        "https://picsum.photos/200/300?random=" +
+                        (rowIndex + 1) * (index + 1)
+                      }
+                      title={card.Name}
+                      text={card.text}
+                      link={card.link}
+                      tags={card.Tagss}
+                      removable={false}
+                    />
+                  ))}
                 </div>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
