@@ -4,7 +4,7 @@ import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
 import IconSection from "./IconSection";
 import MissionTitel from "./MissionTitel";
-import WarumJetztWarumWir from "./WarumJetztWarumWIr";
+import WarumJetztWarumWir from "./WarumJetztWarumWir";
 
 function Mission_V2() {
   const { state, dispatch } = useGlobalState();
