@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const IconTextRows = ({ data }) => {
   if (!data) {
@@ -43,11 +45,6 @@ const IconTextRows = ({ data }) => {
     };
   }, [clickedCardIndex, userClicked, data]);
 
-  // const handleUserClick = (index) => {
-  //   setClickedCardIndex(index);
-  //   setUserClicked(true);
-  // };
-
   return (
     <div className="w-full bg-fm_helles_beige">
       <div className="max-w-screen-xl mx-auto md:p-4 ">
@@ -70,21 +67,21 @@ const IconTextRows = ({ data }) => {
           ))}
         </div>
         <div className="block md:hidden">
-          {/* <Slider {...settings}> */}
-          {data.data.map((item, index) => (
-            <div key={index}>
-              <img
-                className="w-24 object-cover mx-auto pt-4"
-                src={item.iconPath}
-                alt={`Icon ${index + 1}`}
-              />
-              <div className="flex-1 p-4">
-                <p className="text-left font-bold mb-2">{item.title}</p>
-                <p className="text-justify">{item.text}</p>
+          <Slider {...settings}>
+            {data.data.map((item, index) => (
+              <div key={index}>
+                <img
+                  className="w-24 object-cover mx-auto pt-4"
+                  src={item.iconPath}
+                  alt={`Icon ${index + 1}`}
+                />
+                <div className="flex-1 p-4">
+                  <p className="text-left font-bold mb-2">{item.title}</p>
+                  <p className="text-justify">{item.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
-          {/* </Slider> */}
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
