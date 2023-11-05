@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import "./GlossaryContent.css";
 
 const GlossaryContent = ({ data }) => {
   if (!data) {
@@ -35,7 +36,7 @@ function GlossaryItem({ term, data }) {
     <div className="p-4 md:p-6 border-b-2 border-black">
       <div
         className={`p-1 flex rounded justify-between items-center ${
-          isExpanded ? "shadow-xl bg-fm_helles_beige " : ""
+          isExpanded ? "expanded color-animation  shadow-animation" : ""
         }`}
         {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),

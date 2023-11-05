@@ -1,0 +1,13 @@
+/* Standard-Stil */
+.expanded {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Stil, wenn erweitert */
+.expanded.shadow-animation {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expanded.color-animation {
+  background-color: #efe9ea; /* Ändere diese Farbe entsprechend deiner Anforderungen */
+}
