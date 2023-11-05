@@ -3,14 +3,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/**
+ * Eine Komponente für eine Bild-Text-Slideshow.
+ *
+ * @param {Object} data - Die Daten für die Slideshow.
+ * @param {Array} data.data - Ein Array von Slideshow-Einträgen.
+ * @returns {JSX.Element|null} - Die Slideshow-Komponente oder null, wenn keine Daten vorhanden sind.
+ */
 const IconTextRows = ({ data }) => {
-  if (!data) {
-    return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
+  // Wenn keine Daten vorhanden sind oder das Datenarray leer ist, gibt die Komponente null zurück.
+  if (!data || data.data.length === 0) {
+    return null;
   }
 
   const [clickedCardIndex, setClickedCardIndex] = useState(null);
   const [userClicked, setUserClicked] = useState(false);
 
+  // Konfigurationseinstellungen für den Slider.
   const settings = {
     infinite: true,
     speed: 500,
@@ -22,17 +31,18 @@ const IconTextRows = ({ data }) => {
     dots: false,
   };
 
+  // Effekt für das Zurücksetzen des ausgewählten Index nach Inaktivität.
   useEffect(() => {
     let timeoutId;
 
     const resetClickedCardIndex = () => {
       if (!userClicked) {
-        const randomIndex = Math.floor(Math.random() * data.length);
+        const randomIndex = Math.floor(Math.random() * data.data.length);
         setClickedCardIndex(randomIndex);
       }
     };
 
-    const cardTimeout = 3000; // 5 Sekunden Inaktivität (kann angepasst werden)
+    const cardTimeout = 5000; // 5 Sekunden Inaktivität (kann angepasst werden)
     const resetTimer = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(resetClickedCardIndex, cardTimeout);
@@ -47,7 +57,8 @@ const IconTextRows = ({ data }) => {
 
   return (
     <div className="w-full bg-fm_helles_beige">
-      <div className="max-w-screen-xl mx-auto md:p-4 ">
+      <div className="max-w-screen-xl mx-auto md:p-4">
+        {/* Desktop-Ansicht */}
         <div className="my-8 md:block hidden">
           {data.data.map((item, index) => (
             <div className="flex items-start mb-8" key={index}>
@@ -66,6 +77,8 @@ const IconTextRows = ({ data }) => {
             </div>
           ))}
         </div>
+
+        {/* Mobile-Ansicht */}
         <div className="block md:hidden">
           <Slider {...settings}>
             {data.data.map((item, index) => (

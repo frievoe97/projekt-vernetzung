@@ -1,12 +1,17 @@
-footer:
-  contactTitle: "Kontakt"
-  email: "projekt-vernetzung@email.com"
-  location: "Berlin, Deutschland"
-  copyright: "© 2023 Projekt Vernetzung"
-  newsletterTitle: "Newsletter"
-  newsletterText: "Registriere dich hier für unseren Newsletter!"
-  newsletterButton: "Jetzt registrieren!"
-  links:
-    - { text: "Impressum", url: "#" }
-    - { text: "Datenschutz", url: "#" }
-    - { text: "Nutzungsbedingungen", url: "#" }
+contact:
+  email: projekt-vernetzung@email.com
+  location: Berlin, Deutschland
+  copyright: © 2023 Projekt Vernetzung
+
+newsletter:
+  heading: Newsletter
+  text: Registriere dich hier für unseren Newsletter!
+  buttonLabel: Jetzt registrieren!
+
+links:
+  - label: Impressum
+    url: #
+  - label: Datenschutz
+    url: #
+  - label: Nutzungsbedingungen
+    url: #

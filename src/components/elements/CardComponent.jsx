@@ -5,7 +5,7 @@ import "./CardComponent.css";
 
 const CardComponent = ({ imageUrl, title, text, link, tags }) => {
   return (
-    <div className="min-w-80 md:w-96 p-4 shrink-0 mx-auto md:mx-0">
+    <div className="w-80 md:w-96 p-4 shrink-0 mx-auto md:mx-0">
       <div className="bg-fm_weiss rounded-xl shadow-lg drop-shadow-xl overflow-hidden">
         <div className="w-full h-40 overflow-hidden">
           <img

@@ -24,23 +24,28 @@ function PictureHeader_V2({ data }) {
       className="py-0 md:py-8 md:px-4"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="max-w-screen-xl mx-auto bg-white p-4 text-justify md:text-center rounded">
-        <h1 className="text-2xl font-bold text-left md:text-center text-fm_blau mb-4">
-          {title}
-        </h1>
-        <h2 className="text-lg font-semibold">{subtitle}</h2>
-        <p className="mt-4">{description}</p>
-        <p className="mt-4">
-          Indem wir fachübergreifendes Wissen bündeln, möchten wir für
-          Betroffene, ihr Umfeld sowie die Öffentlichkeit:
-        </p>
-        <ul className="list-disc ml-4 md:ml-6 mt-2">
-          {listItems.map((item, index) => (
-            <li key={index} className="text-left w-fit mx-auto">
-              {item}
-            </li>
-          ))}
-        </ul>
+      <div className="max-w-screen-xl mx-auto bg-white  text-justify md:text-center rounded">
+        <div className="block md:hidden">
+          <img src={imageUrl} alt="" className="h-24 w-full object-cover" />
+        </div>
+        <div className="p-4">
+          <h1 className="text-2xl font-bold text-left md:text-center text-fm_blau mb-4">
+            {title}
+          </h1>
+          <h2 className="text-lg font-semibold">{subtitle}</h2>
+          <p className="mt-4">{description}</p>
+          <p className="mt-4">
+            Indem wir fachübergreifendes Wissen bündeln, möchten wir für
+            Betroffene, ihr Umfeld sowie die Öffentlichkeit:
+          </p>
+          <ul className="list-disc ml-4 md:ml-6 mt-2">
+            {listItems.map((item, index) => (
+              <li key={index} className="text-left w-fit mx-auto">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
