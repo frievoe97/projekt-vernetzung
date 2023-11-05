@@ -27,3 +27,12 @@ wissensvermittlung:
     - "Auf diese Weise sollen Betroffene einfacher Zugang zu relevanten Informationen erhalten, um die eigene Erfahrung besser einordnen und objektiver betrachten zu können. Um früher zu erkennen, wo Grenzen überschritten werden. Und um frühestmöglich Worte für das Erlebte zu finden und zu handeln – denn aktuell ist das alles andere als einfach."
   buttonText: "Zu unseren Interviews & Beiträgen"
   buttonLink: "/"
+
+motivationAusEigenerErfahrung:
+  title: "Motivation aus eigener Betroffenenerfahrung"
+  imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-4.jpeg?raw=true"
+  paragraphs:
+    - "Bei Projekt Vernetzung handelt es sich um eine private Content-Initiative. Die Initiatorinnen haben im privaten wie auch beruflichen Lebensbereich in Deutschland Erfahrungen mit Machtmissbrauch gemacht."
+    - "Bei deren Aufarbeitung fielen uns einige gesellschaftliche Missstände auf, die wir als Privatpersonen angehen und zum Besseren verändern können. Wesentliche Mängel sind mangelnde Aufklärung und Sensibilisierung. Aus diesem persönlichen Beweggrund haben wir uns genau das zum Ziel gesetzt."
+  buttonText: "Weitere Informationen"
+  buttonLink: "/"
