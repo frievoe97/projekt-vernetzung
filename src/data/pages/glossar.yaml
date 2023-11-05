@@ -1,3 +1,14 @@
+# PictureHeaderGlossary.yaml
+pictureHeaderGlossary:
+  imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/images/Image-2.jpeg?raw=true"
+  title: "Glossar"
+  subtitle: "Hier möchten wir dir die wichtigsten Begriffe im Kontext von Machtmissbrauch erläutern"
+  descriptions:
+    - >
+      Betroffene sollen auf dieser Seite schneller und einfacher Informationen finden, die auf ihre persönliche Situation zutreffen könnten. Davon ausgehend, können sie sich weiter informieren und insbesondere das in Worte fassen, was oftmals schwer in Worte zu fassen ist.
+    - >
+      Wir erheben keinen Anspruch auf Vollständigkeit. Unsere Auswahl an Begrifflichkeiten wird kontinuierlich auf den Prüfstand gestellt. Für konstruktive Anregungen und Ideen sind wir jederzeit dankbar.
+
 glossaryData:
   - term: "Allgemeine Begrifflichkeiten"
     definition:
