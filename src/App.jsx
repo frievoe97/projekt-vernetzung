@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Adding a # to the URL (feels like an ugly fix but its working...)
+import React from "react";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Anlaufstellen_V2 from "./components/anlaufstellen/Anlaufstellen_V2";
 import Mission_V2 from "./components/mission/Mission_V2";
-import { GlobalStateProvider } from "./data/GlobalState"; // Importieren Sie den AnlaufstellenProvider und useGlobalState
+import { GlobalStateProvider } from "./data/GlobalState";
 import NotFoundComponent from "./components/NotFoundComponent";
 import Home_V2 from "./components/home/Home_V2";
 import Gloassar_V2 from "./components/glossary/Gloassar_V2";
 
-// import "./App.css";
-
+/**
+ * App ist die Hauptkomponente der Anwendung und definiert die Routing-Struktur.
+ */
 function App() {
   return (
     <Router>
@@ -17,14 +18,24 @@ function App() {
         {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
         <GlobalStateProvider>
           <Routes>
+            {/* Startseite */}
             <Route path="/" element={<Home_V2 />} />
+
+            {/* Anlaufstellen */}
             <Route path="/anlaufstellen" element={<Anlaufstellen_V2 />} />
+
+            {/* Über uns */}
             <Route path="/ueber-uns" element={<Mission_V2 />} />
+
+            {/* Glossar */}
+            <Route path="/glossar" element={<Gloassar_V2 />} />
+
             {/* <Route
               path="/interviews/:organizationName"
               element={<InterviewDetail />}
             /> */}
-            <Route path="/glossar" element={<Gloassar_V2 />} />
+
+            {/* Fehlerseite für unbekannte Routen */}
             <Route
               path="*"
               element={
@@ -36,9 +47,8 @@ function App() {
               }
             />
           </Routes>
-        </GlobalStateProvider>{" "}
+        </GlobalStateProvider>
       </Layout>
-      {/* <CookieBanner /> */}
     </Router>
   );
 }
