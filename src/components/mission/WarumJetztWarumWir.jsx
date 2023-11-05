@@ -5,6 +5,8 @@ const WarumJetztWarumWir = ({ data }) => {
     return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
   }
 
+  console.log(data);
+
   const { warumJetzt, warumWir, kontaktText } = data;
 
   return (
@@ -22,7 +24,12 @@ const WarumJetztWarumWir = ({ data }) => {
             <p className="mb-4">{item.text}</p>
           </div>
         ))}
-        <h2 className="font-bold mt-8 mb-4">{kontaktText}</h2>
+        {kontaktText.map((item, index) => (
+          <div key={index}>
+            <h2 className="font-bold mt-8 mb-4">{item.title}</h2>
+            <p className="mb-4">{item.text}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

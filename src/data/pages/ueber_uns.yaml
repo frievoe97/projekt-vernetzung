@@ -38,4 +38,6 @@ warumJetztWarumWir:
       text: "Sind Betroffene aufgeklärt, können sie die eigene Situation früher als ungesund erkennen. Sie haben weniger Scheu, Hilfe durch das Umfeld und durch Strukturen wie z.B. die Opferhilfe zu beanspruchen. Und dies noch bevor ihr Fall potenziell rechtsrelevant wird. In Zeiten von überlasteten Institutionen oder anhaltenden gesellschaftlichen Tendenzen wie der sogenannten “Täter-Opfer-Umkehr” vor Gerichten halten wir Hilfe zur Selbsthilfe für essenziell."
     - title: "Anregung zum Sprechen"
       text: "Und letztlich hoffen wir, viel mehr Menschen – Betroffene und Interessierte gleichermaßen – zum Nachdenken und letztlich zum Sprechen anzuregen. Nur so können Spielräume für Täter Schritt für Schritt eingeschränkt werden."
-  kontaktText: "Du möchtest mehr erfahren, einen Beitrag leisten oder deine Geschichte erzählen? Dann nimm sehr gerne Kontakt mit uns auf oder abonniere unseren Newsletter!"
+  kontaktText:
+    - title: "Du möchtest mehr erfahren, einen Beitrag leisten oder deine Geschichte erzählen?"
+      text: "Dann nimm sehr gerne Kontakt mit uns auf oder abonniere unseren Newsletter!"
