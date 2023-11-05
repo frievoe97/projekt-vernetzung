@@ -1,26 +1,36 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useGlobalState } from "../data/GlobalState";
-
 import yaml from "js-yaml";
 
 const Navbar = () => {
   const { state, dispatch } = useGlobalState();
-  const [openMenu, setOpenMenu] = useState(false); // Zustand für das Hauptmenü
-  const [openSubmenu, setOpenSubmenu] = useState(null); // Zustand für die Untermenüs
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
 
-  const updateWindowWidth = () => {
-    // console.log(window.innerWidth);
-    if (window.innerWidth <= 840) {
-      setOpenMenu(false);
+  // Funktion zum Umschalten des Hauptmenüs
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  // Funktion zum Umschalten der Untermenüs
+  const toggleSubmenu = (index, closeMenu) => {
+    if (openSubmenu === index && closeMenu) {
+      setOpenSubmenu(null);
     } else {
-      setOpenMenu(true);
+      setOpenSubmenu(index);
     }
   };
 
   useEffect(() => {
     // Funktion, um die Bildschirmbreite zu aktualisieren
-    updateWindowWidth();
+    const updateWindowWidth = () => {
+      if (window.innerWidth <= 840) {
+        setOpenMenu(false);
+      } else {
+        setOpenMenu(true);
+      }
+    };
 
     // Event-Listener für das "resize"-Event hinzufügen
     window.addEventListener("resize", updateWindowWidth);
@@ -31,40 +41,25 @@ const Navbar = () => {
     };
   }, []);
 
-  // Funktion zum Umschalten des Hauptmenüs
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
-  // Funktion zum Umschalten der Untermenüs
-  // disableMenu -> dont toggle the menu off, when you click the arrow for the subitems...
-  const toggleSubmenu = (index, disableMenu) => {
-    setOpenSubmenu((prevOpenSubmenu) =>
-      prevOpenSubmenu === index ? null : index
-    );
-    if (disableMenu != false) {
-      updateWindowWidth();
-    }
-  };
-
-  const fetchAndParseYamlData = (url, dispatch, actionType) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((yamlText) => {
-        const parsedData = yaml.load(yamlText);
-        dispatch({
-          type: actionType,
-          payload: parsedData, // Verwenden Sie den übergebenen dataKey als Schlüssel
-        });
+  const fetchAndParseYamlData = async (url, dispatch, actionType) => {
+    try {
+      const response = await fetch(url);
+      const yamlText = await response.text();
+      const parsedData = yaml.load(yamlText);
+      dispatch({
+        type: actionType,
+        payload: parsedData,
       });
+    } catch (error) {
+      console.error("Fehler beim Abrufen und Parsen der YAML-Daten", error);
+    }
   };
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/headerData.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/headerData.yaml",
       dispatch,
-      "SET_HEADER_DATA",
-      "headerData" // Übergeben Sie den Namen des Schlüssels
+      "SET_HEADER_DATA"
     );
   }, [dispatch]);
 
@@ -75,7 +70,7 @@ const Navbar = () => {
   return (
     <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 align-middle">
-        <div className="flex flex-row align-middle">
+        <div className="flex flex-row items-center">
           <img className="h-7" src="/logo-4.png" alt="" />
 
           <Link
@@ -89,7 +84,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text-color_header_font rounded-lg md:hidden  focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border-none"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text-color_header_font rounded-lg md:hidden focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border-none"
           aria-controls="navbar-dropdown"
           aria-expanded={openMenu}
         >
@@ -112,7 +107,7 @@ const Navbar = () => {
         </button>
         <div
           className={`absolute top-full left-0 w-full md:relative md:w-auto ${
-            openMenu ? "block" : "hidden" // Zeigen oder verbergen Sie das Hauptmenü basierend auf openMenu
+            openMenu ? "block" : "hidden"
           }`}
           id="navbar-dropdown"
         >
@@ -122,9 +117,7 @@ const Navbar = () => {
                 {item.subItems ? (
                   <button
                     onClick={() => toggleSubmenu(index, false)}
-                    id={`dropdownNavbarLink${index}`}
-                    data-dropdown-toggle={`dropdownNavbar${index}`}
-                    className={`z-10 flex text-color_header_font items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent  md:bg-transparent md:border-0 md:p-0 md:w-auto hover:underline`}
+                    className={`z-10 flex text-color_header_font items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:bg-transparent md:border-0 md:p-0 md:w-auto hover:underline`}
                   >
                     {item.text}{" "}
                     <svg
@@ -155,12 +148,10 @@ const Navbar = () => {
 
                 {item.subItems && (
                   <div
-                    id={`dropdownNavbar${index}`}
                     className={`z-10 ${
                       openSubmenu === index ? "block" : "hidden"
                     } font-normal bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 relative`}
                   >
-                    {/* Style für die dropdown Liste */}
                     <ul
                       className="z-20 text-color_header_font py-2 text-sm  md:absolute md:bg-white md:border md:border-black md:mt-4"
                       aria-labelledby={`dropdownLargeButton${index}`}
