@@ -15,7 +15,6 @@ function Home_V2() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData,
@@ -29,6 +28,7 @@ function Home_V2() {
       dispatch,
       "SET_STARTSEITE_DATA"
     );
+    console.log("Load Startseite Data: ", state.startseiteData);
   }, [dispatch]);
 
   return (
@@ -36,7 +36,9 @@ function Home_V2() {
       <PictureHeader_V2 data={state.startseiteData.pictureHeader} />
       <TextWithImage data={state.startseiteData.textWithImage} />
       <Wissensvermittlung data={state.startseiteData.wissensvermittlung} />
-      <MotivationAusEigenerErfahrung />
+      <MotivationAusEigenerErfahrung
+        data={state.startseiteData.motivationAusEigenerErfahrung}
+      />
     </div>
   );
 }

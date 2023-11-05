@@ -1,0 +1,41 @@
+missionTitel:
+  title: "Unsere Mission"
+  paragraphs:
+    - "Machtmissbrauch unter Anwendung von Gewalt in ihren unterschiedlichen Formen ist eine “stille Epidemie” mit einer sehr hohen Prävalenz in allen Bereichen unserer Gesellschaft. Hierbei ist unsere Mission, (i) dieses Ausmaß deutlich zu machen, (ii) dafür zu sensibilisieren und (iii) Betroffenen Hilfe zur Selbsthilfe anzubieten:"
+    - "Für uns selbst haben wir erkannt: Fehlendes Wissen ist das erste Problem in der Kette, zu dessen Beseitigung wir unter Berücksichtigung verschiedener Perspektiven einer Gewalterfahrung beitragen möchten:"
+
+iconTextRows:
+  data:
+    - iconPath: "/icons/bank.svg"
+      title: "Die Perspektive der Wissenschaft:"
+      text: "Betroffene könnten die eigene Situation ggf. früher als solche erkennen, Angriffe objektivieren und weniger persönlich nehmen, wenn sie um die einschlägige Studienlage zu gängigem Täterverhalten und psychosozialen Konsequenzen für Betroffene wüssten. Dies würde Betroffene gleichzeitig auch zu mehr Handlungsfähigkeit verhelfen."
+    - iconPath: "/icons/heart.svg"
+      title: "Die Perspektive der Medizin und klinischen Psychologie:"
+      text: "Viele Betroffene erleben schleichende Gesundheits- und Wesensveränderungen, die sie zu spät als eindeutige Konsequenz der Gewalteinwirkung ihnen gegenüber reflektieren. Jedoch sind Gewalterfahrungen nicht selten auch körperliche Erfahrungen."
+    - iconPath: "/icons/justice.svg"
+      title: "Die Perspektive der Justiz:"
+      text: "Betroffene werden auf absehbare Zeit mit überlasteten Institutionen der Justiz und Strafverfolgung konfrontiert sein, die meist nicht auf Fälle von Gewalteinwirkung im Kontext von Machtmissbrauch spezialisiert sind. Viele Täter kennen hingegen ihre strafrechtlich relevanten Grenzen sehr genau. Eine frühe gerichtsverwertbare Dokumentation kann Betroffenen zumindest bedingt helfen."
+    - iconPath: "/icons/like-dislike.svg"
+      title: "Die Perspektive relevanter Vereine und Organisationen:"
+      text: "Betroffene können eine Vielzahl an engagierten Vereinen und Organisationen zur eigenen Situation und Handlungsmöglichkeiten, aber auch zur Abhilfe in Akutsituationen einbinden. Viele helfen kostenfrei. Wir zeigen dir, welche Anlaufstellen es gibt."
+    - iconPath: "/icons/teacher.svg"
+      title: "Die Perspektive (ehemals) Betroffener und von Aktivist:innen:"
+      text: "Gerade Betroffene weniger sichtbarer Formen von Gewalt haben es schwerer, sich als solche zu identifizieren und die eigenen Erlebnisse in Worte zu fassen. Erfahrungsberichte anderer fassen das Erlebte in Worte und bieten so häufig erste Anlaufstellen für Austausch. Wir zeigen dir, welche Anlaufstellen es gibt."
+    - iconPath: "/icons/search-status.svg"
+      title: "Die Perspektive (ehemals) Betroffener und von Aktivist:innen:"
+      text: "Gerade Betroffene weniger sichtbarer Formen von Gewalt haben es schwerer, sich als solche zu identifizieren und die eigenen Erlebnisse in Worte zu fassen. Erfahrungsberichte anderer fassen das Erlebte in Worte und bieten so häufig erste Anlaufstellen für Austausch. Wir zeigen dir, welche Anlaufstellen es gibt."
+
+warumJetztWarumWir:
+  warumJetzt:
+    - title: "Warum jetzt?"
+      text: "Das Jahr 2023 sensibilisierte die deutsche Bevölkerung in einem erhöhten Maß für das Thema Machtmissbrauch. Dabei handelt es sich per se um keine neue Thematik. Neu war vielmehr die Intensität und Frequenz öffentlichkeitswirksamer Initiativen und Medienberichte, die entsprechende Fälle bearbeiteten. Besonders wichtig ist außerdem, dass sich immer mehr betroffene Menschen mit ihren Erlebnissen zu Wort melden – selbst wenn diese Erlebnisberichte noch zu oft ohne Konsequenzen für Täter bleiben und viele von ihnen anonym sind."
+    - title: "Chance in der aktuellen Dynamik"
+      text: "Wir sehen in der aktuellen Dynamik eine große Chance. Daher möchten wir unseren Beitrag dazu leisten, die Aufmerksamkeit für das Thema Machtmissbrauch aufrechtzuerhalten. Nicht zuletzt hoffen wir, dass sich immer mehr Menschen dazu äußern und das öffentlich machen, was Betroffene noch viel zu oft mit sich selber verarbeiten. Der öffentlichen Stigmatisierung Betroffener muss endlich ein Ende gesetzt werden."
+  warumWir:
+    - title: "Warum wir?"
+      text: "Für uns als ehemals Betroffene im privaten und im beruflichen Umfeld hat sich eine sachliche und faktenbasierte Wissensvermittlung unter Einbezug unterschiedlicher Perspektiven, Disziplinen und Sektoren als wesentlicher Schlüssel hin zu einem präventiven Umgang mit Machtmissbrauch erwiesen."
+    - title: "Förderung von Hilfe zur Selbsthilfe"
+      text: "Sind Betroffene aufgeklärt, können sie die eigene Situation früher als ungesund erkennen. Sie haben weniger Scheu, Hilfe durch das Umfeld und durch Strukturen wie z.B. die Opferhilfe zu beanspruchen. Und dies noch bevor ihr Fall potenziell rechtsrelevant wird. In Zeiten von überlasteten Institutionen oder anhaltenden gesellschaftlichen Tendenzen wie der sogenannten “Täter-Opfer-Umkehr” vor Gerichten halten wir Hilfe zur Selbsthilfe für essenziell."
+    - title: "Anregung zum Sprechen"
+      text: "Und letztlich hoffen wir, viel mehr Menschen – Betroffene und Interessierte gleichermaßen – zum Nachdenken und letztlich zum Sprechen anzuregen. Nur so können Spielräume für Täter Schritt für Schritt eingeschränkt werden."
+  kontaktText: "Du möchtest mehr erfahren, einen Beitrag leisten oder deine Geschichte erzählen? Dann nimm sehr gerne Kontakt mit uns auf oder abonniere unseren Newsletter!"

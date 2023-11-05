@@ -1,35 +1,42 @@
 import React from "react";
-import ButtonBigRounded from "../elements/ButtonBigRounded"; // Stelle sicher, dass du den Button-Import entsprechend deinem Projekt anpasst
+import ButtonBigRounded from "../elements/ButtonBigRounded";
 
-const MotivationAusEigenerErfahrung = () => {
+/**
+ * Diese Komponente rendert die Motivation aus eigener Betroffenenerfahrung.
+ * @param {Object} props - Die Props für die Motivation-Daten.
+ * @param {Object} props.data - Die Daten für die Motivation.
+ * @param {string} props.data.title - Der Titel des Abschnitts.
+ * @param {string} props.data.imageUrl - Die URL des Bildes.
+ * @param {string[]} props.data.paragraphs - Ein Array von Textabschnitten.
+ * @param {string} props.data.buttonText - Der Text für den Button.
+ * @param {string} props.data.buttonLink - Der Link für den Button.
+ * @returns {JSX.Element} - Die gerenderte MotivationAusEigenerErfahrung-Komponente.
+ */
+const MotivationAusEigenerErfahrung = ({ data }) => {
+  if (!data) {
+    return null;
+  }
+
+  const { title, imageUrl, paragraphs, buttonText, buttonLink } = data;
+
   return (
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="p-4">
           <img
-            src="https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-4.jpeg?raw=true"
+            src={imageUrl}
             alt="Bild"
-            className="w-full h-auto max-w-lgg mx-auto"
+            className="w-full h-auto max-w-lg mx-auto"
           />
         </div>
-        <h1 className="text-2xl font-bold mb-4">
-          Motivation aus eigener Betroffenenerfahrung
-        </h1>
-        <p className="mb-4">
-          Bei Projekt Vernetzung handelt es sich um eine private
-          Content-Initiative. Die Initiatorinnen haben im privaten wie auch
-          beruflichen Lebensbereich in Deutschland Erfahrungen mit
-          Machtmissbrauch gemacht.
-        </p>
-        <p className="mb-4">
-          Bei deren Aufarbeitung fielen uns einige gesellschaftliche Missstände
-          auf, die wir als Privatpersonen angehen und zum Besseren verändern
-          können. Wesentliche Mängel sind mangelnde Aufklärung und
-          Sensibilisierung. Aus diesem persönlichen Beweggrund haben wir uns
-          genau das zum Ziel gesetzt.
-        </p>
+        <h1 className="text-2xl font-bold mb-4">{title}</h1>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="mb-4">
+            {paragraph}
+          </p>
+        ))}
         <div className="mb-8">
-          <ButtonBigRounded buttonText="Weitere Informationen" link="/" />
+          <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ const SET_WARUM_WIR_PAGE_DATA = "SET_WARUM_WIR_PAGE_DATA";
 const SET_TEXT_LISTE_DATA = "SET_TEXT_LISTE_DATA";
 // NEW
 const SET_STARTSEITE_DATA = "SET_STARTSEITE_DATA";
+const SET_UEBER_UNS_DATA = "SET_UEBER_UNS_DATA";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -41,6 +42,8 @@ const reducer = (state, action) => {
       return { ...state, textListe: action.payload };
     case SET_STARTSEITE_DATA:
       return { ...state, startseiteData: action.payload };
+    case SET_UEBER_UNS_DATA:
+      return { ...state, ueberUns: action.payload };
     default:
       return state;
   }
@@ -60,6 +63,7 @@ const initialState = {
   textListe: {},
   // NEW
   startseiteData: {},
+  ueberUns: {},
 };
 
 // Context erstellen

@@ -1,22 +1,29 @@
 import React from "react";
 
-const MissionTitel = () => {
+/**
+ * Diese Komponente rendert den Missionstitel.
+ * @param {Object} props - Die Props für den Missionstitel.
+ * @param {Object} props.data - Die Daten für den Missionstitel.
+ * @param {string} props.data.title - Der Titel des Abschnitts.
+ * @param {string[]} props.data.paragraphs - Ein Array von Textabschnitten.
+ * @returns {JSX.Element} - Die gerenderte MissionTitel-Komponente.
+ */
+const MissionTitel = ({ data }) => {
+  if (!data) {
+    return null;
+  }
+
+  const { title, paragraphs } = data;
+
   return (
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto md:p-4 text-left p-4">
-        <h2 className="font-bold my-4">Unsere Mission</h2>
-        <p className="mb-4">
-          Machtmissbrauch unter Anwendung von Gewalt in ihren unterschiedlichen
-          Formen ist eine “stille Epidemie” mit einer sehr hohen Prävalenz in
-          allen Bereichen unserer Gesellschaft. Hierbei ist unsere Mission, (i)
-          dieses Ausmaß deutlich zu machen, (ii) dafür zu sensibilisieren und
-          (iii) Betroffenen Hilfe zur Selbsthilfe anzubieten:
-        </p>
-        <p className="mb-4">
-          Für uns selbst haben wir erkannt: Fehlendes Wissen ist das erste
-          Problem in der Kette, zu dessen Beseitigung wir unter Berücksichtigung
-          verschiedener Perspektiven einer Gewalterfahrung beitragen möchten:
-        </p>
+        <h2 className="font-bold my-4">{title}</h2>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="mb-4">
+            {paragraph}
+          </p>
+        ))}
       </div>
     </div>
   );

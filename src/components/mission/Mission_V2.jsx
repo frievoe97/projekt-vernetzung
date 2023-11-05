@@ -31,7 +31,7 @@ function Mission_V2() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/landingPageData.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/ueber_uns.yaml",
       dispatch,
       "SET_LANDING_PAGE_DATA"
     );
