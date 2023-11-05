@@ -1,6 +1,9 @@
 import React from "react";
 
 const PictureHeaderGlossary = ({ data }) => {
+  if (!data) {
+    return null;
+  }
   const { imageUrl, title, subtitle, descriptions } = data;
 
   return (

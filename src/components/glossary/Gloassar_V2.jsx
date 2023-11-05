@@ -31,16 +31,16 @@ function Gloassar_V2() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/landingPageData.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",
       dispatch,
-      "SET_LANDING_PAGE_DATA"
+      "SET_GLOSSAR_PAGE_DATA"
     );
   }, [dispatch]);
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
-      <PictureHeaderGlossary />
-      <GlossaryContent />
+      <PictureHeaderGlossary data={state.glossarData.pictureHeaderGlossary} />
+      <GlossaryContent data={state.glossarData.glossaryData} />
     </div>
   );
 }
