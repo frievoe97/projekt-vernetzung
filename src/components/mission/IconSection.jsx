@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from "react";
-import ReactCardFlip from "react-card-flip";
 import Slider from "react-slick";
 
 const IconTextRows = ({ data }) => {
-  const [clickedCardIndex, setClickedCardIndex] = useState(null);
-  const [userClicked, setUserClicked] = useState(false);
-
   if (!data) {
     return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
   }
+
+  const [clickedCardIndex, setClickedCardIndex] = useState(null);
+  const [userClicked, setUserClicked] = useState(false);
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: false,
+  };
 
   useEffect(() => {
     let timeoutId;
@@ -31,18 +41,18 @@ const IconTextRows = ({ data }) => {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [clickedCardIndex, userClicked]);
+  }, [clickedCardIndex, userClicked, data]);
 
-  const handleUserClick = (index) => {
-    setClickedCardIndex(index);
-    setUserClicked(true);
-  };
+  // const handleUserClick = (index) => {
+  //   setClickedCardIndex(index);
+  //   setUserClicked(true);
+  // };
 
   return (
     <div className="w-full bg-fm_helles_beige">
       <div className="max-w-screen-xl mx-auto md:p-4 ">
         <div className="my-8 md:block hidden">
-          {data.map((item, index) => (
+          {data.data.map((item, index) => (
             <div className="flex items-start mb-8" key={index}>
               <div className="w-16 h-16 flex-shrink-0">
                 <img
@@ -60,21 +70,21 @@ const IconTextRows = ({ data }) => {
           ))}
         </div>
         <div className="block md:hidden">
-          <Slider {...settings}>
-            {data.map((item, index) => (
-              <div key={index}>
-                <img
-                  className="w-24 object-cover mx-auto pt-4"
-                  src={item.iconPath}
-                  alt={`Icon ${index + 1}`}
-                />
-                <div className="flex-1 p-4">
-                  <p className="text-left font-bold mb-2">{item.title}</p>
-                  <p className="text-justify">{item.text}</p>
-                </div>
+          {/* <Slider {...settings}> */}
+          {data.data.map((item, index) => (
+            <div key={index}>
+              <img
+                className="w-24 object-cover mx-auto pt-4"
+                src={item.iconPath}
+                alt={`Icon ${index + 1}`}
+              />
+              <div className="flex-1 p-4">
+                <p className="text-left font-bold mb-2">{item.title}</p>
+                <p className="text-justify">{item.text}</p>
               </div>
-            ))}
-          </Slider>
+            </div>
+          ))}
+          {/* </Slider> */}
         </div>
       </div>
     </div>

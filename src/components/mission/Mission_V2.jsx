@@ -33,15 +33,15 @@ function Mission_V2() {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/ueber_uns.yaml",
       dispatch,
-      "SET_LANDING_PAGE_DATA"
+      "SET_UEBER_UNS_DATA"
     );
   }, [dispatch]);
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
-      <MissionTitel />
-      <IconSection />
-      <WarumJetztWarumWir />
+      <MissionTitel data={state.ueberUns.missionTitel} />
+      <IconSection data={state.ueberUns.iconTextRows} />
+      <WarumJetztWarumWir data={state.ueberUns.warumJetztWarumWir} />
     </div>
   );
 }
