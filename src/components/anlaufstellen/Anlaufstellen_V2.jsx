@@ -79,7 +79,7 @@ function Anlaufstellen_V2() {
   // Lade die Daten aus der YAML-Datei, wenn die Komponente montiert wird
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/anlaufstellenData.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml",
       dispatch,
       "SET_ANLAUFSTELLEN_DATA"
     );
