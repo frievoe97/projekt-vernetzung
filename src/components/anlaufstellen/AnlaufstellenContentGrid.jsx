@@ -1,5 +1,6 @@
 import React from "react";
 import CardComponent from "../elements/CardComponent";
+import CustomCard from "../elements/CustomCard";
 import { useGlobalState } from "../../data/GlobalState";
 import Tags from "../elements/Tags";
 import "./anlausstellenStyle.css";
@@ -112,7 +113,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
                 areAllElementsContained(objectToArray(searchData), card.Tags)
               ) {
                 return (
-                  <CardComponent
+                  <CustomCard
                     key={`${rowIndex}-${index}`}
                     imageUrl={
                       "https://picsum.photos/200/300?random=" +
@@ -122,7 +123,6 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
                     text={card.text}
                     link={card.link}
                     tags={card.Tagss}
-                    removable={false}
                   />
                 );
               }

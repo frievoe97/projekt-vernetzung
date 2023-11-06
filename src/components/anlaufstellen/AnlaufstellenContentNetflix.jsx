@@ -1,5 +1,6 @@
 import React from "react";
 import CardComponent from "../elements/CardComponent";
+import CustomCard from "../elements/CustomCard";
 import { useGlobalState } from "../../data/GlobalState";
 import "./anlausstellenStyle.css";
 
@@ -31,7 +32,18 @@ const AnlaufstellenContentNetflix = () => {
 
                   <div className="flex overflow-x-auto items-stretch flex-row scroll-container py-4">
                     {row.Name.map((card, index) => (
-                      <CardComponent
+                      // <CardComponent
+                      //   key={index}
+                      //   imageUrl={`https://picsum.photos/200/300?random=${
+                      //     (rowIndex + 1) * (index + 1)
+                      //   }`}
+                      //   title={card.Name}
+                      //   text={card.text}
+                      //   link={card.link}
+                      //   tags={card.Tagss}
+                      //   removable={false}
+                      // />
+                      <CustomCard
                         key={index}
                         imageUrl={`https://picsum.photos/200/300?random=${
                           (rowIndex + 1) * (index + 1)
@@ -40,7 +52,6 @@ const AnlaufstellenContentNetflix = () => {
                         text={card.text}
                         link={card.link}
                         tags={card.Tagss}
-                        removable={false}
                       />
                     ))}
                   </div>
