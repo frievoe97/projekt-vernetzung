@@ -13,7 +13,7 @@ const AnlaufstellenContentNetflix = () => {
 
   // Ladeanzeige, wenn die Daten noch nicht geladen wurden
   if (!state.anlaufstellenData.googleDoc) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (

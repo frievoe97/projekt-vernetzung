@@ -6,6 +6,8 @@ import PictureHeader_V2 from "./PictureHeader_V2";
 import TextWithImage from "./TextWithImage";
 import Wissensvermittlung from "./Wissensvermittlung";
 import MotivationAusEigenerErfahrung from "./MotivationAusEigenerErfahrung";
+import TestAntd from "./TestAntd";
+// import AnimatedSVG from "./AnimatedSVG";
 
 function Home_V2() {
   const { state, dispatch } = useGlobalState();
@@ -33,6 +35,8 @@ function Home_V2() {
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
+      {/* <AnimatedSVG /> */}
+      {/* <TestAntd /> */}
       <PictureHeader_V2 data={state.startseiteData.pictureHeader} />
       <TextWithImage data={state.startseiteData.textWithImage} />
       <Wissensvermittlung data={state.startseiteData.wissensvermittlung} />

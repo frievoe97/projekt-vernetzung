@@ -41,7 +41,7 @@ function Footer() {
   }, [dispatch]);
 
   if (!state.footer.contact) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (

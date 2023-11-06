@@ -5,7 +5,7 @@ import yaml from "js-yaml";
 
 const Navbar = () => {
   const { state, dispatch } = useGlobalState();
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   const [openSubmenu, setOpenSubmenu] = useState(null);
 
   // Funktion zum Umschalten des Hauptmenüs
@@ -15,6 +15,8 @@ const Navbar = () => {
 
   // Funktion zum Umschalten der Untermenüs
   const toggleSubmenu = (index, closeMenu) => {
+    setOpenMenu(false);
+    updateWindowWidth();
     if (openSubmenu === index && closeMenu) {
       setOpenSubmenu(null);
     } else {
@@ -22,15 +24,17 @@ const Navbar = () => {
     }
   };
 
+  // Funktion, um die Bildschirmbreite zu aktualisieren
+  const updateWindowWidth = () => {
+    if (window.innerWidth <= 840) {
+      setOpenMenu(false);
+    } else {
+      setOpenMenu(true);
+    }
+  };
+
   useEffect(() => {
-    // Funktion, um die Bildschirmbreite zu aktualisieren
-    const updateWindowWidth = () => {
-      if (window.innerWidth <= 840) {
-        setOpenMenu(false);
-      } else {
-        setOpenMenu(true);
-      }
-    };
+    updateWindowWidth();
 
     // Event-Listener für das "resize"-Event hinzufügen
     window.addEventListener("resize", updateWindowWidth);
@@ -63,8 +67,8 @@ const Navbar = () => {
     );
   }, [dispatch]);
 
-  if (!state.headerData.menuItems || !state.headerData.headerTitle) {
-    return <h1>Loading...</h1>;
+  if (!state.headerData.headerTitle) {
+    return <div></div>;
   }
 
   return (

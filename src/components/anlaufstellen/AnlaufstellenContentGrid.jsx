@@ -86,7 +86,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
 
   // Wenn die Daten aus 'state.anlaufstellenData.googleDoc' noch nicht geladen sind, wird "Loading..." angezeigt
   if (state.anlaufstellenData.googleDoc === undefined) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   return (
