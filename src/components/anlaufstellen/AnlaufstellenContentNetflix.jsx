@@ -24,7 +24,7 @@ const AnlaufstellenContentNetflix = () => {
           {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
             <div key={rowIndex} className="mb-0 divide-y-2 divide-black">
               {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
-              {row.Anlaufstelle.length > 0 && (
+              {row.Anlaufstelle != null && row.Anlaufstelle.length > 0 && (
                 <>
                   <h2 className="text-xl text-left font-bold my-2 ml-4">
                     {row.Kategorie}
@@ -37,8 +37,8 @@ const AnlaufstellenContentNetflix = () => {
                         imageUrl={card.Logo}
                         title={card.Name}
                         text={card.text}
-                        link={card.link}
-                        tags={card.Tagss}
+                        link={card.Link}
+                        tags={card.Tags}
                       />
                     ))}
                   </div>

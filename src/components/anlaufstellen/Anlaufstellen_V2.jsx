@@ -94,10 +94,15 @@ function Anlaufstellen_V2() {
 
       const extractTags = (array) => {
         array.forEach((item) => {
-          if (item.Name && Array.isArray(item.Name)) {
-            item.Name.forEach((tags) => {
+          if (item.Anlaufstelle && Array.isArray(item.Anlaufstelle)) {
+            item.Anlaufstelle.forEach((tags) => {
               tags.Tags.forEach((tag) => {
-                if (tag === "Kategorie" || tag === "Name") return;
+                if (
+                  tag === "Anlaufstelle" ||
+                  tag === "Name" ||
+                  tag === "Kategorie"
+                )
+                  return;
                 tagsSet.add(tag);
               });
             });

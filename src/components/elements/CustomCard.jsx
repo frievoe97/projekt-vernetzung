@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  MailOutlined,
-  PhoneOutlined,
-  InstagramOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, PhoneOutlined, LinkOutlined } from "@ant-design/icons";
 import { Avatar, Card } from "antd";
 import "./CustomCard.css";
 
@@ -24,6 +20,25 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // Hier füge ich einen Link hinzu, der zu `link` führt
+  const cardActions = [
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <LinkOutlined key="insta" />,
+    </a>,
+    <MailOutlined key="mail" />,
+    <PhoneOutlined key="phone" />,
+  ];
+
+  //   if (link) {
+  //     cardActions.push(
+  //       <a href={link} target="_blank" rel="noopener noreferrer">
+  //         <LinkOutlined key="insta" />,
+  //       </a>
+  //     );
+  //   }
+
+  console.log(link);
 
   return (
     <div className="card-container">
@@ -53,19 +68,9 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
             </div>
           </div>
         }
-        actions={[
-          <InstagramOutlined key="insta" />,
-          <MailOutlined key="mail" />,
-          <PhoneOutlined key="phone" />,
-        ]}
+        actions={cardActions}
       >
-        <Meta
-          //   avatar={
-          //     <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />
-          //   }
-          title={title}
-          description={text}
-        />
+        <Meta title={title} description={text} />
       </Card>
     </div>
   );

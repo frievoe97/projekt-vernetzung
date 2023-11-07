@@ -107,7 +107,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
 
         <div className="flex flex-wrap items-stretch justify-center scroll-container pb-8">
           {state.anlaufstellenData.googleDoc.flatMap((row, rowIndex) =>
-            row.Name.map((card, index) => {
+            row.Anlaufstelle.map((card, index) => {
               // Überprüft, ob alle Elemente in objectToArray(searchData) in card.Tags enthalten sind
               if (
                 areAllElementsContained(objectToArray(searchData), card.Tags)
@@ -115,10 +115,7 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
                 return (
                   <CustomCard
                     key={`${rowIndex}-${index}`}
-                    imageUrl={
-                      "https://picsum.photos/200/300?random=" +
-                      (rowIndex + 1) * (index + 1)
-                    }
+                    imageUrl={card.Logo}
                     title={card.Name}
                     text={card.text}
                     link={card.link}
