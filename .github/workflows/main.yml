@@ -3,6 +3,8 @@ name: Upload the Website to the server of the domain projekt-vernetzung.friedric
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '40 14 * * *'  # Jede Nacht um Mitternacht UTC
 
 jobs:
   Upload-to-SFTP:
@@ -19,7 +21,7 @@ jobs:
       - run: npm run build
 
       - name: 📂 SFTP uploader
-        uses: wangyucode/sftp-upload-action@v1.4.8 # Thank you @https://github.com/wangyucode/sftp-upload-action
+        uses: wangyucode/sftp-upload-action@v1.4.8 # Danke an @https://github.com/wangyucode/sftp-upload-action
         with:
           host: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USERNAME }}
