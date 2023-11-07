@@ -1,24 +1,5 @@
 googleDoc:
 - Anlaufstelle:
-  - Link: https://www.beratungsstellen-opferhilfen.de/beratungsstellen/
-    Logo: https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
-    Name: Atlas der Opferhilfen
-    Tags:
-    - Kategorie
-    - Name
-    - Opferhilfe
-    - Erste Hilfe
-    - Körperliche Gewalt
-    - Psychische Gewalt
-    - Gewalt gegen Frauen
-    - Häusliche Gewalt
-    - Gewalt am Arbeitsplatz
-    - Mobbing
-    - Sexuelle Belästigung
-    - Digitale Gewalt
-    - Sexueller Missbrauch
-    - Narzissmus
-    - Gewalt gegen LGBTQI
   - Link: https://weisser-ring.de/
     Logo: https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg
     Name: Weißer Ring
@@ -61,6 +42,25 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
+  - Link: https://www.beratungsstellen-opferhilfen.de/beratungsstellen/
+    Logo: https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
+    Name: Atlas der Opferhilfen
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+    - Sexueller Missbrauch
+    - Narzissmus
+    - Gewalt gegen LGBTQI
   - Link: https://www.brak.de/service/verbraucherinformationen/anwaltssuche/
     Logo: https://th.bing.com/th/id/OIP.CB54yo2JCTagRTRYEWy60gHaBo?pid=ImgDet&rs=1
     Name: Anwaltssuche der Bundesrechtsanwaltskammer
@@ -340,56 +340,6 @@ googleDoc:
     Name: Hilfe-Portal Sexueller Missbrauch
     Tags: []
   Kategorie: Digitale Gewalt
-- Anlaufstelle:
-  - Link: https://themis-vertrauensstelle.de/
-    Logo: https://themis-vertrauensstelle.de/wp-content/uploads/2023/05/cropped-Unbenannt.png
-    Name: 'Musik, Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung
-      und Gewalt'
-    Tags:
-    - Opferhilfe
-    - Erste Hilfe
-    - Gewalt gegen Frauen
-    - Häusliche Gewalt
-  - Link: https://www.ansprechstelle-safe-sport.de/
-    Logo: https://6xc492.n3cdn1.secureserver.net/wp-content/uploads/SafeSport_Logo_2z-1.svg?time=1699361971
-    Name: 'Sport: Safe Sport'
-    Tags:
-    - Opferhilfe
-    - Erste Hilfe
-    - Gewalt gegen Frauen
-    - Häusliche Gewalt
-  Kategorie: Branchenspezifische Anlaufstellen
-- Anlaufstelle:
-  - Link: https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html
-    Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
-    Name: Antidiskrimierungsstelle des Bundes
-    Tags:
-    - Kategorie
-    - Name
-    - Opferhilfe
-    - Erste Hilfe
-    - Körperliche Gewalt
-    - Gewalt gegen Frauen
-    - Gewalt am Arbeitsplatz
-    - Mobbing
-    - Sexueller Missbrauch
-    - Narzissmus
-  - Link: https://verband-brg.de/
-    Logo: https://verband-brg.de/wp-content/uploads/2019/01/logo_vbrg_m3.png
-    Name: Verband der Beratungsstellen für Betroffene rechter, rassistischer und antisemitischer
-      Gewalt
-    Tags:
-    - Name
-    - Sexueller Missbrauch
-    - Narzissmus
-  - Link: https://www.berlin.de/sen/lads/recht/ladg/ombudsstelle/
-    Logo: https://www.berlin.de/imgscaler/UerXchZFAzAEZCYuy102OEqjmgkhCZ6YQ1oabi9hGnc/rbig2zu1/L3N5czExLXByb2Qvc2VuL2xhZHMvX2Fzc2V0cy9yZWNodC9sb2dvX29tYnVkc3N0ZWxsZS5qcGc.jpg?ts=1684994881
-    Name: Ombudsstelle / Landesstelle für Gleichbehandlung (nur Berlin)
-    Tags:
-    - Körperliche Gewalt
-    - Sexueller Missbrauch
-    - Narzissmus
-  Kategorie: Diskriminierung (Geschlecht, LGBTQI+, Rassismus)
 - Anlaufstelle:
   - Link: https://beauftragte-missbrauch.de/
     Logo: https://assets.beauftragte-missbrauch.de//images/logo.svg
