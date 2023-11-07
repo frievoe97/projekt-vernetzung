@@ -1,15 +1,15 @@
-.ant-card-meta-title {
+/* .ant-card-meta-title {
   text-overflow: unset !important;
   white-space: unset !important;
-}
+} */
 
 /* In deiner CustomCard.css-Datei */
 
 /* Standardstil für die Card */
 .card-container {
-  width: 300px;
+  /* width: 150px; */
   height: fit-content;
-  margin: 1rem;
+  /* margin: 1rem;a */
   transition: transform 0.3s; /* Hinzufügen einer sanften Transition */
 }
 
