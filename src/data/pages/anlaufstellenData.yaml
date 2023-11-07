@@ -390,6 +390,46 @@ googleDoc:
     - Sexueller Missbrauch
     - Narzissmus
   Kategorie: Diskriminierung (Geschlecht, LGBTQI+, Rassismus)
+- Anlaufstelle:
+  - Link: https://beauftragte-missbrauch.de/
+    Logo: https://assets.beauftragte-missbrauch.de//images/logo.svg
+    Name: Unabhängige Beauftragte für Fragen des sexuellen Kindesmissbrauchs (UBSKM)
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Psychische Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Gewalt gegen LGBTQI
+    - Rassismus
+  - Link: https://beauftragte-missbrauch.de/betroffenenrat/betroffenenrat-bei-der-ubskm
+    Logo: https://assets.beauftragte-missbrauch.de//images/logo-additional.svg
+    Name: 'Betroffenenrat '
+    Tags:
+    - Kategorie
+    - Opferhilfe
+    - Erste Hilfe
+    - Psychische Gewalt
+    - Gewalt am Arbeitsplatz
+    - Sexuelle Belästigung
+    - Rassismus
+  - Link: https://www.hilfe-portal-missbrauch.de/startseite
+    Logo: https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg
+    Name: Hilfe-Portal Sexueller Missbrauch
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Psychische Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Rassismus
+  Kategorie: Gewalt an Kindern
 
 
 
