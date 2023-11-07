@@ -1,6 +1,7 @@
 googleDoc:
 - Anlaufstelle:
-  - Link: ''
+- Anlaufstelle:
+  - Link: https://www.beratungsstellen-opferhilfen.de/beratungsstellen/
     Logo: https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
     Name: Atlas der Opferhilfen
     Tags:
@@ -19,7 +20,7 @@ googleDoc:
     - Sexueller Missbrauch
     - Narzissmus
     - Gewalt gegen LGBTQI
-  - Link: ''
+  - Link: https://weisser-ring.de/
     Logo: https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg
     Name: Weißer Ring
     Tags:
@@ -38,7 +39,7 @@ googleDoc:
     - Sexueller Missbrauch
     - Narzissmus
     - Gewalt gegen LGBTQI
-  - Link: ''
+  - Link: https://arztsuche.116117.de/
     Logo: https://arztsuche.116117.de/media/images/content/logo.svg
     Name: Ärzt:innensuche der Kassenärztlichen Bundesvereinigung
     Tags:
@@ -48,7 +49,7 @@ googleDoc:
     - Gewalt gegen Frauen
     - Häusliche Gewalt
     - Sexuelle Belästigung
-  - Link: ''
+  - Link: https://arztsuche.116117.de/
     Logo: https://arztsuche.116117.de/media/images/content/logo.svg
     Name: Psychotherapeut:innensuche der Kassenärztlichen Bundesvereinigung
     Tags:
@@ -61,7 +62,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.brak.de/service/verbraucherinformationen/anwaltssuche/
     Logo: https://th.bing.com/th/id/OIP.CB54yo2JCTagRTRYEWy60gHaBo?pid=ImgDet&rs=1
     Name: Anwaltssuche der Bundesrechtsanwaltskammer
     Tags:
@@ -77,7 +78,7 @@ googleDoc:
     - Sexueller Missbrauch
     - Narzissmus
     - Gewalt gegen LGBTQI
-  - Link: ''
+  - Link: https://www.telefonseelsorge.de/
     Logo: https://th.bing.com/th/id/OIP.ntu2oH7cO2QXl-w41M-VsQHaDb?pid=ImgDet&rs=1
     Name: 'Telefonseelsorge '
     Tags:
@@ -95,12 +96,12 @@ googleDoc:
     - Digitale Gewalt
     - Sexueller Missbrauch
     - Narzissmus
-  - Link: ''
+  - Link: https://www.nakos.de/adressen/datenbanksuche/
     Logo: https://www.nakos.de/images/logo.png
     Name: Nationale Selbsthilfegruppensuche
     Tags:
     - Kategorie
-  - Link: ''
+  - Link: https://krisenchat.de/
     Logo: https://th.bing.com/th/id/OIP.BiS_t-uSQAAzgzIhTtLDmwHaB8?pid=ImgDet&rs=1
     Name: Krisenchat
     Tags:
@@ -114,7 +115,7 @@ googleDoc:
     - Sexuelle Belästigung
     - Sexueller Missbrauch
     - Narzissmus
-  - Link: ''
+  - Link: https://www.berliner-krisendienst.de/
     Logo: https://www.berliner-krisendienst.de/wp-content/uploads/2019/11/Logo.png
     Name: Berliner Krisendienst (nur Berlin)
     Tags:
@@ -134,7 +135,7 @@ googleDoc:
     - Gewalt gegen LGBTQI
   Kategorie: Erste Hilfe / Opferhilfe
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://www.hilfetelefon.de/
     Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
     Name: Hilfetelefon Gewalt gegen Frauen
     Tags:
@@ -150,7 +151,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.frauen-gegen-gewalt.de/de/hilfe-beratung.html
     Logo: https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg
     Name: 'Bff: Frauen gegen Gewalt e.V.'
     Tags:
@@ -165,7 +166,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.frauenhaus-suche.de/
     Logo: https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg
     Name: Frauenhaussuche
     Tags:
@@ -177,7 +178,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html
     Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
     Name: Antidiskriminierungsstelle des Bundes
     Tags:
@@ -193,7 +194,7 @@ googleDoc:
     - Narzissmus
   Kategorie: Gewalt gegen Frauen
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://www.hilfetelefon.de/
     Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
     Name: Hilfetelefon Gewalt gegen Frauen
     Tags:
@@ -209,7 +210,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.frauen-gegen-gewalt.de/de/hilfe-beratung.html
     Logo: https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg
     Name: 'Bff: Frauen gegen Gewalt e.V.'
     Tags:
@@ -224,7 +225,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.frauenhaus-suche.de/
     Logo: https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg
     Name: Frauenhaussuche
     Tags:
@@ -238,7 +239,7 @@ googleDoc:
     - Digitale Gewalt
   Kategorie: Gewalt im eigenen Zuhause / in der Partnerschaft
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://www.hilfetelefon.de/
     Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
     Name: Hilfetelefon Gewalt gegen Frauen
     Tags:
@@ -254,7 +255,7 @@ googleDoc:
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: ''
+  - Link: https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html
     Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
     Name: Antidiskriminierungsstelle des Bundes
     Tags:
@@ -268,7 +269,7 @@ googleDoc:
     - Mobbing
     - Sexueller Missbrauch
     - Narzissmus
-  - Link: ''
+  - Link: https://www.ifb.de/wissen/kommunikation/konfliktmanagement/mobbing-landkarte
     Logo: https://www.ifb.de/bundles/s5applayout/images/ifb_og.jpg?20200623091549
     Name: Landkarte für Mobbingberatungsstellen
     Tags:
@@ -276,7 +277,7 @@ googleDoc:
     - Erste Hilfe
     - Gewalt gegen Frauen
     - Häusliche Gewalt
-  - Link: ''
+  - Link: https://macht-immer-sinn.de/mobbing-am-arbeitsplatz/
     Logo: https://www.extremnews.com/images/max_image_view-0ce988e6e8cc493a820574a84ba1f17f.png
     Name: ver.di
     Tags:
@@ -284,7 +285,7 @@ googleDoc:
     - Erste Hilfe
     - Gewalt gegen Frauen
     - Häusliche Gewalt
-  - Link: ''
+  - Link: https://www.work-watch.de/
     Logo: https://pbs.twimg.com/profile_images/1302953068666015747/bMT2IBSs_400x400.jpg
     Name: WorkWatch
     Tags:
@@ -292,7 +293,7 @@ googleDoc:
     - Erste Hilfe
     - Gewalt gegen Frauen
     - Häusliche Gewalt
-  - Link: ''
+  - Link: https://www.whistleblower-net.de/beratung/
     Logo: https://th.bing.com/th/id/OIP.cUI21245ELMbXz08zjS4iQAAAA?pid=ImgDet&rs=1
     Name: Beratung des Whistleblower Netzwerk
     Tags:
@@ -300,7 +301,7 @@ googleDoc:
     - Erste Hilfe
     - Gewalt gegen Frauen
     - Häusliche Gewalt
-  - Link: ''
+  - Link: https://www.bundesjustizamt.de/DE/MeldestelledesBundes/MeldestelledesBundes_node.html
     Logo: https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F08%2FLogo_Bundesamt_f%25C3%25BCr_Justiz.svg%2Flangde-1500px-Logo_Bundesamt_f%25C3%25BCr_Justiz.svg.png&w=1080&q=50
     Name: Externe Hinweisgebermeldestelle beim Bundesamt für Justiz
     Tags:
@@ -310,7 +311,7 @@ googleDoc:
     - Häusliche Gewalt
   Kategorie: Gewalt am Arbeitsplatz
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://hateaid.org/betroffenenberatung/
     Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo-HateAid.svg/2560px-Logo-HateAid.svg.png
     Name: HateAid
     Tags:
@@ -320,7 +321,7 @@ googleDoc:
     - Häusliche Gewalt
     - Gewalt am Arbeitsplatz
     - Mobbing
-  - Link: ''
+  - Link: https://www.cybermobbing-hilfe.de/
     Logo: https://www.cybermobbing-hilfe.de/wp-content/uploads/2021/04/logo-cybermobbinghilfe-retina.png
     Name: Cybermobbing-Hilfe
     Tags:
@@ -330,18 +331,18 @@ googleDoc:
     - Häusliche Gewalt
     - Gewalt am Arbeitsplatz
     - Mobbing
-  - Link: ''
+  - Link: https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_table.html
     Logo: https://www.bfdi.bund.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=3
     Name: Suche nach Aufsichtsbehörden für Datenschutz in den Bundesländern
     Tags:
     - Mobbing
-  - Link: ''
+  - Link: https://www.hilfe-portal-missbrauch.de/startseite
     Logo: https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg
     Name: Hilfe-Portal Sexueller Missbrauch
     Tags: []
   Kategorie: Digitale Gewalt
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://themis-vertrauensstelle.de/
     Logo: https://themis-vertrauensstelle.de/wp-content/uploads/2023/05/cropped-Unbenannt.png
     Name: 'Musik, Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung
       und Gewalt'
@@ -350,7 +351,7 @@ googleDoc:
     - Erste Hilfe
     - Gewalt gegen Frauen
     - Häusliche Gewalt
-  - Link: ''
+  - Link: https://www.ansprechstelle-safe-sport.de/
     Logo: https://6xc492.n3cdn1.secureserver.net/wp-content/uploads/SafeSport_Logo_2z-1.svg?time=1699361971
     Name: 'Sport: Safe Sport'
     Tags:
@@ -360,7 +361,7 @@ googleDoc:
     - Häusliche Gewalt
   Kategorie: Branchenspezifische Anlaufstellen
 - Anlaufstelle:
-  - Link: ''
+  - Link: https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html
     Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
     Name: Antidiskrimierungsstelle des Bundes
     Tags:
@@ -374,7 +375,7 @@ googleDoc:
     - Mobbing
     - Sexueller Missbrauch
     - Narzissmus
-  - Link: ''
+  - Link: https://verband-brg.de/
     Logo: https://verband-brg.de/wp-content/uploads/2019/01/logo_vbrg_m3.png
     Name: Verband der Beratungsstellen für Betroffene rechter, rassistischer und antisemitischer
       Gewalt
@@ -382,7 +383,7 @@ googleDoc:
     - Name
     - Sexueller Missbrauch
     - Narzissmus
-  - Link: ''
+  - Link: https://www.berlin.de/sen/lads/recht/ladg/ombudsstelle/
     Logo: https://www.berlin.de/imgscaler/UerXchZFAzAEZCYuy102OEqjmgkhCZ6YQ1oabi9hGnc/rbig2zu1/L3N5czExLXByb2Qvc2VuL2xhZHMvX2Fzc2V0cy9yZWNodC9sb2dvX29tYnVkc3N0ZWxsZS5qcGc.jpg?ts=1684994881
     Name: Ombudsstelle / Landesstelle für Gleichbehandlung (nur Berlin)
     Tags:
