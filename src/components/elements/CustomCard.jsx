@@ -31,7 +31,27 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
         className="shadow-xl cursor-pointer"
         style={{ width: cardWidth, height: "fit-content", margin: "1rem" }}
         cover={
-          <img alt="example" src={imageUrl} className="h-24 object-cover" />
+          <div className="p-4 h-24">
+            <div
+              style={{
+                maxWidth: "100%",
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                alt="example"
+                src={imageUrl}
+                style={{
+                  maxWidth: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </div>
         }
         actions={[
           <InstagramOutlined key="insta" />,

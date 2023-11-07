@@ -1,5 +1,25 @@
 - Anlaufstelle:
-  - Link: https://weisser-ring.de/
+  - Link: ''
+    Logo: https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
+    Name: Atlas der Opferhilfen
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+    - Sexueller Missbrauch
+    - Narzissmus
+    - Gewalt gegen LGBTQI
+  - Link: ''
+    Logo: https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg
     Name: Weißer Ring
     Tags:
     - Kategorie
@@ -9,6 +29,7 @@
     - Körperliche Gewalt
     - Psychische Gewalt
     - Gewalt gegen Frauen
+    - Häusliche Gewalt
     - Gewalt am Arbeitsplatz
     - Mobbing
     - Sexuelle Belästigung
@@ -16,8 +37,48 @@
     - Sexueller Missbrauch
     - Narzissmus
     - Gewalt gegen LGBTQI
-  - Link: https://arztsuche.116117.de/
-    Name: Ärzt:innen
+  - Link: ''
+    Logo: https://arztsuche.116117.de/media/images/content/logo.svg
+    Name: Ärzt:innensuche der Kassenärztlichen Bundesvereinigung
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Sexuelle Belästigung
+  - Link: ''
+    Logo: https://arztsuche.116117.de/media/images/content/logo.svg
+    Name: Psychotherapeut:innensuche der Kassenärztlichen Bundesvereinigung
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://th.bing.com/th/id/OIP.CB54yo2JCTagRTRYEWy60gHaBo?pid=ImgDet&rs=1
+    Name: Anwaltssuche der Bundesrechtsanwaltskammer
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Sexueller Missbrauch
+    - Narzissmus
+    - Gewalt gegen LGBTQI
+  - Link: ''
+    Logo: https://th.bing.com/th/id/OIP.ntu2oH7cO2QXl-w41M-VsQHaDb?pid=ImgDet&rs=1
+    Name: 'Telefonseelsorge '
     Tags:
     - Kategorie
     - Name
@@ -30,27 +91,50 @@
     - Gewalt am Arbeitsplatz
     - Mobbing
     - Sexuelle Belästigung
-  - Link: https://arztsuche.116117.de/
-    Name: Psychotherapeut:innen
+    - Digitale Gewalt
+    - Sexueller Missbrauch
+    - Narzissmus
+  - Link: ''
+    Logo: https://www.nakos.de/images/logo.png
+    Name: Nationale Selbsthilfegruppensuche
     Tags:
     - Kategorie
-  - Link: https://www.telefonseelsorge.de/
-    Name: 'Telefonseelsorge '
-    Tags: []
+  - Link: ''
+    Logo: https://th.bing.com/th/id/OIP.BiS_t-uSQAAzgzIhTtLDmwHaB8?pid=ImgDet&rs=1
+    Name: Krisenchat
+    Tags:
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Mobbing
+    - Sexuelle Belästigung
+    - Sexueller Missbrauch
+    - Narzissmus
+  - Link: ''
+    Logo: https://www.berliner-krisendienst.de/wp-content/uploads/2019/11/Logo.png
+    Name: Berliner Krisendienst (nur Berlin)
+    Tags:
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+    - Sexueller Missbrauch
+    - Narzissmus
+    - Gewalt gegen LGBTQI
   Kategorie: Erste Hilfe / Opferhilfe
 - Anlaufstelle:
-  - Link: https://www.hilfetelefon.de/
-    Name: Hilfetelefon Gewalt gegen Frauen
-    Tags: []
-  - Link: https://www.frauen-gegen-gewalt.de/de/hilfe-beratung.html
-    Name: 'Bff: Frauen gegen Gewalt e.V.'
-    Tags: []
-  - Link: https://www.frauenhaus-suche.de/
-    Name: Frauenhaussuche
-    Tags: []
-  Kategorie: Gewalt gegen Frauen
-- Anlaufstelle:
-  - Link: https://www.hilfetelefon.de/
+  - Link: ''
+    Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
     Name: Hilfetelefon Gewalt gegen Frauen
     Tags:
     - Kategorie
@@ -65,8 +149,52 @@
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
-  - Link: https://weisser-ring.de/
-    Name: Weisser Ring
+  - Link: ''
+    Logo: https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg
+    Name: 'Bff: Frauen gegen Gewalt e.V.'
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg
+    Name: Frauenhaussuche
+    Tags:
+    - Kategorie
+    - Opferhilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
+    Name: Antidiskriminierungsstelle des Bundes
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Gewalt gegen Frauen
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexueller Missbrauch
+    - Narzissmus
+  Kategorie: Gewalt gegen Frauen
+- Anlaufstelle:
+  - Link: ''
+    Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
+    Name: Hilfetelefon Gewalt gegen Frauen
     Tags:
     - Kategorie
     - Name
@@ -76,33 +204,184 @@
     - Psychische Gewalt
     - Gewalt gegen Frauen
     - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg
+    Name: 'Bff: Frauen gegen Gewalt e.V.'
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg
+    Name: Frauenhaussuche
+    Tags:
+    - Kategorie
+    - Opferhilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
     - Gewalt am Arbeitsplatz
     - Mobbing
     - Sexuelle Belästigung
     - Digitale Gewalt
   Kategorie: Gewalt im eigenen Zuhause / in der Partnerschaft
 - Anlaufstelle:
-  - Link: https://www.hilfetelefon.de/
-    Name: HIlfetelefon Gewalt gegen Frauen
-    Tags: []
-  - Link: https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html
+  - Link: ''
+    Logo: https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg
+    Name: Hilfetelefon Gewalt gegen Frauen
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Psychische Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexuelle Belästigung
+    - Digitale Gewalt
+  - Link: ''
+    Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
     Name: Antidiskriminierungsstelle des Bundes
-    Tags: []
-  - Link: https://www.ifb.de/wissen/kommunikation/konfliktmanagement/mobbing-landkarte
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Gewalt gegen Frauen
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexueller Missbrauch
+    - Narzissmus
+  - Link: ''
+    Logo: https://www.ifb.de/bundles/s5applayout/images/ifb_og.jpg?20200623091549
     Name: Landkarte für Mobbingberatungsstellen
-    Tags: []
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+  - Link: ''
+    Logo: https://www.extremnews.com/images/max_image_view-0ce988e6e8cc493a820574a84ba1f17f.png
+    Name: ver.di
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+  - Link: ''
+    Logo: https://www.work-watch.de/wp-content/uploads/2019/04/work-watch_logo_90.png
+    Name: WorkWatch
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+  - Link: ''
+    Logo: https://th.bing.com/th/id/OIP.cUI21245ELMbXz08zjS4iQAAAA?pid=ImgDet&rs=1
+    Name: Beratung des Whistleblower Netzwerk
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+  - Link: ''
+    Logo: https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F08%2FLogo_Bundesamt_f%25C3%25BCr_Justiz.svg%2Flangde-1500px-Logo_Bundesamt_f%25C3%25BCr_Justiz.svg.png&w=1080&q=50
+    Name: Externe Hinweisgebermeldestelle beim Bundesamt für Justiz
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
   Kategorie: Gewalt am Arbeitsplatz
 - Anlaufstelle:
-  - Link: https://hateaid.org/betroffenenberatung/
+  - Link: ''
+    Logo: https://hateaid.org/wp-content/uploads/2023/06/hateaid-logo-weiss-1316x789px.png
     Name: HateAid
-    Tags: []
+    Tags:
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+  - Link: ''
+    Logo: https://www.cybermobbing-hilfe.de/wp-content/uploads/2021/04/logo-cybermobbinghilfe-retina.png
+    Name: Cybermobbing-Hilfe
+    Tags:
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+  - Link: ''
+    Logo: https://www.bfdi.bund.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=3
+    Name: Suche nach Aufsichtsbehörden für Datenschutz in den Bundesländern
+    Tags:
+    - Mobbing
   Kategorie: Digitale Gewalt
 - Anlaufstelle:
-  - Link: https://themis-vertrauensstelle.de/
-    Name: 'Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung und
-      Gewalt'
-    Tags: []
-  - Link: https://www.ansprechstelle-safe-sport.de/
+  - Link: ''
+    Logo: https://themis-vertrauensstelle.de/wp-content/uploads/2023/05/cropped-Unbenannt.png
+    Name: 'Musik, Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung
+      und Gewalt'
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
+  - Link: ''
+    Logo: https://6xc492.n3cdn1.secureserver.net/wp-content/uploads/SafeSport_Logo_2z-1.svg?time=1699361971
     Name: 'Sport: Safe Sport'
-    Tags: []
+    Tags:
+    - Opferhilfe
+    - Erste Hilfe
+    - Gewalt gegen Frauen
+    - Häusliche Gewalt
   Kategorie: Branchenspezifische Anlaufstellen
+- Anlaufstelle:
+  - Link: ''
+    Logo: https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
+    Name: Antidiskrimierungsstelle des Bundes
+    Tags:
+    - Kategorie
+    - Name
+    - Opferhilfe
+    - Erste Hilfe
+    - Körperliche Gewalt
+    - Gewalt gegen Frauen
+    - Gewalt am Arbeitsplatz
+    - Mobbing
+    - Sexueller Missbrauch
+    - Narzissmus
+  - Link: ''
+    Logo: https://verband-brg.de/wp-content/uploads/2019/01/logo_vbrg_m3.png
+    Name: Verband der Beratungsstellen für Betroffene rechter, rassistischer und antisemitischer
+      Gewalt
+    Tags:
+    - Name
+    - Sexueller Missbrauch
+    - Narzissmus
+  - Link: ''
+    Logo: https://www.berlin.de/imgscaler/UerXchZFAzAEZCYuy102OEqjmgkhCZ6YQ1oabi9hGnc/rbig2zu1/L3N5czExLXByb2Qvc2VuL2xhZHMvX2Fzc2V0cy9yZWNodC9sb2dvX29tYnVkc3N0ZWxsZS5qcGc.jpg?ts=1684994881
+    Name: Ombudsstelle / Landesstelle für Gleichbehandlung (nur Berlin)
+    Tags:
+    - Körperliche Gewalt
+    - Sexueller Missbrauch
+    - Narzissmus
+  Kategorie: Diskriminierung (Geschlecht, LGBTQI+, Rassismus)

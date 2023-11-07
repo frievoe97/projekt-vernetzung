@@ -24,30 +24,17 @@ const AnlaufstellenContentNetflix = () => {
           {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
             <div key={rowIndex} className="mb-0 divide-y-2 divide-black">
               {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
-              {row.Name.length > 0 && (
+              {row.Anlaufstelle.length > 0 && (
                 <>
                   <h2 className="text-xl text-left font-bold my-2 ml-4">
                     {row.Kategorie}
                   </h2>
 
                   <div className="flex overflow-x-auto items-stretch flex-row scroll-container py-4">
-                    {row.Name.map((card, index) => (
-                      // <CardComponent
-                      //   key={index}
-                      //   imageUrl={`https://picsum.photos/200/300?random=${
-                      //     (rowIndex + 1) * (index + 1)
-                      //   }`}
-                      //   title={card.Name}
-                      //   text={card.text}
-                      //   link={card.link}
-                      //   tags={card.Tagss}
-                      //   removable={false}
-                      // />
+                    {row.Anlaufstelle.map((card, index) => (
                       <CustomCard
                         key={index}
-                        imageUrl={`https://picsum.photos/200/300?random=${
-                          (rowIndex + 1) * (index + 1)
-                        }`}
+                        imageUrl={card.Logo}
                         title={card.Name}
                         text={card.text}
                         link={card.link}
