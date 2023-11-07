@@ -4,6 +4,7 @@ import yaml from "js-yaml";
 import AnlaufstellenContentNetflix from "./AnlaufstellenContentNetflix";
 import AnlaufstellenContentGrid from "./AnlaufstellenContentGrid";
 import SearchBar from "./SearchBar";
+import SearchBarAnt from "./SearchBarAnt";
 
 /**
  * Hauptkomponente für die Anlaufstellen-V2-Seite.
@@ -120,9 +121,16 @@ function Anlaufstellen_V2() {
   }, [state.anlaufstellenData]);
 
   return (
-    <div className="text-center text-color_font mt-0 pt-20 bg-fm_helles_beige">
+    <div className="text-center text-color_font mt-0 pt-16 bg-fm_helles_beige">
       {/* Rendere die Suchleiste und übergebe die entsprechenden Funktionen und Daten */}
-      <SearchBar
+      {/* <SearchBar
+        onTagsChange={handleTagsChange}
+        allTags={allTags}
+        searchData={searchData}
+        addTagFromSuggestion={addTagFromSuggestion}
+      /> */}
+
+      <SearchBarAnt
         onTagsChange={handleTagsChange}
         allTags={allTags}
         searchData={searchData}

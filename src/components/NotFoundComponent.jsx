@@ -17,11 +17,11 @@ function NotFoundComponent({ text, buttonText, link }) {
     <div className="flex flex-col items-center justify-center h-fit mt-24">
       {/* Überschrift für die 404-Fehlerseite */}
       <h2 className="text-4xl font-semibold mb-4 text-center">
-        404 - Seite nicht gefunden
+        Diese Seite ist gerade noch in Arbeit :)
       </h2>
 
       {/* Fehlermeldungstext */}
-      <p className="text-lg mb-8">{text}</p>
+      {/* <p className="text-lg mb-8">{text}</p> */}
 
       {/* Navigationsbutton, um zur Startseite zu gelangen */}
       <ButtonBigRounded buttonText={buttonText} link={link} />

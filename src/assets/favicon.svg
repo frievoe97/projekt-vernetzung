@@ -2,16 +2,16 @@
  <g>
   <title>Layer 1</title>
   <ellipse stroke-width="15" fill="none" cx="189.52985" cy="206.4689" id="svg_4" rx="42.43638" ry="42.96029" stroke="#000000"/>
-  <ellipse stroke-width="15" stroke="#000000" fill="none" cx="61.15166" cy="63.16123" id="svg_5" rx="37.1999" ry="37.65917"/>
-  <ellipse stroke-width="16" stroke="#000000" fill="none" cx="191.97917" cy="54.18049" id="svg_6" rx="39.48031" ry="39.96772"/>
-  <ellipse stroke-width="15" stroke="#000000" fill="none" cx="343.24583" cy="129.89245" id="svg_7" rx="27.40262" ry="27.74093"/>
-  <ellipse stroke-width="15" stroke="#000000" fill="none" cx="327.14832" cy="351.04245" id="svg_8" rx="37.11545" ry="37.57367"/>
-  <ellipse stroke-width="15" stroke="#000000" fill="none" cx="61.15164" cy="320.5096" id="svg_9" rx="27.40262" ry="27.74093"/>
-  <line stroke-width="15" stroke="#000000" id="svg_10" y2="176.66244" x2="158.64421" y1="95.05748" x1="81.22706" fill="none"/>
-  <line stroke-width="15" stroke="#000000" transform="rotate(42.551 188.96 129.354)" id="svg_11" y2="154.56849" x2="211.82295" y1="104.13853" x1="166.09763" fill="none"/>
-  <line stroke-width="15" stroke="#000000" id="svg_12" y2="145.02225" x2="320.5145" y1="200.42413" x1="231.80392" fill="none"/>
-  <line stroke-width="15" stroke="#000000" id="svg_14" y2="327.12166" x2="299.86709" y1="239.30187" x1="217.38582" fill="none"/>
-  <line stroke-width="15" stroke="#000000" id="svg_15" y2="237.08293" x2="159.80596" y1="299.88207" x1="79.84744" fill="none"/>
+  <ellipse stroke-width="15" stroke="#ffffff" fill="none" cx="61.15166" cy="63.16123" id="svg_5" rx="37.1999" ry="37.65917"/>
+  <ellipse stroke-width="16" stroke="#ffffff" fill="none" cx="191.97917" cy="54.18049" id="svg_6" rx="39.48031" ry="39.96772"/>
+  <ellipse stroke-width="15" stroke="#ffffff" fill="none" cx="343.24583" cy="129.89245" id="svg_7" rx="27.40262" ry="27.74093"/>
+  <ellipse stroke-width="15" stroke="#ffffff" fill="none" cx="327.14832" cy="351.04245" id="svg_8" rx="37.11545" ry="37.57367"/>
+  <ellipse stroke-width="15" stroke="#ffffff" fill="none" cx="61.15164" cy="320.5096" id="svg_9" rx="27.40262" ry="27.74093"/>
+  <line stroke-width="15" stroke="#ffffff" id="svg_10" y2="176.66244" x2="158.64421" y1="95.05748" x1="81.22706" fill="none"/>
+  <line stroke-width="15" stroke="#ffffff" transform="rotate(42.551 188.96 129.354)" id="svg_11" y2="154.56849" x2="211.82295" y1="104.13853" x1="166.09763" fill="none"/>
+  <line stroke-width="15" stroke="#ffffff" id="svg_12" y2="145.02225" x2="320.5145" y1="200.42413" x1="231.80392" fill="none"/>
+  <line stroke-width="15" stroke="#ffffff" id="svg_14" y2="327.12166" x2="299.86709" y1="239.30187" x1="217.38582" fill="none"/>
+  <line stroke-width="15" stroke="#ffffff" id="svg_15" y2="237.08293" x2="159.80596" y1="299.88207" x1="79.84744" fill="none"/>
  </g>
 
 </svg>

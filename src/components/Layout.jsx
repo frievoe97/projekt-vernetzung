@@ -19,7 +19,7 @@ function Layout({ children }) {
       <Navbar />
 
       {/* Hauptinhalt der Website */}
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow bg-fm_helles_beige">{children}</main>
 
       {/* Footer */}
       <Footer />

@@ -13,7 +13,7 @@ const PictureHeaderGlossary = ({ data }) => {
     >
       <div className="max-w-screen-xl mx-auto bg-white text-justify md:text-center rounded">
         <div className="block md:hidden">
-          <img src={imageUrl} alt="" className="h-24 w-full object-cover" />
+          <img src={imageUrl} alt="" className="object-fill" />
         </div>
         <div className="p-4 ">
           <h1 className="text-2xl font-bold text-fm_blau mb-4">{title}</h1>

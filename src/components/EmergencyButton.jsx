@@ -34,9 +34,9 @@ const EmergencyButton = () => {
   ];
 
   return (
-    <div className="fixed right-0 bottom-24 p-4 pr-0">
+    <div className="fixed right-0 bottom-24 p-4 pr-0 hover:border-none">
       <button
-        className="bg-gray-100 text-color_emergency_button p-4 text-lg shadow-md rounded-none rounded-l-lg"
+        className="bg-gray-100 text-fm_rosa p-4 text-lg shadow-md rounded-none rounded-l-lg hover:border-none"
         onClick={openEmergencyDialog}
       >
         <FontAwesomeIcon icon={faPhone} />
@@ -47,7 +47,7 @@ const EmergencyButton = () => {
           <div className="bg-white rounded-lg p-8 max-w-screen-md shadow-md">
             <div className="flex flex-row items-center mb-4">
               <button
-                className="bg-color_background_2  mr-4"
+                className="bg-color_background_2  mr-4 hover:border-none"
                 onClick={closeEmergencyDialog}
               >
                 <FontAwesomeIcon icon={faTimes} size="lg" />

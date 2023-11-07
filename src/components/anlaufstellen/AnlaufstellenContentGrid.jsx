@@ -94,18 +94,18 @@ function AnlaufstellenContentGrid({ searchData, onTagsChange }) {
     <div className="w-full px-0 md:px-12">
       <div className="w-full">
         <h2 className="text-xl text-left font-bold w-fit flex flex-col md:flex-row items-center ml-4 md:ml-0">
-          Passend zu deiner Suche haben wir folgende Anlaufstellen gefunden:{" "}
-          {objectToArray(searchData).map((tag, index) => (
+          Passend zu deiner Suche haben wir folgende Anlaufstellen gefunden:
+          {/* {objectToArray(searchData).map((tag, index) => (
             <Tags
               key={index}
               tag={capitalizeFirstLetterOfEachWord(tag)}
               onRemoveTag={() => onTagsChange(tag)}
               removable={true}
             />
-          ))}
+          ))} */}
         </h2>
 
-        <div className="flex flex-wrap items-stretch flex-row scroll-container">
+        <div className="flex flex-wrap items-stretch justify-center scroll-container pb-8">
           {state.anlaufstellenData.googleDoc.flatMap((row, rowIndex) =>
             row.Name.map((card, index) => {
               // Überprüft, ob alle Elemente in objectToArray(searchData) in card.Tags enthalten sind

@@ -38,9 +38,11 @@ function PictureHeader_V2({ data }) {
             Indem wir fachübergreifendes Wissen bündeln, möchten wir für
             Betroffene, ihr Umfeld sowie die Öffentlichkeit:
           </p>
-          <ul className="list-disc ml-4 md:ml-6 mt-2">
+          {/* list-disc ml-4 md:ml-6 mt-2 */}
+          <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
             {listItems.map((item, index) => (
-              <li key={index} className="text-left w-fit mx-auto">
+              // text-left w-fit
+              <li key={index} className="text-left md:w-fit">
                 {item}
               </li>
             ))}

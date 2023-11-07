@@ -57,17 +57,17 @@ function SearchBar({
   };
 
   return (
-    <div className="w-full mb-4">
+    <div className="w-full mb-4 bg-fm_weiss">
       <div className="pt-4 max-w-screen-xl px-2 md:px-16 mx-auto">
-        <h2 className="text-xl md:my-8 font-bold">
-          Finde die passende Anlaufstelle!
+        <h2 className="text-4xl md:my-8 font-bold text-fm_blau">
+          Anlaufstellen
         </h2>
         {allTags.length > 0 && (
-          <p className="mb-4">
-            Suche nach einem oder mehreren dieser Schlagwörter
+          <p className="mb-4 text-lg">
+            Suche nach deiner passenden Anlaufstelle
           </p>
         )}
-        <div className="flex flex-wrap pb-4">
+        {/* <div className="flex flex-wrap pb-4">
           {allTags.map((tag, index) => (
             <div
               key={index}
@@ -82,7 +82,7 @@ function SearchBar({
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="w-full">
           <input

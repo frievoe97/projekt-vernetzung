@@ -5,14 +5,15 @@ import {
   InstagramOutlined,
 } from "@ant-design/icons";
 import { Avatar, Card } from "antd";
+import "./CustomCard.css";
 
 const { Meta } = Card;
 
 function CustomCard({ imageUrl, title, text, link, tags }) {
   return (
-    <div>
+    <div className="card-container">
       <Card
-        className="shadow-xl"
+        className="shadow-xl cursor-pointer"
         style={{ width: 300, height: "fit-content", margin: "1rem" }}
         cover={
           <img alt="example" src={imageUrl} className="h-24 object-cover" />

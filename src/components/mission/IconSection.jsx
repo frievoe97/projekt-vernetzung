@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactCardFlip from "react-card-flip";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,6 +19,9 @@ const IconTextRows = ({ data }) => {
 
   const [clickedCardIndex, setClickedCardIndex] = useState(null);
   const [userClicked, setUserClicked] = useState(false);
+  const [prevIndex, setPrevIndex] = useState(null);
+
+  // let prevIndex = null;
 
   // Konfigurationseinstellungen für den Slider.
   const settings = {
@@ -37,12 +41,12 @@ const IconTextRows = ({ data }) => {
 
     const resetClickedCardIndex = () => {
       if (!userClicked) {
-        const randomIndex = Math.floor(Math.random() * data.data.length);
+        const randomIndex = 0;
         setClickedCardIndex(randomIndex);
       }
     };
 
-    const cardTimeout = 5000; // 5 Sekunden Inaktivität (kann angepasst werden)
+    const cardTimeout = 2500; // 5 Sekunden Inaktivität (kann angepasst werden)
     const resetTimer = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(resetClickedCardIndex, cardTimeout);
@@ -54,6 +58,23 @@ const IconTextRows = ({ data }) => {
       clearTimeout(timeoutId);
     };
   }, [clickedCardIndex, userClicked, data]);
+
+  const handleUserClick = (index) => {
+    console.log(index, prevIndex, clickedCardIndex);
+    if (clickedCardIndex == null) {
+      setClickedCardIndex(index);
+    } else {
+      if (prevIndex != index) {
+        setClickedCardIndex(index);
+      } else {
+        setClickedCardIndex(null);
+      }
+    }
+
+    setPrevIndex(index);
+    setUserClicked(true);
+    settings.autoplay = false;
+  };
 
   return (
     <div className="w-full bg-fm_helles_beige">
@@ -80,19 +101,66 @@ const IconTextRows = ({ data }) => {
 
         {/* Mobile-Ansicht */}
         <div className="block md:hidden">
-          <Slider {...settings}>
+          <Slider {...settings} className="h-full" adaptiveHeight={false}>
             {data.data.map((item, index) => (
-              <div key={index}>
-                <img
-                  className="w-24 object-cover mx-auto pt-4"
-                  src={item.iconPath}
-                  alt={`Icon ${index + 1}`}
-                />
-                <div className="flex-1 p-4">
-                  <p className="text-left font-bold mb-2">{item.title}</p>
-                  <p className="text-justify">{item.text}</p>
-                </div>
+              <div
+                key={index}
+                className={`p-0 cursor-pointer h-full`}
+                onClick={() => handleUserClick(index)}
+              >
+                <ReactCardFlip
+                  className="h-full"
+                  isFlipped={index === clickedCardIndex}
+                  flipDirection="horizontal"
+                  containerStyle={{
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                  }}
+                  cardStyle={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
+                  <div className="p-4 h-64 flex  items-center">
+                    {/* <img
+                      className="h-20 object-cover p-4 pt-2 mx-auto mt-4"
+                      src={item.iconPath}
+                      alt={`Icon ${index + 1}`}
+                    />
+                    <h2 className="font-bold text-center flex-grow">
+                      {item.title}
+                    </h2> */}
+                    <div className="mx-auto">
+                      <img
+                        className="h-20 object-cover p-4 pt-2 mx-auto"
+                        src={item.iconPath}
+                        alt={`Icon ${index + 1}`}
+                      />
+                      <h2 className="font-bold text-center flex-grow">
+                        {item.title}
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div className="p-8 h-64 flex items-center">
+                    <div>
+                      <p className="font-bold leading-8">{item.text}</p>
+                    </div>
+                  </div>
+                </ReactCardFlip>
               </div>
+              // <div key={index}>
+              //   <img
+              //     className="w-24 object-cover mx-auto pt-4"
+              //     src={item.iconPath}
+              //     alt={`Icon ${index + 1}`}
+              //   />
+              //   <div className="flex-1 p-4">
+              //     <p className="text-left font-bold mb-2">{item.title}</p>
+              //     <p className="text-justify">{item.text}</p>
+              //   </div>
+              // </div>
             ))}
           </Slider>
         </div>

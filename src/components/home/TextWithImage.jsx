@@ -24,7 +24,7 @@ const TextWithImage = ({ data }) => {
       <div className="py-4 max-w-screen-xl mx-auto">
         {/* Erste Zeile mit Überschrift */}
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-left">{title}</h1>
+          <h1 className="text-2xl font-bold text-fm_blau text-left">{title}</h1>
           {/* Rechte Spalte mit Bild auf Handys */}
           <div className="lg:w-1/3 p-4 lg:pl-8 lg:hidden">
             <img
@@ -49,7 +49,9 @@ const TextWithImage = ({ data }) => {
                 {paragraph}
               </p>
             ))}
-            <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
+            <div className="w-full flex">
+              <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
+            </div>
           </div>
         </div>
       </div>

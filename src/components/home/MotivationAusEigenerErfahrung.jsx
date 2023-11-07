@@ -36,7 +36,7 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
           </p>
         ))}
         <div className="mb-8">
-          <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
+          <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
         </div>
       </div>
     </div>

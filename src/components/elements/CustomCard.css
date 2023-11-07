@@ -1,0 +1,21 @@
+.ant-card-meta-title {
+  text-overflow: unset !important;
+  white-space: unset !important;
+}
+
+/* In deiner CustomCard.css-Datei */
+
+/* Standardstil für die Card */
+.card-container {
+  width: 300px;
+  height: fit-content;
+  margin: 1rem;
+  transition: transform 0.3s; /* Hinzufügen einer sanften Transition */
+}
+
+/* Stiländerungen beim Hover auf Laptop-Bildschirmen */
+@media (min-width: 840px) {
+  .card-container:hover {
+    transform: scale(1.07); /* Vergrößert die Card um 5% beim Hover */
+  }
+}

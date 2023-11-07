@@ -7,6 +7,7 @@ const Navbar = () => {
   const { state, dispatch } = useGlobalState();
   const [openMenu, setOpenMenu] = useState(true);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [isMobile, setIsMobile] = useState(null);
 
   // Funktion zum Umschalten des Hauptmenüs
   const toggleMenu = () => {
@@ -28,8 +29,10 @@ const Navbar = () => {
   const updateWindowWidth = () => {
     if (window.innerWidth <= 840) {
       setOpenMenu(false);
+      setIsMobile(true);
     } else {
       setOpenMenu(true);
+      setIsMobile(false);
     }
   };
 
@@ -75,10 +78,10 @@ const Navbar = () => {
     <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 align-middle">
         <div className="flex flex-row items-center">
-          <img className="h-7" src="/logo-4.png" alt="" />
+          <img className="h-7" src="/logo-4_white.png" alt="" />
 
           <Link
-            className="ml-5 text-color_header_font hover:text-color_header_font self-center text-2xl font-semibold whitespace-nowrap text-lg md:text-2xl"
+            className="ml-5 text-fm_weiss hover:text-fm_weiss self-center text-2xl font-semibold whitespace-nowrap text-lg md:text-2xl"
             to="/"
           >
             {state.headerData.headerTitle}
@@ -101,7 +104,7 @@ const Navbar = () => {
             viewBox="0 0 17 14"
           >
             <path
-              stroke="currentColor"
+              stroke="white"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -142,7 +145,11 @@ const Navbar = () => {
                   </button>
                 ) : (
                   <Link
-                    className="block py-2 pl-3 pr-4 text-color_header_font hover:text-color_header_font rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  dark:hover:bg-gray-700  md:dark:hover:bg-transparent hover:underline"
+                    className={`block py-2 pl-3 pr-4 font-bold ${
+                      isMobile ? "text-black" : "text-fm_weiss"
+                    } hover:${
+                      isMobile ? "text-black" : "text-fm_weiss"
+                    } rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:underline`}
                     to={item.url}
                     onClick={() => toggleSubmenu(index, true)}
                   >
