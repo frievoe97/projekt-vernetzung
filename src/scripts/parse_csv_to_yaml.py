@@ -20,7 +20,6 @@ with open(csv_file, newline='', encoding='utf-8') as csvfile:
         elif current_category is not None and any(row[1:]):  # Wenn es Tags gibt
             tag = {"Name": row[1], "Link": row[19], "Logo": row[23], "Tags": [header[col] for col, value in enumerate(row[2:]) if value == "x"]}
             current_category["Anlaufstelle"].append(tag)
-            # current_category["Link"].append(row[20])
         elif current_category is not None:  # Wenn die Tags abgeschlossen sind
             data.append(current_category)
             current_category = None

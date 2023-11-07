@@ -30,16 +30,6 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
     <PhoneOutlined key="phone" />,
   ];
 
-  //   if (link) {
-  //     cardActions.push(
-  //       <a href={link} target="_blank" rel="noopener noreferrer">
-  //         <LinkOutlined key="insta" />,
-  //       </a>
-  //     );
-  //   }
-
-  console.log(link);
-
   return (
     <div className="card-container">
       <Card
