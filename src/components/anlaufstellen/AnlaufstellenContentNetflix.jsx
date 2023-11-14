@@ -1,8 +1,8 @@
 import React, { useState } from "react"; // Stellen Sie sicher, dass useState hier importiert wird
-import CardComponent from "../elements/CardComponent";
+// import CardComponent from "../elements/CardComponent";
 import CustomCard from "../elements/CustomCard";
 import { useGlobalState } from "../../data/GlobalState";
-import { useSpring, animated } from "react-spring";
+// import { useSpring, animated } from "react-spring";
 import "./anlausstellenStyle.css";
 
 /**
@@ -19,19 +19,19 @@ const AnlaufstellenContentNetflix = () => {
   }
 
   // Zustand für die Sichtbarkeit der Extra-Card
-  const [isExtraCardVisible, setExtraCardVisible] = useState(false);
+  // const [isExtraCardVisible, setExtraCardVisible] = useState(false);
 
   // Animationswerte für die Extra-Card
-  const extraCardProps = useSpring({
-    opacity: isExtraCardVisible ? 1 : 0,
-    transform: isExtraCardVisible ? "scale(1)" : "scale(0.8)",
-  });
+  // const extraCardProps = useSpring({
+  //   opacity: isExtraCardVisible ? 1 : 0,
+  //   transform: isExtraCardVisible ? "scale(1)" : "scale(0.8)",
+  // });
 
   // Funktion, die aufgerufen wird, wenn auf eine Card geklickt wird
-  const handleCardClick = () => {
-    // Setzen Sie den Zustand, um die Extra-Card sichtbar zu machen
-    setExtraCardVisible(true);
-  };
+  // const handleCardClick = () => {
+  //   // Setzen Sie den Zustand, um die Extra-Card sichtbar zu machen
+  //   setExtraCardVisible(true);
+  // };
 
   return (
     <div className="relative w-full px-0">
@@ -41,7 +41,7 @@ const AnlaufstellenContentNetflix = () => {
             <div
               key={rowIndex}
               className="mb-0 divide-y-2 divide-black"
-              onClick={handleCardClick}
+              // onClick={handleCardClick}
             >
               {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
               {row.Anlaufstelle != null && row.Anlaufstelle.length > 0 && (
@@ -59,7 +59,7 @@ const AnlaufstellenContentNetflix = () => {
                         text={card.text}
                         link={card.Link}
                         tags={card.Tags}
-                        onClick={handleCardClick} // Fügen Sie den Klick-Handler hinzu
+                        // onClick={handleCardClick} // Fügen Sie den Klick-Handler hinzu
                       />
                     ))}
                   </div>

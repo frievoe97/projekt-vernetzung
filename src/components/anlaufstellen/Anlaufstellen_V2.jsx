@@ -32,7 +32,7 @@ function Anlaufstellen_V2() {
       .then((yamlText) => {
         // Parst die YAML-Daten mit 'js-yaml' und aktualisiert den globalen Zustand
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
+        // console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData,
