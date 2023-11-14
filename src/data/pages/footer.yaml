@@ -1,5 +1,5 @@
 contact:
-  email: projekt-vernetzung@email.com
+  email: info@projekt-vernetzung.org
   location: Berlin, Deutschland
   copyright: © 2023 Projekt Vernetzung
 
@@ -10,8 +10,8 @@ newsletter:
 
 links:
   - label: Impressum
-    url: #
+    url: "/imprint"
   - label: Datenschutz
-    url: #
-  - label: Nutzungsbedingungen
-    url: #
+    url: "/data-privacy"
+#  - label: Nutzungsbedingungen
+#    url: #
