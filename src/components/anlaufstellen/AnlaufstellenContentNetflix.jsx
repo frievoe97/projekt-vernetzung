@@ -71,7 +71,7 @@ const AnlaufstellenContentNetflix = () => {
       </div>
 
       {/* Hier fügen Sie die Extra-Card hinzu und verwenden react-spring für die Animation */}
-      <animated.div
+      {/* <animated.div
         style={{
           ...extraCardProps,
           position: "fixed",
@@ -90,7 +90,7 @@ const AnlaufstellenContentNetflix = () => {
           link="/fullscreen"
           tags={["Vollbild", "Card"]}
         />
-      </animated.div>
+      </animated.div> */}
     </div>
   );
 };
