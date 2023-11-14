@@ -1,5 +1,3 @@
-// Imprint.jsx
-
 import React from "react";
 
 const Imprint = () => {
