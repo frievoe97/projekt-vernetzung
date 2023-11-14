@@ -10,8 +10,8 @@ newsletter:
 
 links:
   - label: Impressum
-    url: #
+    url: "/imprint"
   - label: Datenschutz
-    url: #
+    url: "/data-privacy"
 #  - label: Nutzungsbedingungen
 #    url: #
