@@ -29,6 +29,7 @@ function Gloassar_V2() {
       });
   };
 
+  // "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",
   useEffect(() => {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",

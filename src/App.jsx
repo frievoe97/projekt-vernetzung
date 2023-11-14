@@ -8,6 +8,8 @@ import NotFoundComponent from "./components/NotFoundComponent";
 import Home_V2 from "./components/home/Home_V2";
 import Gloassar_V2 from "./components/glossary/Gloassar_V2";
 
+import "./fonts/inter.ttf";
+
 /**
  * App ist die Hauptkomponente der Anwendung und definiert die Routing-Struktur.
  */

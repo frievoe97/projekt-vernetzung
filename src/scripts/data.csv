@@ -1,10 +1,10 @@
 Kategorie,Name,Opferhilfe,Erste Hilfe,Körperliche Gewalt,Psychische Gewalt,Gewalt gegen Frauen,Häusliche Gewalt,Gewalt am Arbeitsplatz,Mobbing,Sexuelle Belästigung,Digitale Gewalt,Sexueller Missbrauch,Narzissmus,Gewalt gegen LGBTQI,Rassismus,Prozessbegleitung,Kindesmissbrauch,,Links,,,,Logos
 ,,,,,,,,,,,,,,,,,,,,,,,
 Erste Hilfe / Opferhilfe,,,,,,,,,,,,,,,,,,,,,,,
-,Atlas der Opferhilfen,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,,,https://www.beratungsstellen-opferhilfen.de/beratungsstellen/,,,,https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
 ,Weißer Ring,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,,,https://weisser-ring.de/,,,,https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg
 ,Ärzt:innensuche der Kassenärztlichen Bundesvereinigung,,,x,x,,x,x,x,,,x,,,,,,Die beiden eventuell zusammenfassen?,https://arztsuche.116117.de/,,,,https://arztsuche.116117.de/media/images/content/logo.svg
 ,Psychotherapeut:innensuche der Kassenärztlichen Bundesvereinigung,,,x,x,x,x,x,x,,x,x,x,,,,,,https://arztsuche.116117.de/,,,,https://arztsuche.116117.de/media/images/content/logo.svg
+,Atlas der Opferhilfen,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,,,https://www.beratungsstellen-opferhilfen.de/beratungsstellen/,,,,https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png
 ,Anwaltssuche der Bundesrechtsanwaltskammer,,,x,x,x,x,x,x,x,x,x,,x,x,x,,,https://www.brak.de/service/verbraucherinformationen/anwaltssuche/,,,,https://th.bing.com/th/id/OIP.CB54yo2JCTagRTRYEWy60gHaBo?pid=ImgDet&rs=1
 ,Telefonseelsorge ,x,x,x,x,x,x,x,x,x,x,x,x,x,x,,,,https://www.telefonseelsorge.de/,,,,https://th.bing.com/th/id/OIP.ntu2oH7cO2QXl-w41M-VsQHaDb?pid=ImgDet&rs=1
 ,Nationale Selbsthilfegruppensuche,x,,,,,,,,,,,,,,,,,https://www.nakos.de/adressen/datenbanksuche/,,,,https://www.nakos.de/images/logo.png
@@ -37,18 +37,13 @@ Digitale Gewalt,,,,,,,,,,,,,,,,,,,,,,,
 ,Suche nach Aufsichtsbehörden für Datenschutz in den Bundesländern,,,,,,,,,,x,,,,,,,,https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_table.html,,,,https://www.bfdi.bund.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=3
 ,Hilfe-Portal Sexueller Missbrauch,,,,,,,,,,,,,,,,,,https://www.hilfe-portal-missbrauch.de/startseite,,,,https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg
 ,,,,,,,,,,,,,,,,,,,,,,,
-Branchenspezifische Anlaufstellen,,,,,,,,,,,,,,,,,,,,,,,
-,"Musik, Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung und Gewalt",,,x,x,,,x,x,,,,,,,,,,https://themis-vertrauensstelle.de/,,,,https://themis-vertrauensstelle.de/wp-content/uploads/2023/05/cropped-Unbenannt.png
-,Sport: Safe Sport,,,x,x,,,x,x,,,,,,,,,,https://www.ansprechstelle-safe-sport.de/,,,,https://6xc492.n3cdn1.secureserver.net/wp-content/uploads/SafeSport_Logo_2z-1.svg?time=1699361971
-,,,,,,,,,,,,,,,,,,,,,,,
+Gewalt an Kindern,,,,,,,,,,,,,,,,,,,,,,,
+,Unabhängige Beauftragte für Fragen des sexuellen Kindesmissbrauchs (UBSKM),x,x,x,x,,x,,,x,x,x,,,,x,x,,https://beauftragte-missbrauch.de/,,,,https://assets.beauftragte-missbrauch.de//images/logo.svg
+,Betroffenenrat ,x,,x,x,,x,,,x,,x,,,,,x,,https://beauftragte-missbrauch.de/betroffenenrat/betroffenenrat-bei-der-ubskm,,,,https://assets.beauftragte-missbrauch.de//images/logo-additional.svg
+,Hilfe-Portal Sexueller Missbrauch,x,x,x,x,,x,,,x,x,x,,,,,x,,https://www.hilfe-portal-missbrauch.de/startseite,,,,https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg
 ,,,,,,,,,,,,,,,,,,,,,,,
 "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)",,,,,,,,,,,,,,,,,,,,,,,
 ,Antidiskrimierungsstelle des Bundes,x,x,x,x,x,,x,,x,x,,,x,x,,,,https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html,,,,https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1
 ,"Verband der Beratungsstellen für Betroffene rechter, rassistischer und antisemitischer Gewalt",,x,,,,,,,,,,,x,x,,,,https://verband-brg.de/,,,,https://verband-brg.de/wp-content/uploads/2019/01/logo_vbrg_m3.png
 ,Ombudsstelle / Landesstelle für Gleichbehandlung (nur Berlin),,,,,x,,,,,,,,x,x,,,,https://www.berlin.de/sen/lads/recht/ladg/ombudsstelle/,,,,https://www.berlin.de/imgscaler/UerXchZFAzAEZCYuy102OEqjmgkhCZ6YQ1oabi9hGnc/rbig2zu1/L3N5czExLXByb2Qvc2VuL2xhZHMvX2Fzc2V0cy9yZWNodC9sb2dvX29tYnVkc3N0ZWxsZS5qcGc.jpg?ts=1684994881
-,,,,,,,,,,,,,,,,,,,,,,,
-Gewalt an Kindern,,,,,,,,,,,,,,,,,,,,,,,
-,Unabhängige Beauftragte für Fragen des sexuellen Kindesmissbrauchs (UBSKM),x,x,x,x,,x,,,x,x,x,,,,x,x,,https://beauftragte-missbrauch.de/,,,,https://assets.beauftragte-missbrauch.de//images/logo.svg
-,Betroffenenrat ,x,,x,x,,x,,,x,,x,,,,,x,,https://beauftragte-missbrauch.de/betroffenenrat/betroffenenrat-bei-der-ubskm,,,,https://assets.beauftragte-missbrauch.de//images/logo-additional.svg
-,Hilfe-Portal Sexueller Missbrauch,x,x,x,x,,x,,,x,x,x,,,,,x,,https://www.hilfe-portal-missbrauch.de/startseite,,,,https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg
 ,,,,,,,,,,,,,,,,,,,,,,,

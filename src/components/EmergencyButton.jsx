@@ -34,7 +34,7 @@ const EmergencyButton = () => {
   ];
 
   return (
-    <div className="fixed right-0 bottom-24 p-4 pr-0 hover:border-none">
+    <div className="fixed right-0 bottom-16 p-4 pr-0 hover:border-none">
       <button
         className="bg-gray-100 text-fm_rosa p-4 text-lg shadow-md rounded-none rounded-l-lg hover:border-none"
         onClick={openEmergencyDialog}

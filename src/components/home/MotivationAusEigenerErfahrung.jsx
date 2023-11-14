@@ -17,13 +17,21 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
     return null;
   }
 
-  const { title, imageUrl, paragraphs, buttonText, buttonLink } = data;
+  const {
+    title,
+    imageUrl,
+    paragraphs,
+    buttonText,
+    buttonLink,
+    offlineImageUrl,
+  } = data;
 
   return (
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="p-4">
           <img
+            // src={imageUrl}
             src={imageUrl}
             alt="Bild"
             className="w-full h-auto max-w-lg mx-auto"
@@ -31,11 +39,11 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
         </div>
         <h1 className="text-2xl font-bold mb-4">{title}</h1>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-4">
+          <p key={index} className="mb-4 text-justify">
             {paragraph}
           </p>
         ))}
-        <div className="mb-8">
+        <div className="mb-8  text-left">
           <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
         </div>
       </div>

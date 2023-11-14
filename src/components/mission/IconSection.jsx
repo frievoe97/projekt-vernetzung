@@ -33,6 +33,7 @@ const IconTextRows = ({ data }) => {
     autoplaySpeed: 5000,
     arrows: false,
     dots: false,
+    adaptiveHeight: false,
   };
 
   // Effekt für das Zurücksetzen des ausgewählten Index nach Inaktivität.
@@ -122,18 +123,10 @@ const IconTextRows = ({ data }) => {
                     height: "100%",
                   }}
                 >
-                  <div className="p-4 h-64 flex  items-center">
-                    {/* <img
-                      className="h-20 object-cover p-4 pt-2 mx-auto mt-4"
-                      src={item.iconPath}
-                      alt={`Icon ${index + 1}`}
-                    />
-                    <h2 className="font-bold text-center flex-grow">
-                      {item.title}
-                    </h2> */}
+                  <div className="p-4 h-72 flex  items-center">
                     <div className="mx-auto">
                       <img
-                        className="h-20 object-cover p-4 pt-2 mx-auto"
+                        className="h-20 object-cover p-4 pt-0 mx-auto"
                         src={item.iconPath}
                         alt={`Icon ${index + 1}`}
                       />
@@ -143,24 +136,13 @@ const IconTextRows = ({ data }) => {
                     </div>
                   </div>
 
-                  <div className="p-8 h-64 flex items-center">
+                  <div className="p-4 h-72 flex items-center">
                     <div>
-                      <p className="font-bold leading-8">{item.text}</p>
+                      <p className="font-bold leading-7">{item.text}</p>
                     </div>
                   </div>
                 </ReactCardFlip>
               </div>
-              // <div key={index}>
-              //   <img
-              //     className="w-24 object-cover mx-auto pt-4"
-              //     src={item.iconPath}
-              //     alt={`Icon ${index + 1}`}
-              //   />
-              //   <div className="flex-1 p-4">
-              //     <p className="text-left font-bold mb-2">{item.title}</p>
-              //     <p className="text-justify">{item.text}</p>
-              //   </div>
-              // </div>
             ))}
           </Slider>
         </div>

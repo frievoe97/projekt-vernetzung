@@ -5,6 +5,7 @@ import AnlaufstellenContentNetflix from "./AnlaufstellenContentNetflix";
 import AnlaufstellenContentGrid from "./AnlaufstellenContentGrid";
 import SearchBar from "./SearchBar";
 import SearchBarAnt from "./SearchBarAnt";
+import Filter from "./Filter";
 
 /**
  * Hauptkomponente für die Anlaufstellen-V2-Seite.
@@ -79,6 +80,7 @@ function Anlaufstellen_V2() {
   //   }, [searchData]);
 
   // Lade die Daten aus der YAML-Datei, wenn die Komponente montiert wird
+  // https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml
   useEffect(() => {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml",
@@ -129,12 +131,6 @@ function Anlaufstellen_V2() {
   return (
     <div className="text-center text-color_font mt-0 pt-16 bg-fm_helles_beige">
       {/* Rendere die Suchleiste und übergebe die entsprechenden Funktionen und Daten */}
-      {/* <SearchBar
-        onTagsChange={handleTagsChange}
-        allTags={allTags}
-        searchData={searchData}
-        addTagFromSuggestion={addTagFromSuggestion}
-      /> */}
 
       <SearchBarAnt
         onTagsChange={handleTagsChange}
@@ -142,6 +138,8 @@ function Anlaufstellen_V2() {
         searchData={searchData}
         addTagFromSuggestion={addTagFromSuggestion}
       />
+
+      {/* <Filter /> */}
 
       {/* Rendere den Inhalt basierend auf searchData */}
       {searchData.tags != undefined &&

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalState } from "../data/GlobalState";
 import yaml from "js-yaml";
+import "./Navbar.css";
 
 const Navbar = () => {
   const { state, dispatch } = useGlobalState();
@@ -78,9 +79,12 @@ const Navbar = () => {
     <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 align-middle">
         <div className="flex flex-row items-center">
-          <img className="h-7" src="/logo-4_white.png" alt="" />
+          <Link to="/">
+            <img className="h-8" src="/logo-4_white.png" alt="" />{" "}
+          </Link>
 
           <Link
+            id="header-title"
             className="ml-5 text-fm_weiss hover:text-fm_weiss self-center text-2xl font-semibold whitespace-nowrap text-lg md:text-2xl"
             to="/"
           >
@@ -170,7 +174,7 @@ const Navbar = () => {
                       {item.subItems.map((subItem, subIndex) => (
                         <li key={subIndex}>
                           <Link
-                            className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-color_header_font hover:text-color_header_font"
+                            className="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-color_header_font hover:text-color_header_font "
                             to={subItem.url}
                             onClick={() => toggleSubmenu(index, true)}
                           >

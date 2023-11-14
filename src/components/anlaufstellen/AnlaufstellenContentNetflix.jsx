@@ -34,7 +34,11 @@ const AnlaufstellenContentNetflix = () => {
                     {row.Anlaufstelle.map((card, index) => (
                       <CustomCard
                         key={index}
+                        // imageUrl={card.Logo}
                         imageUrl={card.Logo}
+                        // imageUrl={
+                        //   "http://localhost:8000/projekt-vernetzen/weisser-ring.svg"
+                        // }
                         title={card.Name}
                         text={card.text}
                         link={card.Link}

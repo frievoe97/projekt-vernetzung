@@ -8,6 +8,7 @@ const { Meta } = Card;
 function CustomCard({ imageUrl, title, text, link, tags }) {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 840);
   const cardWidth = isWideScreen ? 300 : 160;
+  const cardMargin = isWideScreen ? "1rem" : "0.5rem";
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,19 +25,70 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
   // Hier füge ich einen Link hinzu, der zu `link` führt
   const cardActions = [
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <LinkOutlined key="insta" />,
+      <LinkOutlined className="text-lg" key="insta" />,
     </a>,
-    <MailOutlined key="mail" />,
-    <PhoneOutlined key="phone" />,
+    <a target="_blank" rel="noopener noreferrer">
+      <MailOutlined className="text-lg" key="insta" />,
+    </a>,
+    <a target="_blank" rel="noopener noreferrer">
+      <PhoneOutlined className="text-lg" key="insta" />,
+    </a>,
   ];
+
+  function wrapTextWithMaxLineLength(inputString, maxLineLength) {
+    // Teile den Eingabestring in Wörter auf
+    const words = inputString.split(" ");
+
+    console.log("inputString: ", inputString);
+
+    let currentLine = "";
+    let result = "<span>";
+
+    for (const word of words) {
+      if (currentLine.length + word.length + 1 <= maxLineLength) {
+        // Füge das aktuelle Wort zur aktuellen Zeile hinzu, falls Platz vorhanden
+        if (currentLine.length > 0) {
+          currentLine += " ";
+        }
+        currentLine += word;
+      } else if (false) {
+      } else {
+        // Füge die aktuelle Zeile mit <br> zum Ergebnis hinzu und starte eine neue Zeile
+        result += `${currentLine}<br>`;
+        currentLine = word;
+      }
+    }
+
+    // Füge die letzte Zeile zum Ergebnis hinzu und schließe den <span>-Tag
+    if (currentLine.length > 0) {
+      result += currentLine + "</span>";
+    }
+
+    console.log("result: ", result);
+
+    // return result;
+    return { __html: result };
+  }
+
+  //   // Beispielaufruf
+  //   const inputString =
+  //     "Dies ist ein Beispieltext, der in Zeilen aufgeteilt werden soll.";
+  //   const maxLineLength = 20;
+  //   const wrappedText = wrapTextWithMaxLineLength(inputString, maxLineLength);
+  //   console.log(wrappedText);
 
   return (
     <div className="card-container">
       <Card
         className="shadow-xl cursor-pointer"
-        style={{ width: cardWidth, height: "fit-content", margin: "1rem" }}
+        style={{
+          width: cardWidth,
+          height: "fit-content",
+          margin: cardMargin,
+          backgroundColor: "#ffffffbb",
+        }}
         cover={
-          <div className="p-4 h-24">
+          <div className="p-3 h-20">
             <div
               style={{
                 maxWidth: "100%",
@@ -53,6 +105,7 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
                   maxWidth: "100%",
                   height: "100%",
                   objectFit: "contain",
+                  mixBlendMode: "multiply",
                 }}
               />
             </div>
@@ -60,7 +113,19 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
         }
         actions={cardActions}
       >
-        <Meta title={title} description={text} />
+        <Meta
+          className="text-xs h-16"
+          style={{
+            hyphens: "auto",
+          }}
+          // title={
+          //   <span
+          //     dangerouslySetInnerHTML={wrapTextWithMaxLineLength(title, 17)}
+          //   />
+          // }
+          title={title}
+          description={text}
+        />
       </Card>
     </div>
   );

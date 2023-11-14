@@ -4,7 +4,10 @@ const PictureHeaderGlossary = ({ data }) => {
   if (!data) {
     return null;
   }
-  const { imageUrl, title, subtitle, descriptions } = data;
+  const { imageUrl, title, subtitle, descriptions, offlineImageUrl } = data;
+
+  // let image =
+  //   "http://localhost:8000/projekt-vernetzen/images/" + offlineImageUrl;
 
   return (
     <div

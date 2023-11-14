@@ -5,36 +5,20 @@ const WarumJetztWarumWir = ({ data }) => {
     return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
   }
 
-  console.log(data);
-
-  const { warumJetzt, warumWir, kontaktText } = data;
-
   return (
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
-        {warumJetzt.length > 0 &&
-          warumJetzt.map((item, index) => (
-            <div key={index}>
-              <h2 className="font-bold mt-8 mb-4">{item.title}</h2>
-              <p className="mb-4">{item.text}</p>
-            </div>
-          ))}
+        {data.map((item, index) => (
+          <div key={index}>
+            <h2 className="font-bold mt-8 mb-4">{item.paragraph[0].title}</h2>
 
-        {warumWir.length > 0 &&
-          warumWir.map((item, index) => (
-            <div key={index}>
-              <h2 className="font-bold mt-8 mb-4">{item.title}</h2>
-              <p className="mb-4">{item.text}</p>
-            </div>
-          ))}
-
-        {kontaktText.length > 0 &&
-          kontaktText.map((item, index) => (
-            <div key={index}>
-              <h2 className="font-bold mt-8 mb-4">{item.title}</h2>
-              <p className="mb-4">{item.text}</p>
-            </div>
-          ))}
+            {item.paragraph[1].text.map((item, index) => (
+              <div key={index}>
+                <p className="mb-4">{item}</p>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

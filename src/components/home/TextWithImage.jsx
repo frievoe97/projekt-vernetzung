@@ -17,18 +17,22 @@ const TextWithImage = ({ data }) => {
     return null;
   }
 
-  const { title, text, imageUrls, buttonText, buttonLink } = data;
+  const { title, text, imageUrls, buttonText, buttonLink, offlineImageUrl } =
+    data;
 
   return (
     <div className="w-full bg-fm_weiss">
       <div className="py-4 max-w-screen-xl mx-auto">
         {/* Erste Zeile mit Überschrift */}
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-fm_blau text-left">{title}</h1>
+          <h1 className="text-2xl font-bold text-fm_blau text-left text-center">
+            {title}
+          </h1>
           {/* Rechte Spalte mit Bild auf Handys */}
           <div className="lg:w-1/3 p-4 lg:pl-8 lg:hidden">
             <img
-              src={imageUrls}
+              // src={imageUrls}
+              src={data.imageUrls}
               alt="Bild"
               className="w-full h-auto max-w-xs mx-auto"
             />
@@ -39,7 +43,12 @@ const TextWithImage = ({ data }) => {
         <div className="flex flex-col lg:flex-row-reverse">
           {/* Rechte Spalte mit Bild auf großen Bildschirmen */}
           <div className="lg:w-1/3 p-4 lg:pl-8 hidden lg:block">
-            <img src={imageUrls} alt="Bild" className="w-full h-auto" />
+            <img
+              src={data.imageUrls}
+              // src={imageUrls}
+              alt="Bild"
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Linke Spalte mit Text und Button */}

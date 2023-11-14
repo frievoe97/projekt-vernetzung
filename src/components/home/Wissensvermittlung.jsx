@@ -23,11 +23,11 @@ const Wissensvermittlung = ({ data }) => {
       <div className="max-w-screen-xl mx-auto p-4">
         <h1 className="text-2xl font-bold my-4">{title}</h1>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-4">
+          <p key={index} className="mb-4 text-justify">
             {paragraph}
           </p>
         ))}
-        <div className="mb-8">
+        <div className="mb-8 text-left">
           <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
         </div>
       </div>

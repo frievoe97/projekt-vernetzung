@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,7 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 h1 {
@@ -58,6 +58,17 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "inter";
+  src: local("inter"), url("./fonts/inter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "koulen";
+  src: local("koulen"), url("./fonts/koulen.ttf") format("truetype");
 }
 
 @media (prefers-color-scheme: light) {

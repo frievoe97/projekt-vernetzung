@@ -29,6 +29,7 @@ function Mission_V2() {
       });
   };
 
+  // "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/ueber_uns.yaml",
   useEffect(() => {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/ueber_uns.yaml",

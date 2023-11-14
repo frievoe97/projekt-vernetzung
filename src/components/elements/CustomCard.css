@@ -11,6 +11,8 @@
   height: fit-content;
   /* margin: 1rem;a */
   transition: transform 0.3s; /* Hinzufügen einer sanften Transition */
+
+  /* box-shadow: 0 0 100px 5px #48abe0; */
 }
 
 /* Stiländerungen beim Hover auf Laptop-Bildschirmen */
@@ -18,4 +20,8 @@
   .card-container:hover {
     transform: scale(1.07); /* Vergrößert die Card um 5% beim Hover */
   }
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-body {
+  padding: 0.5rem;
 }

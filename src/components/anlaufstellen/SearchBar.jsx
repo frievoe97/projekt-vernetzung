@@ -84,7 +84,8 @@ function SearchBar({
           ))}
         </div> */}
 
-        <div className="w-full">
+        {/* SEARCH BAR*/}
+        {/* <div className="w-full">
           <input
             type="text"
             className="w-full mb-2 md:mb-8 rounded-full border-2 bg-transparent placeholder-black"
@@ -93,7 +94,7 @@ function SearchBar({
             onChange={handleChange}
             onKeyDown={handleKeyDown}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

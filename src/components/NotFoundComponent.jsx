@@ -16,7 +16,7 @@ function NotFoundComponent({ text, buttonText, link }) {
   return (
     <div className="flex flex-col items-center justify-center h-fit mt-24">
       {/* Überschrift für die 404-Fehlerseite */}
-      <h2 className="text-4xl font-semibold mb-4 text-center">
+      <h2 className="text-4xl font-semibold mb-4 text-center p-8">
         Diese Seite ist gerade noch in Arbeit :)
       </h2>
 
@@ -24,7 +24,9 @@ function NotFoundComponent({ text, buttonText, link }) {
       {/* <p className="text-lg mb-8">{text}</p> */}
 
       {/* Navigationsbutton, um zur Startseite zu gelangen */}
-      <ButtonBigRounded buttonText={buttonText} link={link} />
+      <div className="mb-8">
+        <ButtonBigRounded buttonText={buttonText} link={link} />
+      </div>
     </div>
   );
 }
