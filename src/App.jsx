@@ -9,8 +9,8 @@ import Home_V2 from "./components/home/Home_V2";
 import Gloassar_V2 from "./components/glossary/Gloassar_V2";
 
 import "./fonts/inter.ttf";
-import Imprint from "./components/imprintAndDataPrivacy/Imprint";
-import DataPrivacy from "./components/imprintAndDataPrivacy/DataPrivacy";
+import Imprint from "./components/imprint/Imprint";
+import DataPrivacy from "./components/imprint/DataPrivacy";
 import Interviews from "./components/interviews/Interviews";
 
 /**

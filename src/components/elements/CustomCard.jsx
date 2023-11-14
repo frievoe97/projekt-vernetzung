@@ -7,7 +7,7 @@ const { Meta } = Card;
 
 function CustomCard({ imageUrl, title, text, link, tags }) {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 840);
-  const cardWidth = isWideScreen ? 300 : 160;
+  const cardWidth = isWideScreen ? 300 : 200;
   const cardMargin = isWideScreen ? "1rem" : "0.5rem";
 
   useEffect(() => {
@@ -114,7 +114,7 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
         actions={cardActions}
       >
         <Meta
-          className="text-xs h-16"
+          className="text-xs h-24 md:h-20"
           style={{
             hyphens: "auto",
           }}

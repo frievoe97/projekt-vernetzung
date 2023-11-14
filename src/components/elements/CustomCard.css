@@ -25,3 +25,20 @@
 :where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-body {
   padding: 0.5rem;
 }
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-meta-title {
+  /* hyphens: auto; */
+  /* text-overflow: ellipsis; */
+  white-space: pre-line;
+  line-height: 1.5rem;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-meta-detail {
+  /* overflow: auto !important; */
+  /* text-overflow: ellipsis; */
+  /* white-space: pre-line; */
+}
+
+.ant-card-meta-title {
+  /* white-space: pre-line; */
+}
