@@ -27,5 +27,5 @@ jobs:
           dryRun: false
           forceUpload: true
           localDir: "./dist"
-          remoteDir: "/pulic_html"
+          remoteDir: "/public_html"
           exclude: ".git*,.DS_Store"
