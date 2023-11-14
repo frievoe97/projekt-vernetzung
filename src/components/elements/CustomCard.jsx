@@ -99,6 +99,7 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
               }}
             >
               <img
+                className="mix-blend-multiply"
                 alt="example"
                 src={imageUrl}
                 style={{

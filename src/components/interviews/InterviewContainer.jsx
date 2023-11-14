@@ -40,26 +40,29 @@ function InterviewContainer() {
       <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
         <div className="flex flex-wrap -mx-2">
           {interviewData.map((interview) => (
-            <div key={interview.id} className="w-1/1 md:w-1/2 lg:w-1/3 p-2">
+            <div key={interview.id} className="w-1/2 md:w-1/3 lg:w-1/4 p-2">
               <div className="p-2 h-full">
-                <div className="p-4 h-full bg-fm_weiss shadow-2xl rounded-2xl  hover:scale-105 transition-transform duration-300">
+                <div className="p-0 h-full bg-fm_weiss shadow-2xl rounded-2xl  hover:scale-105 transition-transform duration-300">
                   <img
                     src={interview.imageSrc}
                     alt={interview.title}
-                    className="w-full h-64 object-cover rounded-2xl"
+                    className="w-full h-40 object-cover rounded-t-2xl"
                   />
-                  <h2 className="text-sm mb-1 font-bold mt-4">
-                    {interview.category}
-                  </h2>
-                  <h3 className="text-xl font-semibold text-left mb-1">
-                    {interview.title}
-                  </h3>
-                  <p className="text-sm">{interview.date}</p>
-                  <p className="mt-2">{interview.description}</p>
-                  <ButtonBigRounded
-                    buttonText={"Weiterlesen"}
-                    link={"/interviews-und-beitraege"}
-                  />
+                  <div className="p-4 pt-0">
+                    {" "}
+                    <h2 className="text-sm mb-1 font-bold mt-4">
+                      {interview.category}
+                    </h2>
+                    <h3 className="text-lg font-semibold text-left mb-1">
+                      {interview.title}
+                    </h3>
+                    <p className="text-xs">{interview.date}</p>
+                    <p className="text-sm mt-2">{interview.description}</p>
+                    <ButtonBigRounded
+                      buttonText={"Weiterlesen"}
+                      link={"/interviews-und-beitraege"}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

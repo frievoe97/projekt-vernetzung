@@ -58,7 +58,7 @@ const TextWithImage = ({ data }) => {
                 {paragraph}
               </p>
             ))}
-            <div className="w-full flex">
+            <div className="flex justify-center md:justify-start">
               <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
             </div>
           </div>
