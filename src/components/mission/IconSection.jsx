@@ -114,7 +114,7 @@ const IconTextRows = ({ data }) => {
             <div
               key={index}
               className={`p-0 cursor-pointer h-full ${
-                index === clickedCardIndex ? "flex-2" : "flex-1"
+                index === clickedCardIndex ? "flex-3" : "flex-1"
               }`}
               onClick={() => handleUserClick(index)}
             >
@@ -125,20 +125,20 @@ const IconTextRows = ({ data }) => {
                 // isFlipped={true}
                 flipDirection="horizontal"
               >
-                <div className="p-4 h-72 flex  items-center ">
+                <div className="p-0 h-72 flex  items-center ">
                   <div className="mx-auto">
                     <img
                       className="h-20 object-cover p-4 pt-0 mx-auto"
                       src={item.iconPath}
                       alt={`Icon ${index + 1}`}
                     />
-                    <h2 className="font-bold text-center flex-grow">
+                    <h2 className="font-bold text-center flex-grow h-20">
                       {item.title}
                     </h2>
                   </div>
                 </div>
 
-                <div className="p-4 h-72 flex items-center ">
+                <div className="p-4 h-72 flex items-center">
                   <div>
                     <p className="leading-7">{item.text}</p>
                   </div>

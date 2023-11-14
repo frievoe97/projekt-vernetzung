@@ -13,6 +13,8 @@ import Imprint from "./components/imprint/Imprint";
 import DataPrivacy from "./components/imprint/DataPrivacy";
 import Interviews from "./components/interviews/Interviews";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 /**
  * App ist die Hauptkomponente der Anwendung und definiert die Routing-Struktur.
  */
@@ -22,6 +24,7 @@ function App() {
       <Layout>
         {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
         <GlobalStateProvider>
+          <ScrollToTop />
           <Routes>
             {/* Startseite */}
             <Route path="/" element={<Home_V2 />} />

@@ -80,7 +80,7 @@ function Anlaufstellen() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
+        // console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData[dataKey], // Verwenden Sie den übergebenen dataKey als Schlüssel
