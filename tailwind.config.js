@@ -46,6 +46,9 @@ export default {
       fm_dunkelgrau: "#414756",
     },
     extend: {
+      flex: {
+        2: "2 2 0%",
+      },
       screens: {
         md: "840px",
       },

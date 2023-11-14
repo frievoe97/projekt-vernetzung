@@ -25,14 +25,14 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
   // Hier füge ich einen Link hinzu, der zu `link` führt
   const cardActions = [
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <LinkOutlined className="text-lg" key="insta" />,
+      <LinkOutlined className="text-lg" key="insta" />
     </a>,
-    <a target="_blank" rel="noopener noreferrer">
-      <MailOutlined className="text-lg" key="insta" />,
-    </a>,
-    <a target="_blank" rel="noopener noreferrer">
-      <PhoneOutlined className="text-lg" key="insta" />,
-    </a>,
+    // <a target="_blank" rel="noopener noreferrer">
+    //   <MailOutlined className="text-lg" key="insta" />
+    // </a>,
+    // <a target="_blank" rel="noopener noreferrer">
+    //   <PhoneOutlined className="text-lg" key="insta" />
+    // </a>,
   ];
 
   function wrapTextWithMaxLineLength(inputString, maxLineLength) {

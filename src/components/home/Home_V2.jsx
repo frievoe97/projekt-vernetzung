@@ -31,7 +31,7 @@ function Home_V2() {
       dispatch,
       "SET_STARTSEITE_DATA"
     );
-    console.log("Load Startseite Data: ", state.startseiteData);
+    // console.log("Load Startseite Data: ", state.startseiteData);
   }, [dispatch]);
 
   return (

@@ -20,8 +20,14 @@ const IconTextRows = ({ data }) => {
   const [clickedCardIndex, setClickedCardIndex] = useState(null);
   const [userClicked, setUserClicked] = useState(false);
   const [prevIndex, setPrevIndex] = useState(null);
+  const [isWideScreen, setIsWideScreen] = useState(false);
 
   // let prevIndex = null;
+
+  // Diese Funktion setzt den Zustand isWideScreen basierend auf der Bildschirmbreite
+  const checkScreenWidth = () => {
+    setIsWideScreen(window.innerWidth > 840);
+  };
 
   // Konfigurationseinstellungen für den Slider.
   const settings = {
@@ -38,11 +44,14 @@ const IconTextRows = ({ data }) => {
 
   // Effekt für das Zurücksetzen des ausgewählten Index nach Inaktivität.
   useEffect(() => {
+    checkScreenWidth();
+    window.addEventListener("resize", checkScreenWidth);
+
     let timeoutId;
 
     const resetClickedCardIndex = () => {
-      if (!userClicked) {
-        const randomIndex = 0;
+      if (!userClicked && isWideScreen) {
+        const randomIndex = Math.floor(Math.random() * data.data.length);
         setClickedCardIndex(randomIndex);
       }
     };
@@ -57,6 +66,7 @@ const IconTextRows = ({ data }) => {
 
     return () => {
       clearTimeout(timeoutId);
+      window.removeEventListener("resize", checkScreenWidth);
     };
   }, [clickedCardIndex, userClicked, data]);
 
@@ -81,7 +91,7 @@ const IconTextRows = ({ data }) => {
     <div className="w-full bg-fm_helles_beige">
       <div className="max-w-screen-xl mx-auto md:p-4">
         {/* Desktop-Ansicht */}
-        <div className="my-8 md:block hidden">
+        {/* <div className="my-8 md:block hidden">
           {data.data.map((item, index) => (
             <div className="flex items-start mb-8" key={index}>
               <div className="w-16 h-16 flex-shrink-0">
@@ -98,10 +108,49 @@ const IconTextRows = ({ data }) => {
               </div>
             </div>
           ))}
+        </div> */}
+        <div className="my-8 md:flex hidden">
+          {data.data.map((item, index) => (
+            <div
+              key={index}
+              className={`p-0 cursor-pointer h-full ${
+                index === clickedCardIndex ? "flex-2" : "flex-1"
+              }`}
+              onClick={() => handleUserClick(index)}
+            >
+              <ReactCardFlip
+                key={index}
+                className=" h-full"
+                isFlipped={index === clickedCardIndex}
+                // isFlipped={true}
+                flipDirection="horizontal"
+              >
+                <div className="p-4 h-72 flex  items-center ">
+                  <div className="mx-auto">
+                    <img
+                      className="h-20 object-cover p-4 pt-0 mx-auto"
+                      src={item.iconPath}
+                      alt={`Icon ${index + 1}`}
+                    />
+                    <h2 className="font-bold text-center flex-grow">
+                      {item.title}
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="p-4 h-72 flex items-center ">
+                  <div>
+                    <p className="leading-7">{item.text}</p>
+                  </div>
+                </div>
+              </ReactCardFlip>
+            </div>
+          ))}
         </div>
 
-        {/* Mobile-Ansicht */}
-        <div className="block md:hidden">
+        {/* Mobile-Ansicht 
+        block md:hidden */}
+        <div className="md:hidden">
           <Slider {...settings} className="h-full" adaptiveHeight={false}>
             {data.data.map((item, index) => (
               <div
@@ -138,7 +187,7 @@ const IconTextRows = ({ data }) => {
 
                   <div className="p-4 h-72 flex items-center">
                     <div>
-                      <p className="font-bold leading-7">{item.text}</p>
+                      <p className="leading-7">{item.text}</p>
                     </div>
                   </div>
                 </ReactCardFlip>

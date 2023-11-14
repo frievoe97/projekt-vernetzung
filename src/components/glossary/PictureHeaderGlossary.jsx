@@ -11,21 +11,26 @@ const PictureHeaderGlossary = ({ data }) => {
 
   return (
     <div
-      className="py-0 md:py-8 md:px-4"
-      style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: "cover" }}
+      className="py-0 md:py-16 md:px-4"
+      style={{
+        backgroundImage: `url(${imageUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center bottom",
+      }}
     >
-      <div className="max-w-screen-xl mx-auto bg-white text-justify md:text-center rounded">
+      <div className="max-w-screen-xl mx-auto bg-white text-justify md:text-center rounded shadow-2xl">
         <div
           className="block md:hidden relative flex flex-col justify-center items-center "
           style={{
             backgroundImage: `url(${imageUrl})`,
             backgroundSize: "cover",
+            backgroundPosition: "center bottom",
           }}
         >
-          <h1 className="text-2xl font-bold text-fm_blau mb-4 z-10 relative bg-fm_weiss py-2 px-4 rounded-lg mt-8">
+          <h1 className="text-2xl font-bold text-fm_blau mb-4 z-10 relative bg-fm_weiss py-2 px-4 rounded-lg mt-8 shadow-2xl">
             {title}
           </h1>
-          <h2 className="text-lg font-semibold bg-fm_weiss m-4 p-2 rounded-lg mb-8 text-center">
+          <h2 className="text-lg font-semibold bg-fm_weiss m-4 p-2 rounded-lg mb-8 text-center shadow-2xl">
             {subtitle}
           </h2>
         </div>

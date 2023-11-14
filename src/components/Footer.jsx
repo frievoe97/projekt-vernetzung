@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useGlobalState } from "../data/GlobalState";
 import yaml from "js-yaml";
 import ButtonBigRounded from "./elements/ButtonBigRounded";
+import { data } from "autoprefixer";
 
 /**
  * Footer ist eine React-Komponente, die den Footer der Website darstellt.
@@ -23,7 +25,7 @@ function Footer() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
+        // console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData,
@@ -38,7 +40,7 @@ function Footer() {
       dispatch,
       "SET_FOOTER_DATA"
     );
-    console.log("Load Footer Data: ", state.footer);
+    // console.log("Load Footer Data: ", state.footer);
   }, [dispatch]);
 
   if (!state.footer.contact) {
@@ -46,10 +48,10 @@ function Footer() {
   }
 
   return (
-    <div className="bg-fm_blau text-fm_weiss p-8 py-4 md:py-16">
+    <div className="bg-fm_blau text-fm_weiss p-8 py-4 md:py-16 min-h-72">
       <div className="max-w-screen-xl mx-auto">
-        <div className="container mx-auto flex flex-wrap md:flex-nowrap justify-between items-center">
-          <div className="w-full md:w-auto mb-4 md:mb-0">
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-between items-start justify-between">
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
             {/* Kontaktinformationen anzeigen */}
             <h4 className="text-xl font-bold">Kontakt</h4>
             <a
@@ -61,27 +63,39 @@ function Footer() {
             <p>{state.footer.contact.location}</p>
             <p className="mt-6">{state.footer.contact.copyright}</p>
           </div>
-          <div className="w-full md:w-auto mb-4 md:mb-0">
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
             {/* Newsletter-Anmeldeabschnitt anzeigen */}
             <h4 className="text-xl font-bold">
               {state.footer.newsletter.heading}
             </h4>
             <p className="my-2">{state.footer.newsletter.text}</p>
-            <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
-              {state.footer.newsletter.buttonLabel}
-            </button>
-
-            <div className="w-full md:w-auto flex flex-wrap">
-              {/* Links anzeigen */}
+            <div className="w-full">
+              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
+                {state.footer.newsletter.buttonLabel}
+              </button>
+            </div>
+            <div className="w-full flex flex-wrap items-start">
+              {/* Links anzeigen in einer flexiblen Box */}
               {state.footer.links.map((link, index) => (
-                <a
+                <Link
                   key={index}
-                  href={link.url}
                   className="text-fm_weiss hover:text-fm_weiss px-4 pr-4 pl-0 cursor-pointer"
+                  to={link.url}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 h-full md:p-4">
+            <h4 className="text-xl font-bold">Feedback</h4>
+            {/* Links anzeigen */}
+            <p>Du hast Feedback, dass du mit uns teilen willst?</p>
+            <p>Dann schreib uns gerne eine Mail.</p>
+            <div className="w-full">
+              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
+                Feedback
+              </button>
             </div>
           </div>
         </div>

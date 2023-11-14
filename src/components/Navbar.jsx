@@ -76,7 +76,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl">
+    <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl h-16">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 align-middle">
         <div className="flex flex-row items-center">
           <Link to="/">

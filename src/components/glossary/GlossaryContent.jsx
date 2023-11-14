@@ -52,7 +52,9 @@ function GlossaryItem({ term, data }) {
           <div key={index} className="my-4 mb-4">
             <h2 className="font-bold text-fm_blau mt-2 mb-2">{data.title}</h2>
             <p className="mb-2 text-justify">{data.text}</p>
-            <a>Weiterlesen</a>
+            <a className="font-bold text-black hover:text-black cursor-pointer">
+              Weiterlesen
+            </a>
           </div>
         ))}
       </section>

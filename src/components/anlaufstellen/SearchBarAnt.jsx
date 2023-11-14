@@ -38,12 +38,15 @@ function SearchBarAnt({
         <h2 className="text-4xl md:my-8 font-bold text-fm_blau">
           Anlaufstellen
         </h2>
-        {allTags.length > 0 && (
+        <p className="pb-12 text-lg">
+          Suche nach deiner passenden Anlaufstelle
+        </p>
+        {/* {allTags.length > 0 && (
           <p className="mb-4 text-lg">
             Suche nach deiner passenden Anlaufstelle
           </p>
-        )}
-        <div className="w-full">
+        )} */}
+        {/* <div className="w-full">
           <Select
             mode="tags"
             value={selected}
@@ -55,7 +58,7 @@ function SearchBarAnt({
             onChange={handleChangeTest}
             options={options}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

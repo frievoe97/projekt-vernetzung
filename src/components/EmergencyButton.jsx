@@ -44,23 +44,23 @@ const EmergencyButton = () => {
 
       {showEmergencyDialog && (
         <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-75 px-4 text-color_font">
-          <div className="bg-white rounded-lg p-8 max-w-screen-md shadow-md">
+          <div className="bg-white rounded-lg p-4 md:p-8 max-w-screen-md shadow-md">
             <div className="flex flex-row items-center mb-4">
               <button
-                className="bg-color_background_2  mr-4 hover:border-none"
+                className="bg-color_background_2  mr-4 hover:border-none border-none"
                 onClick={closeEmergencyDialog}
               >
                 <FontAwesomeIcon icon={faTimes} size="lg" />
               </button>
-              <h2 className="text-3xl font-semibold md:text-center  text-left">
+              <h2 className="text-lg md:text-xl font-semibold md:text-center  text-left">
                 Sofortige Hilfe benötigt?
               </h2>
             </div>
-            <p className="text-lg mb-4">
+            <p className="text-sm md:text-lg mb-4">
               In dringenden Notfällen stehen Ihnen die folgenden Notrufnummern
               zur Verfügung:
             </p>
-            <ul className="space-y-4 text-lg">
+            <ul className="space-y-4 text-sm md:text-lg">
               {emergencyNumbers.map((emergency, index) => (
                 <li key={index} className="flex flex-col items-center w-full">
                   <div className="flex flex-row w-full">
@@ -82,10 +82,20 @@ const EmergencyButton = () => {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 ">
+            <p className="mt-4 text-sm md:text-lg">
               Bitte rufen Sie die entsprechende Nummer an, wenn Sie sich in
               einer Notsituation befinden.
             </p>
+            <p className="mt-4 text-sm md:text-lg">
+              Du hast Feedback oder willst Kontakt zu uns aufnehmen? Dann melde
+              dich gerne bei uns:
+            </p>
+            <a
+              href="mailto:projekt-vernetzung@email.com"
+              className="mt-4 w-fit text-black hover:text-black text-sm md:text-lg"
+            >
+              info@projekt-vernetzung.org
+            </a>
           </div>
         </div>
       )}

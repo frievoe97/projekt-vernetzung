@@ -8,6 +8,9 @@ import EmergencyButton from "./EmergencyButton";
  * Layout ist eine React-Komponente, die das grundlegende Layout der Website definiert.
  * Sie enthält die Navigationsleiste (Navbar), den Hauptinhalt (children), den Footer und einen Notfallbutton.
  *
+ * Header height: h-16 4rem
+ * Footer height: min-h-72 18rem
+ *
  * @param {Object} props - Die Props für die Komponente.
  * @param {ReactNode} props.children - Der Hauptinhalt der Website, der zwischen Navbar und Footer angezeigt wird.
  * @returns {JSX.Element} - Die gerenderte Komponente.
@@ -19,7 +22,9 @@ function Layout({ children }) {
       <Navbar />
 
       {/* Hauptinhalt der Website */}
-      <main className="flex-grow bg-fm_helles_beige">{children}</main>
+      <main className="flex-grow bg-fm_helles_beige min-h-[calc(100vh-22rem)]">
+        {children}
+      </main>
 
       {/* Footer */}
       <Footer />

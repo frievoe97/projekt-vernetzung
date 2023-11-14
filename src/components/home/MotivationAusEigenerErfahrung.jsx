@@ -37,14 +37,14 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
             className="w-full h-auto max-w-lg mx-auto"
           />
         </div>
-        <h1 className="text-2xl font-bold mb-4">{title}</h1>
+        <h1 className="text-2xl font-bold mb-4 text-fm_blau">{title}</h1>
         {paragraphs.map((paragraph, index) => (
           <p key={index} className="mb-4 text-justify">
             {paragraph}
           </p>
         ))}
         <div className="mb-8  text-left">
-          <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
+          <ButtonBigRounded buttonText={buttonText} link={"/"} />
         </div>
       </div>
     </div>

@@ -9,6 +9,9 @@ import Home_V2 from "./components/home/Home_V2";
 import Gloassar_V2 from "./components/glossary/Gloassar_V2";
 
 import "./fonts/inter.ttf";
+import Imprint from "./components/imprintAndDataPrivacy/imprint";
+import DataPrivacy from "./components/imprintAndDataPrivacy/DataPrivacy";
+import Interviews from "./components/interviews/Interviews";
 
 /**
  * App ist die Hauptkomponente der Anwendung und definiert die Routing-Struktur.
@@ -31,6 +34,15 @@ function App() {
 
             {/* Glossar */}
             <Route path="/glossar" element={<Gloassar_V2 />} />
+
+            {/* Imprint */}
+            <Route path="/imprint" element={<Imprint />} />
+
+            {/* Data Privacy */}
+            <Route path="/data-privacy" element={<DataPrivacy />} />
+
+            {/* Interviews */}
+            <Route path="/interviews-und-beitraege" element={<Interviews />} />
 
             {/* <Route
               path="/interviews/:organizationName"
