@@ -1,4 +1,4 @@
-name: Upload the Website to the server of the domain projekt-vernetzung.friedrichvoelkers.de.
+name: Upload the Website to the server of the domain projekt-vernetzung.friedrichvoelkers.de
 
 on:
   push:
