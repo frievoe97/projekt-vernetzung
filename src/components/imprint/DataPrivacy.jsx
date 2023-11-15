@@ -1,5 +1,3 @@
-// DataPrivacy.jsx
-
 import React from "react";
 
 const DataPrivacy = () => {
@@ -29,7 +27,16 @@ const DataPrivacy = () => {
                 3. Verwendung von Analysediensten
               </h2>
               <p className="mt-2 w-fit">
-                Wir setzen keine Analysedienste oder Tracking-Tools ein.
+                Unsere Webhosting-Infrastruktur erfasst bestimmte Daten in
+                Logfiles und nutzt die Statistikprogramme AWStats und Report
+                Magic. In den Logfiles werden anonymisierte IP-Adressen, den
+                verwendeten Browser, das Betriebssystem, Datum und Uhrzeit der
+                Serveranfrage sowie die Herkunftswebsite (sofern vom Benutzer
+                übermittelt) gespeichert. Die IP-Adressen werden anonymisiert,
+                indem die tatsächliche IP-Adresse des Besuchers durch eine
+                zufällige IP-Adresse ersetzt wird, wobei XXX ein Wert zwischen 1
+                und 254 ist, sodass keine Herstellung eines Personenbezugs mehr
+                möglich ist.
               </p>
 
               <p className="mt-8 w-fit">

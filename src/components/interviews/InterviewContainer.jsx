@@ -40,9 +40,9 @@ function InterviewContainer() {
       <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
         <div className="flex flex-wrap -mx-2">
           {interviewData.map((interview) => (
-            <div key={interview.id} className="w-1/2 md:w-1/3 lg:w-1/4 p-2">
+            <div key={interview.id} className="w-1/2 lg:w-1/2 xl:w-1/4 p-2">
               <div className="p-2 h-full">
-                <div className="p-0 h-full bg-fm_weiss shadow-2xl rounded-2xl  hover:scale-105 transition-transform duration-300">
+                <div className="p-0 h-full w-full bg-fm_weiss shadow-2xl rounded-2xl  hover:scale-105 transition-transform duration-300">
                   <img
                     src={interview.imageSrc}
                     alt={interview.title}
