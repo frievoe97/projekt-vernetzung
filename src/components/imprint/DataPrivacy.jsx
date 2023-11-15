@@ -47,19 +47,14 @@ const DataPrivacy = () => {
               <p className="mt-2 w-fit text-justify">
                 Unsere Webhosting-Infrastruktur erfasst bestimmte Daten in
                 Logfiles und nutzt die Statistikprogramme AWStats und Report
-                Magic. In den Logfiles werden anonymisierte IP-Adressen, den
-                verwendeten Browser, das Betriebssystem, Datum und Uhrzeit der
+                Magic. In den Logfiles werden anonymisierte IP-Adressen, der
+                verwendete Browser, das Betriebssystem, Datum und Uhrzeit der
                 Serveranfrage sowie die Herkunftswebsite (sofern vom Benutzer
                 übermittelt) gespeichert. Die IP-Adressen werden anonymisiert,
-                indem die tatsächliche IP-Adresse des Besuchers durch eine
-                zufällige IP-Adresse ersetzt wird, wobei XXX ein Wert zwischen 1
-                und 254 ist, sodass keine Herstellung eines Personenbezugs mehr
-                möglich ist.
-              </p>
-
-              <p className="mt-8 w-fit">
-                Bei weiteren Fragen oder Anliegen zum Datenschutz stehen wir
-                Ihnen gerne zur Verfügung.
+                indem die tatsächliche IP-Adresse des Besuchers z.B.
+                123.123.123.123 durch eine zufällige IP-Adresse 123.123.123.XXX
+                ersetzt wird, wobei XXX ein Wert zwischen 1 und 254 ist, sodass
+                keine Herstellung eines Personenbezugs mehr möglich ist.
               </p>
             </div>
           </div>
