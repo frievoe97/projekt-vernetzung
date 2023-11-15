@@ -119,11 +119,6 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
           style={{
             hyphens: "auto",
           }}
-          // title={
-          //   <span
-          //     dangerouslySetInnerHTML={wrapTextWithMaxLineLength(title, 17)}
-          //   />
-          // }
           title={title}
           description={text}
         />

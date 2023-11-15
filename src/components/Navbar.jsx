@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <nav className="z-30 bg-color_header border-black fixed top-0 left-0 right-0 shadow-2xl h-16">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 align-middle">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3 md:py-4 align-middle">
         <div className="flex flex-row items-center">
           <Link to="/">
             <img className="h-8" src="/logo-4_white.png" alt="" />{" "}
@@ -85,7 +85,7 @@ const Navbar = () => {
 
           <Link
             id="header-title"
-            className="ml-5 text-fm_weiss hover:text-fm_weiss self-center text-2xl font-semibold whitespace-nowrap text-lg md:text-2xl"
+            className="ml-5 text-fm_weiss hover:text-fm_weiss self-center text-2xl font-semibold whitespace-nowrap text-2xl md:text-2xl"
             to="/"
           >
             {state.headerData.headerTitle}

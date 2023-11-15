@@ -87,7 +87,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="w-full md:w-1/3 h-full md:p-4">
+          <div className="w-full md:w-1/4 h-full md:p-4">
             <h4 className="text-xl font-bold">Feedback</h4>
             {/* Links anzeigen */}
             <p>Du hast Feedback, dass du mit uns teilen willst?</p>
