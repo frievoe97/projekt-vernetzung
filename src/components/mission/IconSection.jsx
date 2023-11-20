@@ -21,6 +21,7 @@ const IconTextRows = ({ data }) => {
   const [userClicked, setUserClicked] = useState(false);
   const [prevIndex, setPrevIndex] = useState(null);
   const [isWideScreen, setIsWideScreen] = useState(false);
+  const [clickedCardIndexLaptop, setClickedCardIndexLaptop] = useState(0);
 
   // let prevIndex = null;
 
@@ -109,24 +110,27 @@ const IconTextRows = ({ data }) => {
             </div>
           ))}
         </div> */}
-        <div className="my-8 md:flex hidden">
-          {data.data.map((item, index) => (
-            <div
-              key={index}
-              className={`p-0 cursor-pointer h-full ${
-                index === clickedCardIndex ? "flex-3" : "flex-1"
-              }`}
-              onClick={() => handleUserClick(index)}
-            >
-              <ReactCardFlip
+        <div className="md:block hidden flex flex-col">
+          {clickedCardIndexLaptop !== null && (
+            <div className="text-center my-4 mx-auto h-28 font-bold w-4/5">
+              <p className="leading-8">
+                {data.data[clickedCardIndexLaptop].text}
+              </p>
+            </div>
+          )}
+          <div className="mt-8 md:flex">
+            {data.data.map((item, index) => (
+              <div
                 key={index}
-                className=" h-full"
-                isFlipped={index === clickedCardIndex}
-                // isFlipped={true}
-                flipDirection="horizontal"
+                className={`p-0 cursor-pointer flex-1 ${
+                  clickedCardIndexLaptop === index
+                    ? "bg-white rounded-xl shadow-xl"
+                    : ""
+                }`}
+                onClick={() => setClickedCardIndexLaptop(index)}
               >
-                <div className="p-0 h-72 flex  items-center ">
-                  <div className="mx-auto">
+                <div className="p-0 flex items-center">
+                  <div className="mx-auto pt-4">
                     <img
                       className="h-20 object-cover p-4 pt-0 mx-auto"
                       src={item.iconPath}
@@ -137,15 +141,9 @@ const IconTextRows = ({ data }) => {
                     </h2>
                   </div>
                 </div>
-
-                <div className="p-4 h-72 flex items-center">
-                  <div>
-                    <p className="leading-7">{item.text}</p>
-                  </div>
-                </div>
-              </ReactCardFlip>
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Mobile-Ansicht 

@@ -33,6 +33,10 @@
   line-height: 1.5rem;
 }
 
+:where(.css-2i2tap).ant-card .ant-card-meta-title {
+  white-space: normal;
+}
+
 :where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-meta-detail {
   /* overflow: auto !important; */
   /* text-overflow: ellipsis; */
@@ -40,5 +44,5 @@
 }
 
 .ant-card-meta-title {
-  white-space: pre-line;
+  /* white-space: pre-line; */
 }
