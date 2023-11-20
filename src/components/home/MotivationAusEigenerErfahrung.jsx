@@ -43,9 +43,9 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
             {paragraph}
           </p>
         ))}
-        <div className="mb-8 flex justify-center md:justify-start">
+        {/* <div className="mb-8 flex justify-center md:justify-start">
           <ButtonBigRounded buttonText={buttonText} link={"/"} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

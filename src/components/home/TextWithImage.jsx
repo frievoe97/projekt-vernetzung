@@ -25,7 +25,7 @@ const TextWithImage = ({ data }) => {
       <div className="py-4 max-w-screen-xl mx-auto">
         {/* Erste Zeile mit Überschrift */}
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-fm_blau text-left text-center">
+          <h1 className="text-2xl font-bold text-fm_blau text-center md:text-left">
             {title}
           </h1>
           {/* Rechte Spalte mit Bild auf Handys */}
