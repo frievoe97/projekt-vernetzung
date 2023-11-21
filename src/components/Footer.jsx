@@ -62,18 +62,6 @@ function Footer() {
             </a>
             <p>{state.footer.contact.location}</p>
             <p className="mt-6">{state.footer.contact.copyright}</p>
-          </div>
-          <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
-            {/* Newsletter-Anmeldeabschnitt anzeigen */}
-            <h4 className="text-xl font-bold">
-              {state.footer.newsletter.heading}
-            </h4>
-            <p className="my-2">{state.footer.newsletter.text}</p>
-            <div className="w-full">
-              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
-                {state.footer.newsletter.buttonLabel}
-              </button>
-            </div>
             <div className="w-full flex flex-wrap items-start">
               {/* Links anzeigen in einer flexiblen Box */}
               {state.footer.links.map((link, index) => (
@@ -85,6 +73,18 @@ function Footer() {
                   {link.label}
                 </Link>
               ))}
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
+            {/* Newsletter-Anmeldeabschnitt anzeigen */}
+            <h4 className="text-xl font-bold">
+              {state.footer.newsletter.heading}
+            </h4>
+            <p className="my-2">{state.footer.newsletter.text}</p>
+            <div className="w-full">
+              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
+                {state.footer.newsletter.buttonLabel}
+              </button>
             </div>
           </div>
           <div className="w-full md:w-1/4 h-full md:p-4">

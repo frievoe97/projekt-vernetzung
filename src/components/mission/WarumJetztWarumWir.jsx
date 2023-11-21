@@ -10,9 +10,7 @@ const WarumJetztWarumWir = ({ data }) => {
       <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
         {data.map((item, index) => (
           <div key={index}>
-            <h2 className="font-bold mt-8 mb-4 text-fm_blau">
-              {item.paragraph[0].title}
-            </h2>
+            <h2 className="mt-8 mb-4 heading">{item.paragraph[0].title}</h2>
 
             {item.paragraph[1].text.map((item, index) => (
               <div key={index}>

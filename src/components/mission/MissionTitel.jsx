@@ -18,9 +18,9 @@ const MissionTitel = ({ data }) => {
   return (
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto md:p-4 text-left p-4">
-        <h2 className="font-bold my-4 text-fm_blau">{title}</h2>
+        <h2 className="my-4 heading">{title}</h2>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-4">
+          <p key={index} className="mb-4 text-justify">
             {paragraph}
           </p>
         ))}

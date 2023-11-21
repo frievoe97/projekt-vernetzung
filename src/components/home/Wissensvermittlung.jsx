@@ -21,7 +21,7 @@ const Wissensvermittlung = ({ data }) => {
   return (
     <div className="w-full bg-fm_helles_beige">
       <div className="max-w-screen-xl mx-auto p-4">
-        <h1 className="text-2xl font-bold my-4">{title}</h1>
+        <h1 className="heading-black my-4">{title}</h1>
         {paragraphs.map((paragraph, index) => (
           <p key={index} className="mb-4 text-justify">
             {paragraph}

@@ -34,10 +34,8 @@ function SearchBarAnt({
 
   return (
     <div className="w-full mb-4 bg-fm_weiss">
-      <div className="pt-4 max-w-screen-xl px-2 md:px-16 mx-auto">
-        <h2 className="text-4xl md:my-8 font-bold text-fm_blau pb-12">
-          Anlaufstellen
-        </h2>
+      <div className="max-w-screen-xl mx-auto">
+        <h2 className="heading py-12">Anlaufstellen</h2>
         {/* <p className="pb-12 text-lg">
           Suche nach deiner passenden Anlaufstelle
         </p> */}

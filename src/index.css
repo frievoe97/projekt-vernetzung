@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  /* background-color: transparent; */
+  color: #72a7ff;
+}
+
+.heading-black {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  /* background-color: transparent; */
+  color: #000000;
+}
+
 :root {
   font-family: serif;
   line-height: 1.5;

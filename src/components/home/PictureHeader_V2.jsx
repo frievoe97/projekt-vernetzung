@@ -23,7 +23,7 @@ function PictureHeader_V2({ data }) {
 
   return (
     <div
-      className="py-0 md:py-16 md:px-4"
+      className="py-0 md:pt-16 md:pb-32 md:px-4"
       style={{
         backgroundImage: `url(${imageUrl})`,
         backgroundSize: "cover",
@@ -39,24 +39,23 @@ function PictureHeader_V2({ data }) {
             backgroundPosition: "center bottom",
           }}
         >
-          <h1 className="text-center mx-8 text-2xl font-bold text-fm_blau mb-4 relative bg-fm_weiss p-2 px-4 rounded-lg mt-8 shadow-2xl">
+          {/* MOBILE */}
+          <h1 className="text-center mx-8 mb-4 relative p-2 px-4 rounded-lg mt-8 shadow-2xl heading bg-fm_weiss">
             {title}
           </h1>
-          <h2 className="text-lg font-semibold bg-fm_weiss m-4 p-2 rounded-lg mb-16 text-center shadow-2xl">
-            {subtitle}
-          </h2>
+
+          <div className=" rounded-lg shadow-2xl m-4 p-4 mb-16 bg-fm_weiss">
+            <h2 className="text-lg font-semibold  text-center mb-4">
+              {subtitle}
+            </h2>
+            <p className="text-lg  text-center">{description}</p>
+          </div>
         </div>
 
         <div className="p-4">
-          <h1 className="md:block hidden text-2xl font-bold text-fm_blau mb-4">
-            {title}
-          </h1>
+          <h1 className="md:block hidden heading mb-4">{title}</h1>
           <h2 className="md:block hidden text-lg font-semibold">{subtitle}</h2>
-          {/* {descriptions.map((description, index) => (
-            <p key={index} className="mt-4">
-              {description}
-            </p>
-          ))} */}
+          <p className="md:block hidden text-lg mt-4">{description}</p>
           <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
             {listItems.map((item, index) => (
               // text-left w-fit
@@ -68,36 +67,6 @@ function PictureHeader_V2({ data }) {
         </div>
       </div>
     </div>
-    // <div
-    //   className="py-0 md:py-8 md:px-4"
-    //   style={{ backgroundImage: `url(${imageUrl})` }}
-    // >
-    //   <div className="max-w-screen-xl mx-auto bg-white  text-justify md:text-center rounded">
-    //     <div className="block md:hidden">
-    //       <img src={imageUrl} alt="" className="h-24 w-full object-cover" />
-    //     </div>
-    //     <div className="p-4">
-    //       <h1 className="text-2xl font-bold text-left md:text-center text-fm_blau mb-4">
-    //         {title}
-    //       </h1>
-    //       <h2 className="text-lg font-semibold">{subtitle}</h2>
-    //       <p className="mt-4">{description}</p>
-    //       <p className="mt-4">
-    //         Indem wir fachübergreifendes Wissen bündeln, möchten wir für
-    //         Betroffene, ihr Umfeld sowie die Öffentlichkeit:
-    //       </p>
-    //       {/* list-disc ml-4 md:ml-6 mt-2 */}
-    //       <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
-    //         {listItems.map((item, index) => (
-    //           // text-left w-fit
-    //           <li key={index} className="text-left md:w-fit">
-    //             {item}
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 

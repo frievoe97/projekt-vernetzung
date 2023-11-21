@@ -1,17 +1,6 @@
 import React from "react";
 import ButtonBigRounded from "../elements/ButtonBigRounded";
 
-/**
- * Diese Komponente rendert Text mit einem Bild und einem Button.
- * @param {Object} props - Die Props für den Text, das Bild und den Button.
- * @param {Object} props.data - Die Daten für den Text, das Bild und den Button.
- * @param {string} props.data.title - Der Titel des Texts.
- * @param {string[]} props.data.text - Ein Array von Textabschnitten.
- * @param {string[]} props.data.imageUrls - Ein Array von Bild-URLs.
- * @param {string} props.data.buttonText - Der Text für den Button.
- * @param {string} props.data.buttonLink - Der Link für den Button.
- * @returns {JSX.Element|null} - Die gerenderte TextWithImage-Komponente oder null, wenn keine Daten vorhanden sind.
- */
 const TextWithImage = ({ data }) => {
   if (!data) {
     return null;
@@ -23,43 +12,47 @@ const TextWithImage = ({ data }) => {
   return (
     <div className="w-full bg-fm_weiss">
       <div className="py-4 max-w-screen-xl mx-auto">
-        {/* Erste Zeile mit Überschrift */}
-        <div className="p-4">
-          <h1 className="text-2xl font-bold text-fm_blau text-center md:text-left">
-            {title}
-          </h1>
-          {/* Rechte Spalte mit Bild auf Handys */}
-          <div className="lg:w-1/3 p-4 lg:pl-8 lg:hidden">
-            <img
-              // src={imageUrls}
-              src={data.imageUrls}
-              alt="Bild"
-              className="w-full h-auto max-w-xs mx-auto"
-            />
-          </div>
-        </div>
-
-        {/* Zweite Zeile mit zwei Spalten */}
-        <div className="flex flex-col lg:flex-row-reverse">
-          {/* Rechte Spalte mit Bild auf großen Bildschirmen */}
-          <div className="lg:w-1/3 p-4 lg:pl-8 hidden lg:block">
-            <img
-              src={data.imageUrls}
-              // src={imageUrls}
-              alt="Bild"
-              className="w-full h-auto"
-            />
-          </div>
-
-          {/* Linke Spalte mit Text und Button */}
-          <div className="lg:w-2/3 p-4">
+        {/* Auf Laptops (md) */}
+        <div className="md:flex">
+          {/* Linke Spalte mit Überschrift, Text und Button */}
+          <div className="md:w-2/3 p-4">
+            <h1 className="heading text-center md:text-left mb-4">{title}</h1>
             {text.map((paragraph, index) => (
               <p key={index} className="text-justify mb-4">
                 {paragraph}
               </p>
             ))}
             <div className="flex justify-center md:justify-start">
-              <ButtonBigRounded buttonText={buttonText} link={"/wip"} />
+              <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
+            </div>
+          </div>
+
+          {/* Rechte Spalte mit Bild */}
+          <div className="md:w-1/3 p-4 hidden md:block">
+            <img src={data.imageUrls} alt="Bild" className="w-full h-auto" />
+          </div>
+        </div>
+
+        {/* Auf mobilen Geräten (nicht md) */}
+        <div className="md:hidden flex flex-col">
+          {/* Überschrift, Text und Button untereinander */}
+          <div className="p-4">
+            <h1 className="heading text-center">{title}</h1>
+            {/* Bild */}
+            <div className="p-4">
+              <img
+                src={data.imageUrls}
+                alt="Bild"
+                className="w-full h-auto max-w-xs mx-auto"
+              />
+            </div>
+            {text.map((paragraph, index) => (
+              <p key={index} className="text-justify mb-4">
+                {paragraph}
+              </p>
+            ))}
+            <div className="flex justify-center">
+              <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
             </div>
           </div>
         </div>
