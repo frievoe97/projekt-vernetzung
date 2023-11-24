@@ -29,7 +29,8 @@ function Gloassar_V2() {
       });
   };
 
-  // "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",
+  // https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar_2.yaml
+
   useEffect(() => {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",
@@ -38,10 +39,20 @@ function Gloassar_V2() {
     );
   }, [dispatch]);
 
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar_2.yaml",
+      dispatch,
+      "SET_GLOSSARY_NEW_DATA"
+    );
+  }, [dispatch]);
+
+  // console.log(state.glossaryNew);
+
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
       <PictureHeaderGlossary data={state.glossarData.pictureHeaderGlossary} />
-      <GlossaryContent data={state.glossarData.glossaryData} />
+      <GlossaryContent data={state.glossaryNew} />
     </div>
   );
 }

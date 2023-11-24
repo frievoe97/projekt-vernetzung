@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
@@ -7,58 +7,42 @@ import { Select } from "antd";
 import "./GlossaryContent.css";
 
 const GlossaryContent = ({ data }) => {
-  if (!data) {
-    return null;
+  const [eindeutigeTags, setEindeutigeTags] = useState([]);
+  const [searchTags, setSearchTags] = useState([]);
+
+  const sammleEindeutigeTags = () => {
+    const eindeutigeTags = [];
+
+    if (data && data.glossaryData) {
+      data.glossaryData.forEach((objekt) => {
+        objekt.Tags.forEach((tag) => {
+          // Überprüfe, ob das Tag bereits in eindeutigeTags vorhanden ist
+          const tagExists = eindeutigeTags.some(
+            (eindeutigerTag) => eindeutigerTag.label === tag
+          );
+
+          // Füge das Tag dem Array der eindeutigen Tags hinzu, wenn es noch nicht vorhanden ist
+          if (!tagExists) {
+            eindeutigeTags.push({ label: tag, value: tag });
+          }
+        });
+      });
+    }
+
+    return eindeutigeTags;
+  };
+
+  useEffect(() => {
+    setEindeutigeTags(sammleEindeutigeTags());
+  }, [data]);
+
+  if (Object.keys(data).length === 0) {
+    return <div></div>;
   }
 
-  const stichworte = [
-    { label: "Machtmissbrauch", value: "Machtmissbrauch" },
-    { label: "Frauenhass", value: "Frauenhass" },
-    { label: "Sexismus", value: "Sexismus" },
-    { label: "sexualisierte Gewalt", value: "sexualisierte Gewalt" },
-    { label: "Übergriff", value: "Übergriff" },
-    { label: "Mikroaggressionen", value: "Mikroaggressionen" },
-    { label: "Catcalling", value: "Catcalling" },
-    { label: "Pathologischer Narzissmus", value: "Pathologischer Narzissmus" },
-    { label: "Konsenz / consent", value: "Konsenz / consent" },
-    {
-      label: "Täter-Opfer-Umkehr / Victim blaming",
-      value: "Täter-Opfer-Umkehr / Victim blaming",
-    },
-    { label: "Rape culture", value: "Rape culture" },
-    { label: "Mobbing", value: "Mobbing" },
-    {
-      label: "geschlechtsspezifische Gewalt",
-      value: "geschlechtsspezifische Gewalt",
-    },
-    { label: "Stalking", value: "Stalking" },
-    { label: "Intersektionalität", value: "Intersektionalität" },
-    { label: "Trauma", value: "Trauma" },
-    { label: "Gaslighting", value: "Gaslighting" },
-    { label: "Love Bombing", value: "Love Bombing" },
-    { label: "Silencing", value: "Silencing" },
-    { label: "Grooming", value: "Grooming" },
-    { label: "Nötigung", value: "Nötigung" },
-    { label: "Femizide", value: "Femizide" },
-    { label: "Vergewaltigung", value: "Vergewaltigung" },
-    { label: "Stealthing", value: "Stealthing" },
-    { label: "Ehrenmorde", value: "Ehrenmorde" },
-    { label: "psychische Gewalt", value: "psychische Gewalt" },
-    { label: "sexuelle Belästigung", value: "sexuelle Belästigung" },
-    { label: "Mobbing", value: "Mobbing" },
-    { label: "interne Gewalt", value: "interne Gewalt" },
-    { label: "externe Gewalt", value: "externe Gewalt" },
-    { label: "Gaslighting", value: "Gaslighting" },
-    { label: "Häusliche Gewalt", value: "Häusliche Gewalt" },
-    { label: "Partnerschaftliche Gewalt", value: "Partnerschaftliche Gewalt" },
-    { label: "Finanzielle Gewalt", value: "Finanzielle Gewalt" },
-    {
-      label: "Psychische / emotionale Gewalt",
-      value: "Psychische / emotionale Gewalt",
-    },
-    { label: "Soziale Gewalt", value: "Soziale Gewalt" },
-    { label: "Körperliche Gewalt", value: "Körperliche Gewalt" },
-  ];
+  const handleChangeTest = (value) => {
+    setSearchTags(value);
+  };
 
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
@@ -73,28 +57,67 @@ const GlossaryContent = ({ data }) => {
               marginBottom: "2rem",
             }}
             placeholder="Suche nach dem passenden Begriff"
-            // onChange={handleChangeTest}
-            options={stichworte}
+            onChange={handleChangeTest}
+            options={eindeutigeTags}
           />
         </div>
-        {data.map((item, index) => {
-          return (
+        {data.glossaryData.map((item, index) => {
+          // Check if every tag in searchTags is present in item.Tags
+          const shouldDisplay = searchTags.every((tag) =>
+            item.Tags.includes(tag)
+          );
+
+          // Render GlossaryItem only if shouldDisplay is true
+          return shouldDisplay ? (
             <GlossaryItem
               key={index}
-              term={item.term}
-              definition={item.definition}
+              term={item.Begriff}
+              definition={"Die Definition von " + item.Begriff + " ist..."}
               data={item}
+              tags={item.Tags}
+              searchTags={searchTags}
             />
-          );
+          ) : null;
         })}
       </div>
     </div>
   );
 };
 
-function GlossaryItem({ term, data }) {
-  const [isExpanded, setExpanded] = useState(false);
+function GlossaryItem({ term, data, definition, searchTags, tags }) {
+  const [isExpanded, setExpanded] = useState(searchTags.length > 0);
+
+  // console.log(isExpanded);
   const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
+
+  useEffect(() => {
+    // Update isExpanded when searchTags changes
+    setExpanded(searchTags.length > 0);
+  }, [searchTags]);
+
+  const capitalizeWords = (text) => {
+    if (typeof text !== "string") {
+      return text;
+    }
+
+    // Split the text into words
+    const words = text.split(" ");
+
+    // Iterate through the words and format them
+    const formattedText = words.map((word) => {
+      if (word.length === 0) {
+        return word; // Handle empty words (e.g., double spaces)
+      }
+
+      const firstLetterUpperCase = word.charAt(0).toUpperCase(); // First letter uppercase
+      const restOfWordLowerCase = word.slice(1).toLowerCase(); // Rest of word lowercase
+
+      return firstLetterUpperCase + restOfWordLowerCase;
+    });
+
+    // Join the formatted words back together
+    return formattedText.join(" ");
+  };
 
   return (
     <div className="p-4 md:p-6 border-b-2 border-black">
@@ -106,21 +129,15 @@ function GlossaryItem({ term, data }) {
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
       >
-        <h2 className="text-2xl font-semibold my-2 ml-2">{term}</h2>
+        <h2 className="text-2xl font-semibold my-2 ml-2">
+          {capitalizeWords(term)}
+        </h2>
         <button className="bg-transparent">
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>
       </div>
       <section className="divide-y-2 divide-fm_grau" {...getCollapseProps()}>
-        {data.definition.map((data, index) => (
-          <div key={index} className="my-4 mb-4">
-            <h2 className="font-bold text-fm_blau mt-2 mb-2">{data.title}</h2>
-            <p className="mb-2 text-justify">{data.text}</p>
-            <a className="font-bold text-black hover:text-black cursor-pointer">
-              Weiterlesen
-            </a>
-          </div>
-        ))}
+        <p className="m-4 mt-8">{definition}</p>
       </section>
     </div>
   );
