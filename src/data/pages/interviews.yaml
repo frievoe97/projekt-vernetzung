@@ -1,0 +1,23 @@
+interviews:
+  - id: 1
+    imageSrc: "https://www.watson.de/imgdb/962d/Qx,A,0,622,1334,1000,596,929,142,142/5826289587615643"
+    category: "Machtmissbrauch"
+    title: "Interview mit Experten"
+    date: "25. November 2023"
+    description: >
+      Ein Gespräch über die verschiedenen Aspekte von Machtmissbrauch und dessen Auswirkungen.
+  - id: 2
+    imageSrc: "https://www.watson.de/imgdb/962d/Qx,A,0,622,1334,1000,596,929,142,142/5826289587615643"
+    category: "Machtmissbrauch"
+    title: "Interview mit Opfern"
+    date: "12. Dezember 2023"
+    description: >
+      Erfahrungen und Geschichten von Menschen, die Opfer von Machtmissbrauch wurden.
+  - id: 3
+    imageSrc: "https://www.watson.de/imgdb/962d/Qx,A,0,622,1334,1000,596,929,142,142/5826289587615643"
+    category: "Machtmissbrauch"
+    title: "Bekämpfung von Machtmissbrauch"
+    date: "5. Januar 2024"
+    description: >
+      Strategien und Ansätze zur Prävention und Bekämpfung von Machtmissbrauch in der Gesellschaft.
+  # Weitere Interviews hier hinzufügen, falls benötigt
