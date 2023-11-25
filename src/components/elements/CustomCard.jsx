@@ -8,6 +8,7 @@ const { Meta } = Card;
 function CustomCard({ imageUrl, title, text, link, tags }) {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 840);
   const cardWidth = isWideScreen ? 300 : 200;
+  const cardHeight = isWideScreen ? 300 : 200;
   const cardMargin = isWideScreen ? "1rem" : "0.5rem";
 
   useEffect(() => {

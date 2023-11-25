@@ -48,7 +48,7 @@ const GlossaryContent = ({ data }) => {
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
       <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-16">
-        <div className="w-full">
+        <div className="w-full px-4">
           <Select
             mode="tags"
             // value={"selected"}

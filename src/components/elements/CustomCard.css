@@ -30,7 +30,19 @@
   /* hyphens: auto; */
   /* text-overflow: ellipsis; */
   white-space: pre-line;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 840px) {
+  :where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-meta-title {
+    /* hyphens: auto; */
+    /* text-overflow: ellipsis; */
+    white-space: pre-line;
+    line-height: 1.1rem;
+    /* margin: 0 10px; */
+    font-size: 0.9rem;
+  }
 }
 
 :where(.css-2i2tap).ant-card .ant-card-meta-title {
@@ -42,7 +54,6 @@
   /* overflow: auto !important; */
   /* text-overflow: ellipsis; */
   /* white-space: pre-line; */
-  margin: 0 10px;
 }
 
 .ant-card-meta-title {
