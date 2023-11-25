@@ -21,7 +21,7 @@ const IconTextRows = ({ data }) => {
   const [userClicked, setUserClicked] = useState(false);
   const [prevIndex, setPrevIndex] = useState(null);
   const [isWideScreen, setIsWideScreen] = useState(false);
-  const [clickedCardIndexLaptop, setClickedCardIndexLaptop] = useState(0);
+  const [clickedCardIndexLaptop, setClickedCardIndexLaptop] = useState(-1);
 
   // let prevIndex = null;
 
@@ -110,7 +110,7 @@ const IconTextRows = ({ data }) => {
             </div>
           ))}
         </div> */}
-        <div className="md:block hidden flex flex-col">
+        {/* <div className="md:block hidden flex flex-col">
           {clickedCardIndexLaptop !== null && (
             <div className="text-center my-4 mx-auto h-28 font-bold w-4/5">
               <p className="leading-8">
@@ -144,6 +144,55 @@ const IconTextRows = ({ data }) => {
               </div>
             ))}
           </div>
+        </div> */}
+
+        <div className="md:flex hidden flex flex-wrap">
+          {data.data.map((item, index) => (
+            <div
+              key={index}
+              className={`w-1/2 p-4 cursor-pointer mx-auto mb-8 ${
+                clickedCardIndexLaptop === index
+                  ? "bg-white rounded-xl shadow-xl"
+                  : ""
+              }`}
+              onClick={() => setClickedCardIndexLaptop(index)}
+            >
+              <ReactCardFlip
+                className="h-full"
+                isFlipped={index === clickedCardIndexLaptop}
+                flipDirection="horizontal"
+                containerStyle={{
+                  // width: "fit-content",
+                  // height: "100%",
+                  // height: "fit-content",
+                  // display: "flex",
+                  height: "10rem",
+                }}
+                cardStyle={{
+                  // width: "100%",
+                  // height: "100%",
+                  // height: "fit-content",
+                  height: "5rem",
+                }}
+              >
+                <div className="flex items-center flex-col">
+                  <img
+                    className="h-20 object-cover p-4 pt-0 mx-auto"
+                    src={item.iconPath}
+                    alt={`Icon ${index + 1}`}
+                  />
+                  <h2 className="font-bold text-center flex-grow">
+                    {item.title}
+                  </h2>
+                </div>
+                <div className="flex items-center flex-col">
+                  <h2 className="font-bold text-center flex-grow justify-center">
+                    {item.text}
+                  </h2>
+                </div>
+              </ReactCardFlip>
+            </div>
+          ))}
         </div>
 
         {/* Mobile-Ansicht 
