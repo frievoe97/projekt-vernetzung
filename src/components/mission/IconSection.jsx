@@ -150,11 +150,12 @@ const IconTextRows = ({ data }) => {
           {data.data.map((item, index) => (
             <div
               key={index}
-              className={`w-1/2 p-4 cursor-pointer mx-auto mb-8 ${
+              className={`w-1/2 p-4 cursor-pointer mx-auto ${
                 clickedCardIndexLaptop === index
                   ? "bg-white rounded-xl shadow-xl"
                   : ""
-              }`}
+              }
+              ${index == data.data.length - 1 ? "mb-0" : "mb-8"}`}
               onClick={() => setClickedCardIndexLaptop(index)}
             >
               <ReactCardFlip
