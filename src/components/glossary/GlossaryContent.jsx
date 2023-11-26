@@ -10,6 +10,38 @@ const GlossaryContent = ({ data }) => {
   const [eindeutigeTags, setEindeutigeTags] = useState([]);
   const [searchTags, setSearchTags] = useState([]);
 
+  const alphabet = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "Ä",
+    "Ö",
+    "Ü",
+  ];
+
   const sammleEindeutigeTags = () => {
     const eindeutigeTags = [];
 
@@ -29,8 +61,52 @@ const GlossaryContent = ({ data }) => {
       });
     }
 
+    // return sortObjectsByLabel(eindeutigeTags);
     return eindeutigeTags;
   };
+
+  const sortObjectsByBegriff = (arrayOfObjects) => {
+    // Verwende die sort() Methode, um das Array zu sortieren
+    arrayOfObjects.sort((a, b) => {
+      // Vergleiche die Werte des 'Begriff'-Schlüssels für die Sortierreihenfolge
+      const begriffA = a.Begriff.toLowerCase(); // Vergleich ist nicht case-sensitive
+      const begriffB = b.Begriff.toLowerCase();
+
+      if (begriffA < begriffB) {
+        return -1;
+      }
+      if (begriffA > begriffB) {
+        return 1;
+      }
+      return 0; // Die Werte sind gleich
+    });
+
+    return arrayOfObjects; // Das sortierte Array zurückgeben
+  };
+  if (Object.keys(data).length > 0) {
+    data.glossaryData = sortObjectsByBegriff(data.glossaryData);
+  }
+
+  // const sortObjectsByLabel = (arrayOfObjects) => {
+  //   // Verwende die sort() Methode, um das Array zu sortieren
+  //   arrayOfObjects.sort((a, b) => {
+  //     // Vergleiche die Werte des 'label'-Schlüssels für die Sortierreihenfolge
+  //     const labelA = a.label.toLowerCase(); // Vergleich ist nicht case-sensitive
+  //     const labelB = b.label.toLowerCase();
+
+  //     if (labelA < labelB) {
+  //       return 1;
+  //     }
+  //     if (labelA > labelB) {
+  //       return -1;
+  //     }
+  //     return 0; // Die Werte sind gleich
+  //   });
+
+  //   return arrayOfObjects; // Das sortierte Array zurückgeben
+  // };
+
+  // console.log()
 
   useEffect(() => {
     setEindeutigeTags(sammleEindeutigeTags());
@@ -44,11 +120,17 @@ const GlossaryContent = ({ data }) => {
     setSearchTags(value);
   };
 
+  // Ein Array für die Buchstabenüberschriften erstellen
+  const letters = new Set();
+
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
-      <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-16">
-        <div className="w-full px-4">
+      <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0">
+        <div className="w-full px-4 md:px-0">
+          <h1 className="relative py-2 px-4 w-full text-center rounded-lg mt-6 mb-8 heading">
+            Filtere hier deine Suchanfrage
+          </h1>
           <Select
             mode="tags"
             // value={"selected"}
@@ -62,22 +144,48 @@ const GlossaryContent = ({ data }) => {
           />
         </div>
         {data.glossaryData.map((item, index) => {
-          // Check if every tag in searchTags is present in item.Tags
           const shouldDisplay = searchTags.every((tag) =>
             item.Tags.includes(tag)
           );
 
-          // Render GlossaryItem only if shouldDisplay is true
-          return shouldDisplay ? (
-            <GlossaryItem
-              key={index}
-              term={item.Begriff}
-              definition={"Die Definition von " + item.Begriff + " ist..."}
-              data={item}
-              tags={item.Tags}
-              searchTags={searchTags}
-            />
-          ) : null;
+          // Buchstaben des aktuellen Begriffs ermitteln
+          const firstLetter = item.Begriff.charAt(0).toUpperCase();
+
+          // Die Buchstabenüberschrift nur einmal anzeigen
+          if (!letters.has(firstLetter) && shouldDisplay) {
+            letters.add(firstLetter);
+            return (
+              <div key={firstLetter}>
+                <h2 className="mb-4 relative py-2 px-4 mt-8 text-black heading-black">
+                  {firstLetter}
+                </h2>
+                {shouldDisplay && (
+                  <GlossaryItem
+                    key={index}
+                    term={item.Begriff}
+                    definition={
+                      "Die Definition von " + item.Begriff + " ist..."
+                    }
+                    data={item}
+                    tags={item.Tags}
+                    searchTags={searchTags}
+                  />
+                )}
+              </div>
+            );
+          } else {
+            // Für die Begriffe ohne Überschrift
+            return shouldDisplay ? (
+              <GlossaryItem
+                key={index}
+                term={item.Begriff}
+                definition={"Die Definition von " + item.Begriff + " ist..."}
+                data={item}
+                tags={item.Tags}
+                searchTags={searchTags}
+              />
+            ) : null;
+          }
         })}
       </div>
     </div>
@@ -120,7 +228,7 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
   };
 
   return (
-    <div className="p-4 md:p-6 border-b-2 border-black">
+    <div className="p-4 md:p-6 border-t-2 border-black">
       <div
         className={`p-1 flex rounded justify-between items-center ${
           isExpanded ? "expanded color-animation  shadow-animation" : ""

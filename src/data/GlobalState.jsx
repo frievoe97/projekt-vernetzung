@@ -10,6 +10,7 @@ const SET_UEBER_UNS_DATA = "SET_UEBER_UNS_DATA";
 const SET_GLOSSAR_PAGE_DATA = "SET_GLOSSAR_PAGE_DATA";
 const SET_FOOTER_DATA = "SET_FOOTER_DATA";
 const SET_GLOSSARY_NEW_DATA = "SET_GLOSSARY_NEW_DATA";
+const SET_INTERVIEW_DATA = "SET_INTERVIEW_DATA";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -28,6 +29,8 @@ const reducer = (state, action) => {
       return { ...state, footer: action.payload };
     case SET_GLOSSARY_NEW_DATA:
       return { ...state, glossaryNew: action.payload };
+    case SET_INTERVIEW_DATA:
+      return { ...state, interviews: action.payload };
     default:
       return state;
   }
@@ -42,6 +45,7 @@ const initialState = {
   glossarData: {},
   glossaryNew: {},
   footer: {},
+  interviews: [],
 };
 
 // Context erstellen

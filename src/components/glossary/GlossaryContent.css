@@ -11,3 +11,12 @@
 .expanded.color-animation {
   background-color: #efe9ea; /* Ändere diese Farbe entsprechend deiner Anforderungen */
 }
+
+/* SELECT */
+:where(.css-dev-only-do-not-override-2i2tap).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  border: 2px solid black;
+  height: 3rem;
+}

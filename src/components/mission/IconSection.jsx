@@ -3,6 +3,7 @@ import ReactCardFlip from "react-card-flip";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./IconSection.css";
 
 /**
  * Eine Komponente für eine Bild-Text-Slideshow.
@@ -150,48 +151,44 @@ const IconTextRows = ({ data }) => {
           {data.data.map((item, index) => (
             <div
               key={index}
-              className={`w-1/2 p-4 cursor-pointer mx-auto ${
-                clickedCardIndexLaptop === index
-                  ? "bg-white rounded-xl shadow-xl"
-                  : ""
-              }
-              ${index == data.data.length - 1 ? "mb-0" : "mb-8"}`}
+              className={`w-1/3 px-10 py-8 cursor-pointer mx-auto items-center
+              ${index == data.data.length - 1 ? "mb-0" : "mb-0"}`}
               onClick={() => setClickedCardIndexLaptop(index)}
             >
-              <ReactCardFlip
-                className="h-full"
-                isFlipped={index === clickedCardIndexLaptop}
-                flipDirection="horizontal"
-                containerStyle={{
-                  // width: "fit-content",
-                  // height: "100%",
-                  // height: "fit-content",
-                  // display: "flex",
-                  height: "10rem",
-                }}
-                cardStyle={{
-                  // width: "100%",
-                  // height: "100%",
-                  // height: "fit-content",
-                  height: "5rem",
-                }}
-              >
-                <div className="flex items-center flex-col">
-                  <img
-                    className="h-20 object-cover p-4 pt-0 mx-auto"
-                    src={item.iconPath}
-                    alt={`Icon ${index + 1}`}
-                  />
-                  <h2 className="font-bold text-center flex-grow">
-                    {item.title}
-                  </h2>
-                </div>
-                <div className="flex items-center flex-col">
-                  <h2 className="font-bold text-center flex-grow justify-center">
-                    {item.text}
-                  </h2>
-                </div>
-              </ReactCardFlip>
+              <div className="bg-white rounded-xl shadow-xl">
+                <ReactCardFlip
+                  className="h-full flex items-center" // Hier Flexbox hinzugefügt
+                  isFlipped={index === clickedCardIndexLaptop}
+                  flipDirection="horizontal"
+                  containerStyle={{
+                    height: "22rem",
+                  }}
+                  cardStyles={{
+                    front: {
+                      alignItems: "center",
+                      display: "flex",
+                    },
+                    back: {
+                      // Styles für die Rückseite der Karte
+                      alignItems: "center",
+                      display: "flex",
+                      textAlign: "center",
+                    },
+                  }}
+                >
+                  <div className="flex mx-auto flex-col">
+                    <img
+                      className="h-20 object-cover p-4 pt-0 mx-auto"
+                      src={item.iconPath}
+                      alt={`Icon ${index + 1}`}
+                    />
+                    <h2 className="font-bold text-center mx-8">{item.title}</h2>
+                  </div>
+                  <div className="flex items-center flex-col">
+                    <h2 className="font-bold text-center mx-8">{item.text}</h2>
+                  </div>
+                </ReactCardFlip>
+              </div>
             </div>
           ))}
         </div>

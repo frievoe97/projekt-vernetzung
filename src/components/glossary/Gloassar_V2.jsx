@@ -45,9 +45,10 @@ function Gloassar_V2() {
       dispatch,
       "SET_GLOSSARY_NEW_DATA"
     );
+    // console.log(state.glossaryNew);
   }, [dispatch]);
 
-  // console.log(state.glossaryNew);
+  // console.log(sortObjectsByBegriff(state.glossaryNew.glossaryData));
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">

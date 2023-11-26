@@ -12,6 +12,7 @@ import "./fonts/inter.ttf";
 import Imprint from "./components/imprint/Imprint";
 import DataPrivacy from "./components/imprint/DataPrivacy";
 import Interviews from "./components/interviews/Interviews";
+import InterviewDetail from "./components/interviews/InterviewDetail";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -47,10 +48,10 @@ function App() {
             {/* Interviews */}
             <Route path="/interviews-und-beitraege" element={<Interviews />} />
 
-            {/* <Route
-              path="/interviews/:organizationName"
+            <Route
+              path="/interviews-und-beitraege/:organizationName"
               element={<InterviewDetail />}
-            /> */}
+            />
 
             {/* Fehlerseite für unbekannte Routen */}
             <Route
