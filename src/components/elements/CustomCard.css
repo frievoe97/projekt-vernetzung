@@ -47,7 +47,7 @@
 
 :where(.css-2i2tap).ant-card .ant-card-meta-title {
   white-space: normal;
-  line-height: 2rem;
+  line-height: 1.3rem;
 }
 
 :where(.css-dev-only-do-not-override-2i2tap).ant-card .ant-card-meta-detail {
