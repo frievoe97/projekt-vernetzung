@@ -151,7 +151,7 @@ const IconTextRows = ({ data }) => {
           {data.data.map((item, index) => (
             <div
               key={index}
-              className={`w-1/3 px-10 py-8 cursor-pointer mx-auto items-center
+              className={`w-1/2 xl:w-1/3 px-10 py-8 cursor-pointer mx-auto items-center
               ${index == data.data.length - 1 ? "mb-0" : "mb-0"}`}
               onClick={() => setClickedCardIndexLaptop(index)}
             >
@@ -162,6 +162,7 @@ const IconTextRows = ({ data }) => {
                   flipDirection="horizontal"
                   containerStyle={{
                     height: "22rem",
+                    minHeight: "fit-content",
                   }}
                   cardStyles={{
                     front: {
