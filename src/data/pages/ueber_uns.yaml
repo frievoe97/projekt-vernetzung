@@ -7,19 +7,19 @@ missionTitel:
 iconTextRows:
   data:
     - iconPath: "/icons/teacher.svg"
-      title: "Die Perspektive der Wissenschaft:"
+      title: "Die Perspektive der Wissenschaft"
       text: "Betroffene könnten die eigene Situation ggf. früher als solche erkennen, Angriffe objektivieren und weniger persönlich nehmen, wenn sie um die einschlägige Studienlage zu gängigem Täterverhalten und psychosozialen Konsequenzen für Betroffene wüssten. Dies würde Betroffene gleichzeitig auch zu mehr Handlungsfähigkeit verhelfen."
     - iconPath: "/icons/heart.svg"
-      title: "Die Perspektive der Medizin und klinischen Psychologie:"
+      title: "Die Perspektive der Medizin und klinischen Psychologie"
       text: "Viele Betroffene erleben schleichende Gesundheits- und Wesensveränderungen, die sie zu spät als eindeutige Konsequenz der Gewalteinwirkung ihnen gegenüber reflektieren. Jedoch sind Gewalterfahrungen nicht selten auch körperliche Erfahrungen."
     - iconPath: "/icons/justice.svg"
-      title: "Die Perspektive der Justiz:"
+      title: "Die Perspektive der Justiz"
       text: "Betroffene werden auf absehbare Zeit mit überlasteten Institutionen der Justiz und Strafverfolgung konfrontiert sein, die meist nicht auf Fälle von Gewalteinwirkung im Kontext von Machtmissbrauch spezialisiert sind. Viele Täter kennen hingegen ihre strafrechtlich relevanten Grenzen sehr genau. Eine frühe gerichtsverwertbare Dokumentation kann Betroffenen zumindest bedingt helfen."
     - iconPath: "/icons/bank.svg"
-      title: "Die Perspektive relevanter Vereine und Organisationen:"
+      title: "Die Perspektive relevanter Vereine und Organisationen"
       text: "Betroffene können eine Vielzahl an engagierten Vereinen und Organisationen zur eigenen Situation und Handlungsmöglichkeiten, aber auch zur Abhilfe in Akutsituationen einbinden. Viele helfen kostenfrei. Wir zeigen dir, welche Anlaufstellen es gibt."
     - iconPath: "/icons/like-dislike.svg"
-      title: "Die Perspektive (ehemals) Betroffener und von Aktivist:innen:"
+      title: "Die Perspektive (ehemals) Betroffener und von Aktivist:innen"
       text: "Gerade Betroffene weniger sichtbarer Formen von Gewalt haben es schwerer, sich als solche zu identifizieren und die eigenen Erlebnisse in Worte zu fassen. Erfahrungsberichte anderer fassen das Erlebte in Worte und bieten so häufig erste Anlaufstellen für Austausch. Wir zeigen dir, welche Anlaufstellen es gibt."
 
 warumJetztWarumWir:
