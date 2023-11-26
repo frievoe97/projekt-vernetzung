@@ -155,7 +155,7 @@ const IconTextRows = ({ data }) => {
               ${index == data.data.length - 1 ? "mb-0" : "mb-0"}`}
               onClick={() => setClickedCardIndexLaptop(index)}
             >
-              <div className="bg-white rounded-xl shadow-xl">
+              <div className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all">
                 <ReactCardFlip
                   className="h-full flex items-center" // Hier Flexbox hinzugefügt
                   isFlipped={index === clickedCardIndexLaptop}
