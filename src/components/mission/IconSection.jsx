@@ -147,7 +147,7 @@ const IconTextRows = ({ data }) => {
           </div>
         </div> */}
 
-        <div className="md:flex hidden flex flex-wrap">
+        {/* <div className="md:flex hidden flex flex-wrap">
           {data.data.map((item, index) => (
             <div
               key={index}
@@ -171,6 +171,53 @@ const IconTextRows = ({ data }) => {
                     },
                     back: {
                       // Styles für die Rückseite der Karte
+                      alignItems: "center",
+                      display: "flex",
+                      textAlign: "center",
+                    },
+                  }}
+                >
+                  <div className="flex mx-auto flex-col">
+                    <img
+                      className="h-20 object-cover p-4 pt-0 mx-auto"
+                      src={item.iconPath}
+                      alt={`Icon ${index + 1}`}
+                    />
+                    <h2 className="font-bold text-center mx-8">{item.title}</h2>
+                  </div>
+                  <div className="flex items-center flex-col">
+                    <h2 className="font-bold text-center mx-8">{item.text}</h2>
+                  </div>
+                </ReactCardFlip>
+              </div>
+            </div>
+          ))}
+        </div> */}
+
+        <div className="md:flex hidden grid grid-cols-2 md:grid-cols-3 gap-4">
+          {data.data.map((item, index) => (
+            <div
+              key={index}
+              className={`w-full px-10 py-8 cursor-pointer mx-auto items-center ${
+                index === data.data.length - 1 ? "mb-0" : "mb-0"
+              }`}
+              onClick={() => setClickedCardIndexLaptop(index)}
+            >
+              <div className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all">
+                <ReactCardFlip
+                  className="h-full flex items-center"
+                  isFlipped={index === clickedCardIndexLaptop}
+                  flipDirection="horizontal"
+                  containerStyle={{
+                    height: "22rem",
+                    minHeight: "fit-content",
+                  }}
+                  cardStyles={{
+                    front: {
+                      alignItems: "center",
+                      display: "flex",
+                    },
+                    back: {
                       alignItems: "center",
                       display: "flex",
                       textAlign: "center",

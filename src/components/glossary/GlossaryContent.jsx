@@ -123,6 +123,8 @@ const GlossaryContent = ({ data }) => {
   // Ein Array für die Buchstabenüberschriften erstellen
   const letters = new Set();
 
+  console.log(data.glossaryData);
+
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
@@ -156,7 +158,7 @@ const GlossaryContent = ({ data }) => {
             letters.add(firstLetter);
             return (
               <div key={firstLetter}>
-                <h2 className="mb-4 relative py-2 px-4 mt-8 text-black heading-black">
+                <h2 className="mb-4 relative py-2 px-4 mt-8 text-black heading-black border-b-2 border-fm_rosa">
                   {firstLetter}
                 </h2>
                 {shouldDisplay && (
@@ -208,27 +210,36 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
       return text;
     }
 
-    // Split the text into words
+    // Teile den Text in Wörter auf
     const words = text.split(" ");
 
-    // Iterate through the words and format them
+    // Iteriere durch die Wörter und formatiere sie
     const formattedText = words.map((word) => {
       if (word.length === 0) {
-        return word; // Handle empty words (e.g., double spaces)
+        return word; // Leere Wörter (z.B. doppelte Leerzeichen) behandeln
       }
 
-      const firstLetterUpperCase = word.charAt(0).toUpperCase(); // First letter uppercase
-      const restOfWordLowerCase = word.slice(1).toLowerCase(); // Rest of word lowercase
+      const wordParts = word.split("-");
+      const capitalizedWordParts = wordParts.map((part) => {
+        if (part.length === 0) {
+          return part; // Leere Teile (z.B. doppelte Bindestriche) behandeln
+        }
 
-      return firstLetterUpperCase + restOfWordLowerCase;
+        const firstLetterUpperCase = part.charAt(0).toUpperCase(); // Erstes Zeichen groß
+        const restOfWordLowerCase = part.slice(1).toLowerCase(); // Rest des Teils klein
+
+        return firstLetterUpperCase + restOfWordLowerCase;
+      });
+
+      return capitalizedWordParts.join("-");
     });
 
-    // Join the formatted words back together
+    // Die formatierten Wörter wieder zusammenfügen
     return formattedText.join(" ");
   };
 
   return (
-    <div className="p-4 md:p-6 border-t-2 border-black">
+    <div className="p-4 md:p-6">
       <div
         className={`p-1 flex rounded justify-between items-center ${
           isExpanded ? "expanded color-animation  shadow-animation" : ""
