@@ -2,6 +2,7 @@ import React from "react";
 
 import ButtonBigRounded from "../elements/ButtonBigRounded";
 import Preview from "./elements/Preview";
+import NotFoundComponent from "../NotFoundComponent";
 
 function InterviewContainer() {
   // Daten für die Interviews
@@ -35,6 +36,14 @@ function InterviewContainer() {
     },
     // Weitere Interviews hier hinzufügen, falls benötigt
   ];
+
+  return (
+    <NotFoundComponent
+      text={"Das Interview existiert nicht."}
+      buttonText={"Zurück zur Startseite"}
+      link={"/"}
+    />
+  );
 
   return (
     <div className="w-full">
