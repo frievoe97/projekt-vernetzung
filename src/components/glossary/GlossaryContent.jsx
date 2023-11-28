@@ -248,9 +248,7 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
       >
-        <h2 className="text-xl font-semibold my-2 ml-2">
-          {capitalizeWords(term)}
-        </h2>
+        <h2 className="text-xl my-2 ml-2">{capitalizeWords(term)}</h2>
         <button className="bg-transparent">
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>
