@@ -158,7 +158,7 @@ const GlossaryContent = ({ data }) => {
             letters.add(firstLetter);
             return (
               <div key={firstLetter}>
-                <h2 className="mb-4 relative py-2 px-4 mt-8 text-black heading-black border-b-2 border-fm_rosa">
+                <h2 className="mb-4 relative py-2 px-4 mt-4 text-black heading-black border-b-2 border-fm_rosa">
                   {firstLetter}
                 </h2>
                 {shouldDisplay && (
@@ -239,7 +239,7 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
   };
 
   return (
-    <div className="p-4 md:p-6">
+    <div className="p-2">
       <div
         className={`p-1 flex rounded justify-between items-center ${
           isExpanded ? "expanded color-animation  shadow-animation" : ""
