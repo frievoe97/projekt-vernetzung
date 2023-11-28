@@ -186,7 +186,7 @@ const IconTextRows = ({ data }) => {
                     <h2 className="font-bold text-center mx-8">{item.title}</h2>
                   </div>
                   <div className="flex items-center flex-col">
-                    <h2 className="font-bold text-center mx-8">{item.text}</h2>
+                    <h2 className="text-center mx-8">{item.text}</h2>
                   </div>
                 </ReactCardFlip>
               </div>
