@@ -147,7 +147,7 @@ const IconTextRows = ({ data }) => {
           </div>
         </div> */}
 
-        {/* <div className="md:flex hidden flex flex-wrap">
+        <div className="md:flex hidden flex flex-wrap">
           {data.data.map((item, index) => (
             <div
               key={index}
@@ -192,9 +192,9 @@ const IconTextRows = ({ data }) => {
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
 
-        <div className="md:flex hidden grid grid-cols-2 md:grid-cols-3 gap-4">
+        {/* <div className="md:flex hidden grid grid-cols-2 md:grid-cols-3 gap-4">
           {data.data.map((item, index) => (
             <div
               key={index}
@@ -239,7 +239,7 @@ const IconTextRows = ({ data }) => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Mobile-Ansicht 
         block md:hidden */}
