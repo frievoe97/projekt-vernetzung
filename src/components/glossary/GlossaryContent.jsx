@@ -165,12 +165,15 @@ const GlossaryContent = ({ data }) => {
                   <GlossaryItem
                     key={index}
                     term={item.Begriff}
-                    definition={
-                      "Die Definition von " + item.Begriff + " ist..."
-                    }
+                    // definition={
+                    //   "Die Definition von " + item.Begriff + " ist..."
+                    // }
+                    definition={item.Definition}
                     data={item}
                     tags={item.Tags}
+                    source={item.Quellen}
                     searchTags={searchTags}
+                    link={item["Website-Verlinkung"]}
                   />
                 )}
               </div>
@@ -181,10 +184,13 @@ const GlossaryContent = ({ data }) => {
               <GlossaryItem
                 key={index}
                 term={item.Begriff}
-                definition={"Die Definition von " + item.Begriff + " ist..."}
+                // definition={"Die Definition von " + item.Begriff + " ist..."}
+                definition={item.Definition}
                 data={item}
                 tags={item.Tags}
+                source={item.Quellen}
                 searchTags={searchTags}
+                link={item["Website-Verlinkung"]}
               />
             ) : null;
           }
@@ -194,7 +200,15 @@ const GlossaryContent = ({ data }) => {
   );
 };
 
-function GlossaryItem({ term, data, definition, searchTags, tags }) {
+function GlossaryItem({
+  term,
+  data,
+  definition,
+  searchTags,
+  tags,
+  source,
+  link,
+}) {
   const [isExpanded, setExpanded] = useState(searchTags.length > 0);
 
   // console.log(isExpanded);
@@ -253,8 +267,17 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>
       </div>
-      <section className="divide-y-2 divide-fm_grau" {...getCollapseProps()}>
-        <p className="m-4 mt-8">{definition}</p>
+      <section className="" {...getCollapseProps()}>
+        <p className="m-4 mt-8 text-justify">{definition}</p>
+        <div className="flex justify-end items-end justify-between mb-4">
+          <a
+            className="ml-4 text-black hover:text-black hover:underline font-normal"
+            href={link}
+          >
+            Weiterlesen
+          </a>
+          <div className="mr-4 text-xs">Quelle: {source}</div>
+        </div>
       </section>
     </div>
   );

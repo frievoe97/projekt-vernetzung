@@ -17,7 +17,7 @@ with open(csv_datei, newline='', encoding='utf-8') as csvfile:
     header = next(csv_reader)  # Die erste Zeile enthält die Spaltenüberschriften
     for row in csv_reader:
         begriff = row[0].strip()  # Trimme den Begriff
-        definition = begriff  # Die Definition ist der gleiche Wert wie der Begriff
+        definition = row[1].strip()  # Die Definition ist der gleiche Wert wie der Begriff
         website_verlinkung = row[2].strip()  # Trimme die Website-Verlinkung
         quellen = row[3].strip()  # Trimme die Quellen
         tags = [header[i].strip() for i in range(4, len(header)) if i < len(row) and row[i] == 'x']
