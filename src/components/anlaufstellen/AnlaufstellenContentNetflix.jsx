@@ -47,7 +47,7 @@ const AnlaufstellenContentNetflix = () => {
                 {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
                 {row.Anlaufstelle != null && row.Anlaufstelle.length > 0 && (
                   <>
-                    <h2 className="text-xl text-left font-bold my-2 ml-4">
+                    <h2 className="text-xl text-left font-bold my-2 ml-4 ">
                       {row.Kategorie}
                     </h2>
 

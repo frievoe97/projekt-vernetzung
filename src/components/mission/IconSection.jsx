@@ -93,60 +93,6 @@ const IconTextRows = ({ data }) => {
     <div className="w-full bg-fm_helles_beige">
       <div className="max-w-screen-xl mx-auto md:p-4">
         {/* Desktop-Ansicht */}
-        {/* <div className="my-8 md:block hidden">
-          {data.data.map((item, index) => (
-            <div className="flex items-start mb-8" key={index}>
-              <div className="w-16 h-16 flex-shrink-0">
-                <img
-                  className="w-32 object-cover p-4 pt-2"
-                  src={item.iconPath}
-                  alt={`Icon ${index + 1}`}
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-left">
-                  <span className="font-bold">{item.title}</span> {item.text}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div> */}
-        {/* <div className="md:block hidden flex flex-col">
-          {clickedCardIndexLaptop !== null && (
-            <div className="text-center my-4 mx-auto h-28 font-bold w-4/5">
-              <p className="leading-8">
-                {data.data[clickedCardIndexLaptop].text}
-              </p>
-            </div>
-          )}
-          <div className="mt-8 md:flex">
-            {data.data.map((item, index) => (
-              <div
-                key={index}
-                className={`p-0 cursor-pointer flex-1 ${
-                  clickedCardIndexLaptop === index
-                    ? "bg-white rounded-xl shadow-xl"
-                    : ""
-                }`}
-                onClick={() => setClickedCardIndexLaptop(index)}
-              >
-                <div className="p-0 flex items-center">
-                  <div className="mx-auto pt-4">
-                    <img
-                      className="h-20 object-cover p-4 pt-0 mx-auto"
-                      src={item.iconPath}
-                      alt={`Icon ${index + 1}`}
-                    />
-                    <h2 className="font-bold text-center flex-grow h-20">
-                      {item.title}
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
-
         <div className="md:flex hidden flex flex-wrap justify-center">
           {data.data.map((item, index) => (
             <div
