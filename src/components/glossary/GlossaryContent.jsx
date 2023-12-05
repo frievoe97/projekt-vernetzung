@@ -269,14 +269,17 @@ function GlossaryItem({
       </div>
       <section className="" {...getCollapseProps()}>
         <p className="m-4 mt-8 text-justify">{definition}</p>
-        <div className="flex justify-end items-end justify-between mb-4">
+        <div className="flex flex-col md:flex-row  md:items-end justify-between mb-2 md:mb-4">
           <a
             className="ml-4 text-black hover:text-black hover:underline font-normal"
             href={link}
+            target="_blank"
           >
             Weiterlesen
           </a>
-          <div className="mr-4 text-xs">Quelle: {source}</div>
+          <div className="ml-4 md:ml-0 md:mr-4 mt-2 md:mt-0 text-xs font-light">
+            Quelle: {source}
+          </div>
         </div>
       </section>
     </div>
