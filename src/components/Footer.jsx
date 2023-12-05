@@ -47,9 +47,9 @@ function Footer() {
   }
 
   return (
-    <div className="bg-fm_blau text-fm_weiss p-8 py-4 md:py-8 min-h-72">
+    <div className="bg-fm_blau_dark text-fm_weiss p-8 py-4 md:py-4 min-h-72 text-sm">
       <div className="max-w-screen-xl mx-auto">
-        <div className="container mx-auto flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-between items-start justify-between">
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row justify-between items-start justify-between">
           <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
             {/* Kontaktinformationen anzeigen */}
             <h4 className="text-xl font-bold">
@@ -94,6 +94,16 @@ function Footer() {
                   </Link>
                 ))}
               </div>
+              <p className="mt-2">
+                Diese Seite wurde erstellt von{" "}
+                <a
+                  className="text-white hover:text-white font-normal"
+                  href="https://github.com/frievoe97"
+                  target="_blank"
+                >
+                  Friedrich Völkers
+                </a>
+              </p>
             </div>
           </div>
           <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
@@ -103,7 +113,7 @@ function Footer() {
             </h4>
             <p className="my-2">{state.footer.newsletter.text}</p>
             <div className="w-full">
-              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
+              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg font-bold">
                 {state.footer.newsletter.buttonLabel}
               </button>
             </div>
@@ -116,7 +126,7 @@ function Footer() {
             <p className="my-2">{state.footer.feedback.text}</p>
             {/* Links anzeigen */}
             <div className="w-full">
-              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
+              <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg font-bold">
                 {state.footer.feedback.buttonLabel}
               </button>
             </div>

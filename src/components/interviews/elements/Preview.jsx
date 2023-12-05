@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Importiere die Link-Komponente
 import { FaQuoteRight } from "react-icons/fa6";
 import "./Preview.css";
 
-const Preview = ({ imageUrl, title }) => {
+const Preview = ({ imageUrl, title, textTeaser }) => {
   // Ersetze Leerzeichen durch Bindestriche und konvertiere zu Kleinbuchstaben
   const convertToSlug = (inputString) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
@@ -33,8 +33,7 @@ const Preview = ({ imageUrl, title }) => {
         <div className="relative m-4 text-white">
           <FaQuoteRight className="absolute -top-5 -left-1 text-4xl" />
           <div className="m-4 ml-7 bg-blue-500 bg-opacity-70 shadow-xl rounded p-1">
-            Text text text text text text text text text text text text text
-            text text text text text text text text text text text text text.
+            {textTeaser}
           </div>
         </div>
       </div>

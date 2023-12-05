@@ -271,13 +271,13 @@ function GlossaryItem({
         <p className="m-4 mt-8 text-justify">{definition}</p>
         <div className="flex flex-col md:flex-row  md:items-end justify-between mb-2 md:mb-4">
           <a
-            className="ml-4 text-black hover:text-black hover:underline font-normal"
+            className="ml-4 text-black hover:text-black hover:underline font-bold"
             href={link}
             target="_blank"
           >
             Weiterlesen
           </a>
-          <div className="ml-4 md:ml-0 md:mr-4 mt-2 md:mt-0 text-xs font-light">
+          <div className="ml-4 md:ml-0 mr-4 mt-2 md:mt-0 text-xs font-light">
             Quelle: {source}
           </div>
         </div>

@@ -38,6 +38,7 @@ export default {
       color_contact_banner_background_2: "#72A7FF",
       // Figma Colors
       fm_blau: "#72A7FF",
+      fm_blau_dark: "#305ca6",
       fm_rosa: "#FB819B",
       fm_altrosa: "#BEA5A9",
       fm_grau: "#A5ABBD",

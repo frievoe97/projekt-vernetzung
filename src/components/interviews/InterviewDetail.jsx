@@ -28,10 +28,9 @@ function InterviewDetail() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
       dispatch,
-      "SET_INTERVIEW_DATA",
-      "interviews" // Übergeben Sie den Namen des Schlüssels
+      "SET_INTERVIEW_V_2_DATA"
     );
   }, [dispatch]);
 
@@ -39,20 +38,26 @@ function InterviewDetail() {
     return inputString.replace(/\s+/g, "-").toLowerCase();
   };
 
-  if (state.interviews.length == 0) {
-    return (
-      <NotFoundComponent
-        text={"Das Interview existiert nicht."}
-        buttonText={"Zurück zu den Interviews"}
-        link={"/interviews"}
-      />
-    );
+  // if (state.interviews.length == 0) {
+  //   return (
+  //     <NotFoundComponent
+  //       text={"Das Interview existiert nicht."}
+  //       buttonText={"Zurück zu den Interviews"}
+  //       link={"/interviews"}
+  //     />
+  //   );
+  // }
+
+  if (Object.keys(state.interviewsV2).length == 0) {
+    return;
   }
 
-  for (let i = 0; i < state.interviews.length; i++) {
-    const title = state.interviews[i].title;
+  console.log(state.interviewsV2);
+
+  for (let i = 0; i < state.interviewsV2.length; i++) {
+    const title = state.interviewsV2[i].title;
     if (convertToSlug(title) === organizationName) {
-      interview = state.interviews[i];
+      interview = state.interviewsV2[i];
     }
   }
 
