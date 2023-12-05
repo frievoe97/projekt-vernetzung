@@ -1,13 +1,25 @@
 contact:
-  email: info@projekt-vernetzung.org
-  location: Berlin, Deutschland
+  heading: Kontakt
+  rows:
+    - title: Email
+      text: projekt-vernetzung@email.com
+    - title: Instagram
+      text: "@projektvernetzung"
+    - title: Berlin, Deutschland  
   copyright: © 2023 Projekt Vernetzung
 
 newsletter:
   heading: Newsletter
-  text: Registriere dich hier für unseren Newsletter!
+  text: "Du möchtest in regelmäßigen Abständen Neuigkeiten und Wissensinput von uns und unseren Content Partner:innen erhalten?"
   buttonLabel: Jetzt registrieren!
+  buttonLink: "/"
 
+feedback:
+  heading: Feedback
+  text: "Du hast Ideen oder konstruktive Kritik, die du mit uns teilen willst? Du willst sogar mitmachen oder einen Beitrag leisten?"
+  buttonLabel: Schreib uns!
+  buttonLink: "/"
+  
 links:
   - label: Impressum
     url: "/imprint"

@@ -2,40 +2,39 @@ pictureHeader:
   imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-1.jpeg?raw=true"
   offlineImageUrl: metoo.jpeg
   text:
-    title: "Machtmissbrauch passiert überall."
-    subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel."
+    title: "Machtmissbrauch kann in jedem Lebensbereich auftreten"
+    subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel"
     description: >
-      Als Beitrag zu mehr Prävention möchten wir hier die vielen verschiedenen Facetten von Machtmissbrauch und dessen systemische und gesellschaftliche Voraussetzungen abbilden.
-    listItems:
-      - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
-      - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
-      - "gemeinsam mit Dritten erörtern, was sich ändern muss und was Jede:r einzelne beitragen kann."
+      Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an. Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln.
+    #listItems:
+    #  - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
+    #  - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
+    #  - "gemeinsam mit Dritten erörtern, was sich ändern muss und was Jede:r einzelne beitragen kann."
 
 textWithImage:
   title: "Integrativer Ansatz für bessere Prävention"
   imageUrls: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-3.jpeg?raw=true"
   offlineImageUrl: persons.jpeg
   text:
-    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen diesen Fällen ähnliche Muster zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich."
-    - "Medial werden diese Muster zuletzt vielfach als “System” beschrieben, “das Machtmissbrauch stützt”. Dieses System umfasst Täter:innen, die Gewalt oft subtil und schleichend einsetzen. Es umfasst aber auch deren Umfeld sowie – Stand heute – limitierte Handlungsoptionen für Betroffene."
-    - "Wir möchten dieses System auf unserer Plattform möglichst verständlich aufarbeiten und dabei vor allem zeigen, dass es nicht in Silos, sondern gesamtgesellschaftlich betrachtet werden muss."
+    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen der Mehrzahl der Fälle ähnliche Muster und Strukturen zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich. Medial wurden diese Muster zuletzt vielfach als “System” beschrieben, “das Machtmissbrauch stützt” bzw. “möglich macht”."
+    - "Die Plattform von “Projekt Vernetzung” arbeitet dieses “System” aus verschiedenen Perspektiven auf und zeigt, dass Lösungen nicht in Silos, sondern gesamtgesellschaftlich bzw. bereichsübergreifend erarbeitet werden müssen. "
   buttonText: "Mehr Erfahren"
   buttonLink: "/"
 
 wissensvermittlung:
   title: "Wissensvermittlung durch die Stimmen Dritter"
   paragraphs:
-    - "Viele Menschen helfen z.B. durch ihre Forschung, ihre Arbeit oder ihre Erlebnisberichte, Machtmissbrauch zu erklären und dafür zu sensibilisieren. Oft tun sie dies bereits seit Jahren. Dank der wichtigen medialen Aufmerksamkeit auf dem Thema erhalten sie nun verstärkt Gehör. An diesem Momentum möchten wir ansetzen. Anstatt das Rad neu zu erfinden, wollen wir die vielfältigen Stimmen hier zu Wort kommen lassen, die bereits in der Tiefe informieren und aufklären, die wichtige Projekte ins Leben gerufen haben, oder die sich öffentlichkeitswirksam positionieren."
-    - "Auf diese Weise sollen Betroffene einfacher Zugang zu relevanten Informationen erhalten, um die eigene Erfahrung besser einordnen und objektiver betrachten zu können. Um früher zu erkennen, wo Grenzen überschritten werden. Und um frühestmöglich Worte für das Erlebte zu finden und zu handeln – denn aktuell ist das alles andere als einfach."
-  buttonText: "Zu unseren Interviews & Beiträgen"
-  buttonLink: "/"
+    - "Viele Menschen helfen zum Teil seit Jahren durch ihre Forschung, Erwerbsarbeit, politische Meinungsbildung oder Erlebnisberichte, Machtmissbrauch zu erklären und dafür zu sensibilisieren. Dank der wichtigen Medienarbeit zu dem Thema erhalten sie nun verstärkt Gehör. An diesem Momentum möchten wir ansetzen – jedoch nicht, indem wir selber das Rad neu erfinden."
+    - "Stattdessen bündelt “Projekt Vernetzung” die Stimmen zahlreicher Expert:innen, Meinungsführer:innen und anderer engagierter Menschen und Organisationen, die sich mit der Thematik befassen. Diese Plattform verfolgt das Ziel, die Suche Betroffener nach relevanten Informationen und Anlaufstellen zu verkürzen. Angesicht überlasteter Systeme ist frühe Hilfe zur Selbsthilfe essenziell. Betroffene sollen die eigene Erfahrung schneller einordnen und erkennen können, wo Grenzüberschreitungen stattfinden. Zudem finden sie hier Hilfestellungen, um das Erlebte nach Möglichkeit frühestmöglich in Worte zu fassen und idealerweise zu handeln, bevor ihre Fälle beispielsweise rechtlich relevant werden oder sogar gesundheitliche Schäden physischer oder psychischer Natur nach sich ziehen."
+  # buttonText: "Zu unseren Interviews & Beiträgen"
+  # buttonLink: "/"
 
 motivationAusEigenerErfahrung:
   title: "Motivation aus eigener Betroffenenerfahrung"
   imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-4.jpeg?raw=true"
   offlineImageUrl: persons2.jpeg
   paragraphs:
-    - "Bei Projekt Vernetzung handelt es sich um eine private Content-Initiative. Die Initiatorinnen haben im privaten wie auch beruflichen Lebensbereich in Deutschland Erfahrungen mit Machtmissbrauch gemacht."
-    - "Bei deren Aufarbeitung fielen uns einige gesellschaftliche Missstände auf, die wir als Privatpersonen angehen und zum Besseren verändern können. Wesentliche Mängel sind mangelnde Aufklärung und Sensibilisierung. Aus diesem persönlichen Beweggrund haben wir uns genau das zum Ziel gesetzt."
-  buttonText: "Weitere Informationen"
-  buttonLink: "/"
+    - "Bei Projekt Vernetzung handelt es sich zunächst um eine private Content-Initiative. Die Initiatorinnen haben jeweils im privaten bzw. im beruflichen Lebensbereich in Deutschland Erfahrungen mit Machtmissbrauch gemacht."
+    - "Aus eigener Erfahrung können wir sagen, dass mangelnde Aufklärung und Sensibilisierung zur Thematik wesentliche Mängel sind. Gleichzeitig sehen wir hier einen Handlungsspielraum für Privatpersonen, den wir gemeinsam mit anderen angehen und zum Besseren verändern können."
+  # buttonText: "Weitere Informationen"
+  # buttonLink: "/"
