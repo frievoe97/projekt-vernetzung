@@ -3,9 +3,10 @@ contact:
   rows:
     - title: Email
       text: projekt-vernetzung@email.com
-    - title: Instagram: 
+    - title: Instagram
       text: @projektvernetzung
-    - title: Berlin, Deutschland  
+    - title: Adresse
+      text: Berlin, Deutschland  
   copyright: © 2023 Projekt Vernetzung
 
 newsletter:
