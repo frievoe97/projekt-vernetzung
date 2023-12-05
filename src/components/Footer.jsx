@@ -25,7 +25,6 @@ function Footer() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        // console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData,
@@ -48,31 +47,53 @@ function Footer() {
   }
 
   return (
-    <div className="bg-fm_blau text-fm_weiss p-8 py-4 md:py-16 min-h-72">
+    <div className="bg-fm_blau text-fm_weiss p-8 py-4 md:py-8 min-h-72">
       <div className="max-w-screen-xl mx-auto">
         <div className="container mx-auto flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-between items-start justify-between">
           <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
             {/* Kontaktinformationen anzeigen */}
-            <h4 className="text-xl font-bold">Kontakt</h4>
-            <a
-              href="mailto:projekt-vernetzung@email.com"
-              className="mt-2 text-fm_weiss hover:text-fm_weiss"
-            >
-              {state.footer.contact.email}
-            </a>
-            <p>{state.footer.contact.location}</p>
-            <p className="mt-6">{state.footer.contact.copyright}</p>
-            <div className="w-full flex flex-wrap items-start">
-              {/* Links anzeigen in einer flexiblen Box */}
-              {state.footer.links.map((link, index) => (
-                <Link
-                  key={index}
-                  className="text-fm_weiss hover:text-fm_weiss px-4 pr-4 pl-0 cursor-pointer"
-                  to={link.url}
+            <h4 className="text-xl font-bold">
+              {state.footer.contact.heading}
+            </h4>
+            <div className="my-2">
+              <div className="flex">
+                <div className="mr-2">
+                  {state.footer.contact.rows[0].title}:
+                </div>
+                <a
+                  href="mailto:projekt-vernetzung@email.com"
+                  className="hover:text-fm_weiss text-fm_weiss font-normal cursor-pointer"
                 >
-                  {link.label}
-                </Link>
-              ))}
+                  {state.footer.contact.rows[0].text}
+                </a>
+              </div>
+              <div className="flex">
+                <div className="mr-2">
+                  {state.footer.contact.rows[1].title}:
+                </div>
+                <a
+                  href="https://www.instagram.com/projektvernetzung"
+                  className="hover:text-fm_weiss text-fm_weiss font-normal cursor-pointer"
+                >
+                  {state.footer.contact.rows[1].text}
+                </a>
+              </div>
+              <div className="flex">
+                <div>{state.footer.contact.rows[2].title}</div>
+              </div>
+              <p className="mt-6">{state.footer.contact.copyright}</p>
+              <div className="w-full flex flex-wrap items-start">
+                {/* Links anzeigen in einer flexiblen Box */}
+                {state.footer.links.map((link, index) => (
+                  <Link
+                    key={index}
+                    className="text-fm_weiss hover:text-fm_weiss px-4 pr-4 pl-0 cursor-pointer"
+                    to={link.url}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
           <div className="w-full md:w-1/3 mb-4 md:mb-0 h-full md:p-4">
@@ -88,13 +109,15 @@ function Footer() {
             </div>
           </div>
           <div className="w-full md:w-1/4 h-full md:p-4">
-            <h4 className="text-xl font-bold">Feedback</h4>
+            <h4 className="text-xl font-bold">
+              {" "}
+              {state.footer.feedback.heading}
+            </h4>
+            <p className="my-2">{state.footer.feedback.text}</p>
             {/* Links anzeigen */}
-            <p>Du hast Feedback, dass du mit uns teilen willst?</p>
-            <p>Dann schreib uns gerne eine Mail.</p>
             <div className="w-full">
               <button className="my-2 bg-fm_rosa hover:bg-fm_rosa text-fm_weiss px-4 py-2 rounded hover:border-none border-none hover:shadow-lg">
-                Feedback
+                {state.footer.feedback.buttonLabel}
               </button>
             </div>
           </div>

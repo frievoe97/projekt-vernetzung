@@ -140,7 +140,7 @@ const GlossaryContent = ({ data }) => {
               width: "100%",
               marginBottom: "2rem",
             }}
-            placeholder="Suche nach dem passenden Begriff"
+            placeholder="Tippe deinen Suchbegriff in die Suchmaske"
             onChange={handleChangeTest}
             options={eindeutigeTags}
           />
@@ -239,7 +239,7 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
   };
 
   return (
-    <div className="p-2">
+    <div className="">
       <div
         className={`p-1 flex rounded justify-between items-center ${
           isExpanded ? "expanded color-animation  shadow-animation" : ""
@@ -248,7 +248,7 @@ function GlossaryItem({ term, data, definition, searchTags, tags }) {
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
       >
-        <h2 className="text-xl my-2 ml-2">{capitalizeWords(term)}</h2>
+        <h2 className="text-lg my-2 ml-2">{capitalizeWords(term)}</h2>
         <button className="bg-transparent">
           <FontAwesomeIcon icon={isExpanded ? faAngleDown : faAngleLeft} />
         </button>

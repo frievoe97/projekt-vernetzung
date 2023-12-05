@@ -13,12 +13,12 @@ const TextWithImage = ({ data }) => {
     <div className="w-full bg-fm_weiss">
       <div className="py-4 max-w-screen-xl mx-auto">
         {/* Auf Laptops (md) */}
-        <div className="md:flex">
+        <div className="hidden md:flex">
           {/* Linke Spalte mit Überschrift, Text und Button */}
           <div className="md:w-2/3 p-4">
             <h1 className="heading text-center md:text-left mb-4">{title}</h1>
             {text.map((paragraph, index) => (
-              <p key={index} className="text-justify mb-4">
+              <p key={index} className="text-left mb-4">
                 {paragraph}
               </p>
             ))}

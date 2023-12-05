@@ -21,8 +21,26 @@
   )
   .ant-select-selector {
   border: 2px solid #fb819b;
-  height: 3rem;
+  border-radius: 15px;
+  min-height: 3rem;
+  font-size: large;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
+@media (max-width: 840px) {
+  :where(.css-dev-only-do-not-override-2i2tap).ant-select:not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    font-size: medium;
+  }
+}
+
+/* :where(.css-dev-only-do-not-override-2i2tap).ant-select-multiple
+  .ant-select-selection-item {
+  padding: 3px;
+  font-size: small;
+} */
 
 :where(.css-dev-only-do-not-override-2i2tap).ant-select:not(
     .ant-select-disabled

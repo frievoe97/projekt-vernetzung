@@ -11,7 +11,7 @@ const Imprint = () => {
               <h2 className="text-xl font-bold mt-4 w-fit">
                 Verantwortlich für den Inhalt dieser Website:
               </h2>
-              <p className="mt-2 w-fit">Projekt Vernetzung e.V.</p>
+              <p className="mt-2 w-fit">Projekt Vernetzung</p>
               <p className="w-fit">Berlin, Deutschland</p>
 
               <h2 className="text-xl font-bold mt-4 w-fit">Kontakt:</h2>
@@ -19,7 +19,7 @@ const Imprint = () => {
 
               <a
                 href="mailto:projekt-vernetzung@email.com"
-                className="mt-2 w-fit text-black"
+                className="mt-2 w-fit text-black hover:text-black font-normal"
               >
                 E-Mail: info@projekt-vernetzung.org
               </a>
@@ -30,7 +30,7 @@ const Imprint = () => {
                 Haftung für die Inhalte externer Links.
               </p>
 
-              <p className="mt-8 w-fit">© 2023 Projekt Vernetzung e.V.</p>
+              <p className="mt-8 w-fit">© 2023 Projekt Vernetzung</p>
             </div>
           </div>
         </div>

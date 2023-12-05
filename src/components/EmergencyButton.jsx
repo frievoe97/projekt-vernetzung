@@ -7,34 +7,48 @@ const EmergencyButton = () => {
 
   const openEmergencyDialog = () => {
     setShowEmergencyDialog(true);
+    toggleScroll(false); // Deaktiviert das Scrollen
   };
 
   const closeEmergencyDialog = () => {
     setShowEmergencyDialog(false);
+    toggleScroll(true); // Aktiviert das Scrollen
   };
 
   // Definiere eine Liste von Notrufnummern und deren Beschreibungen
   const emergencyNumbers = [
     {
-      title: "Polizei",
-      number: "030/1234",
-      description: "Bei kriminellen Vorfällen und Sicherheitsbedenken.",
-    },
-    {
-      title: "Feuerwehr",
-      number: "0160/54325",
-      description: "Bei Feuer- und Brandsituationen sowie anderen Notfällen.",
-    },
-    {
-      title: "Ärztlicher Notdienst",
-      number: "1183322",
+      title: "Weisser Ring",
+      number: "116 006",
       description:
-        "Bei gesundheitlichen Notfällen außerhalb der regulären Praxiszeiten.",
+        "Für in Not geratene Betroffene von Gewalt und Kriminalität.",
+    },
+    {
+      title: "Hilfetelefon Gewalt gegen Frauen",
+      number: "116 016",
+      description:
+        "Für alle Frauen, die von Gewalt betroffenen oder bedroht sind – ganz gleich, ob die Gewalterfahrung in der Vergangenheit oder Gegenwart liegt. Darüber hinaus können sich auch Menschen aus dem sozialen Umfeld der Betroffenen jederzeit an das Hilfetelefon wenden.",
+    },
+    {
+      title: "Patient:innenservice und Ärzt:innen",
+      number: "116 117",
+      description:
+        "Medizinische Hilfe von Ärztinnen und Ärzte sowie Psychotherapeutinnen und Psychotherapeuten.",
     },
   ];
 
+  const toggleScroll = (enableScroll) => {
+    if (enableScroll) {
+      // Aktiviert das Scrollen
+      document.body.style.overflow = "auto";
+    } else {
+      // Deaktiviert das Scrollen
+      document.body.style.overflow = "hidden";
+    }
+  };
+
   return (
-    <div className="fixed right-0 bottom-16 p-4 pr-0 hover:border-none">
+    <div className="fixed right-0 bottom-16 md:bottom-96 p-4 pr-0 hover:border-none">
       <button
         className="bg-gray-100 text-fm_rosa p-4 text-lg shadow-md rounded-none rounded-l-lg hover:border-none"
         onClick={openEmergencyDialog}
@@ -82,10 +96,6 @@ const EmergencyButton = () => {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-sm md:text-lg">
-              Bitte rufen Sie die entsprechende Nummer an, wenn Sie sich in
-              einer Notsituation befinden.
-            </p>
             <p className="mt-4 text-sm md:text-lg">
               Du hast Feedback oder willst Kontakt zu uns aufnehmen? Dann melde
               dich gerne bei uns:

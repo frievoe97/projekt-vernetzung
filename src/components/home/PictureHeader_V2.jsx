@@ -52,18 +52,18 @@ function PictureHeader_V2({ data }) {
           </div>
         </div>
 
-        <div className="p-4">
+        <div className="md:p-4">
           <h1 className="md:block hidden heading mb-4">{title}</h1>
           <h2 className="md:block hidden text-lg font-semibold">{subtitle}</h2>
           <p className="md:block hidden text-lg mt-4">{description}</p>
-          <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
+          {/* <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
             {listItems.map((item, index) => (
               // text-left w-fit
               <li key={index} className="text-left md:w-fit">
                 {item}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

@@ -41,7 +41,8 @@ const AnlaufstellenContentNetflix = () => {
     <div>
       <div className="relative w-full px-0">
         <div className="">
-          <div className="w-full">
+          {/* w-full */}
+          <div className="max-w-screen-xl mx-auto">
             {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
               <div key={rowIndex} className="mb-0 divide-y-2 divide-fm_rosa">
                 {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
