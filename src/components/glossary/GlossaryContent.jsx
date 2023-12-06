@@ -121,12 +121,17 @@ const GlossaryContent = ({ data }) => {
           />
         </div>
         {data.glossaryData.map((item, index) => {
-          const shouldDisplay = searchTags.every(
-            (tag) =>
-              item.Tags.includes(tag) ||
-              item.Begriff.toLowerCase().includes(tag.toLowerCase()) ||
-              item.Definition.toLowerCase().includes(tag.toLowerCase())
-          );
+          const shouldDisplay = searchTags.every((tag) => {
+            if (tag.length >= 3) {
+              return (
+                item.Tags.includes(tag) ||
+                item.Begriff.toLowerCase().includes(tag.toLowerCase()) ||
+                item.Definition.toLowerCase().includes(tag.toLowerCase())
+              );
+            } else {
+              return true;
+            }
+          });
 
           // Buchstaben des aktuellen Begriffs ermitteln
           const firstLetter = item.Begriff.charAt(0).toUpperCase();
