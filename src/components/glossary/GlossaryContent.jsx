@@ -10,38 +10,6 @@ const GlossaryContent = ({ data }) => {
   const [eindeutigeTags, setEindeutigeTags] = useState([]);
   const [searchTags, setSearchTags] = useState([]);
 
-  const alphabet = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-    "Ä",
-    "Ö",
-    "Ü",
-  ];
-
   const sammleEindeutigeTags = () => {
     const eindeutigeTags = [];
 
@@ -123,7 +91,7 @@ const GlossaryContent = ({ data }) => {
   // Ein Array für die Buchstabenüberschriften erstellen
   const letters = new Set();
 
-  console.log(data.glossaryData);
+  console.log(data);
 
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
@@ -131,8 +99,15 @@ const GlossaryContent = ({ data }) => {
       <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0">
         <div className="w-full px-4 md:px-0">
           <h1 className="relative py-2 px-4 w-full text-center rounded-lg mt-6 mb-8 heading">
-            Filtere hier deine Suchanfrage
+            Hier kannst du deine Suche filtern
           </h1>
+          <p className="mb-8 text-md">
+            <b>Disclaimer:</b> Projekt Vernetzung erhebt keinen Anspruch auf
+            Vollständigkeit und stellt die eigene Auswahl an Begrifflichkeiten
+            fortlaufend auf den Prüfstand. Falls wir aus deiner Sicht etwas
+            vergessen haben, sind wir für konstruktive Anregungen und Ideen
+            jederzeit dankbar.
+          </p>
           <Select
             mode="tags"
             // value={"selected"}
@@ -146,8 +121,11 @@ const GlossaryContent = ({ data }) => {
           />
         </div>
         {data.glossaryData.map((item, index) => {
-          const shouldDisplay = searchTags.every((tag) =>
-            item.Tags.includes(tag)
+          const shouldDisplay = searchTags.every(
+            (tag) =>
+              item.Tags.includes(tag) ||
+              item.Begriff.toLowerCase().includes(tag.toLowerCase()) ||
+              item.Definition.toLowerCase().includes(tag.toLowerCase())
           );
 
           // Buchstaben des aktuellen Begriffs ermitteln
@@ -252,6 +230,20 @@ function GlossaryItem({
     return formattedText.join(" ");
   };
 
+  const highlightSearchTags = (text, searchTags) => {
+    // Prüfen, ob searchTags vorhanden sind und mindestens 3 Zeichen lang sind
+    if (
+      Array.isArray(searchTags) &&
+      searchTags.length > 0 &&
+      searchTags.every((tag) => tag.length >= 3)
+    ) {
+      // Erstelle ein reguläres Ausdrucksmuster, um alle Suchbegriffe zu finden
+      const regex = new RegExp(`(${searchTags.join("|")})`, "gi");
+      return text.replace(regex, "<strong>$1</strong>");
+    }
+    return text;
+  };
+
   return (
     <div className="">
       <div
@@ -268,7 +260,12 @@ function GlossaryItem({
         </button>
       </div>
       <section className="" {...getCollapseProps()}>
-        <p className="m-4 mt-8 text-justify">{definition}</p>
+        <p
+          className="m-4 mt-8 text-justify"
+          dangerouslySetInnerHTML={{
+            __html: highlightSearchTags(definition, searchTags),
+          }}
+        ></p>
         <div className="flex flex-col md:flex-row  md:items-end justify-between mb-2 md:mb-4">
           <a
             className="ml-4 text-black hover:text-black hover:underline font-bold"
