@@ -3,12 +3,14 @@ pictureHeaderGlossary:
   imageUrl: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-2.jpeg?raw=true"
   offlineImageUrl: dict.jpeg
   title: "Glossar"
-  subtitle: "Hier möchten wir dir die wichtigsten Begriffe im Kontext von Machtmissbrauch erläutern"
+  subtitle: "Potenziell relevante Begrifflichkeiten im Kontext von Machtmissbrauch"
   descriptions:
     - >
-      Betroffene sollen auf dieser Seite schneller und einfacher Informationen finden, die auf ihre persönliche Situation zutreffen könnten. Davon ausgehend, können sie sich weiter informieren und insbesondere das in Worte fassen, was oftmals schwer in Worte zu fassen ist.
-    - >
-      Wir erheben keinen Anspruch auf Vollständigkeit. Unsere Auswahl an Begrifflichkeiten wird kontinuierlich auf den Prüfstand gestellt. Für konstruktive Anregungen und Ideen sind wir jederzeit dankbar.
+      An dieser Stelle findest du Hilfestellung, um deine Erfahrungen besser zu verstehen und in Worte zu fassen.
+  searchTitle: Hier kannst du deine Suche filtern
+  searchSubtitlePrefix: "Disclaimer: "
+  searchSubtitleText: "Projekt Vernetzung erhebt keinen Anspruch auf Vollständigkeit und stellt die eigene Auswahl an Begrifflichkeiten fortlaufend auf den Prüfstand. Falls wir aus deiner Sicht etwas vergessen haben, sind wir für konstruktive Anregungen und Ideen jederzeit dankbar."
+  
 
 glossaryData:
   - term: "Allgemeine Begrifflichkeiten"
