@@ -91,8 +91,6 @@ const GlossaryContent = ({ data }) => {
   // Ein Array für die Buchstabenüberschriften erstellen
   const letters = new Set();
 
-  console.log(data);
-
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
