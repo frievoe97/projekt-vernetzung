@@ -4,8 +4,9 @@ pictureHeader:
   text:
     title: "Machtmissbrauch kann in jedem Lebensbereich auftreten"
     subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel"
-    description: >
-      Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an. Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln.
+    description:
+      - "Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an."
+      - "Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln."
     #listItems:
     #  - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
     #  - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
@@ -16,8 +17,8 @@ textWithImage:
   imageUrls: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-3.jpeg?raw=true"
   offlineImageUrl: persons.jpeg
   text:
-    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen der Mehrzahl der Fälle ähnliche Muster und Strukturen zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich. Medial wurden diese Muster zuletzt vielfach als “System” beschrieben, “das Machtmissbrauch stützt” bzw. “möglich macht”."
-    - "Die Plattform von “Projekt Vernetzung” arbeitet dieses “System” aus verschiedenen Perspektiven auf und zeigt, dass Lösungen nicht in Silos, sondern gesamtgesellschaftlich bzw. bereichsübergreifend erarbeitet werden müssen. "
+    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen der Mehrzahl der Fälle ähnliche Muster und Strukturen zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich. Medial wurden diese Muster zuletzt vielfach als “System” beschrieben, das Machtmissbrauch “stützt” bzw. “möglich macht”."
+    - "Die Plattform von Projekt Vernetzung arbeitet dieses System aus verschiedenen Perspektiven auf und zeigt, dass Lösungen nicht in Silos, sondern gesamtgesellschaftlich bzw. bereichsübergreifend erarbeitet werden müssen. "
   buttonText: "Mehr Erfahren"
   buttonLink: "/"
 
