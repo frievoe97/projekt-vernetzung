@@ -50,11 +50,13 @@ function PictureHeader_V2({ data }) {
             <h2 className="text-lg font-semibold  text-center mb-4">
               {subtitle}
             </h2>
-            {description.map((item, index) => (
-              <p key={index} className="text-lg text-center">
-                {item}
-              </p>
-            ))}
+            <div>
+              {description.map((item, index) => (
+                <p key={index} className="text-lg text-center mb-2">
+                  {item}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -64,7 +66,7 @@ function PictureHeader_V2({ data }) {
           {/* <p className="md:block hidden text-lg mt-4">{description}</p> */}
           <div className="md:block hidden text-lg mt-4">
             {description.map((item, index) => (
-              <p key={index} className="text-lg text-center">
+              <p key={index} className="text-lg text-center mb-2">
                 {item}
               </p>
             ))}
