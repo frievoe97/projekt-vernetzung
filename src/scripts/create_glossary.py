@@ -20,7 +20,9 @@ with open(csv_datei, newline='', encoding='utf-8') as csvfile:
         definition = row[1].strip()  # Die Definition ist der gleiche Wert wie der Begriff
         website_verlinkung = row[2].strip()  # Trimme die Website-Verlinkung
         quellen = row[3].strip()  # Trimme die Quellen
-        tags = [header[i].strip() for i in range(4, len(header)) if i < len(row) and row[i] == 'x']
+        zusatzLinkText = row[4].strip()
+        zusatzLinkURL = row[5].strip()
+        tags = [header[i].strip() for i in range(6, len(header)) if i < len(row) and row[i] == 'x']
 
         # Füge die Tags zum Set aller Tags hinzu
         alle_tags.update(tags)
@@ -31,7 +33,9 @@ with open(csv_datei, newline='', encoding='utf-8') as csvfile:
             'Definition': definition,
             'Website-Verlinkung': website_verlinkung,
             'Quellen': quellen,
-            'Tags': tags
+            'Tags': tags,
+            'zusatzLinkText' :zusatzLinkText,
+            'zusatzLinkURL': zusatzLinkURL
         }
 
         glossary_data.append(eintrag)
