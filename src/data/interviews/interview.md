@@ -1,6 +1,10 @@
 Interview mit Pia Stendera und Lena von Holt | 21. Dezember 2023
 
+---
+
 ## Die Unschuldsvermutung gilt vor Gericht. Aber wir Journalisten sind keine Richter.
+
+---
 
 ### Pia Stendera und Lena von Holt sind beide freie Journalist:innen, die im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden sind. Ihre Recherche zum Thema Machtmissbrauch in einem der größten deutschen Medienkonzerne wurde erst kürzlich durch Spotify als “Top Dokumentation” und “Top Newcomer” für das Jahr 2023 ausgezeichnet und führte das Ranking unzähliger Podcast-Hörer:innen als meistgehörter Podcast an. In ihrer journalistischen Arbeit beschäftigen sich Pia und Lena sonst mit Themen rund um Macht und Ermächtigung, rechte Gewalt sowie Ostdeutschland. Dabei interessiert sie die Perspektive Betroffener besonders.
 
