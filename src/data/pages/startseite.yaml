@@ -4,8 +4,9 @@ pictureHeader:
   text:
     title: "Machtmissbrauch kann in jedem Lebensbereich auftreten"
     subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel"
-    description: >
-      Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an. Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln.
+    description:
+      - "Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an."
+      - "Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln."
     #listItems:
     #  - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
     #  - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
@@ -16,16 +17,16 @@ textWithImage:
   imageUrls: "https://github.com/frievoe97/projekt-vernetzung/blob/main/src/assets/iamges/Image-3.jpeg?raw=true"
   offlineImageUrl: persons.jpeg
   text:
-    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen der Mehrzahl der Fälle ähnliche Muster und Strukturen zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich. Medial wurden diese Muster zuletzt vielfach als “System” beschrieben, “das Machtmissbrauch stützt” bzw. “möglich macht”."
-    - "Die Plattform von “Projekt Vernetzung” arbeitet dieses “System” aus verschiedenen Perspektiven auf und zeigt, dass Lösungen nicht in Silos, sondern gesamtgesellschaftlich bzw. bereichsübergreifend erarbeitet werden müssen. "
+    - "Jeder Fall von erlebtem Machtmissbrauch ist eine individuelle Geschichte. Dennoch liegen der Mehrzahl der Fälle ähnliche Muster und Strukturen zugrunde. Und dies unabhängig von einer Branche oder einem Lebensbereich. Medial wurden diese Muster zuletzt vielfach als “System” beschrieben, das Machtmissbrauch “stützt” bzw. “möglich macht”."
+    - "Die Plattform von Projekt Vernetzung arbeitet dieses System aus verschiedenen Perspektiven auf und zeigt, dass Lösungen nicht in Silos, sondern gesamtgesellschaftlich bzw. bereichsübergreifend erarbeitet werden müssen. "
   buttonText: "Mehr Erfahren"
   buttonLink: "/"
 
 wissensvermittlung:
   title: "Wissensvermittlung durch die Stimmen Dritter"
   paragraphs:
-    - "Viele Menschen helfen zum Teil seit Jahren durch ihre Forschung, Erwerbsarbeit, politische Meinungsbildung oder Erlebnisberichte, Machtmissbrauch zu erklären und dafür zu sensibilisieren. Dank der wichtigen Medienarbeit zu dem Thema erhalten sie nun verstärkt Gehör. An diesem Momentum möchten wir ansetzen – jedoch nicht, indem wir selber das Rad neu erfinden."
-    - "Stattdessen bündelt “Projekt Vernetzung” die Stimmen zahlreicher Expert:innen, Meinungsführer:innen und anderer engagierter Menschen und Organisationen, die sich mit der Thematik befassen. Diese Plattform verfolgt das Ziel, die Suche Betroffener nach relevanten Informationen und Anlaufstellen zu verkürzen. Angesicht überlasteter Systeme ist frühe Hilfe zur Selbsthilfe essenziell. Betroffene sollen die eigene Erfahrung schneller einordnen und erkennen können, wo Grenzüberschreitungen stattfinden. Zudem finden sie hier Hilfestellungen, um das Erlebte nach Möglichkeit frühestmöglich in Worte zu fassen und idealerweise zu handeln, bevor ihre Fälle beispielsweise rechtlich relevant werden oder sogar gesundheitliche Schäden physischer oder psychischer Natur nach sich ziehen."
+    - "Viele Menschen helfen zum Teil seit Jahren durch ihre Forschung, Arbeit, politische Meinungsbildung oder Erlebnisberichte, Machtmissbrauch zu erklären und dafür zu sensibilisieren. Dank der wichtigen Medienarbeit zu dem Thema erhalten sie nun verstärkt Gehör. An diesem Momentum möchten wir ansetzen – jedoch nicht, indem wir selber das Rad neu erfinden."
+    - "Stattdessen bündelt Projekt Vernetzung die Stimmen zahlreicher Expert:innen, Meinungsführer:innen und anderer engagierter Menschen und Organisationen, die sich mit der Thematik befassen. Diese Plattform verfolgt das Ziel, die Suche Betroffener nach relevanten Informationen und Anlaufstellen zu verkürzen. Angesichts überlasteter Systeme ist frühe Hilfe zur Selbsthilfe essenziell. Betroffene sollen die eigene Erfahrung schneller einordnen und Grenzüberschreitungen erkennen können. Zudem finden sie hier Hilfestellungen, um das Erlebte nach Möglichkeit frühestmöglich in Worte zu fassen und idealerweise zu handeln, bevor ihre Fälle beispielsweise rechtlich relevant werden oder sogar gesundheitliche Schäden physischer oder psychischer Natur nach sich ziehen."
   # buttonText: "Zu unseren Interviews & Beiträgen"
   # buttonLink: "/"
 
