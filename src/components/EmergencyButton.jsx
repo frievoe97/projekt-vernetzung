@@ -23,12 +23,12 @@ const EmergencyButton = () => {
       description:
         "Für in Not geratene Betroffene von Gewalt und Kriminalität.",
     },
-    {
-      title: "Hilfetelefon Gewalt gegen Frauen",
-      number: "116 016",
-      description:
-        "Für alle Frauen, die von Gewalt betroffenen oder bedroht sind – ganz gleich, ob die Gewalterfahrung in der Vergangenheit oder Gegenwart liegt. Darüber hinaus können sich auch Menschen aus dem sozialen Umfeld der Betroffenen jederzeit an das Hilfetelefon wenden.",
-    },
+    // {
+    //   title: "Hilfetelefon Gewalt gegen Frauen",
+    //   number: "116 016",
+    //   description:
+    //     "Für alle Frauen, die von Gewalt betroffenen oder bedroht sind – ganz gleich, ob die Gewalterfahrung in der Vergangenheit oder Gegenwart liegt. Darüber hinaus können sich auch Menschen aus dem sozialen Umfeld der Betroffenen jederzeit an das Hilfetelefon wenden.",
+    // },
     {
       title: "Patient:innenservice und Ärzt:innen",
       number: "116 117",
