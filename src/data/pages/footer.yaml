@@ -4,7 +4,7 @@ contact:
     - title: Email
       text: info@projekt-vernetzung.org
     - title: Instagram
-      text: "@projektvernetzung"
+      text: "@projekt.vernetzung"
     - title: Berlin, Deutschland  
   copyright: © 2023 Projekt Vernetzung
 
@@ -16,7 +16,7 @@ newsletter:
 
 feedback:
   heading: Feedback
-  text: "Du hast Ideen oder konstruktive Kritik, die du mit uns teilen willst? Du willst sogar mitmachen oder einen Beitrag leisten?"
+  text: "Du hast Ideen oder konstruktive Kritik, die du mit uns teilen willst? Oder du willst mitmachen bzw. einen anderen Beitrag leisten?"
   buttonLabel: Schreib uns!
   buttonLink: "/"
   
