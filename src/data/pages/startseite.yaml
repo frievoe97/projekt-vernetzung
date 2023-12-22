@@ -6,7 +6,7 @@ pictureHeader:
     subtitle: "Um dem zu begegnen, ist Prävention eines der wirksamsten Mittel"
     description:
       - "Projekt Vernetzung sieht Wissen als eine der wichtigsten Voraussetzungen für Prävention an."
-      - "Diese Plattform soll möglichst viel davon verständlich und fachübergreifen bündeln."
+      - "Diese Plattform soll möglichst viel davon verständlich und fachübergreifend bündeln."
     #listItems:
     #  - "das Problem in seiner Drastik in allen Lebensbereichen und Branchen unserer Gesellschaft darstellen,"
     #  - "möglichst präventiv und umfassend informieren, sensibilisieren und Handlungsoptionen aufzeigen,"
@@ -26,7 +26,8 @@ wissensvermittlung:
   title: "Wissensvermittlung durch die Stimmen Dritter"
   paragraphs:
     - "Viele Menschen helfen zum Teil seit Jahren durch ihre Forschung, Arbeit, politische Meinungsbildung oder Erlebnisberichte, Machtmissbrauch zu erklären und dafür zu sensibilisieren. Dank der wichtigen Medienarbeit zu dem Thema erhalten sie nun verstärkt Gehör. An diesem Momentum möchten wir ansetzen – jedoch nicht, indem wir selber das Rad neu erfinden."
-    - "Stattdessen bündelt Projekt Vernetzung die Stimmen zahlreicher Expert:innen, Meinungsführer:innen und anderer engagierter Menschen und Organisationen, die sich mit der Thematik befassen. Diese Plattform verfolgt das Ziel, die Suche Betroffener nach relevanten Informationen und Anlaufstellen zu verkürzen. Angesichts überlasteter Systeme ist frühe Hilfe zur Selbsthilfe essenziell. Betroffene sollen die eigene Erfahrung schneller einordnen und Grenzüberschreitungen erkennen können. Zudem finden sie hier Hilfestellungen, um das Erlebte nach Möglichkeit frühestmöglich in Worte zu fassen und idealerweise zu handeln, bevor ihre Fälle beispielsweise rechtlich relevant werden oder sogar gesundheitliche Schäden physischer oder psychischer Natur nach sich ziehen."
+    - "Stattdessen bündelt Projekt Vernetzung die Stimmen zahlreicher Expert:innen, Meinungsführer:innen und anderer engagierter Menschen und Organisationen, die sich mit der Thematik befassen. Diese Plattform verfolgt das Ziel, die Suche Betroffener nach relevanten Informationen und Anlaufstellen zu verkürzen. Angesichts überlasteter Systeme ist frühe Hilfe zur Selbsthilfe essenziell." 
+    - "Betroffene sollen die eigene Erfahrung schneller einordnen und Grenzüberschreitungen erkennen können. Zudem finden sie hier Hilfestellungen, um das Erlebte nach Möglichkeit frühestmöglich in Worte zu fassen und idealerweise zu handeln, bevor ihre Fälle beispielsweise rechtlich relevant werden oder sogar gesundheitliche Schäden physischer oder psychischer Natur nach sich ziehen."
   # buttonText: "Zu unseren Interviews & Beiträgen"
   # buttonLink: "/"
 
@@ -36,6 +37,6 @@ motivationAusEigenerErfahrung:
   offlineImageUrl: persons2.jpeg
   paragraphs:
     - "Bei Projekt Vernetzung handelt es sich zunächst um eine private Content-Initiative. Die Initiatorinnen haben jeweils im privaten bzw. im beruflichen Lebensbereich in Deutschland Erfahrungen mit Machtmissbrauch gemacht."
-    - "Aus eigener Erfahrung können wir sagen, dass mangelnde Aufklärung und Sensibilisierung zur Thematik wesentliche Mängel sind. Gleichzeitig sehen wir hier einen Handlungsspielraum für Privatpersonen, den wir gemeinsam mit anderen angehen und zum Besseren verändern können."
+    - "Aus eigener Erfahrung können wir sagen, dass mangelnde Aufklärung und Sensibilisierung zur Thematik wesentliche Barrieren sind. Gleichzeitig sehen wir hier einen Handlungsspielraum für Privatpersonen, den wir gemeinsam mit anderen angehen und zum Besseren verändern können."
   # buttonText: "Weitere Informationen"
   # buttonLink: "/"
