@@ -72,8 +72,9 @@ function Footer() {
                   {state.footer.contact.rows[1].title}:
                 </div>
                 <a
-                  href="https://www.instagram.com/projektvernetzung"
+                  href="https://www.instagram.com/projekt.vernetzung"
                   className="hover:text-fm_weiss text-fm_weiss font-normal cursor-pointer"
+                  target="_blank"
                 >
                   {state.footer.contact.rows[1].text}
                 </a>

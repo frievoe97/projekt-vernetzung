@@ -21,6 +21,8 @@ function PictureHeader_V2({ data }) {
   // const imageUrl =
   //   "http://localhost:8000/projekt-vernetzen/images/" + data.offlineImageUrl;
 
+  console.log(description);
+
   return (
     <div
       className="py-0 md:pt-16 md:pb-32 md:px-4"
@@ -48,14 +50,25 @@ function PictureHeader_V2({ data }) {
             <h2 className="text-lg font-semibold  text-center mb-4">
               {subtitle}
             </h2>
-            <p className="text-lg  text-center">{description}</p>
+            {description.map((item, index) => (
+              <p key={index} className="text-lg text-center">
+                {item}
+              </p>
+            ))}
           </div>
         </div>
 
         <div className="md:p-4">
           <h1 className="md:block hidden heading mb-4">{title}</h1>
           <h2 className="md:block hidden text-lg font-semibold">{subtitle}</h2>
-          <p className="md:block hidden text-lg mt-4">{description}</p>
+          {/* <p className="md:block hidden text-lg mt-4">{description}</p> */}
+          <div className="md:block hidden text-lg mt-4">
+            {description.map((item, index) => (
+              <p key={index} className="text-lg text-center">
+                {item}
+              </p>
+            ))}
+          </div>
           {/* <ul className="list-disc md:w-fit ml-6 mt-4 md:mx-auto">
             {listItems.map((item, index) => (
               // text-left w-fit

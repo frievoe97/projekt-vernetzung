@@ -1,0 +1,13 @@
+/* Standardstil für die Card */
+.interview-preview-container {
+  /* width: 150px; */
+  /* height: fit-content; */
+  /* margin: 1rem;a */
+  transition: transform 0.3s; /* Hinzufügen einer sanften Transition */
+
+  /* box-shadow: 0 0 100px 5px #48abe0; */
+}
+
+.interview-preview-container:hover {
+  transform: scale(1.02); /* Vergrößert die Card um 5% beim Hover */
+}
