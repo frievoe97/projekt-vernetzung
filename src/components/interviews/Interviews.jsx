@@ -6,13 +6,13 @@ import CurrentInterview from "./CurrentInterview";
 import NotFoundComponent from "../NotFoundComponent";
 
 function Interviews() {
-  return (
-    <NotFoundComponent
-      text={"Das Interview existiert nicht."}
-      buttonText={"Zurück zur Startseite"}
-      link={"/"}
-    />
-  );
+  // return (
+  //   <NotFoundComponent
+  //     text={"Das Interview existiert nicht."}
+  //     buttonText={"Zurück zur Startseite"}
+  //     link={"/"}
+  //   />
+  // );
 
   return (
     <div className="text-center text-color_font bg-fm_weiss pt-16">
