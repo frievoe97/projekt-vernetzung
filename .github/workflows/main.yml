@@ -3,7 +3,6 @@ name: Upload the Website to the server of the domain projekt-vernetzung.friedric
 on:
   push:
     branches: 
-      - main
       - preview
   schedule:
     - cron: '40 14 * * *'  # Jede Nacht um Mitternacht UTC
