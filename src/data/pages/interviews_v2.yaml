@@ -7,7 +7,7 @@ interviews:
   Headline: Wir Journalistinnen sind keine Richterinnen.
   Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
   Rubrik: Journalismus
-  TextInhaltInterview: 231122_ITW_Pia-Stendera_Lena-von-Holt - Google Docs
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231130_Pia-Stendera_Lena-von-Holt.md
   TextTeaser: Pia Stendera und Lena von Holt sind beide freie Journalistinnen, die
     im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden
     sind. Wir haben uns sehr darüber gefreut, dass die beiden sich Zeit genommen haben,
@@ -54,7 +54,7 @@ interviews:
   Headline: HEADLINE SOPHIE RENDLE
   Interview: Sophie Rendl
   Rubrik: Aktivismus
-  TextInhaltInterview: ''
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231215_Sophie-Rendl.md
   TextTeaser: Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie
     Rendl
 - ? ''
