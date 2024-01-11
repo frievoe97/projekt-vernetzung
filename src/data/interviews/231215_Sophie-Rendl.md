@@ -31,7 +31,7 @@ Bezüglich der Beratungsstellen ist es für Betroffene gut zu wissen, dass man e
 
 **SR**: Wenn es um bekannte Personen als Täter geht, die eine große Fanbase haben und beliebt sind, findet automatisch eine gewisse Idealisierung dieser Person statt. Wenn dann öffentlich die weiße Weste oder das Bild des Idols angegriffen wird, entsteht häufig eine Art von Wut und der Wunsch, dieses Idol zu schützen. Das machst du am besten, indem etwaige Vorwürfe äußerst klein gehalten werden. Frauen, die sich zur Wehr setzen, werden also dann in vielen Fällen durch die Fanbase komplett diffamiert, angegriffen und mit Shitstorms im Internet geplagt, oder aber auch durch das Idol und dessen Management selbst durch Verleumdungsklagen und Rufschädigungsklagen mundtot gemacht. Das ist das eine.
 
-> "Wir erkennen in Kunst und Kultur sehr stark veraltete und tradierte Verhaltensmuster"
+> Wir erkennen in Kunst und Kultur sehr stark veraltete und tradierte Verhaltensmuster.
 
 Die zweite Aspekt, warum Machtmissbrauch und sexualisierte Übergriffe nicht nur zwischen Täter:innen und der betroffenen Person passieren, liegt daran, dass wir gerade in Kunst und Kultur sehr stark veraltete und tradierte Verhaltensmuster erkennen. Während in einigen Arbeitsbereichen die Arbeitsgestaltung Richtung “new work” und somit der Abschaffung von Hierarchien und eher holokratischen Ansätzen geht, existieren in Kunst und Kultur noch immer altmodische Vorstellungen von Führung, Können und Genialität. Es wird viel entschuldigt und gesagt, dass die übergriffigen Verhaltensweisen zum jeweiligen Beruf dazu gehören, wodurch genau dieses System wieder von allen Beteiligten gestützt wird.
 
@@ -41,13 +41,13 @@ Zum dritten fühlen sich durch die Diskussion um sexuelle Belästigung und die k
 
 **SR**: Seit #MeToo, der Etablierung von Beratungsstellen, den vielen Aktivist:innen, den betroffenen Personen, die laut werden und seit all dieser anstrengenden Arbeit, merkt man immer wieder, dass man recht schnell an die Grenzen des Systems stößt. Das ist in feministischen, aber auch antirassistischen Bewegungen sehr häufig so. Es ist wichtig, laut zu sein, sich auszusprechen und Hilfe zu erhalten. Aber sobald mein Fall beendet ist, tauchen um mich herum 100.000 andere Fälle auf.
 
-> “Ohne eine grundsätzliche Überlegung, wie wir unsere Gesellschaftsstrukturen neu designen könnten, wird ständig nur Symptombekämpfung betrieben.”
+> Ohne eine grundsätzliche Überlegung, wie wir unsere Gesellschaftsstrukturen neu designen könnten, wird ständig nur Symptombekämpfung betrieben.
 
 Wir leben in einem System, in dem es eine Vorherrschaft von bestimmten Personen gibt, welche sich einzig und allein auf ein Geburtsprivileg, z.B. die Hautfarbe oder das Geschlecht stützt. Ohne eine grundsätzliche Überlegung, wie wir unsere Gesellschaftsstrukturen neu designen könnten, wird ständig nur Symptombekämpfung betrieben und das merken wir vor allem bei dem Thema der sexuellen Belästigung. Wir drehen uns im Kreis: immer wieder werden einzelne Personen unterstützt, das ist auch unglaublich wichtig. Aber neben dieser einen Person gibt es tausende Weitere, denen ähnliches widerfahren ist oder nach wie vor widerfährt. Solange an der Spitze Personen stehen, die überhaupt kein Interesse daran haben, das System abzuschaffen, das Täter:innen schützt, wird sich nichts ändern.
 
 **PV**: Hättest du neben dem großen “Systemsturz” auch andere Ideen für konkrete Schritte, die ein anderes System herbeiführen würden?
 
-> “Es muss mehr hingeschaut, eingeschritten und zugehört werden."
+> Es muss mehr hingeschaut, eingeschritten und zugehört werden.
 
 **SR**: Es gibt die vielen kleinen Systeme, in denen wir uns tagtäglich bewegen. Hier wäre es wichtig, die allgemeine Zivilcourage auszubauen. Es muss mehr hingeschaut, eingeschritten und zugehört werden. Hier sind unter anderem Kolleg:innen und vor allem auch männlich gelesene Personen wichtig, die sagen: “Ich fühle mich eigentlich nicht wohl, auch wenn es mich direkt nicht betrifft. Ich möchte nicht in so einem Umfeld arbeiten. Es ist nicht lustig, wenn ständig sexistische Witze gemacht werden.”  
 
@@ -61,7 +61,7 @@ Zusammengefasst muss also etwas auf der Ebene der betroffenen Personen, aber auc
 
 Zudem beschäftigt man sich natürlich am ehesten mit Themen, zu denen man selbst einen eigenen, direkten und emotionalen Bezug hat. Wir haben alle Mütter, wir haben Großmütter, wir haben Töchter ... Hier kann man die Frage stellen: “Wie geht es dir damit, wenn deiner Tochter, deiner Mutter oder deiner Nichte so etwas passiert?”
 
-> "Wenn es um die breite Masse geht, ist es wichtig, die Ängste und Sorgen zu hören. Oft liegen den Gegenstimmen die Angst vor dem Fremden und die Sorge vor Veränderung zu Grunde."
+> Wenn es um die breite Masse geht, ist es wichtig, die Ängste und Sorgen zu hören. Oft liegen den Gegenstimmen die Angst vor dem Fremden und die Sorge vor Veränderung zu Grunde.
 
 Außerdem müssen wir natürlich weiterhin laut bleiben, uns nicht einschüchtern oder zum Schweigen bringen lassen. Gegenstimmen gehören dazu. Gerade bei Diskursverschiebungen ist es wichtig, diese vielen verschiedenen Positionen auch in der politischen Arena weiter zu verhandeln. Mit manche Positionen und Ideologien am rechten äußeren Rand sollten wir meiner Meinung nach aus Prinzip nicht verhandeln, da sie menschenverachtend oder demokratiefeindlich sind. Aber wenn es um die breite Masse geht, ist es wichtig, die Ängste und Sorgen zu hören. Oft liegen den Gegenstimmen die Angst vor dem Fremden und die Sorge vor Veränderung zu Grunde. 
 
@@ -91,7 +91,7 @@ Zudem gibt es tatsächlich immer noch einige “All male-Panels”. Hier beobach
 
 Ich glaube, dass Geschlechterstereotypen sozialisiert und nicht von Natur aus angeboren sind. Das fängt bei den klassischen Zuschreibungen an die Geschlechter an:  beim Spielzeug, bei der Annahme, dass Buben nicht weinen dürfen und Mädchen schon, dass Buben stark sein müssen und so weiter. All diese Zuschreibungen sind nicht naturgegeben. Darum kann man nicht sagen, wie ein Matriarchat aussehen würde und ob es auch dann machtmissbrauchendes Verhalten gäbe. Natürlich sprechen die Zahlen für sich, Frauen sind ganz eindeutig sehr viel häufiger betroffen, gerade von sexualisierter Gewalt und männlich gelesene Personen häufiger auf der Täterseite.  Trotzdem sehen wir, dass Machtmissbrauch nicht unbedingt nur bei einem Geschlecht vorkommt. Auch Frauen können Macht missbrauchen.
 
-> “Wie Menschen mit Macht umgehen, ist etwas sehr individuelles und es ist wichtig, dass sich alle Personen, egal welchen Geschlechts, über die eigene Machtposition bewusst werden.”
+> Wie Menschen mit Macht umgehen, ist etwas sehr individuelles und es ist wichtig, dass sich alle Personen, egal welchen Geschlechts, über die eigene Machtposition bewusst werden.
 
 Man muss sich anschauen: Woher kommt die Basis meiner Macht? Was habe ich gerade gemacht, weil ich über einer Person stehe, ihr vorgesetzt bin oder mehr Wissen habe? Im zweiten Schritt muss ich dann überlegen, wie ich diese Macht so gebrauchen kann, dass ich den mir unterlegenen Menschen Gutes zukommen lasse, möglichst wenig Grenzen überschreite und die Autonomie der anderen Personen respektiere und schütze. Macht kann auch etwas Positives sein und muss nicht immer in Missbrauch oder missbräuchlichen Aspekten enden. 
 
