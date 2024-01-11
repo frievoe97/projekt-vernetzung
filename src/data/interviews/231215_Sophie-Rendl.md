@@ -5,7 +5,7 @@ Interview mit Sophie Rendl | 15. Dezember 2023
 
 ### Sophie Rendl, Forbes 30 under 30, ist eine österreichische Juristin und hat sich in den letzten Jahren auf die Themen Gewaltschutz, Antidiskriminierung, Codes of Conduct und #MeToo in Kunst und Kultur spezialisiert. Sie ist Gründerin der Frauendomäne, einer Datenbank für weiblich gelesene Expertinnen und berät Organisationen dabei, Antidiskriminierungsstrategien zu erstellen und umzusetzen. Zudem hat sie die vera* Vertrauensstelle mit ins Leben gerufen, die sich in Österreich gegen Belästigung und Gewalt in Kunst, Kultur und Sport einsetzt.
 
-*Im Interview erzählt sie von den unterschiedlichen Organisationen, verweist auf gesellschaftliche Strukturen der Ungleichheit und erklärt, warum unser Gesellschaftssystem Machtmissbrauch begünstigt. *
+*Im Interview erzählt sie von den unterschiedlichen Organisationen, verweist auf gesellschaftliche Strukturen der Ungleichheit und erklärt, warum unser Gesellschaftssystem Machtmissbrauch begünstigt.*
 
 **PV**: Es gibt bereits zahlreiche Initiativen in Unternehmen oder Organisationen, die bei Mitarbeitenden auf allen Ebenen dafür sensibilisieren, ein gutes Miteinander zu schaffen. Und für Fälle, die intern nicht gelöst werden, gibt es das europäische Hinweisgeberschutzgesetz mit seinen externen Meldestellen. Reichen diese nicht aus? Wozu braucht es externe Anlaufstellen wie vera*?
 
