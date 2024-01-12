@@ -131,7 +131,8 @@ function InterviewDetail() {
             <div className="w-full bg-fm_weiss pt-8 pb-8">
               {/* <ReactMarkdown>{markdown}</ReactMarkdown> */}
               <ReactMarkdown
-                className="prose max-w-none text-justify"
+                // text-justify
+                className="prose max-w-none "
                 components={{ a: LinkRenderer }}
               >
                 {markdown}

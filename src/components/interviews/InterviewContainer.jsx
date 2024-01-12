@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
-import ButtonBigRounded from "../elements/ButtonBigRounded";
-import Preview from "./elements/Preview";
 import PreviewV2 from "./elements/PreviewV2";
-import NotFoundComponent from "../NotFoundComponent";
 
 function InterviewContainer() {
   const { state, dispatch } = useGlobalState();
@@ -30,30 +27,6 @@ function InterviewContainer() {
     );
   }, [dispatch]);
 
-  // Daten für die Interviews
-  const interviewData = [
-    {
-      id: 1,
-      imageSrc: "https://picsum.photos/200/300?random=1",
-      category: "Machtmissbrauch",
-      title: "Interview mit Experten",
-      date: "25. November 2023",
-      description:
-        "Ein Gespräch über die verschiedenen Aspekte von Machtmissbrauch und dessen Auswirkungen.",
-    },
-    // Weitere Interviews hier hinzufügen, falls benötigt
-  ];
-
-  console.log(state.interviewsV2);
-
-  // return (
-  //   <NotFoundComponent
-  //     text={"Das Interview existiert nicht."}
-  //     buttonText={"Zurück zur Startseite"}
-  //     link={"/"}
-  //   />
-  // );
-
   if (state.interviewsV2.interviews == undefined) {
     return;
   }
@@ -68,7 +41,7 @@ function InterviewContainer() {
           }}
         >
           {state.interviewsV2.interviews
-            .filter((interview) => interview.Freigabe === "ja")
+            // .filter((interview) => interview.Freigabe === "ja")
             .map((interview, index) => (
               <div key={index} className="m-4 flex items-center justify-center">
                 <PreviewV2
