@@ -3,7 +3,7 @@ Interview mit Pia Stendera und Lena von Holt | 21. Dezember 2023
 
 ## Wir Journalistinnen sind keine Richterinnen.
 
-### Pia Stendera und Lena von Holt sind beide freie Journalistinnen, die im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden sind. Ihre Recherche zum Thema Machtmissbrauch in einem der größten deutschen Medienkonzerne wurde erst kürzlich durch Spotify als “Top Dokumentation” und “Top Newcomer” für das Jahr 2023 ausgezeichnet und führte das Ranking unzähliger Podcast-Hörer:innen als meistgehörter Podcast an. In ihrer journalistischen Arbeit interessieren sich Pia und Lena generell für die Perspektiven Betroffener.
+#### Pia Stendera und Lena von Holt sind beide freie Journalistinnen, die im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden sind. Ihre Recherche zum Thema Machtmissbrauch in einem der größten deutschen Medienkonzerne wurde erst kürzlich durch Spotify als “Top Dokumentation” und “Top Newcomer” für das Jahr 2023 ausgezeichnet und führte das Ranking unzähliger Podcast-Hörer:innen als meistgehörter Podcast an. In ihrer journalistischen Arbeit interessieren sich Pia und Lena generell für die Perspektiven Betroffener.
 
 *Wir haben uns sehr darüber gefreut, dass die beiden sich Zeit genommen haben, mit euch zu teilen, was sie im Zuge ihrer Podcast-Produktion zum Thema Machtmissbrauch mitgenommen haben und welche Schlüsse sie daraus für sich selbst, aber auch für Betroffene, unsere Gesellschaft und den Journalismus ziehen.*
 
