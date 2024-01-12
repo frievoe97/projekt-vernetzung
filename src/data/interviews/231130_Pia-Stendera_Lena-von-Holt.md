@@ -86,6 +86,6 @@ PS: Ich bin dafür, dass hier und jetzt Männer Platz machen und, wo nötig, Ver
 
 ---
 
-Ihr wollt Pias und Lenas Arbeit verfolgen oder mit beiden in Kontakt treten? Am besten folgt ihr ihnen dafür auf Instagram unter @pia.stendera und @lenavonholt.
+Ihr wollt Pias und Lenas Arbeit verfolgen oder mit beiden in Kontakt treten? Am besten folgt ihr ihnen dafür auf Instagram unter [@pia.stendera](https://www.instagram.com/pia.stendera/?hl=de) und [@lenavonholt](https://www.instagram.com/lenavonholt/?ref=NJnCjuUr1R4y&hl=am-et).
 
 Den Podcast der beiden, “Boys Club”, findet ihr unter diesem [Link auf Spotify](https://open.spotify.com/show/42A230DwCz7M1Wicnmjx7R).
