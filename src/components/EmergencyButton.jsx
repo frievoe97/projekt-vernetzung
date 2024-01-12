@@ -96,16 +96,6 @@ const EmergencyButton = () => {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-sm md:text-lg">
-              Du hast Feedback oder willst Kontakt zu uns aufnehmen? Dann melde
-              dich gerne bei uns:
-            </p>
-            <a
-              href="mailto:projekt-vernetzung@email.com"
-              className="mt-4 w-fit text-black hover:text-black text-sm md:text-lg"
-            >
-              info@projekt-vernetzung.org
-            </a>
           </div>
         </div>
       )}

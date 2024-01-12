@@ -48,7 +48,7 @@ const CurrentInterview = (interview) => {
                   {interview.interview.Headline}
                 </h1>
 
-                <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-12 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss">
+                <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-12 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss rounded-lg opacity-70">
                   {interview.interview.TextTeaser}
                 </div>
                 <FaQuoteRight
@@ -61,18 +61,16 @@ const CurrentInterview = (interview) => {
         </Link>
       </div>
       <div className="md:hidden">
-        <div className="w-full h-128 h-fit bg-fm_blau_light">
-          <div className="relative">
-            <h1
-              className="text-black font-bold rounded-lg text-2xl text-left p-4 z-10 heading-koulen-black "
-              id="current-interview-title"
-            >
-              {interview.interview.Headline}
-            </h1>
-            {/* <FaQuoteRight
-              className="absolute left-0 top-1 rotate-180  text-4xl text-fm_blau"
+        <div className="w-full h-fit bg-fm_blau_light">
+          <div
+            className=" relative text-black font-bold rounded-lg text-2xl text-left p-8 z-10 heading-koulen-black "
+            id="current-interview-title"
+          >
+            <FaQuoteRight
+              className="absolute left-4 top-4 rotate-180  text-4xl text-fm_blau -z-10"
               size={30}
-            /> */}
+            />
+            {interview.interview.Headline}
           </div>
 
           <div className="w-fit mx-auto">
@@ -82,7 +80,7 @@ const CurrentInterview = (interview) => {
               alt=""
             />
           </div>
-          <div className=" bg-fm_weiss text-black text-left text-justify bg-opacity-50 p-4 ">
+          <div className=" bg-fm_weiss text-black text-left text-justify bg-opacity-50 p-4">
             {interview.interview.TextTeaser}
           </div>
         </div>

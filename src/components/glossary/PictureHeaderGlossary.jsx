@@ -18,7 +18,7 @@ const PictureHeaderGlossary = ({ data }) => {
         backgroundPosition: "center bottom",
       }}
     >
-      <div className="max-w-screen-xl mx-auto bg-white text-justify md:text-center rounded shadow-2xl">
+      <div className="max-w-screen-xl mx-auto bg-white text-justify md:text-center rounded-lg shadow-2xl">
         <div
           className="block md:hidden relative flex flex-col justify-center items-center "
           style={{
