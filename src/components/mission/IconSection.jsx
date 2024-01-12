@@ -90,7 +90,7 @@ const IconTextRows = ({ data }) => {
   };
 
   return (
-    <div className="w-full bg-fm_helles_beige">
+    <div className="w-full bg-fm_helles_beige py-16">
       <div className="max-w-screen-xl mx-auto md:p-4">
         {/* Desktop-Ansicht */}
         <div className="md:flex hidden flex flex-wrap justify-center">

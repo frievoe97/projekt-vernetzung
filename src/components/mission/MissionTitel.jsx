@@ -16,7 +16,7 @@ const MissionTitel = ({ data }) => {
   const { title, paragraphs1, paragraphs2, list } = data;
 
   return (
-    <div className="w-full bg-fm_weiss">
+    <div className="w-full bg-fm_weiss py-12">
       <div className="max-w-screen-xl mx-auto md:p-4 text-left p-4">
         <h2 className="my-4 heading">{title}</h2>
         {paragraphs1.map((paragraph, index) => (

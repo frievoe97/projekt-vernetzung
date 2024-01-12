@@ -1,4 +1,5 @@
 import React from "react";
+import "./PictureHeader_V2.css";
 
 /**
  * Diese Komponente rendert einen Bildkopf (Header) mit dynamischen Daten.
@@ -42,7 +43,7 @@ function PictureHeader_V2({ data }) {
           }}
         >
           {/* MOBILE */}
-          <h1 className="text-center mx-8 mb-4 relative p-2 px-4 rounded-lg mt-8 shadow-2xl heading bg-fm_weiss">
+          <h1 className="text-center mx-8 mb-4 relative p-2 px-4 rounded-lg mt-8 shadow-2xl heading-koulen bg-fm_weiss">
             {title}
           </h1>
 
@@ -61,7 +62,7 @@ function PictureHeader_V2({ data }) {
         </div>
 
         <div className="md:p-4">
-          <h1 className="md:block hidden heading mb-4">{title}</h1>
+          <h1 className="md:block hidden heading-koulen mb-4 ">{title}</h1>
           <h2 className="md:block hidden text-lg font-semibold">{subtitle}</h2>
           {/* <p className="md:block hidden text-lg mt-4">{description}</p> */}
           <div className="md:block hidden text-lg mt-4">

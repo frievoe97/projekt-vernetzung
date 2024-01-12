@@ -94,7 +94,7 @@ const GlossaryContent = ({ data }) => {
   return (
     // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
-      <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0">
+      <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0 pb-20">
         <div className="w-full px-4 md:px-0">
           <h1 className="relative py-2 px-4 w-full text-center rounded-lg mt-6 mb-8 heading">
             Hier kannst du deine Suche filtern

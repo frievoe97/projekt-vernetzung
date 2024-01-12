@@ -10,6 +10,15 @@
   color: #72a7ff;
 }
 
+.heading-koulen {
+  font-family: "koulen", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  /* background-color: transparent; */
+  color: #72a7ff;
+}
+
 .heading-black {
   font-weight: 700;
   font-size: 1.5rem;

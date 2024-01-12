@@ -11,7 +11,7 @@ const TextWithImage = ({ data }) => {
 
   return (
     <div className="w-full bg-fm_weiss">
-      <div className="py-4 max-w-screen-xl mx-auto">
+      <div className="py-8 md:py-14 max-w-screen-xl mx-auto">
         {/* Auf Laptops (md) */}
         <div className="hidden md:flex">
           {/* Linke Spalte mit Überschrift, Text und Button */}

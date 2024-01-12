@@ -35,7 +35,7 @@ function SearchBarAnt({
   return (
     <div className="w-full mb-4 bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto">
-        <h2 className="heading pt-12 mb-6">Anlaufstellen</h2>
+        <h2 className="heading-koulen pt-12 mb-6">Anlaufstellen</h2>
         <p className="font-bold text-lg mb-4">
           Potenziell relevante Anlaufstellen im Kontext von Machtmissbrauch{" "}
         </p>

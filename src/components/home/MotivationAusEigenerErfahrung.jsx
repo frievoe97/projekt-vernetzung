@@ -17,13 +17,13 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
 
   return (
     <div className="w-full bg-fm_weiss">
-      <div className="py-4 max-w-screen-xl mx-auto">
+      <div className="py-8 md:py-14 max-w-screen-xl mx-auto">
         <div className="hidden md:flex">
           <div className="md:w-1/2 p-4">
             <img src={imageUrl} alt="Bild" className="w-full h-auto" />
           </div>
           <div className="md:w-1/2 p-4">
-            <h1 className="heading-black text-center md:text-right w-full mb-4">
+            <h1 className="heading text-center md:text-right w-full mb-4">
               {title}
             </h1>
             {paragraphs.map((paragraph, index) => (
@@ -37,9 +37,7 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
           </div>
         </div>
         <div className="md:hidden flex flex-col">
-          <h1 className="mb-4 heading-black text-center md:text-left">
-            {title}
-          </h1>
+          <h1 className="mb-4 heading text-center md:text-left">{title}</h1>
           <div className="p-4">
             <img
               src={imageUrl}

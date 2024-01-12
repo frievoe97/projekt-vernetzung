@@ -6,7 +6,7 @@ const WarumJetztWarumWir = ({ data }) => {
   }
 
   return (
-    <div className="w-full bg-fm_weiss">
+    <div className="w-full bg-fm_weiss py-16">
       <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
         {data.map((item, index) => (
           <div key={index}>

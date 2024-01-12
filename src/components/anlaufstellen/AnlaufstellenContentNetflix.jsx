@@ -41,7 +41,7 @@ const AnlaufstellenContentNetflix = () => {
     <div>
       <div className="relative w-full px-0">
         <div className="">
-          <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-screen-xl mx-auto my-20">
             {/* <div className="w-full"> */}
             {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
               <div key={rowIndex} className="mb-0 divide-y-2 divide-fm_rosa">
