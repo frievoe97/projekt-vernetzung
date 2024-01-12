@@ -17,8 +17,11 @@ function InterviewDetail() {
   const { organizationName } = useParams();
   // MARKDOWNTEST
   const [markdown, setMarkdown] = useState("");
-  const url =
-    "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
+  // const url =
+  //   "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
+
+  let url =
+    "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/empty_interview.md";
 
   let interview = {};
 
@@ -51,8 +54,8 @@ function InterviewDetail() {
       .catch((error) =>
         console.error("Fehler beim Abrufen des Markdown:", error)
       );
-    console.log(markdown);
-  }, [url]);
+    console.log("New URL: ", url);
+  }, [url, interview]);
 
   const convertToSlug = (inputString) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
@@ -81,6 +84,18 @@ function InterviewDetail() {
     );
   }
 
+  if (interview.TextInhaltInterview) {
+    url = interview.TextInhaltInterview;
+  }
+
+  function LinkRenderer(props) {
+    return (
+      <a href={props.href} target="_blank" rel="noreferrer">
+        {props.children}
+      </a>
+    );
+  }
+
   return (
     <div>
       <div className="bg-fm_blau w-full pt-16 shadow-2xl">
@@ -102,10 +117,19 @@ function InterviewDetail() {
       </div>
       <div className="w-full bg-fm_weiss">
         <div className="max-w-screen-xl mx-auto p-4">
+          <Link to="/interviews-und-beitraege">
+            <div className="flex items-center">
+              <IoArrowBackOutline color="black" size={20} />
+              <p className="text-black font-bold">Zurück zu allen Interviews</p>
+            </div>
+          </Link>
           {markdown && (
             <div className="w-full bg-fm_weiss pt-8 pb-8">
               {/* <ReactMarkdown>{markdown}</ReactMarkdown> */}
-              <ReactMarkdown className="prose max-w-none text-justify">
+              <ReactMarkdown
+                className="prose max-w-none text-justify"
+                components={{ a: LinkRenderer }}
+              >
                 {markdown}
               </ReactMarkdown>
             </div>

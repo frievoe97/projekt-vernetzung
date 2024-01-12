@@ -67,16 +67,18 @@ function InterviewContainer() {
             gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
           }}
         >
-          {state.interviewsV2.interviews.map((interview, index) => (
-            <div key={index} className="m-4 flex items-center justify-center">
-              <PreviewV2
-                title={interview.Headline}
-                imageUrl={interview.BildTeaser}
-                textTeaser={interview.TextTeaser}
-                style={{ minWidth: "350px" }} // Mindestbreite für jedes Element
-              />
-            </div>
-          ))}
+          {state.interviewsV2.interviews
+            .filter((interview) => interview.Freigabe === "ja")
+            .map((interview, index) => (
+              <div key={index} className="m-4 flex items-center justify-center">
+                <PreviewV2
+                  title={interview.Headline}
+                  imageUrl={interview.BildTeaser}
+                  textTeaser={interview.TextTeaser}
+                  style={{ minWidth: "350px" }} // Mindestbreite für jedes Element
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import csv
 import yaml
 
 # Pfad zur CSV-Datei
-csv_datei = 'deine_csv_datei.csv'
+csv_datei = 'updates.csv'
 
 # Pfad zur YAML-Datei
 yaml_datei = '../data/pages/interviews_v2.yaml'

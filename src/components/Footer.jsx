@@ -47,7 +47,7 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-fm_blau_dark text-fm_weiss p-8 py-8 md:py-4 min-h-72 text-sm">
+    <footer className="bg-fm_grau_dark text-fm_weiss p-8 py-8 md:py-4 min-h-72 text-sm">
       <div className="max-w-screen-xl mx-auto">
         <div className="container mx-auto flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row justify-between items-start justify-between">
           <div className="w-full md:w-1/3  h-full md:p-4">

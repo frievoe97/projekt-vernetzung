@@ -43,18 +43,21 @@ export default {
       fm_rosa: "#FB819B",
       fm_altrosa: "#BEA5A9",
       fm_grau: "#A5ABBD",
+      fm_grau_dark: "#52555E",
       fm_weiss: "#FFFFFF",
       fm_helles_beige: "#EFE9EA",
       fm_dunkelgrau: "#414756",
     },
     extend: {
       height: {
+        88: "20rem",
         104: "28rem",
         128: "30rem",
       },
       width: {
         104: "28rem",
         128: "30rem",
+        140: "40rem",
       },
       flex: {
         2: "2 2 0%",
