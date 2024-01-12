@@ -1,69 +1,86 @@
 interviews:
-  - "": ""
-    BildHeadline: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
-    BildTeaser: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
-    Freigabe: ""
-    Headline: Wir Journalistinnen sind keine Richterinnen.
-    Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
-    Rubrik: Journalismus
-    TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231130_Pia-Stendera_Lena-von-Holt.md
-    TextTeaser:
-      Pia Stendera und Lena von Holt sind beide freie Journalistinnen, die
-      im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden
-      sind. Wir haben uns sehr darüber gefreut, dass die beiden sich Zeit genommen haben,
-      mit euch zu teilen, was sie im Zuge ihrer Podcast-Produktion zum Thema Machtmissbrauch
-      mitgenommen haben und welche Schlüsse sie daraus für sich selbst, aber auch für
-      Betroffene, unsere Gesellschaft und den Journalismus ziehen.
-  # - ? ''
-  #   : ''
-  #   BildHeadline: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
-  #   BildTeaser: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
-  #   Freigabe: ''
-  #   Headline: HEADLINE SIRENSE COLLECTIVE
-  #   Interview: The Sirense Collective
-  #   Rubrik: Aktivismus
-  #   TextInhaltInterview: ''
-  #   TextTeaser: Teaser The Sirense Collective Teaser The Sirense Collective Teaser The
-  #     Sirense Collective
-  # - ? ''
-  #   : ''
-  #   BildHeadline: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
-  #   BildTeaser: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
-  #   Freigabe: ''
-  #   Headline: HEADLINE FORENSIC NURSES
-  #   Interview: Forensic Nurses
-  #   Rubrik: Medizin
-  #   TextInhaltInterview: ''
-  #   TextTeaser: Teaser Forensic Nurses Teaser Forensic Nurses Teaser Forensic Nurses
-  #     Teaser Forensic Nurses
-  # - ? ''
-  #   : ''
-  #   BildHeadline: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
-  #   BildTeaser: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
-  #   Freigabe: ''
-  #   Headline: HEADLINE LAND-GRAZIEN
-  #   Interview: Land-Grazien
-  #   Rubrik: Initiative
-  #   TextInhaltInterview: ''
-  #   TextTeaser: Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien
-  - "": ""
-    BildHeadline: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
-    BildTeaser: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
-    Freigabe: ""
-    Headline: HEADLINE SOPHIE RENDLE
-    Interview: Sophie Rendl
-    Rubrik: Aktivismus
-    TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231215_Sophie-Rendl.md
-    TextTeaser:
-      Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie
-      Rendl
-# - ? ''
-#   : ''
-#   BildHeadline: ''
-#   BildTeaser: ''
-#   Freigabe: ''
-#   Headline: HEADLINE LENA MARBACHER
-#   Interview: Lena Marbacher
-#   Rubrik: Journalismus
-#   TextInhaltInterview: ''
-#   TextTeaser: Teaser
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
+  BildTeaser: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
+  Freigabe: ja
+  Headline: Wir Journalistinnen sind keine Richterinnen.
+  Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
+  Max200Zeichen(teaser): ''
+  Rubrik: Journalismus
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231130_Pia-Stendera_Lena-von-Holt.md
+  TextTeaser: Pia Stendera und Lena von Holt wurden vor allem durch ihren Podcast
+    “Boys Club” bekannt. Im Interview erfahrt ihr, was die beiden aus der Podcast-Produktion
+    zum Thema Machtmissbrauch mitgenommen haben und welche Schlüsse sie daraus für
+    sich selbst, aber auch für Betroffene, unsere Gesellschaft und den Journalismus
+    ziehen.
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
+  BildTeaser: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
+  Freigabe: nein
+  Headline: HEADLINE SIRENSE COLLECTIVE
+  Interview: The Sirense Collective
+  Max200Zeichen(teaser): ''
+  Rubrik: Aktivismus
+  TextInhaltInterview: ''
+  TextTeaser: Teaser The Sirense Collective Teaser The Sirense Collective Teaser The
+    Sirense Collective
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
+  BildTeaser: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
+  Freigabe: nein
+  Headline: HEADLINE FORENSIC NURSES
+  Interview: Forensic Nurses
+  Max200Zeichen(teaser): ''
+  Rubrik: Medizin
+  TextInhaltInterview: ''
+  TextTeaser: Teaser Forensic Nurses Teaser Forensic Nurses Teaser Forensic Nurses
+    Teaser Forensic Nurses
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
+  BildTeaser: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
+  Freigabe: nein
+  Headline: HEADLINE LAND-GRAZIEN
+  Interview: Land-Grazien
+  Max200Zeichen(teaser): ''
+  Rubrik: Initiative
+  TextInhaltInterview: ''
+  TextTeaser: Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
+  BildTeaser: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
+  Freigabe: nein
+  Headline: HEADLINE SOPHIE RENDL
+  Interview: Sophie Rendl
+  Max200Zeichen(teaser): ''
+  Rubrik: Aktivismus
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231215_Sophie-Rendl.md
+  TextTeaser: Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie
+    Rendl
+- ? ''
+  : ''
+  Bild1(rund): ''
+  Bild2(rechteckig): ''
+  BildHeadline: Mail Friedrich jpg
+  BildTeaser: Mail Friedrich jpg
+  Freigabe: nein
+  Headline: HEADLINE LENA MARBACHER
+  Interview: Lena Marbacher
+  Max200Zeichen(teaser): ''
+  Rubrik: Journalismus
+  TextInhaltInterview: ''
+  TextTeaser: Teaser
