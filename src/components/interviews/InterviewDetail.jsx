@@ -132,7 +132,7 @@ function InterviewDetail() {
               {/* <ReactMarkdown>{markdown}</ReactMarkdown> */}
               <ReactMarkdown
                 // text-justify
-                className="prose max-w-none text-justify"
+                className="prose max-w-none"
                 components={{ a: LinkRenderer }}
               >
                 {markdown}

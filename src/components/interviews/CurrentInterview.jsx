@@ -52,7 +52,7 @@ const CurrentInterview = (interview) => {
                   {interview.interview.TextTeaser}
                 </div>
                 <FaQuoteRight
-                  className="absolute top-14 rotate-180 text-4xl text-fm_blau z-10 left-2"
+                  className="absolute top-14 rotate-180 text-4xl text-fm_blau z-10 left-2 opacity-60"
                   size={70}
                 />
               </div>
@@ -67,7 +67,7 @@ const CurrentInterview = (interview) => {
             id="current-interview-title"
           >
             <FaQuoteRight
-              className="absolute left-4 top-4 rotate-180  text-4xl text-fm_blau -z-10"
+              className="absolute left-4 top-4 rotate-180  text-4xl text-fm_blau -z-10 opacity-60"
               size={30}
             />
             {interview.interview.Headline}
