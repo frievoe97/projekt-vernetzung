@@ -41,7 +41,7 @@ function InterviewContainer() {
           }}
         >
           {state.interviewsV2.interviews
-            // .filter((interview) => interview.Freigabe === "ja")
+            .filter((interview) => interview.Freigabe === "ja")
             .map((interview, index) => (
               <div key={index} className="m-4 flex items-center justify-center">
                 <PreviewV2
