@@ -5,76 +5,54 @@ import { FaQuoteRight } from "react-icons/fa6";
 import { Link } from "react-router-dom"; // Importiere die Link-Komponente
 import "./CurrentInterview.css";
 
-const CurrentInterview = () => {
+const CurrentInterview = (interview) => {
   const { state, dispatch } = useGlobalState();
 
   const convertToSlug = (inputString) => {
+    if (inputString == undefined) return;
     return inputString.replace(/\s+/g, "-").toLowerCase();
   };
 
-  const fetchAndParseYamlData = (url, dispatch, actionType) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((yamlText) => {
-        const parsedData = yaml.load(yamlText);
-
-        dispatch({
-          type: actionType,
-          payload: parsedData,
-        });
-      });
-  };
-
-  useEffect(() => {
-    fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
-      dispatch,
-      "SET_INTERVIEW_V_2_DATA"
-    );
-  }, [dispatch]);
-
-  if (Object.keys(state.interviewsV2).length <= 0) return;
+  console.log(interview);
 
   /*
-    BildHeadline: "https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg"
-    BildTeaser: "https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg"
-    Headline: "HEADLINE PIA UND LENA"
-    Interview: "Pia Stendera und Lena von Holt - \"Boys Club\"-Podcast"
-    Rubrik: "Journalismus"
-    TextInhaltInterview: ""
-    TextTeaser: "Teaser Pia und Lena Teaser Pia und Lena Teaser Pia und Lena Teaser Pia und Lena"
-  */
+          104: "28rem",
+        128: "30rem",
+        140: "40rem",
+      },
+      */
 
   return (
     <div>
       <div className="md:flex hidden">
         <Link
           to={`/interviews-und-beitraege/${convertToSlug(
-            state.interviewsV2.interviews[0].Headline
+            interview.interview.Headline
           )}`}
           className="w-full h-128 bg-fm_blau_light flex items-center justify-center"
           // Fügen Sie hier weitere CSS-Klassen hinzu, wenn benötigt
         >
           <div className="w-full h-128 ">
             <div className="h-full max-w-screen-xl mx-auto">
-              <div className="w-full h-full relative overflow-hidden">
+              <div className="w-full h-full relative ">
                 <img
-                  className="w-24 md:w-80 lg:w-128 absolute bottom-0 right-20 z-10"
-                  src={state.interviewsV2.interviews[0].BildHeadline}
+                  className="md:w-80 lg:w-128 absolute bottom-0 right-20 z-10"
+                  src={interview.interview.BildHeadline}
                   alt=""
                 />
                 <h1
-                  className="absolute top-20 text-black p-2 font-bold rounded-lg w-140 text-left z-20"
+                  className="absolute top-20 text-black p-2 font-bold rounded-lg w-140 text-left z-20 left-10"
                   id="current-interview-title"
                   // style={{ textShadow: "3px 3px 20px black" }}
                 >
-                  {state.interviewsV2.interviews[0].Headline}
+                  {interview.interview.Headline}
                 </h1>
-                <div className="absolute bottom-12 left-24 bg-fm_weiss text-black w-140 text-left shadow-2xl bg-opacity-50 p-4 z-20">
-                  {state.interviewsV2.interviews[0].TextTeaser}
+
+                <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-12 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss">
+                  {interview.interview.TextTeaser}
                 </div>
                 <FaQuoteRight
-                  className="absolute bottom-80 left-6 text-4xl text-fm_blau z-10"
+                  className="absolute top-14 rotate-180 text-4xl text-fm_blau z-10 left-2"
                   size={70}
                 />
               </div>
@@ -84,21 +62,28 @@ const CurrentInterview = () => {
       </div>
       <div className="md:hidden">
         <div className="w-full h-128 h-fit bg-fm_blau_light">
-          <h1
-            className="text-black font-bold rounded-lg text-2xl text-left p-4"
-            id="current-interview-title"
-          >
-            {state.interviewsV2.interviews[0].Headline}
-          </h1>
-          <div className="">
+          <div className="relative">
+            <h1
+              className="text-black font-bold rounded-lg text-2xl text-left p-4 z-10 heading-koulen-black "
+              id="current-interview-title"
+            >
+              {interview.interview.Headline}
+            </h1>
+            {/* <FaQuoteRight
+              className="absolute left-0 top-1 rotate-180  text-4xl text-fm_blau"
+              size={30}
+            /> */}
+          </div>
+
+          <div className="w-fit mx-auto">
             <img
-              className="  h-54 object-cover p-4 pb-0"
-              src={state.interviewsV2.interviews[0].BildHeadline}
+              className="  h-64 object-cover p-4 pb-0"
+              src={interview.interview.BildHeadline}
               alt=""
             />
           </div>
           <div className=" bg-fm_weiss text-black text-left text-justify bg-opacity-50 p-4 ">
-            {state.interviewsV2.interviews[0].TextTeaser}
+            {interview.interview.TextTeaser}
           </div>
         </div>
       </div>

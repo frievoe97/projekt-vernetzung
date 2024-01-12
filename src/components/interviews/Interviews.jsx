@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import InterviewContainer from "./InterviewContainer";
 import CurrentInterview from "./CurrentInterview";
+import { useGlobalState } from "../../data/GlobalState";
+import yaml from "js-yaml";
 
 import NotFoundComponent from "../NotFoundComponent";
 
@@ -10,6 +12,29 @@ import { IoMailOutline, IoLogoInstagram } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 function Interviews() {
+  const { state, dispatch } = useGlobalState();
+
+  const fetchAndParseYamlData = (url, dispatch, actionType) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((yamlText) => {
+        const parsedData = yaml.load(yamlText);
+
+        dispatch({
+          type: actionType,
+          payload: parsedData,
+        });
+      });
+  };
+
+  useEffect(() => {
+    fetchAndParseYamlData(
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
+      dispatch,
+      "SET_INTERVIEW_V_2_DATA"
+    );
+  }, [dispatch]);
+
   // return (
   //   <NotFoundComponent
   //     text={"Das Interview existiert nicht."}
@@ -18,28 +43,30 @@ function Interviews() {
   //   />
   // );
 
+  if (Object.keys(state.interviewsV2).length <= 0) return;
+
   return (
     <div>
       <div className="text-center text-color_font bg-fm_weiss pt-16">
-        <CurrentInterview />
-        <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto justify-between px-12 py-8">
-          <div className="flex flex-col">
-            <div className="flex space-x-4 mb-4 items-center">
-              <img src="/logo-2.jpeg" className="w-64" alt="" />
+        <CurrentInterview interview={state.interviewsV2.interviews[0]} />
+        <div className="flex  max-w-screen-xl mx-auto justify-between px-8  pt-8">
+          <div className="flex flex-col md:flex-row w-full   justify-between">
+            <h1 className="bg-fm_weiss  w-fit text-2xl text-left font-bold mb-4">
+              Hier findest du unsere Expert:innen-Interviews und Beiträge
+            </h1>
+            <div className="flex space-x-4 mb-4 items-center w-fit">
+              <img src="/logo-2.jpeg" className="h-8" alt="" />
               <a href="mailto:projekt-vernetzung@email.com">
-                <IoMailOutline size={40} color="#72A7FF" />
+                <IoMailOutline size={26} color="#72A7FF" />
               </a>
               <a
                 href="https://www.instagram.com/projekt.vernetzung"
                 target="_blank"
               >
-                <IoLogoInstagram size={32} color="#72A7FF" />
+                <IoLogoInstagram size={22} color="#72A7FF" />
               </a>
             </div>
           </div>
-          <h1 className="bg-fm_weiss w-3/6 text-2xl text-right font-bold">
-            Hier findest du unsere Expert:innen-Interviews und Beiträge
-          </h1>
         </div>
         <InterviewContainer />
       </div>

@@ -12,15 +12,15 @@ const PreviewV2 = ({ imageUrl, title, textTeaser }) => {
   // 88 - 20rem
 
   return (
-    <div className="w-96 h-128 flex flex-col relative rounded-2xl shadow-2xl interview-preview-container">
-      <div className="w-full h-40 bg-fm_blau rounded-t-2xl relative overflow-hidden">
+    <div className="w-96 h-140 flex flex-col relative rounded-2xl shadow-2xl interview-preview-container">
+      <div className="w-full h-40 bg-fm_blau_light rounded-t-2xl relative overflow-hidden">
         <img
-          className="h-48 w-48 object-cover absolute top-1/2 transform -translate-y-1/2 right-0 rounded-l-full shadow-2xl"
+          className="h-48  object-cover absolute left-1/2 transform -translate-x-1/2 bottom-0  "
           src={imageUrl}
           alt=""
         />
       </div>
-      <div className="p-4 flex h-88 flex-col">
+      <div className="p-4 flex h-104 flex-col">
         <p className="text-base font-bold mb-4">Rubrik</p>
         <h1 className="text-2xl font-black text-left mb-4">{title}</h1>
         <p className="text-black font-light mb-4 overflow-y-hidden">

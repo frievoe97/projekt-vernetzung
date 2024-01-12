@@ -73,7 +73,7 @@ function InterviewContainer() {
               <div key={index} className="m-4 flex items-center justify-center">
                 <PreviewV2
                   title={interview.Headline}
-                  imageUrl={interview.BildTeaser}
+                  imageUrl={interview.BildHeadline}
                   textTeaser={interview.TextTeaser}
                   style={{ minWidth: "350px" }} // Mindestbreite für jedes Element
                 />

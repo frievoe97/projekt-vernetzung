@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import ButtonBigRounded from "../elements/ButtonBigRounded";
 import NotFoundComponent from "../NotFoundComponent";
+import CurrentInterview from "./CurrentInterview";
 import { IoArrowBackOutline } from "react-icons/io5";
 
 // MARKDOWN TEST
@@ -98,11 +99,11 @@ function InterviewDetail() {
 
   return (
     <div>
-      <div className="bg-fm_blau w-full pt-16 shadow-2xl">
+      {/* <div className="bg-fm_blau w-full pt-16 shadow-2xl">
         <div className="w-full shadow-2xl">
           <div className="max-w-screen-xl mx-auto h-96 relative overflow-hidden">
             <div className="flex items-center ">
-              {/* <IoArrowBackOutline className="text-5xl text-fm_weiss mt-7" /> */}
+              
               <h1 className="font-bold mt-8 text-fm_weiss text-left w-4/5 mx-4">
                 {interview.Headline}
               </h1>
@@ -114,6 +115,9 @@ function InterviewDetail() {
             />
           </div>
         </div>
+      </div> */}
+      <div className=" pt-16">
+        <CurrentInterview interview={interview} />
       </div>
       <div className="w-full bg-fm_weiss">
         <div className="max-w-screen-xl mx-auto p-4">
