@@ -99,6 +99,6 @@ Man muss sich anschauen: Woher kommt die Basis meiner Macht? Was habe ich gerade
 
 ---
 
-Ihr wollt Sophies Arbeit weiter verfolgen oder mit ihr in Kontakt treten? Am besten folgt ihr Sophie dafür auf Instagram unter @sophie_rendl. Wenn ihr euch genauer über die Frauendomäne informieren wollt, könnt ihr das [hier](https://www.frauendomaene.at/) tun. Die vera* Vertrauensstelle haben wir euch [hier](https://vera-vertrauensstelle.at/) verlinkt.
+Ihr wollt Sophies Arbeit weiter verfolgen oder mit ihr in Kontakt treten? Am besten folgt ihr Sophie dafür auf Instagram unter [@sophie_rendl](https://www.instagram.com/sophie_rendl/?hl=de). Wenn ihr euch genauer über die Frauendomäne informieren wollt, könnt ihr das [hier](https://www.frauendomaene.at/) tun. Die vera* Vertrauensstelle haben wir euch [hier](https://vera-vertrauensstelle.at/) verlinkt.
 
 &ast; MINT ist eine zusammenfassende Bezeichnung für Berufe aus den Bereichen Mathematik, Informatik, Naturwissenschaft und Technik.
