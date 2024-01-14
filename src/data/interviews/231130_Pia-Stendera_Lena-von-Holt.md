@@ -35,7 +35,7 @@ So wird eine gewisse Abhängigkeitsstruktur geschaffen, die zu Beginn meist mit 
 So wird beispielsweise die Methode des “Love Bombing” angewandt, die wir beschrieben haben. Mitarbeitenden wird zudem suggeriert: “Du hast hier eine Familie, du bist hier gut aufgehoben”. Aus dieser engen Bindung, dieser Abhängigkeit heraus wird dann mit negativen Intentionen gegen betroffene Personen agiert. Bringen betroffene Personen das in irgendeiner Art und Weise zur Sprache, werden ihnen ihre Gefühle abgesprochen. Diese Methode nennt sich “Gaslighting”. Letztlich funktioniert Mobbing oft nicht anders: Mitarbeitende möchten “Teil der Mannschaft" sein und dazugehören, freuen sich über Anerkennung. Dann werden sie runtergemacht und schlimmstenfalls nicht ernst genommen, wenn sie es melden.
 
 
-> ### "Wenn man die Kolleg:innen als Familie betrachtet, passiert die Vermischung von Beruflichem und Privatem zwangsläufig. Und diese macht es Führungskräften einfacher, ihre Macht zu missbrauchen."
+> ## "Wenn man die Kolleg:innen als Familie betrachtet, passiert die Vermischung von Beruflichem und Privatem zwangsläufig. Und diese macht es Führungskräften einfacher, ihre Macht zu missbrauchen."
 
 
 **LvH**: Wenn man die Kolleg:innen als Familie betrachtet, passiert die Vermischung von Beruflichem und Privatem zwangsläufig. Und diese macht es Führungskräften einfacher, ihre Macht zu missbrauchen. Falsch verstandene Loyalität haben wir entsprechende Fälle genannt. Ich glaube, als Arbeitgeber oder als Führungskraft kann es helfen, ein Vorbild zu leben, das Kritik auch an der eigenen Person wertschätzt und sogar einfordert. Und wo entsprechend ein Raum entsteht, in dem sich Betroffene von Übergriffen trauen, Hilfe zu holen.
@@ -47,7 +47,7 @@ Ein weiterer Aspekt, der Machtmissbrauch begünstigt und mir als Journalistin wi
 **PS**: Ich glaube, dass ein offener Raum für Kritik tatsächlich essentiell ist. Stellt sich über den Zeitverlauf heraus, dass er von einem Arbeitgeber lediglich als Schein propagiert wird, darf man nicht darauf hereinfallen. Gleiches gilt für Arbeitgeber, die sagen, sie böten einen hierarchiefreien Raum. Man muss sich dessen bewusst sein, dass Hierarchien dort natürlich vorhanden sind. Diese Hierarchien können insbesondere in Berufsfeldern problematisch werden, in denen eine subjektive Bewertung Menschen weiterbringt, kein objektiver Maßstab. Da kannst du mitunter  wahnsinnig gute Arbeit leisten und Talent haben. All das ist unwichtig. Es zählt, ob du machtvolle Fürsprecher:innen hast. 
 
 
-> ### "Gesellschaftlich müssten gewisse Narrative verschwinden, die wir zuletzt wieder in der öffentlichen Diskussion über Machtmissbrauch wahrgenommen haben: 'Die Frauen, die wollen das doch auch.’"
+> ## "Gesellschaftlich müssten gewisse Narrative verschwinden, die wir zuletzt wieder in der öffentlichen Diskussion über Machtmissbrauch wahrgenommen haben: 'Die Frauen, die wollen das doch auch.’"
 
 
 **PV: Was müsste sich ändern, wenn wir über die Ebene des Individuums hinaus schauen? Was bräuchte es zum Beispiel in Organisationen oder in unserer Gesellschaft?**
@@ -65,7 +65,7 @@ Das hat natürlich Auswirkungen auf unsere Arbeit mit Quellen. Wir sind als Teil
 Ein weiterer Aspekt ist das Emotionale. Natürlich bewegen einen die Schilderungen von Quellen, gerade als Frau. Man durchlebt die eigenen Geschichten, die man in seinem Leben angesammelt hat. Daher finde ich es für diese Art der Berichterstattung gut, im Team zusammenzuarbeiten. Und mit diesem vermeintlich unprofessionellen Teil der Emotionen – der meiner Meinung nach nicht unprofessionell, sondern gesund ist – dann eher zur Kollegin zu gehen, als zur Quelle.
 
 
-> ### "Ob etwas strafrechtlich relevant ist und dann noch verurteilt werden kann, ist jedoch eine andere Frage, als ob etwas okay ist. Diese Frage ist ein gesellschaftlicher Aushandlungsprozess, den wir Journalist:innen unterstützen."
+> ## "Ob etwas strafrechtlich relevant ist und dann noch verurteilt werden kann, ist jedoch eine andere Frage, als ob etwas okay ist. Diese Frage ist ein gesellschaftlicher Aushandlungsprozess, den wir Journalist:innen unterstützen."
 
 
 **PV: Ihr habt unsere nächste Frage gerade schon ein wenig vorweggenommen, es geht um das Thema Unschuldsvermutung.**
@@ -93,7 +93,7 @@ Für die Zukunft des Journalismus wünsche ich mir, dass mehr Formen von Machtmi
 Was marginalisierte Menschen, die Gewalt oder Unrecht erfahren haben, im Anschluss erleben –  gesellschaftlich, politisch und im Justizsystem – wird von Betroffenen häufig als ein noch größerer Schlag ins Gesicht beschrieben. Diese sekundären Traumata, diese zusätzliche Gewalt, die sehr klar zeigt, wie strukturell die Probleme sind.
 
 
-> ### "Zu denken, dass lauter weiße Frauen in Führungspositionen die Welt zu einer besseren machen, ist ein schneller Trugschluss."
+> ## "Zu denken, dass lauter weiße Frauen in Führungspositionen die Welt zu einer besseren machen, ist ein schneller Trugschluss."
 
 
 **PV: Dabei wünschen wir euch viel Erfolg! Noch eine Frage zum Schluss: Im Film Barbie wurde letztes Jahr das Szenario dargestellt, dass Frauen all die Rollen innehaben, die heute in der Mehrheit von Männern besetzt sind. Was meint ihr, gäbe es in einer solchen Gesellschaft Machtmissbrauch und wie sähe er aus?**
