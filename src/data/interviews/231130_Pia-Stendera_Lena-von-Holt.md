@@ -15,7 +15,7 @@ Ich fand dabei interessant, dass nicht nur Anknüpfungspunkte auf der #MeToo-Ebe
 **LvH**: Ich kann mich nur anschließen. Uns hat sehr bewegt, dass so viele Menschen sich selbst oder ihren Arbeitgeber wiedererkannt haben. Und dass wir ihnen zeigen konnten, dass das Problem nicht ihr eigenes persönliches, sondern vielmehr ein systemisches ist. Nun können sie es besser benennen. Das ist ein erster Schritt hin zur Veränderung: Dieses vermeintliche Tabu-Thema aufbrechen. Endlich darüber sprechen. Und vor allem, endlich miteinander darüber sprechen.
 
 
-> ### "Ich hoffe, dass mehr Betroffene durch die Aufmerksamkeit auf #MeToo im Jahr 2023 schneller entsprechende Muster erkennen; dass sie schneller dahin kommen, ihrem Bauchgefühl zu trauen (...)."
+> ## "Ich hoffe, dass mehr Betroffene durch die Aufmerksamkeit auf #MeToo im Jahr 2023 schneller entsprechende Muster erkennen; dass sie schneller dahin kommen, ihrem Bauchgefühl zu trauen (...)."
 
 
 **PV: Ja, das glauben wir. Würdet ihr angesichts all der Resonanz sagen, dass das Thema Machtmissbrauch noch nicht auserzählt ist? Müsste man über all die anderen Fälle auch öffentlich sprechen?**
