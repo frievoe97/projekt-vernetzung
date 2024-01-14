@@ -1,20 +1,22 @@
 
 Interview mit Pia Stendera und Lena von Holt | 16. Januar 2024
 
-### Wir Journalistinnen sind keine Richterinnen.
+# Wir Journalistinnen sind keine Richterinnen.
 
 *Pia Stendera und Lena von Holt sind beide freie Journalistinnen, die im vergangenen Jahr vor allem durch ihren Podcast “Boys Club” bekannt geworden sind. Ihre Recherche zum Thema Machtmissbrauch in einem der größten deutschen Medienkonzerne wurde erst kürzlich durch Spotify als “Top Dokumentation” und “Top Newcomer” für das Jahr 2023 ausgezeichnet und führte das Ranking unzähliger Podcast-Hörer:innen als meistgehörter Podcast an. In ihrer journalistischen Arbeit interessieren sich Pia und Lena generell für die Perspektiven Betroffener.*
 
 *Wir haben uns sehr darüber gefreut, dass die beiden sich Zeit genommen haben, mit euch zu teilen, was sie im Zuge ihrer Podcast-Produktion zum Thema Machtmissbrauch mitgenommen haben und welche Schlüsse sie daraus für sich selbst, aber auch für Betroffene, unsere Gesellschaft und den Journalismus ziehen.*
 
-**PV**: Schön, Euch beide heute bei uns zu haben. Ihr seid letztes Jahr vor allem durch den Podcast “Boys Club” bekannt geworden. Damit wollen wir direkt einsteigen. Wir sind neugierig: Welche Reaktionen infolge des Podcast-Launches haben euch am meisten überrascht?
+**PV: Schön, Euch beide heute bei uns zu haben. Ihr seid letztes Jahr vor allem durch den Podcast “Boys Club” bekannt geworden. Damit wollen wir direkt einsteigen. Wir sind neugierig: Welche Reaktionen infolge des Podcast-Launches haben euch am meisten überrascht?**
 
-**PS**: Wir haben erstmal Unmengen an Reaktionen bekommen, vor allem von Frauen. Von Mädchen im Schulschülerinnen-Alter bis hin zu Frauen aus Vorstandsetagen. Einige von ihnen haben ähnliche Erlebnisse sehr konkret, andere eher abstrakt geschildert. Der Podcast bot also Anknüpfungspunkte, mit denen sich Menschen identifizieren konnten. In der Masse, die uns erreichte, war das allerdings unglaublich. Einem wird bewusst, dass Machtmissbrauch de facto überall passiert.
+**PS**: Wir haben erstmal Unmengen an Reaktionen bekommen, vor allem von Frauen. Von Mädchen im Schülerinnen-Alter bis hin zu Frauen aus Vorstandsetagen. Einige von ihnen haben ähnliche Erlebnisse sehr konkret, andere eher abstrakt geschildert. Der Podcast bot also Anknüpfungspunkte, mit denen sich Menschen identifizieren konnten. In der Masse, die uns erreichte, war das allerdings unglaublich. Einem wird bewusst, dass Machtmissbrauch de facto überall passiert.
 Ich fand dabei interessant, dass nicht nur Anknüpfungspunkte auf der #MeToo-Ebene da waren. Viele fanden sich im Arbeitskontext insgesamt in unseren Recherchen wieder. Das schnelle Aufsteigen, die starke Identifikation mit dem Arbeitgeber. Alles Gegebenheiten, die Machtmissbrauch begünstigen können.
 
 **LvH**: Ich kann mich nur anschließen. Uns hat sehr bewegt, dass so viele Menschen sich selbst oder ihren Arbeitgeber wiedererkannt haben. Und dass wir ihnen zeigen konnten, dass das Problem nicht ihr eigenes persönliches, sondern vielmehr ein systemisches ist. Nun können sie es besser benennen. Das ist ein erster Schritt hin zur Veränderung: Dieses vermeintliche Tabu-Thema aufbrechen. Endlich darüber sprechen. Und vor allem, endlich miteinander darüber sprechen.
 
-**PV**: Ja, das glauben wir. Würdet ihr angesichts all der Resonanz sagen, dass das Thema Machtmissbrauch noch nicht auserzählt ist? Müsste man über all die anderen Fälle auch öffentlich sprechen?
+> ### "Ich hoffe, dass mehr Betroffene durch die Aufmerksamkeit auf #MeToo im Jahr 2023 schneller entsprechende Muster erkennen; dass sie schneller dahin kommen, ihrem Bauchgefühl zu trauen (...)."
+
+**PV: Ja, das glauben wir. Würdet ihr angesichts all der Resonanz sagen, dass das Thema Machtmissbrauch noch nicht auserzählt ist? Müsste man über all die anderen Fälle auch öffentlich sprechen?**
 
 **PS**: In einer idealen Welt nicht. Oft wird nicht verstanden, dass der Schritt an die Öffentlichkeit die letzte Möglichkeit ist, die Betroffenen bleibt. Bestenfalls helfen im Arbeitskontext vorher andere Strukturen, nämlich der Arbeitgeber, das Problem ohne den Druck der Öffentlichkeit zu lösen.
 
@@ -22,13 +24,17 @@ Bei unserem Podcast ging es uns nicht um die Aufdeckung eines von vielen Fällen
 
 Ich hoffe, dass mehr Betroffene durch die Aufmerksamkeit auf #MeToo im Jahr 2023 schneller entsprechende Muster erkennen; dass sie schneller dahin kommen, ihrem Bauchgefühl zu trauen, zu verstehen und zu sagen: “Mir passiert gerade Unrecht. Und ich habe das Recht, etwas dagegen zu unternehmen.” Das gilt im Übrigen genauso für rote Linien, die nirgends rechtlich festgeschrieben sind.
 
-**PV**: Okay, könntet ihr für unsere Leser:innen die Muster und die Strukturen, die ihr bei eurer Recherche beobachtet habt, beschreiben? Inwieweit lassen sie sich auch auf andere Fälle von Machtmissbrauch übertragen, z.B. in anderen Branchen, aber auch außerhalb des Arbeitskontexts?
+**PV: Okay, könntet ihr für unsere Leser:innen die Muster und die Strukturen, die ihr bei eurer Recherche beobachtet habt, beschreiben? Inwieweit lassen sie sich auch auf andere Fälle von Machtmissbrauch übertragen, z.B. in anderen Branchen, aber auch außerhalb des Arbeitskontexts?**
 
 **PS**: Aus meiner Sicht lassen sich verschiedene Tendenzen, die Machtmissbrauch begünstigen, erstmal generell auf die Arbeitswelt übertragen. Zunächst einmal die Idee vom schnellen Aufstieg innerhalb einer Struktur, die wir bereits sehr früh in unserem Podcast erklärt haben. Er schafft Toleranzen für Dinge, die man vielleicht sonst nicht hinnehmen würde. Außerdem kann er dafür sorgen, dass sich Mitarbeitende übermäßig mit einem Arbeitgeber identifizieren und somit in einen Sog geraten.
 
 So wird eine gewisse Abhängigkeitsstruktur geschaffen, die zu Beginn meist mit positiven Gefühlen verbunden ist. Ab hier greifen dann grundlegende Manipulationsmechanismen, die in der Arbeitswelt, aber auch in der toxischen Zweierbeziehung vorkommen können.
 
 So wird beispielsweise die Methode des “Love Bombing” angewandt, die wir beschrieben haben. Mitarbeitenden wird zudem suggeriert: “Du hast hier eine Familie, du bist hier gut aufgehoben”. Aus dieser engen Bindung, dieser Abhängigkeit heraus wird dann mit negativen Intentionen gegen betroffene Personen agiert. Bringen betroffene Personen das in irgendeiner Art und Weise zur Sprache, werden ihnen ihre Gefühle abgesprochen. Diese Methode nennt sich “Gaslighting”. Letztlich funktioniert Mobbing oft nicht anders: Mitarbeitende möchten “Teil der Mannschaft" sein und dazugehören, freuen sich über Anerkennung. Dann werden sie runtergemacht und schlimmstenfalls nicht ernst genommen, wenn sie es melden.
+
+
+> ### "Wenn man die Kolleg:innen als Familie betrachtet, passiert die Vermischung von Beruflichem und Privatem zwangsläufig. Und diese macht es Führungskräften einfacher, ihre Macht zu missbrauchen."
+
 
 **LvH**: Wenn man die Kolleg:innen als Familie betrachtet, passiert die Vermischung von Beruflichem und Privatem zwangsläufig. Und diese macht es Führungskräften einfacher, ihre Macht zu missbrauchen. Falsch verstandene Loyalität haben wir entsprechende Fälle genannt. Ich glaube, als Arbeitgeber oder als Führungskraft kann es helfen, ein Vorbild zu leben, das Kritik auch an der eigenen Person wertschätzt und sogar einfordert. Und wo entsprechend ein Raum entsteht, in dem sich Betroffene von Übergriffen trauen, Hilfe zu holen.
 
