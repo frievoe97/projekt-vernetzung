@@ -1,5 +1,5 @@
 
-Interview mit Pia Stendera und Lena von Holt | 21. Dezember 2023
+Interview mit Pia Stendera und Lena von Holt | 16. Januar 2024
 
 ### Wir Journalistinnen sind keine Richterinnen.
 
