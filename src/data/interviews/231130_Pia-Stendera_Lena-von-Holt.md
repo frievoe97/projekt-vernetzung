@@ -110,4 +110,4 @@ Ihr wollt Pias und Lenas Arbeit verfolgen oder mit beiden in Kontakt treten? Am 
 
 Den Podcast der beiden, “Boys Club”, findet ihr unter diesem [Link auf Spotify](https://open.spotify.com/show/42A230DwCz7M1Wicnmjx7R).
 
-Fotorechte: Livia Kappler
+*Fotorechte: Livia Kappler*
