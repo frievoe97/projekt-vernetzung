@@ -2,9 +2,6 @@
   all: revert;
 }
 
-.blockquote-margin > blockquote > h2 {
-  /* Deine gewünschten Styling-Regeln hier */
-  /* background-color: blue !important; */
-  /* font-size: 24px; */
-  /* Weitere Stile hinzufügen, wie gewünscht */
+.blockquote-margin blockquote h2 {
+  margin-bottom: 2.5rem;
 }

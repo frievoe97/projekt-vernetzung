@@ -8,6 +8,7 @@ import ButtonBigRounded from "../elements/ButtonBigRounded";
 import NotFoundComponent from "../NotFoundComponent";
 import CurrentInterview from "./CurrentInterview";
 import { IoArrowBackOutline } from "react-icons/io5";
+import "./InterviewDetail.css";
 
 // MARKDOWN TEST
 import ReactMarkdown from "react-markdown";
