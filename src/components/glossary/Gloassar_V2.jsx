@@ -59,3 +59,5 @@ function Gloassar_V2() {
 }
 
 export default Gloassar_V2;
+
+// Bei „pathologischer Narzissmus“ und Bossing fehlen die weiterführenden Links zu Drittanbietern
