@@ -120,7 +120,7 @@ function InterviewDetail() {
         <CurrentInterview interview={interview} />
       </div>
       <div className="w-full bg-fm_weiss">
-        <div className="max-w-screen-xl mx-auto p-4">
+        <div className="max-w-screen-lg mx-auto p-4">
           <Link to="/interviews-und-beitraege">
             <div className="flex items-center">
               <IoArrowBackOutline color="black" size={20} />
@@ -128,11 +128,11 @@ function InterviewDetail() {
             </div>
           </Link>
           {markdown && (
-            <div className="w-full bg-fm_weiss pt-8 pb-8">
+            <div className="max-w-screen-lg mx-auto bg-fm_weiss pt-8 pb-8">
               {/* <ReactMarkdown>{markdown}</ReactMarkdown> */}
               <ReactMarkdown
                 // text-justify
-                className="prose max-w-none md:text-justify"
+                className="prose max-w-none md:text-justify blockquote-margin"
                 components={{ a: LinkRenderer }}
               >
                 {markdown}

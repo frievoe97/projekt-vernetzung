@@ -47,7 +47,7 @@ const TextWithImage = ({ data }) => {
               />
             </div>
             {text.map((paragraph, index) => (
-              <p key={index} className="text-justify mb-4">
+              <p key={index} className="text-left mb-4">
                 {paragraph}
               </p>
             ))}

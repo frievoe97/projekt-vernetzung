@@ -23,7 +23,7 @@ const Wissensvermittlung = ({ data }) => {
       <div className="max-w-screen-xl mx-auto py-8 md:py-14">
         <h1 className="heading-black my-4">{title}</h1>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-4 text-justify md:text-center">
+          <p key={index} className="mb-4 text-left md:text-center px-4">
             {paragraph}
           </p>
         ))}
