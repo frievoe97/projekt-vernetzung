@@ -41,7 +41,7 @@ const PictureHeaderGlossary = ({ data }) => {
           </h1>
           <h2 className="md:block hidden text-lg font-semibold">{subtitle}</h2>
           {descriptions.map((description, index) => (
-            <p key={index} className="mt-4">
+            <p key={index} className="mt-4 px-2">
               {description}
             </p>
           ))}

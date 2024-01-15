@@ -40,7 +40,7 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
           <h1 className="mb-4 heading text-center md:text-left mx-4">
             {title}
           </h1>
-          <div className="p-4">
+          <div className="p-4 px-6">
             <img
               src={imageUrl}
               alt="Bild"
@@ -48,7 +48,7 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
             />
           </div>
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="p-4 text-left mb-1">
+            <p key={index} className="p-4 px-6 text-left mb-1">
               {paragraph}
             </p>
           ))}

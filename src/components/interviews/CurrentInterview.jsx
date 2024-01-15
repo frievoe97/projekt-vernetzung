@@ -80,7 +80,7 @@ const CurrentInterview = (interview) => {
               alt=""
             />
           </div>
-          <div className=" bg-fm_weiss text-black text-left text-justify bg-opacity-50 p-4">
+          <div className=" bg-fm_weiss text-black text-left text-left bg-opacity-50 p-4">
             {interview.interview.TextTeaser}
           </div>
         </div>

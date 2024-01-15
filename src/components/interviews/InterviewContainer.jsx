@@ -33,7 +33,7 @@ function InterviewContainer() {
 
   return (
     <div className="w-full bg-fm_weiss">
-      <div className="max-w-screen-xl mx-auto text-justify p-4 pb-16">
+      <div className="max-w-screen-xl mx-auto text-justify  pb-16">
         <div
           className="grid grid-cols-auto-fill gap-4"
           style={{

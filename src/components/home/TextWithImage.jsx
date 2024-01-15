@@ -29,17 +29,17 @@ const TextWithImage = ({ data }) => {
 
           {/* Rechte Spalte mit Bild */}
           <div className="md:w-1/3 p-4 hidden md:block">
-            <img src={data.imageUrls} alt="Bild" className="w-full h-auto" />
+            <img src={data.imageUrls} alt="Bild" className="w-4/5 h-auto" />
           </div>
         </div>
 
         {/* Auf mobilen Geräten (nicht md) */}
         <div className="md:hidden flex flex-col">
           {/* Überschrift, Text und Button untereinander */}
-          <div className="p-4">
+          <div className="p-4 px-6">
             <h1 className="heading text-center">{title}</h1>
             {/* Bild */}
-            <div className="p-4">
+            <div className="p-4 my-4">
               <img
                 src={data.imageUrls}
                 alt="Bild"
