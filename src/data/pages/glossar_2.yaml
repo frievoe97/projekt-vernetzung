@@ -1,39 +1,26 @@
 glossaryData:
 - Begriff: Bossing
   Definition: Bossing steht für die über einen längeren Zeitraum vorgenommenen feindlichen,
-    systematischen, häufig nicht immer erkennbaren Handlungen von Vorgesetzten (»Bossen«)
-    gegenüber Untergebenen, um sie loszuwerden.
-  Quellen: Vgl. Bundesuentrale für politische Bildung 2016
+    systematischen, häufig nicht sofort erkennbaren Handlungen von Vorgesetzten (»Bossen«)
+    gegenüber Untergebenen, um sie loszuwerden. Die einzelnen Formen von Bossing sind
+    oftmals nicht klar von anderen Gewaltformen abzugrenzen. Eine umfassende Übersicht
+    enthält der Katalog der 100 Mobbinghandlungen nach Esser & Wolmerath (der Personalrat
+    2000, S. 448)
+  Quellen: Vgl. Bundeszentrale für politische Bildung 2016
   Tags:
   - Gewalt in der Arbeitswelt
   Website-Verlinkung: https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/18930/bossing/
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
+  zusatzLinkText: Zum Katalog der 100 Mobbinghandlungen
+  zusatzLinkURL: https://www.anti-mobbing-zollernalb.de/files/Katalog-der-100-Mobbing-Handlungen-Esser-Wolmerath.pdf
 - Begriff: Catcalling
-  Definition: Catcalling beschreibt eine Form sexueller Belästigung und meint das
-    Hinterherrufen oder -pfeifen einer Person im öffentlichen Raum. Auch Hupen, Sprüche,
-    Geräusche oder andere unerwünschte Äußerungen zählen hierzu. Diese finden nicht
-    auf eine respektvolle Weise statt und sind häufig sexuell aufgeladen.
+  Definition: Catcalling meint das Hinterherrufen oder -pfeifen einer Person im öffentlichen
+    Raum. Auch Hupen, Sprüche, Geräusche oder andere unerwünschte Äußerungen zählen
+    hierzu. Diese finden nicht auf eine respektvolle Weise statt und sind häufig sexuell
+    aufgeladen.
   Quellen: Vgl. FOCUS Online 2021, Was ist Catcalling? Einfach erklärt.
   Tags:
   - Allgemeine Begrifflichkeiten
   Website-Verlinkung: https://praxistipps.focus.de/was-ist-catcalling-einfach-erklaert_129851
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
-- Begriff: consent
-  Definition: 'Bei consent (sexueller Konsens) geht es darum zu fragen, was das Gegenüber
-    möchte, und sich die Zustimmung, also den Konsens, einzuholen. Die Idee der Zustimmung
-    ist einfach: Um Sex zu haben, müssen wir wissen, dass die Person, mit der wir
-    Sex haben möchten, auch Sex mit uns haben will. Das bedeutet, dass wir verbal
-    oder nonverbal mit der Partner*in kommunizieren und dafür sorgen, dass alle sexuellen
-    Aktivitäten mit voller gegenseitiger Zustimmung stattfinden.'
-  Quellen: Vgl. Amnestiy International Schweiz 2022, Konsens in sexuellen Beziheungen
-    - Worum geht es?
-  Tags:
-  - Allgemeine Begrifflichkeiten
-  - Psychische Gewalt
-  - Körperliche Gewalt
-  Website-Verlinkung: https://www.amnesty.ch/de/themen/frauenrechte/sexualisierte-gewalt/gegenseitige-zustimmung
   zusatzLinkText: ''
   zusatzLinkURL: ''
 - Begriff: Cybermobbing
@@ -44,6 +31,19 @@ glossaryData:
   Tags:
   - Digitale Gewalt
   Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/kinder-und-jugend/medienkompetenz/was-ist-cybermobbing--86484
+  zusatzLinkText: ''
+  zusatzLinkURL: ''
+- Begriff: Consent
+  Definition: 'Bei consent (sexueller Konsens) geht es darum zu fragen, was das Gegenüber
+    möchte, und sich die Zustimmung, also den Konsens, einzuholen. Die Idee der Zustimmung
+    ist einfach: Um Sex zu haben, müssen wir wissen, dass die Person, mit der wir
+    Sex haben möchten, auch Sex mit uns haben will. Das bedeutet, dass wir verbal
+    oder nonverbal mit der Partner*in kommunizieren und dafür sorgen, dass alle sexuellen
+    Aktivitäten mit voller gegenseitiger Zustimmung stattfinden.'
+  Quellen: Vgl. Amnestiy International Schweiz 2022, Konsens in sexuellen Beziheungen
+    - Worum geht es?
+  Tags: []
+  Website-Verlinkung: https://www.amnesty.ch/de/themen/frauenrechte/sexualisierte-gewalt/gegenseitige-zustimmung
   zusatzLinkText: ''
   zusatzLinkURL: ''
 - Begriff: Cybergrooming
@@ -60,13 +60,13 @@ glossaryData:
   zusatzLinkURL: ''
 - Begriff: Diskriminierung
   Definition: Das Allgemeine Gleichbehandlungsgesetz (AGG) spricht nicht von Diskriminierung
-    sondern von Benachteiligung, da nicht jede unterschiedliche Behandlung, die einen
-    Nachteil zur Folge hat, diskriminierend sein muss. Eine unmittelbare (direkte
+    sondern von Benachteiligung. Nicht jede unterschiedliche Behandlung, die einen
+    Nachteil zur Folge hat, muss diskriminierend sein. Eine unmittelbare (direkte
     oder offene) Benachteiligung liegt vor, wenn eine Person eine weniger günstige
-    Behandlung als eine Vergleichsperson erfährt, erfahren hat oder erfahren würde.
-    Das ist zum Beispiel der Fall, wenn eine Person mit Migrationshintergrund trotz
-    gleicher Qualifikationen nicht zu einem Bewerbungsgespräch eingeladen wird, Personen
-    ohne Migrationshintergrund hingegen schon.
+    Behandlung als eine Vergleichsperson erfährt. Das ist zum Beispiel der Fall, wenn
+    eine Person mit Migrationshintergrund trotz gleicher Qualifikationen nicht zu
+    einem Bewerbungsgespräch eingeladen wird, Personen ohne Migrationshintergrund
+    hingegen schon.
   Quellen: Vgl. Antidiskriminierungsstelle des Bundes, Was ist Diskriminierung?
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -74,11 +74,11 @@ glossaryData:
   zusatzLinkText: ''
   zusatzLinkURL: ''
 - Begriff: Digitale Gewalt
-  Definition: Bei digitaler Gewalt greifen Täter und Täterinnen im Internet an - per
-    Chat, E-Mail oder in sozialen Netzwerken. Bei digitaler Gewalt geht es den meisten
-    Tatpersonen darum, die ausgewählte Person zu ängstigen oder zum Schweigen zu bringen.
-    Dafür nutzen sie das Internet oder verschaffen sich zum Beispiel direkt Zugriff
-    auf das Mobiltelefon oder den Computer des Opfers.
+  Definition: Bei digitaler Gewalt greifen Täter:innen im Internet an - per Chat,
+    E-Mail oder in sozialen Netzwerken. Bei digitaler Gewalt geht es den meisten Tatpersonen
+    darum, die ausgewählte Person zu ängstigen oder zum Schweigen zu bringen. Dafür
+    nutzen sie das Internet oder verschaffen sich zum Beispiel direkt Zugriff auf
+    das Mobiltelefon oder den Computer des Opfers.
   Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
   Tags:
   - Digitale Gewalt
@@ -98,17 +98,6 @@ glossaryData:
   Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: emotionale Gewalt
-  Definition: Emotionale Gewalt ist eine andere Bezeichnung für psychische Gewalt
-    und beschreibt alle Formen der emotionalen Schädigung und Verletzung einer Person.
-    Sie hat viele Dimensionen. Dazu zählen Einschüchterungen, aggressives Anschreien,
-    Verleumdungen, Drohungen und Demütigungen bis hin zu Gaslighling und Hovering.
-  Quellen: Vgl. bff Frauen gegen Gewalt e.V., Psychische Gewalt - Merkmale und Tatsachen
-  Tags:
-  - Psychische Gewalt
-  Website-Verlinkung: https://www.frauen-gegen-gewalt.de/de/infothek/psychische-gewalt/merkmale-und-tatsachen.html
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
 - Begriff: Femizide
   Definition: Die Tötung von Frauen wegen ihres Geschlechts oder wegen bestimmter
     Vorstellungen von Weiblichkeit wird als Femizid oder Feminizid bezeichnet. Femizide
@@ -121,26 +110,14 @@ glossaryData:
   Website-Verlinkung: https://frauenrechte.de/fileadmin/Redaktion/Unsere_Arbeit/Gewalt_im_Namen_der_Ehre/GNE_Materialien/2022_Femizid_Ehrenmord_Definition.pdf
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: Finanzielle Gewalt
-  Definition: Finanzielle Gewalt ist ein anderer Begriff für wirtschaftliche Gewalt
-    und beschreibt die Beeinflussung des wirtschaftlichen Überlebens eines anderen,
-    meistens in Form von Beschränkungen. Wie bei anderen Formen von Gewalt besteht
-    ihre Funktion darin, Abhängigkeit und Angst zu erzeugen. Der damit einhergehende
-    Missbrauch dieser Abhängigkeit ist Gewalt.
-  Quellen: Vgl. Gewalt INFO at, Ökonomische Gewalt
-  Tags:
-  - Häusliche Gewalt
-  Website-Verlinkung: https://www.gewaltinfo.at/fachwissen/formen/oekonomische_gewalt.php
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
 - Begriff: Gaslighting
-  Definition: 'Der Begriff „Gaslighting“ bezeichnet eine Form von psychischer Gewalt,
-    bei dem die Opfer so stark durch Lügen, Leugnen und Einschüchterungstaktiken manipuliert
-    werden, dass sie anfangen, an ihrem eigenen Verstand zu zweifeln. Das Heimtückische
-    beim „Gaslighting“: eine Lüge hier, eine Lüge da, ab und zu ein abfälliger Kommentar.
-    Die stete Kritik am Handeln oder Aussehen, die Einschüchterungen und Versteckspiele
-    haben über die Dauer verheerende Folgen: Der oder die Betroffene misstraut der
-    eigenen Wahrnehmung, wird zunehmend verwirrt und emotional erschöpft.'
+  Definition: 'Der Begriff „Gaslighting“ bezeichnet eine Methode der psychischen Gewalt,
+    bei der die Opfer so stark durch Lügen, Leugnen und Einschüchterungstaktiken manipuliert
+    werden. Das Heimtückische beim „Gaslighting“: eine Lüge hier, eine Lüge da, ab
+    und zu ein abfälliger Kommentar. Die stete Kritik am Handeln oder Aussehen, die
+    Einschüchterungen und Versteckspiele haben über die Dauer verheerende Folgen:
+    Der oder die Betroffene misstraut der eigenen Wahrnehmung, wird zunehmend verwirrt
+    und emotional erschöpft.'
   Quellen: Vgl. Barmer, Psychische Gesundheit - Gaslighting - so erkennt man die gezielte
     Manipulation
   Tags:
@@ -149,13 +126,13 @@ glossaryData:
   Website-Verlinkung: https://www.barmer.de/gesundheit-verstehen/psyche/psychische-gesundheit/gaslighting-1072304
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: geschlechtsspezifische Gewalt
+- Begriff: Geschlechtsspezifische Gewalt
   Definition: Geschlechtsspezifische Gewalt gegen Frauen ist Gewalt, die Betroffene
     erfahren, weil sie weiblichen Geschlechts sind. Gemeint sind damit alle Handlungen,
     durch die Frauen körperliches, sexuelles oder psychisches Leid erfahren oder wirtschaftlich
     Schaden nehmen. Schon die Androhung von Gewalt zählt dazu, genauso wie Nötigung
     oder willkürliche Freiheitsentziehung.
-  Quellen: Vgl. Fraunhauskoordinierung, Geschlechtsspezifische Gewalt
+  Quellen: Vgl. Frauenhauskoordinierung, Geschlechtsspezifische Gewalt
   Tags:
   - Allgemeine Begrifflichkeiten
   Website-Verlinkung: https://www.frauenhauskoordinierung.de/themenportal/gewalt-gegen-frauen/gewaltformen/geschlechtsspezifische-gewalt/
@@ -163,10 +140,10 @@ glossaryData:
   zusatzLinkURL: ''
 - Begriff: Grooming
   Definition: 'Grooming (engl.= anbahnen, vorbereiten) bedeutet, eine sexuelle Grenzüberschreitung
-    oder einen sexuellen Kindesmissbrauch geplant vorzubereiten. Dieses geplante Vorgehen
-    umfasst in der Regel folgende Aspekte : Vertrauen des Kindes gewinnen, es bevorzugen,
-    isolieren, zum Schweigen und Geheimhalten bringen und gefügig machen, indem nach
-    und nach die Grenzen des Opfers überschritten werden.'
+    bei Kindern geplant vorzubereiten. Dieses geplante Vorgehen umfasst in der Regel
+    folgende Aspekte: Vertrauen des Kindes gewinnen, es bevorzugen, isolieren, zum
+    Schweigen und Geheimhalten bringen und gefügig machen, indem nach und nach die
+    Grenzen des Opfers überschritten werden.'
   Quellen: Vgl. Unabhängige Kommission zur Aufarbeitung sexuellen Kindesmissbrauchs,
     Glossar
   Tags:
@@ -176,12 +153,11 @@ glossaryData:
   zusatzLinkURL: ''
 - Begriff: Häusliche Gewalt
   Definition: Häusliche Gewalt bezeichnet wie Partnerschaftsgewalt Gewalttaten zwischen
-    Menschen, die in einer häuslichen Gemeinschaft leben oder lebten, beispielsweise
-    in einer Ehe, Lebenspartnerschaft oder intimen Beziehung. Zu Partnerschaftsgewalt
-    zählen nicht nur Schläge, sie sind nur eine Facette eines komplexen Verhaltensmusters,
-    das umfassend auf Macht und Kontrolle zielt. Betroffene sind häufig auch psychischer
-    Gewalt wie Demütigungen, Drohungen, Einschüchterungen, sozialer Isolation oder
-    wirtschaftlichem Druck durch den Täter oder die Täterin ausgesetzt.
+    Menschen, die in einer häuslichen Gemeinschaft leben, beispielsweise in einer
+    Ehe oder intimen Beziehung. Schläge sind hierbei nur eine Facette eines komplexen
+    Verhaltensmusters, das umfassend auf Macht und Kontrolle zielt. Betroffene sind
+    häufig auch psychischer Gewalt wie Demütigungen, Drohungen, Einschüchterungen,
+    sozialer Isolation oder wirtschaftlichem Druck durch Täter:innen ausgesetzt.
   Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -201,7 +177,7 @@ glossaryData:
   zusatzLinkURL: ''
 - Begriff: Körperliche Gewalt
   Definition: 'Die körperliche Gewalt wird auch physische Gewalt genannt. Diese Form
-    meint ein nach aussen gerichtetes, aggressives Verhalten, welches die Schädigung
+    meint ein nach außen gerichtetes, aggressives Verhalten, welches die Schädigung
     und/oder Verletzung eines anderen zur Folge hat. Beispiele: Schubsen, Treten und
     Schlagen, Ohrfeigen, Anspucken, Festhalten, Einsperren / Aussperren, Würgen.'
   Quellen: Vgl. Jura Forum
@@ -212,12 +188,12 @@ glossaryData:
   zusatzLinkText: ''
   zusatzLinkURL: ''
 - Begriff: Love Bombing
-  Definition: Love Bombing (zu Deutsch Liebesbombardement) ist eine manipulative Beziehungstaktik,
-    bei der jemand von einem „Love Bomber“ oder einer „Love Bomberin“ mit Aufmerksamkeit,
-    Geschenken, Komplimenten und Versprechen regelrecht überschüttet wird. Der Love
-    Bomber oder die Love Bomberin täuscht ernste Absichten vor und zielt darauf ab,
-    eine Person schnellstmöglich von sich abhängig zu machen. Es handelt sich dabei
-    um eine Form von emotionalem Missbrauch.
+  Definition: Love Bombing (zu Deutsch Liebesbombardement) ist eine manipulative Taktik
+    in zwischenmenschlichen Beziehungen oder am Arbeitsplatz, bei der „Love Bomber“
+    eine Person mit Aufmerksamkeit, Geschenken, Komplimenten und Versprechen regelrecht
+    überschütten. Sie täuschen ernste Absichten vor und zielen darauf ab, die Person
+    schnellstmöglich von sich abhängig zu machen. Es handelt sich dabei um eine Form
+    von emotionalem Missbrauch.
   Quellen: Vgl. AOK 2023, Warum Love Bombing so gefährlich ist
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -242,12 +218,11 @@ glossaryData:
 - Begriff: Mobbing
   Definition: Mobbing ist fortgesetzte Gewalt einer Person oder Gruppe gegenüber einer
     anderen Person. Hinter Mobbing steckt eine Dynamik, die auf Macht und Kontrolle
-    in größeren Gruppen abzielt. Normalerweise gibt es einen oder wenige Angreiferinnen
-    oder Angreifer - und eine größere Zahl Unbeteiligter, die nicht eingreifen, aber
-    stillschweigend dazu beitragen. Die einzelnen Formen von Mobbing sind oftmals
-    nicht klar von anderen Gewaltformen abzugrenzen. Eine umfassende Übersicht enthält
-    der Katalog der 100 Mobbinghandlungen nach Esser & Wolmerath (der Personalrat
-    2000, S. 448)
+    in größeren Gruppen abzielt. Normalerweise gibt es eine:n oder wenige Angreifer:innen
+    - und eine größere Zahl Unbeteiligter, die stillschweigend dazu beitragen. Die
+    einzelnen Formen von Mobbing sind oftmals nicht klar von anderen Gewaltformen
+    abzugrenzen. Eine umfassende Übersicht enthält der Katalog der 100 Mobbinghandlungen
+    nach Esser & Wolmerath (der Personalrat 2000, S. 448)
   Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -256,15 +231,18 @@ glossaryData:
   - Häusliche Gewalt
   - Digitale Gewalt
   Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
+  zusatzLinkText: Zum Katalog der 100 Mobbinghandlungen
+  zusatzLinkURL: https://www.anti-mobbing-zollernalb.de/files/Katalog-der-100-Mobbing-Handlungen-Esser-Wolmerath.pdf
 - Begriff: Misogynie
   Definition: Der aus dem Altgriechischen stammende Begriff Misogynie lässt sich am
-    genauesten als Frauenhass übersetzen, daneben findet man häufig als Synonym die
-    Formulierung der Frauenfeindlichkeit. Misogynie beschreibt die Annahme einer ontologischen
-    Minderwertigkeit von Frauen, wie sie seit der Antike in verschiedenen Schriften
-    der Philosophie und Literatur, aber letztlich auch im christlichen Glauben, der
-    Hexenverfolgung und wissenschaftlichen Abhandlungen zum Ausdruck gebracht wurde
+    genauesten als Frauenhass oder Frauenfeindlichkeit übersetzen. Misogynie beschreibt
+    die Annahme einer gegebenen Minderwertigkeit von Frauen, wie sie seit der Antike
+    in verschiedenen Schriften der Philosophie und Literatur, aber letztlich auch
+    im christlichen Glauben, der Hexenverfolgung und wissenschaftlichen Abhandlungen
+    zum Ausdruck gebracht wurde. Während der Begriff zwar etwas sehr Konkretes bezeichnet
+    – nämlich die Abwertung von Frauen –, wird er gleichwohl seit vielen Jahren auch
+    in einer allgemeineren Form als strukturelle Entwertung oder Benachteiligung von
+    Weiblichkeit gebraucht.
   Quellen: Vgl. Bundeszentrale für politische Bildung 2018, Aus Politik und Zeitgeschichte
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -279,8 +257,8 @@ glossaryData:
     am Schreien gehindert; 2) Drohungen: Dem Opfer wird beispielsweise mit Gewalt
     oder dem Tod gedroht; 3) Ausnutzung einer Situation: Das Opfer wird beispielsweise
     unter Drogen gesetzt, so dass es sich nicht mehr wehren kann oder ist mit dem
-    oder der Täter*in in einem Raum eingesperrt. Die schwerste Form der sexuellen
-    Nötigung gemäß Strafgesetzbuch die Vergewaltigung.'
+    oder der Täter:in in einem Raum eingesperrt. Die schwerste Form der sexuellen
+    Nötigung gemäß Strafgesetzbuch ist die Vergewaltigung.'
   Quellen: Vgl. Klugo 2022, Was gilt als sexuelle Nötigung? Das sagt das StGB
   Tags:
   - Körperliche Gewalt
@@ -288,88 +266,57 @@ glossaryData:
   Website-Verlinkung: https://www.klugo.de/blog/sexuelle-noetigung
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: Partnerschaftliche Gewalt
-  Definition: Partnerschaftsgewalt bezeichnet Gewalttaten zwischen Menschen, die in
-    einer häuslichen Gemeinschaft leben oder lebten, beispielsweise in einer Ehe,
-    Lebenspartnerschaft oder intimen Beziehung. Zu Partnerschaftsgewalt zählen nicht
-    nur Schläge, sie sind nur eine Facette eines komplexen Verhaltensmusters, das
-    umfassend auf Macht und Kontrolle zielt. Betroffene sind häufig auch psychischer
-    Gewalt wie Demütigungen, Drohungen, Einschüchterungen, sozialer Isolation oder
-    wirtschaftlichem Druck durch den Täter oder die Täterin ausgesetzt.
-  Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
-  Tags:
-  - Allgemeine Begrifflichkeiten
-  - Psychische Gewalt
-  - Körperliche Gewalt
-  - Häusliche Gewalt
-  Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
 - Begriff: Pathologischer Narzissmus
-  Definition: 'Bei der krankhaften Form von Narzissmus (vergleichbar mit Selbstverliebtheit),
-    also die narzisstische Persönlichkeitsstörung, handelt es sich um eine psychosomatische
-    Erkrankung mit funktionalen Störungen der eigenen Selbstwertregulation. Menschen
-    mit narzisstischer Persönlichkeitsstörung zeichnet ein krankhaft übertriebenes
-    Selbstwertgefühl und Aufmerksamkeitsbedürfnis aus. Typische Kennzeichen von pathologischem
-    Narzissmus sind: Selbstüberschätzung, Fantasieren, Überlegenheitsgefühle, Aufmerksamkeitssuche,
-    ausbeiterisches Verhalten, Mangel an Empathie und Neid. Das Glossar "Narzissmus
-    A - Z" von Projekt Echo beschreibt typische Handlungen, Muster und Auswirkungen
+  Definition: 'Bei der krankhaften Form von Narzissmus, also der narzisstischen Persönlichkeitsstörung,
+    handelt es sich um eine psychosomatische Erkrankung mit funktionalen Störungen
+    der eigenen Selbstwertregulation. Menschen mit narzisstischer Persönlichkeitsstörung
+    zeichnet ein krankhaft übertriebenes Selbstwertgefühl und Aufmerksamkeitsbedürfnis
+    aus. Typische Kennzeichen von pathologischem Narzissmus sind: Selbstüberschätzung,
+    Überlegenheitsgefühle, Aufmerksamkeitssuche, ausbeuterisches, manipulatives und
+    intrigantes Verhalten, Mangel an Empathie und Neid. Das Glossar "Narzissmus A
+    - Z" von Projekt Echo beschreibt typische Handlungen, Muster und Auswirkungen
     bei narzisstischem Missbrauch.'
   Quellen: 'Vgl. Onmeda 2022, Narzissmus: Definition, Symptome und Typen'
   Tags:
   - Psychische Gewalt
   Website-Verlinkung: https://www.onmeda.de/krankheiten/narzissmus-id202498/
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
-- Begriff: psychische Gewalt
+  zusatzLinkText: Zum Glossar "Narzissmus A - Z"
+  zusatzLinkURL: https://projekt-echo.de/narzissmus-a-bis-z/
+- Begriff: Psychische Gewalt
   Definition: 'Psychische Gewalt ist eine Form von Gewalt, die ohne Schläge auskommt.
-    Ziel ist es dabei in der Regel immer, die andere Person zu schwächen, sie aus
-    dem Gleichgewicht zu bringen und zu verunsichern. Opfer psychischer Gewalt beginnen,
-    ihr Selbstbild zu ändern und das Vertrauen zu verlieren, sowohl in sich selbst,
-    als auch in andere Personen. Gezielt ausgeübte psychische Gewalt ist dabei zu
-    unterscheiden von der kurzfristigen Abreaktion von Frustration. So kann es in
-    jedem Streit vorkommen, dass Worte fallen, die im Eifer des Gefechts und aufgrund
-    eines aufgewühlten Gefühlslebens ausgesprochen werden. Mit psychischer Gewalt
-    geht es jedoch nicht darum, sich kurzfristig „Luft zu machen“, sondern der Täter
-    verfolgt dabei meist folgende Hauptziele: Macht, Kontrolle, Dominanz, Privilegien.'
+    Ziel ist es dabei in der Regel, die andere Person zu schwächen, sie aus dem Gleichgewicht
+    zu bringen und zu verunsichern. Opfer psychischer Gewalt beginnen, ihr Selbstbild
+    zu ändern und das Vertrauen zu verlieren, sowohl in sich selbst, als auch in andere
+    Personen. Gezielt ausgeübte psychische Gewalt ist dabei zu unterscheiden von der
+    kurzfristigen Abreaktion von Frustration. In jedem Streit können Worte fallen,
+    die im Eifer des Gefechts ausgesprochen werden. Mit psychischer Gewalt geht es
+    jedoch nicht darum, sich kurzfristig „Luft zu machen“, sondern der Täter verfolgt
+    dabei meist folgende Hauptziele: Macht, Kontrolle, Dominanz, Privilegien. Zudem
+    beginnt diese Form von Gewalt oft subtil.'
   Quellen: Vgl. Jura Forum, Was ist psychische Gewalt?
   Tags:
   - Psychische Gewalt
   Website-Verlinkung: https://www.juraforum.de/lexikon/psychische-gewalt#was-ist-psychische-gewalt
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: Rape culture
-  Definition: 'Rape culture beschreibt eine Gesellschaft, in der sexuelle Gewalt zwar
-    weit verbreitet ist, aber von vielen Menschen nicht als solche gesehen wird: Opfern
-    wird generell misstraut oder die Schuld zugeschoben, indem Täter geschützt und
-    Vorfälle heruntergespielt werden. So werden beispielsweise Frauen, die Anzeige
-    nach einem Übergriff erstatten, gefragt, warum sie denn zu so später Stunde allein
-    unterwegs waren. Angestellten, die sich gegen Vorgesetzte wehren, wird strategisches
-    Interesse unterstellt.'
-  Quellen: Vgl. taz 12.01.2013, Rape Culture - Die hässliche Wirklichkeit
-  Tags:
-  - Allgemeine Begrifflichkeiten
-  Website-Verlinkung: https://taz.de/Rape-Culture/!5075574/
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
 - Begriff: Sexismus
   Definition: 'Sexismus ist eine Art von Diskriminierung und bedeutet die Benachteiligung,
     Abwertung, Verletzung und Unterdrückung einer Person oder einer Gruppe aufgrund
-    des Geschlechts. Sexismus ist auch die Vorstellung, dass Geschlechter eine Ordnung
-    oder Reihenfolge haben. Zum Beispiel die Vorstellung, dass Männer mehr wert sind
-    als Frauen. Wer sexistisch denkt, beachtet nicht die Persönlichkeit des einzelnen
-    Menschen. Wer sexistisch denkt, denkt zum Beispiel: Sie ist eine Frau, dann muss
-    sie auf eine bestimmte Art aussehen oder sich verhalten oder so fühlen / Sie ist
-    eine Frau, dann hat sie bestimmte Aufgaben / Er ist ein Mann, dann muss er etwas
-    besonders gut können. Wer sexistisch denkt, denkt also nicht darüber nach, ob
-    eine Person wirklich bestimmte Dinge gut kann oder gern machen möchte.'
+    des Geschlechts. Sexismus ist auch die Vorstellung, dass Geschlechter eine naturgegebene
+    Ordnung oder Reihenfolge haben. Zum Beispiel die Vorstellung, dass Männer mehr
+    wert sind als Frauen. Wer sexistisch denkt, beachtet nicht die Persönlichkeit
+    des einzelnen Menschen, sondern zum Beispiel: Sie ist eine Frau, dann muss sie
+    auf eine bestimmte Art aussehen, sich verhalten oder fühlen / Sie ist eine Frau,
+    dann hat sie bestimmte Aufgaben / Er ist ein Mann, dann muss er etwas besonders
+    gut können. Es geht nicht darum, ob eine Person wirklich bestimmte Dinge gut kann
+    oder gern machen möchte.'
   Quellen: 'Vgl. Bundeszentrale für politische Bildung 2022, einfach POLITIK: Lexikon'
   Tags:
   - Allgemeine Begrifflichkeiten
   Website-Verlinkung: https://www.bpb.de/kurz-knapp/lexika/lexikon-in-einfacher-sprache/331402/sexismus/
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: sexualisierte Gewalt
+- Begriff: Sexualisierte Gewalt
   Definition: Sexualisierte Gewalt bezeichnet jeden Übergriff auf die sexuelle Selbstbestimmung.
     Die Täter - weit überwiegend sind es Männer, auch wenn sexualisierte Gewalt ebenfalls
     von Frauen ausgehen kann - zwingen den Betroffenen ihren Willen auf. Es geht also
@@ -386,7 +333,7 @@ glossaryData:
   Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: sexuelle Belästigung
+- Begriff: Sexuelle Belästigung
   Definition: Nicht nur körperliche Übergriffe wie Vergewaltigung, sexuelle Nötigung
     oder sexueller Missbrauch zählen zu dieser Form von Gewalt. Auch jede Form unerwünschter
     sexueller Kommunikation zählen dazu - obszöne Worte und Gesten, aufdringliche
@@ -402,16 +349,14 @@ glossaryData:
   Website-Verlinkung: https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: sexuelle Belästigung am Arbeitsplatz
-  Definition: 'Sexismus und sexuelle Belästigung am Arbeitsplatz kommen in zahlreichen
-    Unternehmen und Organisationen vor. Die Antidiskriminierungsstelle des Bundes
-    hat im Oktober 2019 eine Studie veröffentlicht: Demnach hat jede elfte erwerbstätige
-    Person in den vergangenen drei Jahren sexuelle Belästigung und Gewalt am Arbeitsplatz
-    erlebt. Frauen sind doppelt so häufig betroffen wie Männer. Betroffene können
-    sich direkt gegen Täter oder Täterinnen wehren und bei ihrer Arbeitsstelle Schutz
+- Begriff: Sexuelle Belästigung am Arbeitsplatz
+  Definition: Sexismus und sexuelle Belästigung am Arbeitsplatz kommen in zahlreichen
+    Unternehmen und Organisationen vor. Ein Viertel aller Frauen zwischen 16 und 65
+    Jahren war bereits am Arbeits- oder Ausbildungsplatz betroffen. Betroffene können
+    sich direkt gegen Täter oder Täterinnen wehren und bei zuständigen Stellen Schutz
     und Hilfe einfordern. Darüber hinaus sind manche Formen der sexuellen Belästigung
     auch strafrechtlich relevant - nämlich dann, wenn sie mit körperlichen Übergriffen
-    einhergehen.'
+    einhergehen.
   Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
   Tags:
   - Gewalt in der Arbeitswelt
@@ -424,12 +369,11 @@ glossaryData:
     Erwachsener oder Jugendlicher (14 Jahre und älter) strafbar macht, wenn er sexuelle
     Handlungen an einem Kind (Person unter 14 Jahren) vornimmt oder an sich vornehmen
     lässt. Diese Handlungen können mit und ohne Körperkontakt stattfinden. Somit fallen
-    insbesondere Berührungen im Intimbereich und alle Formen von Vergewaltigungen
-    darunter. Jedoch auch das Zeigen oder gemeinsame Betrachten pornografischer Bilder
-    oder das Entblößen von Genitalien und das Manipulieren an Geschlechtsteilen sind
-    nach dem Strafgesetzbuch Missbrauchshandlungen, wenn ein Erwachsener oder Jugendlicher
-    mit oder vor einem Kind agiert.
-  Quellen: Vgl. Polizei-Beartung
+    nicht nur Berührungen im Intimbereich und alle Formen von Vergewaltigungen darunter.
+    Auch das Zeigen oder gemeinsame Betrachten pornografischer Bilder oder das Entblößen
+    und Manipulieren von Geschlechtsteilen sind nach dem Strafgesetzbuch Missbrauchshandlungen,
+    wenn ein Erwachsener oder Jugendlicher mit oder vor einem Kind agiert.
+  Quellen: Vgl. Polizei-Beratung
   Tags:
   - Allgemeine Begrifflichkeiten
   - Psychische Gewalt
@@ -439,12 +383,13 @@ glossaryData:
   zusatzLinkText: ''
   zusatzLinkURL: ''
 - Begriff: Silencing
-  Definition: Silencing (dt. Zum Schweigen bringen) bringt Bevölkerungsgruppen, Kulturen,
-    Lebensweisen und Perspektiven zum Schweigen. Gerade in Diskriminierungs- und Rassismus-Kontexten,
-    in denen BIPoC zugehört und wahrgenommen werden müssen, kommt es vermehrt dazu.
-    Dabei wird ihnen vorgeschrieben, wie sie über ihre Erfahrungen und Emotionen zu
-    sprechen haben, um nicht z.B. zu wütend oder zu laut zu erscheinen. So werden
-    Stereotype gegen marginalisierte Personen reproduziert und Machtstrukturen geschaffen.
+  Definition: Silencing (dt. "zum Schweigen bringen") bringt Bevölkerungsgruppen,
+    Kulturen, Lebensweisen und Perspektiven zum Schweigen. Gerade in Diskriminierungs-
+    und Rassismus-Kontexten, in denen People of Color zugehört und wahrgenommen werden
+    müssen, kommt es vermehrt dazu. Dabei wird ihnen vorgeschrieben, wie sie über
+    ihre Erfahrungen und Emotionen zu sprechen haben, um nicht z.B. zu wütend oder
+    zu laut zu erscheinen. So werden Stereotype gegen marginalisierte Personen reproduziert
+    und Machtstrukturen geschaffen.
   Quellen: Vgl. renk Magazin 15.03.2022, Was ist Silencing?
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -457,7 +402,7 @@ glossaryData:
     oft einher mit einer Isolation der Betroffenen. Es handelt sich um ein Verhalten,
     das darauf abzielt, sie zu isolieren und beinhaltet zum Beispiel die oft subtile
     Abwertung von Kontakten zu Familie oder Freunden, sowie weniger subtile Handlungen
-    wir das Einsperren zu Hause, das Absperren des Telefons.
+    wie das Einsperren zu Hause, das Absperren des Telefons.
   Quellen: Vgl. Lamnek/Luedtke/Ottermann/Vogl 2012, Soziale Bedingungen häuslicher
     Gewalt
   Tags:
@@ -469,17 +414,15 @@ glossaryData:
 - Begriff: Stalking
   Definition: Der englische Begriff "to stalk" kommt aus der Jagd und bedeutet so
     viel wie anschleichen oder anpirschen. Stalking bezeichnet das intensive und andauernde
-    Nachstellen, Belästigen und Bedrohen der ausgewählten Person. Stalkerinnen und
-    Stalker zwingen Betroffenen den Kontakt auf. Es geht ihnen nicht um eine Beziehung.
-    Tatsächliches Ziel sind Macht und Kontrolle. Stalking kann viele Formen annehmen.
-    Dazu gehören die ständige unerwünschte Kommunikation über Briefe, E-Mails, Telefon,
-    Messenger oder das Beobachten und Auskundschaften von Tagesabläufen und Gewohnheiten.
-    Auch die indirekte Kontaktaufnahme über dritte Personen, Beschimpfungen sowie
-    das Eindringen in Wohnräume oder Lebensbereiche wie den Arbeitsplatz, den Verein
-    oder das Fitnessstudio zählen dazu. Unerwünschte Geschenke oder Bestellungen im
-    Namen der Betroffenen, das Zerstören von Eigentum sowie das Androhen von Gewalt
-    bis hin zu tatsächlichen körperlichen oder sexuellen Übergriffen können ebenfalls
-    als Stalking bezeichnet werden.
+    Nachstellen, Belästigen und Bedrohen der ausgewählten Person mit dem Ziel der
+    Macht und Kontrolle. Stalking kann viele Formen annehmen. Dazu gehören die ständige
+    unerwünschte Kommunikation über Briefe, E-Mails, Telefon, Messenger oder das Beobachten
+    und Auskundschaften von Tagesabläufen und Gewohnheiten. Auch die indirekte Kontaktaufnahme
+    über dritte Personen, Beschimpfungen sowie das Eindringen in Wohnräume oder Lebensbereiche
+    zählen dazu. Unerwünschte Geschenke oder Bestellungen im Namen der Betroffenen,
+    das Zerstören von Eigentum sowie das Androhen von Gewalt bis hin zu tatsächlichen
+    körperlichen oder sexuellen Übergriffen können ebenfalls als Stalking bezeichnet
+    werden.
   Quellen: Vgl. BMFSFJ 2023, Formen der Gewalt erkennen
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -490,16 +433,13 @@ glossaryData:
   zusatzLinkURL: ''
 - Begriff: Täter-Opfer-Umkehr
   Definition: Täter-Opfer-Umkehr ist ein Begriff aus der Kriminologie und bezieht
-    sich auf eine Situation, in der das Opfer einer Straftat als Täterin oder Täter,
-    bzw. als Mittäterin oder Mittäter dargestellt oder behandelt wird. Der englische
-    Begriff „Victim Blaming“ bedeutet wörtlich übersetzt „Opfer beschuldigen“ bzw.
-    „Opfer-Schelte“. Victim Blaiming tritt u.a. infolge von häuslicher Gewalt, Vergewaltigungen,
-    klassischen Betrugsdelikten oder rassistischen Übergriffen auf. Die Ursache für
-    einen Übergriff wird hierbei nicht bei der Tatperson, sondern im vermeintlich
-    „provokativen“ Verhalten des Opfers gesucht. Man spricht dabei von einer möglichen
-    „Mitschuld“, wo es aber keine gibt. Andersherum formuliert hieße das, wenn man
-    sich selbst richtig verhalten würde, könnte ja nichts passieren. Das wäre eine
-    trügerische Sicherheit und falsch.
+    sich auf eine Situation, in der das Opfer einer Straftat als Täter:in, bzw. als
+    Mittäter:in dargestellt oder behandelt wird. Der englische Begriff „Victim Blaming“
+    bedeutet wörtlich übersetzt „Opfer beschuldigen“. Die Ursache für einen Übergriff
+    wird dabei nicht bei der Tatperson, sondern im vermeintlich „provokativen“ Verhalten
+    des Opfers gesucht. Man spricht von einer möglichen „Mitschuld“, wo es keine gibt.
+    Es wird suggeriert, hätte das Opfer selbst sich "richtig" verhalten, könnte nichts
+    passieren.
   Quellen: Vgl. Polizei-Beratung
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -509,16 +449,13 @@ glossaryData:
 - Begriff: Trauma
   Definition: 'Unter einem Trauma verstehen Fachleute eine schwere seelische Verletzung,
     die durch ein extrem belastendes persönliches Erlebnis ausgelöst werden kann.
-    Traumatisierend können verschiedene Situationen und Ereignisse wirken, die so
-    außergewöhnlich bedrohend oder katastrophal sind, dass sie bei fast jedem Menschen
-    eine tiefe Verzweiflung auslösen würden. Hierzu zählen unter anderem: Naturkatastrophen,
-    schwere Unfälle, Kriege, Tod naher Angehöriger, lebensbedrohliche Erkrankungen,
-    körperliche, psychische oder sexuelle Gewalt, Mobbing. Ein Trauma kann eine starke
-    und oft langanhaltende seelische Belastung zur Folge haben. Das hat jedoch nichts
-    mit Schwäche zu tun. Vielmehr gibt es außergewöhnlich belastende Situationen,
-    die ein Mensch nicht ohne Weiteres bewältigen kann. So gesehen handelt es bei
-    einer Traumatisierung um eine komplexe Reaktion auf extreme äußere Einflüsse,
-    welche von verschiedenen Faktoren beeinflusst wird.'
+    Traumatisierend können verschiedene Situationen und Ereignisse wirken, die bedrohend
+    bis katastrophal sind und bei fast jedem Menschen eine tiefe Verzweiflung auslösen
+    würden. Hierzu zählen unter anderem: Naturkatastrophen, schwere Unfälle, Kriege,
+    Tod naher Angehöriger, lebensbedrohliche Erkrankungen, körperliche, psychische
+    oder sexuelle Gewalt, Mobbing. Ein Trauma hat jedoch nichts mit Schwäche zu tun.
+    Es handelt sich bei einer Traumatisierung um eine komplexe Reaktion auf extreme
+    äußere Einflüsse, welche von verschiedenen Faktoren beeinflusst wird.'
   Quellen: 'Vgl. AOK 2022, Trauma: Wenn die Seele verletzt wird'
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -535,7 +472,7 @@ glossaryData:
     einer sexuellen Handlung nicht mehr darauf an, ob körperliche Gewalt angewendet
     wurde oder ob eine betroffene Person sich gewehrt hat. Ein sexueller Übergriff
     ist dann strafbar, wenn er gegen den erkennbaren Willen einer Person ausgeübt
-    wird. Der Grundsatz „Nein heißt Nein“ ist damit auch im deutschen Strafrecht verankert.
+    wird (Grundsatz „Nein heißt Nein“).
   Quellen: Vgl. Beratungsstelle gegen sexualisierte Gewalt
   Tags:
   - Allgemeine Begrifflichkeiten
@@ -543,47 +480,26 @@ glossaryData:
   Website-Verlinkung: https://beratung-bonn.de/themen/vergewaltigung/
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: Victim Blaming
-  Definition: Victim Blaming (Täter-Opfer-Umkehr) ist ein Begriff aus der Kriminologie
-    und bezieht sich auf eine Situation, in der das Opfer einer Straftat als Täterin
-    oder Täter, bzw. als Mittäterin, Mittäter dargestellt oder behandelt wird. Der
-    englische Begriff „Victim Blaming“ bedeutet wörtlich übersetzt „Opfer beschuldigen“
-    bzw. „Opfer-Schelte“. Victim Blaiming tritt u.a. infolge von häuslicher Gewalt,
-    Vergewaltigungen, klassischen Betrugsdelikten oder rassistischen Übergriffen auf.
-    Die Ursache für einen Übergriff wird hierbei nicht bei der Tatperson, sondern
-    im vermeintlich „provokativen“ Verhalten des Opfers gesucht. Man spricht dabei
-    von einer möglichen „Mitschuld“, wo es aber keine gibt. Andersherum formuliert
-    hieße das, wenn man sich selbst richtig verhalten würde, könnte ja nichts passieren.
-    Das wäre eine trügerische Sicherheit und falsch.
-  Quellen: Vgl. Polizei-Beratung
-  Tags:
-  - Allgemeine Begrifflichkeiten
-  Website-Verlinkung: https://www.polizei-beratung.de/infos-fuer-betroffene/victim-blaming/
-  zusatzLinkText: ''
-  zusatzLinkURL: ''
 - Begriff: Wirtschaftliche Gewalt
-  Definition: Wirtschaftliche Gewalt bezeichnet jene Situationen, in denen die Frau
-    über kein eigenes Einkommen verfügt und der Partner diese Situation ausnützt,
-    indem er ungenügende Geldmittel für Haushaltsangelegenheiten bereitstellt und/oder
-    Einkommen, Vermögen und Ausgaben geheim hält. Die Beschränkungen sollen darauf
-    abzielen, das erzielte Einkommen zu kontrollieren. Wie bei anderen Formen von
-    Gewalt besteht ihre Funktion darin, Abhängigkeit und Angst zu erzeugen, die dazu
-    beitragen, den Vorrang des männlichen Familienoberhauptes in einem Muster der
-    Ungleichheit der Geschlechter zu stärken, das dank Gewalt länger anhält.
+  Definition: Wirtschaftliche Gewalt bezeichnet jene Situationen, in denen eine Person
+    über kein eigenes bzw. ein unzureichendes Einkommen verfügt und der Partner diese
+    Situation ausnutzt, indem er ungenügende Geldmittel für Haushaltsangelegenheiten
+    bereitstellt und/oder Einkommen, Vermögen und Ausgaben geheim hält. Die Beschränkungen
+    sollen darauf abzielen, das erzielte Einkommen zu kontrollieren. Wie bei anderen
+    Formen von Gewalt besteht ihre Funktion darin, Abhängigkeit und Angst zu erzeugen.
   Quellen: Vgl. Gewalt INFO at, Ökonomische Gewalt
   Tags:
   - Häusliche Gewalt
   Website-Verlinkung: https://www.gewaltinfo.at/fachwissen/formen/oekonomische_gewalt.php
   zusatzLinkText: ''
   zusatzLinkURL: ''
-- Begriff: Frauenhass
-  Definition: Neben dem Begriff Frauenhass (Misogynie) findet man häufig als Synonym
-    die Formulierung der Frauenfeindlichkeit. Misogynie beschreibt die Annahme einer
-    ontologischen Minderwertigkeit von Frauen, wie sie seit der Antike in verschiedenen
-    Schriften der Philosophie und Literatur, aber letztlich auch im christlichen Glauben,
-    der Hexenverfolgung und wissenschaftlichen Abhandlungen zum Ausdruck gebracht
-    wurde. Während der Begriff zwar etwas sehr Konkretes bezeichnet – nämlich die
-    Abwertung von Frauen –, wird er gleichwohl seit vielen Jahren auch in einer allgemeineren
+- Begriff: Frauenfeindlichkeit
+  Definition: Frauenfeindlichkeit bzw. Misogynie beschreibt die Annahme einer gegebenen
+    Minderwertigkeit von Frauen, wie sie seit der Antike in verschiedenen Schriften
+    der Philosophie und Literatur, aber letztlich auch im christlichen Glauben, der
+    Hexenverfolgung und wissenschaftlichen Abhandlungen zum Ausdruck gebracht wurde.
+    Während der Begriff zwar etwas sehr Konkretes bezeichnet – nämlich die Abwertung
+    von Frauen –, wird er gleichwohl seit vielen Jahren auch in einer allgemeineren
     Form als strukturelle Entwertung oder Benachteiligung von Weiblichkeit gebraucht.
   Quellen: Vgl. Bundeszentrale für politische Bildung 2018, Aus Politik und Zeitgeschichte
   Tags:
@@ -599,7 +515,7 @@ glossaryData:
 - Begriff: Machtmissbrauch
   Definition: Machtmissbrauch ist der Missbrauch einer (ggf. nur gefühlten) Machtposition,
     um anderen Personen - über welche man Macht ausüben kann - zu schaden, sie zu
-    schikanieren oder zu benachteiligen oder um sich selbst oder Günstlingen persönliche
+    schikanieren oder zu benachteiligen, oder um sich selbst oder Günstlingen persönliche
     Vorteile zu verschaffen.
   Quellen: Vgl. Antidiskriminierungsstelle des Bundes, Handlungsleitfaden UFA zum
     Thema "Machtmissbrauch"
