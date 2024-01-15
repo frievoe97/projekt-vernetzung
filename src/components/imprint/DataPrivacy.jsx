@@ -11,7 +11,25 @@ const DataPrivacy = () => {
             </h1>
             <div className="text-left w-fit mx-auto">
               <h2 className="text-xl font-bold mt-4 w-fit">
-                1. Verwendung von Analysediensten
+                1. Speicherung personenbezogener Daten
+              </h2>
+              <p className="mt-2 w-fit text-justify">
+                Im rechtlichen Sinne beziehen sich personenbezogene Daten auf
+                Informationen, die sich auf eine identifizierte oder
+                identifizierbare natürliche Person beziehen. Das schließt Daten
+                ein, die direkt oder indirekt verwendet werden können, um die
+                Identität einer Person festzustellen, wie beispielsweise Namen,
+                Adressen, E-Mail-Adressen, Telefonnummern oder andere
+                persönliche Merkmale. In Übereinstimmung mit den rechtlichen
+                Bestimmungen und zum Schutz der Privatsphäre unserer
+                Nutzer:innen möchten wir klarstellen, dass auf dieser Website
+                keine personenbezogenen Daten im Sinne dieser Definition
+                gespeichert oder verarbeitet werden, außer, du teilst uns diese
+                mit.
+              </p>
+
+              <h2 className="text-xl font-bold mt-4 w-fit">
+                2. Verwendung von Analysediensten
               </h2>
               <p className="mt-2 w-fit text-justify">
                 Unsere Webhosting-Infrastruktur erfasst bestimmte Daten in
@@ -26,7 +44,7 @@ const DataPrivacy = () => {
                 keine Herstellung eines Personenbezugs mehr möglich ist.
               </p>
 
-              <h2 className="text-xl font-bold mt-4 w-fit">2. Newsletter</h2>
+              <h2 className="text-xl font-bold mt-4 w-fit">3. Newsletter</h2>
               <p className="mt-2 w-fit text-justify">
                 Wenn du den auf der Website angebotenen Newsletter beziehen
                 möchtest, benötigen wir von dir eine Email-Adresse sowie
@@ -57,7 +75,7 @@ const DataPrivacy = () => {
                 zudem über den Anbieter.
               </p>
 
-              <h2 className="text-xl font-bold mt-4 w-fit">5. Google Fonts</h2>
+              <h2 className="text-xl font-bold mt-4 w-fit">4. Google Fonts</h2>
               <p className="mt-2 w-fit text-justify">
                 3. Google Fonts Diese Seite nutzt zur einheitlichen Darstellung
                 von Schriftarten sogenannte Google Fonts, die von Google
@@ -75,7 +93,7 @@ const DataPrivacy = () => {
               </p>
 
               <h2 className="text-xl font-bold mt-4 w-fit">
-                4. Datenverarbeitung auf Instagram
+                5. Datenverarbeitung auf Instagram
               </h2>
               <p className="mt-2 w-fit text-justify">
                 Wir haben eine Social-Media-Präsenz auf Instagram. Wenn du ein
