@@ -5,7 +5,7 @@ interviews:
   Freigabe: ja
   Headline: Wir Journalistinnen sind keine Richterinnen.
   Hex1(background): '#D7E0FF'
-  Hex2(card): ''
+  Hex2(card): '#7da6f8'
   Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
   Max200Zeichen(teaser): ''
   Rubrik: Journalismus
@@ -61,7 +61,7 @@ interviews:
   Freigabe: ja
   Headline: Wir muessen unsere Gesellschaftsstrukturen neu designen.
   Hex1(background): '#ecb8c3'
-  Hex2(card): EFE9EA (50%)
+  Hex2(card): '#eb879d'
   Interview: Sophie Rendl
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
