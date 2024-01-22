@@ -45,6 +45,8 @@ function InterviewContainer() {
           }}
         >
           {state.interviewsV2.interviews
+            .slice() // Erstelle eine Kopie des Arrays, um das ursprüngliche nicht zu ändern
+            .reverse() // Drehe das Array um, um rückwärts zu iterieren
             .filter((interview) => interview.Freigabe === "ja")
             .map((interview, index) => (
               <div key={index} className="m-4 flex items-center justify-center">

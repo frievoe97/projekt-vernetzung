@@ -55,7 +55,9 @@ const PreviewV2 = ({ imageUrl, title, textTeaser, bgColor }) => {
           </div>
           <div className="p-4 flex h-fit flex-col">
             <p className="text-base font-bold mb-4">Interview</p>
-            <h1 className="text-2xl font-black text-left mb-4">{title}</h1>
+            <h1 className="text-2xl font-black text-left mb-4 hyphens-auto">
+              {title}
+            </h1>
             <p className="text-black font-light mb-4 overflow-y-hidden text-left">
               {textTeaser}
             </p>

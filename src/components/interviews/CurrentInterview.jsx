@@ -13,6 +13,20 @@ const CurrentInterview = (interview) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
   };
 
+  function umlauteErsetzen(text) {
+    const umlauteMap = {
+      ä: "ae",
+      ö: "oe",
+      ü: "ue",
+      ß: "ss",
+      Ä: "Ae",
+      Ö: "Oe",
+      Ü: "Ue",
+    };
+
+    return text.replace(/[äöüßÄÖÜ]/g, (umlaut) => umlauteMap[umlaut]);
+  }
+
   // console.log(interview);
 
   /*
@@ -47,7 +61,7 @@ const CurrentInterview = (interview) => {
                   id="current-interview-title"
                   // style={{ textShadow: "3px 3px 20px black" }}
                 >
-                  {interview.interview.Headline}
+                  {umlauteErsetzen(interview.interview.Headline)}
                 </h1>
 
                 <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-12 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss rounded-lg opacity-70">
@@ -77,7 +91,7 @@ const CurrentInterview = (interview) => {
               size={30}
               style={{ color: interview.interview["Hex2(card)"] }}
             />
-            {interview.interview.Headline}
+            {umlauteErsetzen(interview.interview.Headline)}
           </div>
 
           <div className="w-fit mx-auto">
