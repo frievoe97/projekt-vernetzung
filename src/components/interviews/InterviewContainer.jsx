@@ -39,7 +39,7 @@ function InterviewContainer() {
     <div className="w-full bg-fm_weiss">
       <div className="max-w-screen-xl mx-auto text-justify pb-16">
         <div
-          className="grid grid-cols-auto-fill gap-16 px-8"
+          className="grid grid-cols-auto-fill gap-4 px-8"
           style={{
             gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
           }}
