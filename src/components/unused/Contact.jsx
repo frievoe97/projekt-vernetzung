@@ -28,10 +28,10 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
-          console.error(error.text);
+          // console.error(error.text);
         }
       );
   }

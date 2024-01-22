@@ -14,7 +14,7 @@ function WarumJetzt() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
+        // console.log(parsedData);
         dispatch({
           type: actionType,
           payload: parsedData, // Verwenden Sie den übergebenen dataKey als Schlüssel

@@ -22,7 +22,7 @@ function PictureHeader_V2({ data }) {
   // const imageUrl =
   //   "http://localhost:8000/projekt-vernetzen/images/" + data.offlineImageUrl;
 
-  console.log(description);
+  // console.log(description);
 
   return (
     <div

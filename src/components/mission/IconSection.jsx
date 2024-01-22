@@ -73,7 +73,7 @@ const IconTextRows = ({ data }) => {
   }, [clickedCardIndex, userClicked, data]);
 
   const handleUserClick = (index) => {
-    console.log(index, prevIndex, clickedCardIndex);
+    // console.log(index, prevIndex, clickedCardIndex);
     if (clickedCardIndex == null) {
       setClickedCardIndex(index);
     } else {

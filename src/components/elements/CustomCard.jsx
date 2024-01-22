@@ -40,7 +40,7 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
     // Teile den Eingabestring in Wörter auf
     const words = inputString.split(" ");
 
-    console.log("inputString: ", inputString);
+    // console.log("inputString: ", inputString);
 
     let currentLine = "";
     let result = "<span>";
@@ -65,7 +65,7 @@ function CustomCard({ imageUrl, title, text, link, tags }) {
       result += currentLine + "</span>";
     }
 
-    console.log("result: ", result);
+    // console.log("result: ", result);
 
     // return result;
     return { __html: result };

@@ -1,12 +1,11 @@
 interviews:
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/pia_lena_round.png
-  BildTeaser: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
+  Bild: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
   Freigabe: ja
   Headline: Wir Journalistinnen sind keine Richterinnen.
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
   Max200Zeichen(teaser): ''
   Rubrik: Journalismus
@@ -18,26 +17,26 @@ interviews:
     ziehen.
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
-  BildTeaser: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
+  Bild: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
   Freigabe: nein
-  Headline: HEADLINE SIRENSE COLLECTIVE
+  Headline: The Sirens Collective - Aktivismus in Wellenform
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: The Sirense Collective
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
   TextInhaltInterview: ''
-  TextTeaser: Teaser The Sirense Collective Teaser The Sirense Collective Teaser The
-    Sirense Collective
+  TextTeaser: The Sirens Collective will die Dunkelziffer von sexualisierter Gewalt
+    sichtbar machen. Im Interview erzählen die Initiaroinnen Kim Hoss und Lise van
+    Wersch, welche Wellen ihr Projekt geschlagen hat und welchen Mehrwert es haben
+    kann, eigene Erfahrungen zu teilen.
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
-  BildTeaser: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
+  Bild: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
   Freigabe: nein
   Headline: HEADLINE FORENSIC NURSES
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: Forensic Nurses
   Max200Zeichen(teaser): ''
   Rubrik: Medizin
@@ -46,12 +45,11 @@ interviews:
     Teaser Forensic Nurses
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
-  BildTeaser: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
+  Bild: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
   Freigabe: nein
   Headline: HEADLINE LAND-GRAZIEN
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: Land-Grazien
   Max200Zeichen(teaser): ''
   Rubrik: Initiative
@@ -59,26 +57,25 @@ interviews:
   TextTeaser: Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
-  BildTeaser: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
+  Bild: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
   Freigabe: nein
-  Headline: HEADLINE SOPHIE RENDL
+  Headline: Wir müssen unsere Gesellschaftsstrukturen neu designen.
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: Sophie Rendl
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
   TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/231215_Sophie-Rendl.md
-  TextTeaser: Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie Rendl Teaser Sophie
-    Rendl
+  TextTeaser: Sophie Rendl, Forbes 30 under 30, ist eine österreichische Juristin.
+    Im Interview verweist sie auf gesellschaftliche Strukturen der Ungleichheit und
+    erklärt, warum unser Gesellschaftssystem Machtmissbrauch begünstigt.
 - ? ''
   : ''
-  Bild1(rund): ''
-  Bild2(rechteckig): ''
-  BildHeadline: Mail Friedrich jpg
-  BildTeaser: Mail Friedrich jpg
+  Bild: Mail Friedrich jpg
   Freigabe: nein
   Headline: HEADLINE LENA MARBACHER
+  Hex1(background): ''
+  Hex2(card): ''
   Interview: Lena Marbacher
   Max200Zeichen(teaser): ''
   Rubrik: Journalismus

@@ -22,7 +22,7 @@ function InterviewDetail() {
       .then((response) => response.text())
       .then((yamlText) => {
         const parsedData = yaml.load(yamlText);
-        console.log(parsedData);
+        // console.log(parsedData);
         // console.log(dataKey);
         // console.log(parsedData[dataKey]);
         dispatch({

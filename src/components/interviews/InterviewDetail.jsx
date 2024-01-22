@@ -42,7 +42,7 @@ function InterviewDetail() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
       dispatch,
       "SET_INTERVIEW_V_2_DATA"
     );
@@ -56,7 +56,7 @@ function InterviewDetail() {
       .catch((error) =>
         console.error("Fehler beim Abrufen des Markdown:", error)
       );
-    console.log("New URL: ", url);
+    // console.log("New URL: ", url);
   }, [url, interview]);
 
   const convertToSlug = (inputString) => {

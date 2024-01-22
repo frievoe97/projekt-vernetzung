@@ -29,7 +29,7 @@ function Interviews() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
       dispatch,
       "SET_INTERVIEW_V_2_DATA"
     );
@@ -45,10 +45,28 @@ function Interviews() {
 
   if (Object.keys(state.interviewsV2).length <= 0) return;
 
+  function findeLetztenFreigegebenenEintrag(interviewsArray) {
+    let letzterFreigegebenerEintrag = null;
+
+    for (let i = interviewsArray.length - 1; i >= 0; i--) {
+      const interview = interviewsArray[i];
+      if (interview.Freigabe === "ja") {
+        letzterFreigegebenerEintrag = interview;
+        break; // Breche die Schleife ab, sobald ein freigegebener Eintrag gefunden wurde
+      }
+    }
+
+    return letzterFreigegebenerEintrag;
+  }
+
   return (
     <div>
       <div className="text-center text-color_font bg-fm_weiss pt-16">
-        <CurrentInterview interview={state.interviewsV2.interviews[0]} />
+        <CurrentInterview
+          interview={findeLetztenFreigegebenenEintrag(
+            state.interviewsV2.interviews
+          )}
+        />
         <div className="flex  max-w-screen-xl mx-auto justify-between px-8  pt-8">
           <div className="flex flex-col md:flex-row w-full   justify-between">
             <h1 className="bg-fm_weiss  w-fit text-2xl text-left font-bold mb-4">

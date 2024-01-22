@@ -5,7 +5,7 @@ import yaml
 csv_datei = 'updates.csv'
 
 # Pfad zur YAML-Datei
-yaml_datei = '../data/pages/interviews_v2.yaml'
+yaml_datei = '../data/pages/interviews_v3.yaml'
 
 # Funktion zur Umwandlung in CamelCase
 def to_camel_case(text):

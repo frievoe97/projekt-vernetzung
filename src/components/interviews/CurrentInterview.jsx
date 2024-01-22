@@ -13,7 +13,7 @@ const CurrentInterview = (interview) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
   };
 
-  console.log(interview);
+  // console.log(interview);
 
   /*
           104: "28rem",
@@ -22,6 +22,8 @@ const CurrentInterview = (interview) => {
       },
       */
 
+  // Hex1(background): "#D7E0FF"
+
   return (
     <div>
       <div className="md:flex hidden">
@@ -29,15 +31,15 @@ const CurrentInterview = (interview) => {
           to={`/interviews-und-beitraege/${convertToSlug(
             interview.interview.Headline
           )}`}
-          className="w-full h-128 bg-fm_blau_light flex items-center justify-center"
-          // Fügen Sie hier weitere CSS-Klassen hinzu, wenn benötigt
+          className="w-full h-128  flex items-center justify-center"
+          style={{ backgroundColor: interview.interview["Hex1(background)"] }}
         >
           <div className="w-full h-128 ">
             <div className="h-full max-w-screen-xl mx-auto">
               <div className="w-full h-full relative ">
                 <img
                   className="md:w-80 lg:w-128 absolute bottom-0 right-20 z-10"
-                  src={interview.interview.BildHeadline}
+                  src={interview.interview.Bild}
                   alt=""
                 />
                 <h1
@@ -52,8 +54,9 @@ const CurrentInterview = (interview) => {
                   {interview.interview.TextTeaser}
                 </div>
                 <FaQuoteRight
-                  className="absolute top-14 rotate-180 text-4xl text-fm_blau z-10 left-2 opacity-60"
+                  className="absolute top-14 rotate-180 text-4xl  z-10 left-2 "
                   size={70}
+                  style={{ color: interview.interview["Hex2(card)"] }}
                 />
               </div>
             </div>
@@ -61,14 +64,18 @@ const CurrentInterview = (interview) => {
         </Link>
       </div>
       <div className="md:hidden">
-        <div className="w-full h-fit bg-fm_blau_light">
+        <div
+          className="w-full h-fit"
+          style={{ backgroundColor: interview.interview["Hex1(background)"] }}
+        >
           <div
             className=" relative text-black font-bold rounded-lg text-2xl text-left p-8 z-10 heading-koulen-black "
             id="current-interview-title"
           >
             <FaQuoteRight
-              className="absolute left-4 top-4 rotate-180  text-4xl text-fm_blau -z-10 opacity-60"
+              className="absolute left-4 top-4 rotate-180  text-4xl  -z-10 "
               size={30}
+              style={{ color: interview.interview["Hex2(card)"] }}
             />
             {interview.interview.Headline}
           </div>
@@ -76,7 +83,7 @@ const CurrentInterview = (interview) => {
           <div className="w-fit mx-auto">
             <img
               className="  h-64 object-cover p-4 pb-0"
-              src={interview.interview.BildHeadline}
+              src={interview.interview.Bild}
               alt=""
             />
           </div>

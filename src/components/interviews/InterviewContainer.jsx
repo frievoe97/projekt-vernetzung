@@ -21,7 +21,7 @@ function InterviewContainer() {
 
   useEffect(() => {
     fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v2.yaml",
+      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
       dispatch,
       "SET_INTERVIEW_V_2_DATA"
     );
@@ -31,11 +31,15 @@ function InterviewContainer() {
     return;
   }
 
+  // console.log(state.interviewsV2);
+
+  // Hex1(background)
+
   return (
     <div className="w-full bg-fm_weiss">
-      <div className="max-w-screen-xl mx-auto text-justify  pb-16">
+      <div className="max-w-screen-xl mx-auto text-justify pb-16">
         <div
-          className="grid grid-cols-auto-fill gap-4"
+          className="grid grid-cols-auto-fill gap-16 px-8"
           style={{
             gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
           }}
@@ -46,8 +50,9 @@ function InterviewContainer() {
               <div key={index} className="m-4 flex items-center justify-center">
                 <PreviewV2
                   title={interview.Headline}
-                  imageUrl={interview.BildHeadline}
+                  imageUrl={interview.Bild}
                   textTeaser={interview.TextTeaser}
+                  bgColor={interview["Hex1(background)"]}
                   style={{ minWidth: "350px" }} // Mindestbreite für jedes Element
                 />
               </div>
