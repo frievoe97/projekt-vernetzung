@@ -68,8 +68,8 @@ function Interviews() {
           )}
         />
         <div className="flex  max-w-screen-xl mx-auto justify-between px-8  pt-8">
-          <div className="flex flex-col md:flex-row w-full   justify-between">
-            <h1 className="bg-fm_weiss  w-fit text-2xl text-left font-bold mb-4">
+          <div className="flex flex-col  grow justify-between">
+            <h1 className="bg-fm_weiss   text-2xl text-left font-bold mb-4">
               Hier findest du unsere Expert:innen-Interviews und Beiträge
             </h1>
             <div className="flex space-x-4 mb-4 items-center w-fit">

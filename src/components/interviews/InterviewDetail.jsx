@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGlobalState } from "../../data/GlobalState";
 import yaml from "js-yaml";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import ButtonBigRounded from "../elements/ButtonBigRounded";
 import NotFoundComponent from "../NotFoundComponent";
 import CurrentInterview from "./CurrentInterview";
 import { IoArrowBackOutline } from "react-icons/io5";
@@ -59,8 +56,28 @@ function InterviewDetail() {
     // console.log("New URL: ", url);
   }, [url, interview]);
 
-  const convertToSlug = (inputString) => {
+  const convertToSlugOld = (inputString) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
+  };
+
+  const convertToSlug = (inputString) => {
+    // Umlaute und große Umlaute ersetzen
+    inputString = inputString
+      .replace(/ä/g, "ae")
+      .replace(/ö/g, "oe")
+      .replace(/ü/g, "ue")
+      .replace(/ß/g, "ss")
+      .replace(/Ä/g, "ae")
+      .replace(/Ö/g, "oe")
+      .replace(/Ü/g, "ue");
+
+    // Satzzeichen und Sonderzeichen entfernen und in Kleinbuchstaben umwandeln
+    inputString = inputString
+      .replace(/[^\w\s-]/g, "") // Alle nicht-alphanumerischen Zeichen entfernen
+      .replace(/\s+/g, "-") // Leerzeichen durch Bindestriche ersetzen
+      .toLowerCase(); // In Kleinbuchstaben umwandeln
+
+    return inputString;
   };
 
   if (state.interviewsV2.interviews == undefined) {
@@ -71,6 +88,18 @@ function InterviewDetail() {
     const title = state.interviewsV2.interviews[i].Headline;
     if (convertToSlug(title) === organizationName) {
       interview = state.interviewsV2.interviews[i];
+    }
+  }
+
+  // Überprüfen, ob interview nach der Schleife null oder undefined ist
+  if (Object.keys(interview).length == 0) {
+    // Falls interview immer noch null oder undefined ist, die Methode convertToSlugOld verwenden
+    for (let i = 0; i < state.interviewsV2.interviews.length; i++) {
+      const title = state.interviewsV2.interviews[i].Headline;
+      if (convertToSlugOld(title) === organizationName) {
+        interview = state.interviewsV2.interviews[i];
+        break; // Interview gefunden, Schleife beenden
+      }
     }
   }
 

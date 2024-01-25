@@ -9,11 +9,27 @@ const CurrentInterview = (interview) => {
   const { state, dispatch } = useGlobalState();
 
   const convertToSlug = (inputString) => {
-    if (inputString == undefined) return;
-    return inputString.replace(/\s+/g, "-").toLowerCase();
+    // Umlaute und große Umlaute ersetzen
+    inputString = inputString
+      .replace(/ä/g, "ae")
+      .replace(/ö/g, "oe")
+      .replace(/ü/g, "ue")
+      .replace(/ß/g, "ss")
+      .replace(/Ä/g, "ae")
+      .replace(/Ö/g, "oe")
+      .replace(/Ü/g, "ue");
+
+    // Satzzeichen und Sonderzeichen entfernen und in Kleinbuchstaben umwandeln
+    inputString = inputString
+      .replace(/[^\w\s-]/g, "") // Alle nicht-alphanumerischen Zeichen entfernen
+      .replace(/\s+/g, "-") // Leerzeichen durch Bindestriche ersetzen
+      .toLowerCase(); // In Kleinbuchstaben umwandeln
+
+    return inputString;
   };
 
   function umlauteErsetzen(text) {
+    if (!text) return "";
     const umlauteMap = {
       ä: "ae",
       ö: "oe",
@@ -26,6 +42,10 @@ const CurrentInterview = (interview) => {
 
     return text.replace(/[äöüßÄÖÜ]/g, (umlaut) => umlauteMap[umlaut]);
   }
+
+  useEffect(() => {
+    console.log(interview);
+  }, [interview]);
 
   // console.log(interview);
 

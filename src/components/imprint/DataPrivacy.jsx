@@ -5,7 +5,7 @@ const DataPrivacy = () => {
     <div className="pt-16">
       <div className="p-0 md:p-6 text-center z-0 text-color_font">
         <div className="grid text-center gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0">
-          <div className="md:bg-fm_weiss p-6 rounded-xl my-16 w-fit mx-auto  md:shadow-2xl">
+          <div className="md:bg-fm_weiss p-6 rounded-xl my-16 w-fit mx-auto  md:shadow-2xl p-8">
             <h1 className="text-2xl font-bold text-fm_blau mb-4 heading-koulen">
               Datenschutzerklaerung
             </h1>
