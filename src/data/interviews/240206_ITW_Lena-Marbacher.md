@@ -2,7 +2,7 @@
 
 **Transkript zum Interview mit Lena Marbacher | 15. Dezember 2022**
 
-**Titel: Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. In**** erster Linie mit denen, die gesellschaftlich wirken.**
+**Titel: Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. In erster Linie mit denen, die gesellschaftlich wirken.**
 
 **Untertitel:** _Lena Marbacher ist freie Journalistin, mittlerweile ausgeschiedene Mitgründerin des Wirtschaftsmagazins Neue Narrative und des dazugehörigen Verlags NN Publishing GmbH. Davor war sie Gesellschafterin einer selbstorganisierten Unternehmensberatung. Über zehn Jahre hat Lena Marbacher Organisationen und ihre Mitglieder in Veränderungsprozessen mit dem Fokus auf Partizipation, Selbstorganisation, Machtverhältnisse und Antidiskriminierung begleitet. Sie spricht als Expertin zur Zukunft der Arbeit vor Vertreter __:__ innen der Politik, Wirtschaft und auf Konferenzen._
 
