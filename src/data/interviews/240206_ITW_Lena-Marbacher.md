@@ -1,4 +1,4 @@
-Interview mit Lena Marbacher | 06. Februar 2024**
+Interview mit Lena Marbacher | 06. Februar 2024
 
 # Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. In erster Linie mit denen, die gesellschaftlich wirken.
 
