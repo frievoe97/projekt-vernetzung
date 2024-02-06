@@ -8,11 +8,11 @@ Interview mit Lena Marbacher | 06. Februar 2024
 
 **PV: Zu Neue Narrative gibt es viel in der Presse zu lesen – könntest du dennoch kurz zusammenfassen, worum es dabei genau geht?**
 
-**LM:** Neue Narrative ist mit der Idee gestartet, Content zu entwickeln, um andereMenschen zur Gestaltung einer fairen Wirtschaftswelt zu befähigen. Das Magazinerscheint drei Mal im Jahr und behandelt Themen rund um die Zukunft der Arbeitswelt. Mein Anspruch war, die Thematik soweit möglich gesellschaftspolitisch zu betrachten und auf die Idee hinzuarbeiten, dass Arbeit ein guter Ort sein kann. Dass Menschen unabhängig von ihrer finanziellen Herkunft, ihrer Zuwanderungsgeschichte, ihres Geschlechts oder ihrer Behinderung in Organisationen gleiche Möglichkeiten haben.
+**LM:** Neue Narrative ist mit der Idee gestartet, Content zu entwickeln, um andere Menschen zur Gestaltung einer fairen Wirtschaftswelt zu befähigen. Das Magazin erscheint drei Mal im Jahr und behandelt Themen rund um die Zukunft der Arbeitswelt. Mein Anspruch war, die Thematik soweit möglich gesellschaftspolitisch zu betrachten und auf die Idee hinzuarbeiten, dass Arbeit ein guter Ort sein kann. Dass Menschen unabhängig von ihrer finanziellen Herkunft, ihrer Zuwanderungsgeschichte, ihres Geschlechts oder ihrer Behinderung in Organisationen gleiche Möglichkeiten haben.
 
 **PV: Und wo steht das Projekt heute?**
 
-**LM:** Irgendwann kommt ein reines Printmagazin an den Punkt, an dem sich Wachstum und Abonnement-Kündigungen in etwa die Waage halten. Uns war klar, dass Neue Narrative Produkterweiterungen braucht. So habenwir angefangen, digitale Produkte zu entwickeln, z.B. eine Plattform für Tools, Methoden und Case Studies für die Organisationsentwicklung.
+**LM:** Irgendwann kommt ein reines Printmagazin an den Punkt, an dem sich Wachstum und Abonnement-Kündigungen in etwa die Waage halten. Uns war klar, dass Neue Narrative Produkterweiterungen braucht. So haben wir angefangen, digitale Produkte zu entwickeln, z.B. eine Plattform für Tools, Methoden und Case Studies für die Organisationsentwicklung.
 
 **PV: Sehr häufig wird Neue Narrative in der Presse aufgrund eurer besonderen Arbeitsweise erwähnt. Ihr habt kompetenzbasiert und hierarchiefrei gearbeitet. Was genau bedeutet das?**
 
@@ -82,7 +82,7 @@ Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. Aber nicht nur mit denen,
 
 **PV: Gibt es dann überhaupt besonders prädestinierte Branchen?**
 
-**LM:** Nein. In meinem Buch betrachte ich rund 15 Branchen und die Mechanismen, die dort zu Machtmissbrauch führen. Unter Machtmissbrauch verstehe ich alles von regelmäßiger, die Person betreffender Diskriminierung, Mobbing, psychische, physische und sexuelle Gewalt. Die Prinzipien, die wirken, sind immer und überall die gleichen. In manchen Kreisen wird z.B. gern argumentiert, das kapitalistische Wirtschaftssystem sei das Problem. Aber Machtmissbrauch gibt es auch in Einrichtungen, in denen Geld eine untergeordnete Rolle spielt. Die massivsten Machtbeziehungen und entsprechend auch Machtmissbrauch gibt es da, wo mit Schutzbefohlenen und pflegebedürftigen Menschen gearbeitet wird, also mit Kindern, Alten und Menschen mit Behinderung. Kirchen, karitative Einrichtungen, Sportvereine, betreutes Wohnen. Den Betroffenen dort wird von Angehörigen und Umstehenden oft nicht geglaubt, sie haben keine Lobby und können sich nicht wehren. Das ist ein riesiges Problem.
+**LM:** Nein. In meinem Buch betrachte ich rund 15 Branchen und die Mechanismen, die dort zu Machtmissbrauch führen. Unter Machtmissbrauch verstehe ich alles von regelmäßiger, die Person betreffender Diskriminierung, Mobbing, psychischer, physischer und sexueller Gewalt. Die Prinzipien, die wirken, sind immer und überall die gleichen. In manchen Kreisen wird z.B. gern argumentiert, das kapitalistische Wirtschaftssystem sei das Problem. Aber Machtmissbrauch gibt es auch in Einrichtungen, in denen Geld eine untergeordnete Rolle spielt. Die massivsten Machtbeziehungen und entsprechend auch Machtmissbrauch gibt es da, wo mit Schutzbefohlenen und pflegebedürftigen Menschen gearbeitet wird, also mit Kindern, Alten und Menschen mit Behinderung. Kirchen, karitative Einrichtungen, Sportvereine, betreutes Wohnen. Den Betroffenen dort wird von Angehörigen und Umstehenden oft nicht geglaubt, sie haben keine Lobby und können sich nicht wehren. Das ist ein riesiges Problem.
 
 **PV: Denkst du, man hört in Branchen wie dem Sport, dem Theater oder dem Film schlichtweg von mehr Fällen, weil sie weniger konservativ sind?**
 
@@ -110,4 +110,4 @@ Der Umgang mit Machtmissbrauch hat allerdings keinen Spielraum für prototypisch
 **PV: Liebe Lena, vielen Dank für das spannende Interview und dafür, dass du deine Expertise über den Zusammenhang zwischen Gesellschaft und Organisationen mit uns geteilt hast.**
 
 
-*Wenn ihr Lenas Arbeit spannend findet oder euch weiter mit ihr über ihre Themen und Projekte austauschen wollt, findet Ihr sie am besten über Linkedin über ihren Klarnamen sowie auf Instagram unter @lena\_marbacher. Ihr Buch erscheint im September im S. Fischer Verlag.*
+*Wenn ihr Lenas Arbeit spannend findet oder euch weiter mit ihr über ihre Themen und Projekte austauschen wollt, findet ihr sie am besten über Linkedin über ihren Klarnamen sowie auf Instagram unter @lena\_marbacher. Ihr Buch erscheint im September im S. Fischer Verlag.*
