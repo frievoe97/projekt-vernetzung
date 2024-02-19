@@ -1,10 +1,10 @@
 interviews:
 - ? ''
   : ''
-  Bild: https://www.deine-korrespondentin.de/wp-content/uploads/2023/06/Lena-von-Holt-und-Pia-Stendera-@Livia-Kappler-1536x994.jpg
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/pia_lena_round.png
   Freigabe: ja
   Headline: Wir Journalistinnen sind keine Richterinnen.
-  Hex1(background): ''
+  Hex1(background): '#D7E0FF'
   Hex2(card): ''
   Interview: Pia Stendera und Lena von Holt - "Boys Club"-Podcast
   Max200Zeichen(teaser): ''
@@ -17,7 +17,7 @@ interviews:
     ziehen.
 - ? ''
   : ''
-  Bild: https://www.stuttgarter-zeitung.de/media.facebook.1ef7ac5b-0af3-4c02-9ac9-42fbe37700cf.normalized.jpg
+  Bild: ''
   Freigabe: nein
   Headline: The Sirens Collective - Aktivismus in Wellenform
   Hex1(background): ''
@@ -32,7 +32,7 @@ interviews:
     kann, eigene Erfahrungen zu teilen.
 - ? ''
   : ''
-  Bild: https://www.forensicnurses.org/wp-content/uploads/2021/12/sliders-1.png
+  Bild: ''
   Freigabe: nein
   Headline: HEADLINE FORENSIC NURSES
   Hex1(background): ''
@@ -45,23 +45,28 @@ interviews:
     Teaser Forensic Nurses
 - ? ''
   : ''
-  Bild: https://land-grazien.de/wp-content/uploads/2022/08/LG-Logo-rgb-Web-Schrift-weiss-1-e1661863439131.png
-  Freigabe: nein
-  Headline: HEADLINE LAND-GRAZIEN
-  Hex1(background): ''
-  Hex2(card): ''
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
+  Freigabe: ja
+  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
+    an sich, es geht immer einzig und alleine um Macht.
+  Hex1(background): '#D7E0FF'
+  Hex2(card): '#EFE9EA'
   Interview: Land-Grazien
   Max200Zeichen(teaser): ''
   Rubrik: Initiative
-  TextInhaltInterview: ''
-  TextTeaser: Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
+  TextTeaser: 'Die LAND-GRAZIEN sind ein ein Beratungsangebot für Frauen im ländlichen
+    Raum in Schleswig-Holstein. Das Besondere: Die Beratungsstelle befindet sich in
+    einem Bus und ist somit mobil. Was genau es mit dieser Form der Beratung auf sich
+    hat und wie die konkrete Hilfe aussieht, erzählt uns Miriam Peters, Gründerin
+    der Landgrazien, in diesem Interview.'
 - ? ''
   : ''
-  Bild: https://www.forbes.at/assets/images/8/Foto_Sophie%20Rendl-005216b1.jpg
-  Freigabe: nein
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/sophie_rendl_round.png
+  Freigabe: ja
   Headline: Wir müssen unsere Gesellschaftsstrukturen neu designen.
-  Hex1(background): ''
-  Hex2(card): ''
+  Hex1(background): '#FB819B'
+  Hex2(card): '#EFE9EA'
   Interview: Sophie Rendl
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
@@ -71,13 +76,54 @@ interviews:
     erklärt, warum unser Gesellschaftssystem Machtmissbrauch begünstigt.
 - ? ''
   : ''
-  Bild: Mail Friedrich jpg
-  Freigabe: nein
-  Headline: HEADLINE LENA MARBACHER
-  Hex1(background): ''
-  Hex2(card): ''
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/lena_m_round.png
+  Freigabe: ja
+  Headline: Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. In erster Linie
+    mit denen, die gesellschaftlich wirken.
+  Hex1(background): '#BEA5A9'
+  Hex2(card): '#EFE9EA'
   Interview: Lena Marbacher
   Max200Zeichen(teaser): ''
   Rubrik: Journalismus
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240206_ITW_Lena-Marbacher.md
+  TextTeaser: Lena Marbacher ist freie Journalistin und mittlerweile ausgeschiedene
+    Mitgründerin des Wirtschaftsmagazins Neue Narrative. Über zehn Jahre hat Lena
+    Marbacher Organisationen in Veränderungsprozessen mit  dem Fokus auf Machtverhältnissen
+    und Antidiskriminierung begleitet. Sie spricht als Expertin zur Zukunft der Arbeit
+    auf Konferenzen.
+- ? ''
+  : ''
+  Bild: ''
+  Freigabe: ''
+  Headline: ''
+  Hex1(background): ''
+  Hex2(card): ''
+  Interview: Projekt echo
+  Max200Zeichen(teaser): ''
+  Rubrik: ''
   TextInhaltInterview: ''
-  TextTeaser: Teaser
+  TextTeaser: ''
+- ? ''
+  : ''
+  Bild: ''
+  Freigabe: ''
+  Headline: ''
+  Hex1(background): ''
+  Hex2(card): ''
+  Interview: Silvia Gardini
+  Max200Zeichen(teaser): ''
+  Rubrik: ''
+  TextInhaltInterview: ''
+  TextTeaser: ''
+- ? ''
+  : ''
+  Bild: ''
+  Freigabe: ''
+  Headline: ''
+  Hex1(background): ''
+  Hex2(card): ''
+  Interview: Dr. Bärbel Wardetzki
+  Max200Zeichen(teaser): ''
+  Rubrik: ''
+  TextInhaltInterview: ''
+  TextTeaser: ''
