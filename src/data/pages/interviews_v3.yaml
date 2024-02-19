@@ -1,4 +1,3 @@
-interviews:
 - ? ''
   : ''
   Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/pia_lena_round.png
@@ -45,23 +44,6 @@ interviews:
     Teaser Forensic Nurses
 - ? ''
   : ''
-  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
-  Freigabe: ja
-  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
-    an sich, es geht immer einzig und alleine um Macht.
-  Hex1(background): '#D7E0FF'
-  Hex2(card): '#EFE9EA'
-  Interview: Land-Grazien
-  Max200Zeichen(teaser): ''
-  Rubrik: Initiative
-  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
-  TextTeaser: 'Die LAND-GRAZIEN sind ein ein Beratungsangebot für Frauen im ländlichen
-    Raum in Schleswig-Holstein. Das Besondere: Die Beratungsstelle befindet sich in
-    einem Bus und ist somit mobil. Was genau es mit dieser Form der Beratung auf sich
-    hat und wie die konkrete Hilfe aussieht, erzählt uns Miriam Peters, Gründerin
-    der Landgrazien, in diesem Interview.'
-- ? ''
-  : ''
   Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/sophie_rendl_round.png
   Freigabe: ja
   Headline: Wir müssen unsere Gesellschaftsstrukturen neu designen.
@@ -89,37 +71,18 @@ interviews:
   TextTeaser: Lena Marbacher ist freie Journalistin und mittlerweile ausgeschiedene Mitgründerin des Wirtschaftsmagazins Neue Narrative. Sie begleitete Organisationen in Veränderungsprozessen und spricht als Expertin zur Zukunft der Arbeit auf Konferenzen.
 - ? ''
   : ''
-  Bild: ''
-  Freigabe: ''
-  Headline: ''
-  Hex1(background): ''
-  Hex2(card): ''
-  Interview: Projekt echo
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
+  Freigabe: ja
+  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
+    an sich, es geht immer einzig und alleine um Macht.
+  Hex1(background): '#D7E0FF'
+  Hex2(card): '#EFE9EA'
+  Interview: Land-Grazien
   Max200Zeichen(teaser): ''
-  Rubrik: ''
-  TextInhaltInterview: ''
-  TextTeaser: ''
-- ? ''
-  : ''
-  Bild: ''
-  Freigabe: ''
-  Headline: ''
-  Hex1(background): ''
-  Hex2(card): ''
-  Interview: Silvia Gardini
-  Max200Zeichen(teaser): ''
-  Rubrik: ''
-  TextInhaltInterview: ''
-  TextTeaser: ''
-- ? ''
-  : ''
-  Bild: ''
-  Freigabe: ''
-  Headline: ''
-  Hex1(background): ''
-  Hex2(card): ''
-  Interview: Dr. Bärbel Wardetzki
-  Max200Zeichen(teaser): ''
-  Rubrik: ''
-  TextInhaltInterview: ''
-  TextTeaser: ''
+  Rubrik: Initiative
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
+  TextTeaser: 'Die LAND-GRAZIEN sind ein ein Beratungsangebot für Frauen im ländlichen
+    Raum in Schleswig-Holstein. Das Besondere: Die Beratungsstelle befindet sich in
+    einem Bus und ist somit mobil. Was genau es mit dieser Form der Beratung auf sich
+    hat und wie die konkrete Hilfe aussieht, erzählt uns Miriam Peters, Gründerin
+    der Landgrazien, in diesem Interview.'
