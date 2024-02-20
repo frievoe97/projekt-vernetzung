@@ -1,10 +1,8 @@
-**Interview mit Miriam Peters von den LAND-GRAZIEN | 19. Januar 2024**
+Interview mit Miriam Peters von den LAND-GRAZIEN | 19. Januar 2024
 
-***
+# Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt an sich, es geht immer einzig und alleine um Macht.
 
-**Titel: “Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt an sich, es geht immer einzig und alleine um Macht.”**
-
-**Vorstellung:** _Miriam Peters ist 33 Jahre alt und eine staatlich anerkannte Sozialarbeiterin. Bei ihrer früheren Arbeit in einem Frauenhaus in Lübeck fiel ihr auf, dass es im ländlichen Raum in Deutschland an Unterstützungsangeboten für von Gewalt betroffene Frauen mangelt. Daraufhin entwickelte sie selbst das Konzept der LAND-GRAZIEN: ein Beratungsangebot für Frauen im ländlichen Raum in Schleswig-Holstein. Das Besondere: Die Beratungsstelle befindet sich in einem Bus und ist somit mobil. Was genau es mit dieser Form der Beratung auf sich hat und wie die konkrete Hilfe aussieht, erfahrt ihr in diesem Interview\._ 
+*Miriam Peters ist 33 Jahre alt und eine staatlich anerkannte Sozialarbeiterin. Bei ihrer früheren Arbeit in einem Frauenhaus in Lübeck fiel ihr auf, dass es im ländlichen Raum in Deutschland an Unterstützungsangeboten für von Gewalt betroffene Frauen mangelt. Daraufhin entwickelte sie selbst das Konzept der LAND-GRAZIEN: ein Beratungsangebot für Frauen im ländlichen Raum in Schleswig-Holstein. Das Besondere: Die Beratungsstelle befindet sich in einem Bus und ist somit mobil. Was genau es mit dieser Form der Beratung auf sich hat und wie die konkrete Hilfe aussieht, erfahrt ihr in diesem Interview.*
 
 **PV: Liebe Miriam, Danke, dass du dir Zeit für uns genommen hast. Kannst du uns erzählen, was genau sich hinter den LAND-GRAZIEN verbirgt?** 
 
@@ -113,5 +111,7 @@ Deshalb liegt bei uns der Schwerpunkt auf der Selbstbestimmung. Wir klären Frau
 **MP:** Definitiv, wir hätten Machtmissbrauch. Die Gewaltdynamiken und Gewalthandlungen, die Frauen ausüben, unterscheiden sich allerdings maßgeblich von denen, die Männer ausüben. Und klar, da wo es Menschen gibt, gibt es immer auch Machtmissbrauch. Es ist meiner Meinung nach eine Utopie daran zu glauben, dass wir irgendwann ein gewaltfreies Leben leben können, auch wenn ich es mir persönlich und auch fachlich sehr wünschen würde. Ich bin da mehr der realistische Part. 
 
 **PV: Lieben Dank für das Interview und die spannenden Einblicke in deine Arbeit!**
+
+---
 
 _Ihr wollt mehr über die LAND-GRAZIEN erfahren oder mit Miriam oder ihren Kolleginnen in Kontakt treten? Am besten folgt ihr den LAND-GRAZIEN dafür auf Instagram unter @_[_land\_grazien_](https://www.instagram.com/land_grazien/)_. Die Webseite haben wir euch_ [_hier_ ](https://land-grazien.de/)_verlinkt._ 
