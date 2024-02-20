@@ -77,14 +77,14 @@ const CurrentInterview = (interview) => {
                   alt=""
                 />
                 <h1
-                  className="absolute top-20 text-black p-2 font-bold rounded-lg w-140 text-left z-20 left-10"
+                  className="absolute top-20 text-5xl text-black p-2 font-bold rounded-lg w-140 text-left z-20 left-10"
                   id="current-interview-title"
                   // style={{ textShadow: "3px 3px 20px black" }}
                 >
                   {umlauteErsetzen(interview.interview.Headline)}
                 </h1>
 
-                <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-12 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss rounded-lg opacity-70">
+                <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-8 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss rounded-lg opacity-70">
                   {interview.interview.TextTeaser}
                 </div>
                 <FaQuoteRight
