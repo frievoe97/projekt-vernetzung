@@ -25,7 +25,9 @@ interviews:
   Interview: The Sirense Collective
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
-  TextInhaltInterview: ''
+  TextInhaltInterview: Das Kollektiv The Sirens Collective startete mit einem Online-Archiv,
+    welches die Dunkelziffer von sexualisierter Gewalt sichtbar machen will. Wer und
+    was genau sich hinter dem Kollektiv verirgt, erfahrt ihr im Interview.
   TextTeaser: The Sirens Collective will die Dunkelziffer von sexualisierter Gewalt
     sichtbar machen. Im Interview erzählen die Initiaroinnen Kim Hoss und Lise van
     Wersch, welche Wellen ihr Projekt geschlagen hat und welchen Mehrwert es haben
@@ -45,23 +47,26 @@ interviews:
     Teaser Forensic Nurses
 - ? ''
   : ''
-  Bild: ''
-  Freigabe: nein
-  Headline: HEADLINE LAND-GRAZIEN
-  Hex1(background): ''
-  Hex2(card): ''
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
+  Freigabe: ja
+  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
+    an sich, es geht immer einzig und alleine um Macht.
+  Hex1(background): '#D7E0FF'
+  Hex2(card): '#EFE9EA'
   Interview: Land-Grazien
   Max200Zeichen(teaser): ''
   Rubrik: Initiative
-  TextInhaltInterview: ''
-  TextTeaser: Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien Teaser Land-Grazien
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
+  TextTeaser: Die LAND-GRAZIEN sind ein ein mobiles Beratungsangebot für Frauen im
+    ländlichen Raum. Was genau es mit dieser Form der Beratung auf sich hat und wie
+    die konkrete Hilfe aussieht, erzählt uns Miriam Peters im Interview.
 - ? ''
   : ''
   Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/sophie_rendl_round.png
   Freigabe: ja
   Headline: Wir müssen unsere Gesellschaftsstrukturen neu designen.
-  Hex1(background): '#ecb8c3'
-  Hex2(card): '#eb879d'
+  Hex1(background): '#FB819B'
+  Hex2(card): '#EFE9EA'
   Interview: Sophie Rendl
   Max200Zeichen(teaser): ''
   Rubrik: Aktivismus
@@ -75,13 +80,15 @@ interviews:
   Freigabe: ja
   Headline: Ja, Machtmissbrauch kann mit Hierarchien zu tun haben. In erster Linie
     mit denen, die gesellschaftlich wirken.
-  Hex1(background): '#EFE9EA'
-  Hex2(card): '#BEA5A9'
+  Hex1(background): '#BEA5A9'
+  Hex2(card): '#EFE9EA'
   Interview: Lena Marbacher
   Max200Zeichen(teaser): ''
   Rubrik: Journalismus
   TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240206_ITW_Lena-Marbacher.md
-  TextTeaser: Lena Marbacher ist freie Journalistin und mittlerweile ausgeschiedene Mitgründerin des Wirtschaftsmagazins Neue Narrative. Sie begleitete Organisationen in Veränderungsprozessen und spricht als Expertin zur Zukunft der Arbeit auf Konferenzen.
+  TextTeaser: Lena Marbacher ist freie Journalistin und mittlerweile ausgeschiedene
+    Mitgründerin des Wirtschaftsmagazins Neue Narrative. Sie begleitete Organisationen
+    in Veränderungsprozessen und spricht als Expertin zur Zukunft der Arbeit auf Konferenzen.
 - ? ''
   : ''
   Bild: ''
