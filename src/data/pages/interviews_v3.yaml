@@ -47,21 +47,6 @@ interviews:
     Teaser Forensic Nurses
 - ? ''
   : ''
-  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
-  Freigabe: ja
-  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
-    an sich, es geht immer einzig und alleine um Macht.
-  Hex1(background): '#D7E0FF'
-  Hex2(card): '#EFE9EA'
-  Interview: Land-Grazien
-  Max200Zeichen(teaser): ''
-  Rubrik: Initiative
-  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
-  TextTeaser: Die LAND-GRAZIEN sind ein ein mobiles Beratungsangebot für Frauen im
-    ländlichen Raum. Was genau es mit dieser Form der Beratung auf sich hat und wie
-    die konkrete Hilfe aussieht, erzählt uns Miriam Peters im Interview.
-- ? ''
-  : ''
   Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/sophie_rendl_round.png
   Freigabe: ja
   Headline: Wir müssen unsere Gesellschaftsstrukturen neu designen.
@@ -89,6 +74,21 @@ interviews:
   TextTeaser: Lena Marbacher ist freie Journalistin und mittlerweile ausgeschiedene
     Mitgründerin des Wirtschaftsmagazins Neue Narrative. Sie begleitete Organisationen
     in Veränderungsprozessen und spricht als Expertin zur Zukunft der Arbeit auf Konferenzen.
+- ? ''
+  : ''
+  Bild: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/landgrazien_round.png
+  Freigabe: ja
+  Headline: Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt
+    an sich, es geht immer einzig und alleine um Macht.
+  Hex1(background): '#D7E0FF'
+  Hex2(card): '#EFE9EA'
+  Interview: Land-Grazien
+  Max200Zeichen(teaser): ''
+  Rubrik: Initiative
+  TextInhaltInterview: https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/240119_Interview_%20Landgrazien.md
+  TextTeaser: Die LAND-GRAZIEN sind ein ein mobiles Beratungsangebot für Frauen im
+    ländlichen Raum. Was genau es mit dieser Form der Beratung auf sich hat und wie
+    die konkrete Hilfe aussieht, erzählt uns Miriam Peters im Interview.    
 - ? ''
   : ''
   Bild: ''
