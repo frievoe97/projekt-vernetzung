@@ -32,7 +32,7 @@ Bisher sind wir mit unserem Mobil nur in Schleswig-Holstein unterwegs. Hier komm
 
 Insgesamt besteht unser Team aus fünf Frauen, aber niemand arbeitet in Vollzeit. Zudem bin ich die Einzige, die Beratungen durchführt. Zudem steigt meine Kollegin Christina, die jetzt im zweiten Studienjahr ist, immer mehr in die Beratung ein. 
 
-**“Grundsätzlich kann man aber sagen, dass von Gewalt betroffene Frauen auf dem Land wie auch in der Stadt aus jedem Bereich wie auch jeder Gesellschaftsschicht kommen können.”**
+> ## “Grundsätzlich kann man aber sagen, dass von Gewalt betroffene Frauen auf dem Land wie auch in der Stadt aus jedem Bereich wie auch jeder Gesellschaftsschicht kommen können.”
 
 **PV: Generell ist es ja so, dass theoretisch jede Frau in jedem Lebensbereich von Gewalterfahrungen betroffen sein kann. Ihr fokussiert euch aber nun auf den ländlichen Raum: Könnt ihr dort eine Zuspitzung der Zielgruppe erkennen?** 
 
@@ -40,7 +40,7 @@ Insgesamt besteht unser Team aus fünf Frauen, aber niemand arbeitet in Vollzeit
 
 Grundsätzlich kann man aber sagen, dass von Gewalt betroffene Frauen auf dem Land wie auch in der Stadt aus jedem Bereich wie auch jeder Gesellschaftsschicht kommen können. So leben zum Beispiel viele reiche Menschen bewusst auf dem Dorf, weil sie den Trubel in der Stadt nicht haben wollen. Aufgrund der hohen Mieten in der Stadt haben wir genauso viele sehr arme Menschen auf dem Land. Unter all diesen Menschen kann es jede Frau treffen. Und jeder Dritten passiert es tatsächlich auch. 
 
-**“Die Unterstützungsleistungen der Länder sind zudem freiwillige Leistungen. Per Gesetz ist kein Bundesland dazu verpflichtet, Gelder in diesen Bereich zu investieren.”**
+> ## “Die Unterstützungsleistungen der Länder sind zudem freiwillige Leistungen. Per Gesetz ist kein Bundesland dazu verpflichtet, Gelder in diesen Bereich zu investieren.”
 
 **PV: In der Presse war zuletzt viel über die schwierige Finanzlage von Unterstützungsangeboten für Frauen zu lesen. Kannst du zusammenfassen, aus welchen Töpfen Frauenhäuser ihr Geld bekommen?**
 
@@ -60,7 +60,7 @@ Danach haben wir, auch aufgrund der knappen Haushaltslage von Bund und Ländern,
 
 Derzeit finanzieren wir uns zu 100 Prozent aus Spenden, pro Jahr etwa 300.000 Euro.
 
-**“Wir machen darauf aufmerksam, dass es bis dato keine ausreichende (...) Versorgung des ländlichen Raumes gibt. Viele Politiker:innen sehen das anders. (...) Ein Zuspruch an uns wäre hier auch ein Eingeständnis des eigenen Versagens. Das tut natürlich weh.”**
+> ## “Wir machen darauf aufmerksam, dass es bis dato keine ausreichende (...) Versorgung des ländlichen Raumes gibt. Viele Politiker:innen sehen das anders. (...) Ein Zuspruch an uns wäre hier auch ein Eingeständnis des eigenen Versagens. Das tut natürlich weh.”
 
 **PV: Euer Konzept fällt demnach nicht in die Definition eines “Frauenhauses” öffentlicher Akteure. Wie kommt das?** 
 
@@ -80,7 +80,7 @@ Alles ist also politisch. Und gleichzeitig ist aber auch alles, was politisch ge
 
 **MP:** Für mich persönlich habe ich hier keine Ziele. Für das nächste halbe Jahr habe ich für die LAND-GRAZIEN das Ziel, beim  Fundraising eine neue und systematischere Strategie aufzustellen. Hier ist es natürlich toll, sich externe Fachexpertise einholen zu können. Zudem kann ich über das Programm weitere Kontakte, Netzwerke und Ideen für mein Fundraising an die Hand bekommen. Das ist wirklich sehr hilfreich. 
 
-**“Ich würde mir wünschen, dass das Thema Gewalt aus dieser dunklen, schrecklichen Ecke rausgeholt wird. Jeder muss sich bewusst machen, dass Gewalt überall ist.”**
+> ## “Ich würde mir wünschen, dass das Thema Gewalt aus dieser dunklen, schrecklichen Ecke rausgeholt wird. Jeder muss sich bewusst machen, dass Gewalt überall ist.”
 
 **PV: Wir hätten noch eine sehr große Frage: Wie und was müsste sich in deinen Augen gesellschaftlich, aber auch systemisch ändern, damit deine Arbeit einfacher wird und nachhaltig Früchte trägt?** 
 
@@ -115,3 +115,6 @@ Deshalb liegt bei uns der Schwerpunkt auf der Selbstbestimmung. Wir klären Frau
 ---
 
 _Ihr wollt mehr über die LAND-GRAZIEN erfahren oder mit Miriam oder ihren Kolleginnen in Kontakt treten? Am besten folgt ihr den LAND-GRAZIEN dafür auf Instagram unter @_[_land\_grazien_](https://www.instagram.com/land_grazien/)_. Die Webseite haben wir euch_ [_hier_ ](https://land-grazien.de/)_verlinkt._ 
+
+
+*Fotorechte: Privat*
