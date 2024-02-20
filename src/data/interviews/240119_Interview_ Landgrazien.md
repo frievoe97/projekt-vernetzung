@@ -1,4 +1,4 @@
-Interview mit Miriam Peters von den LAND-GRAZIEN | 19. Januar 2024
+Interview mit Miriam Peters von den LAND-GRAZIEN | 21. Januar 2024
 
 # Bei partnerschaftlicher Gewalt geht es nicht um Strafe oder die Gewalt an sich, es geht immer einzig und alleine um Macht.
 
