@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"; // Importiere die Link-Komponente
 import "./CurrentInterview.css";
 
 const CurrentInterview = (interview) => {
-  const { state, dispatch } = useGlobalState();
+  // const { state, dispatch } = useGlobalState();
 
   const convertToSlug = (inputString) => {
     // Umlaute und große Umlaute ersetzen
@@ -43,37 +43,22 @@ const CurrentInterview = (interview) => {
     return text.replace(/[äöüßÄÖÜ]/g, (umlaut) => umlauteMap[umlaut]);
   }
 
-  useEffect(() => {
-    console.log(interview);
-  }, [interview]);
-
-  // console.log(interview);
-
-  /*
-          104: "28rem",
-        128: "30rem",
-        140: "40rem",
-      },
-      */
-
-  // Hex1(background): "#D7E0FF"
-
   return (
     <div>
       <div className="md:flex hidden">
         <Link
           to={`/interviews-und-beitraege/${convertToSlug(
-            interview.interview.Headline
+            interview.interview.headline
           )}`}
           className="w-full h-128  flex items-center justify-center"
-          style={{ backgroundColor: interview.interview["Hex1(background)"] }}
+          style={{ backgroundColor: interview.interview.backgroundColor }}
         >
           <div className="w-full h-128 ">
             <div className="h-full max-w-screen-xl mx-auto">
               <div className="w-full h-full relative ">
                 <img
                   className="md:w-80 lg:w-128 absolute bottom-0 right-20 z-10"
-                  src={interview.interview.Bild}
+                  src={interview.interview.imageUrl}
                   alt=""
                 />
                 <h1
@@ -81,16 +66,16 @@ const CurrentInterview = (interview) => {
                   id="current-interview-title"
                   // style={{ textShadow: "3px 3px 20px black" }}
                 >
-                  {umlauteErsetzen(interview.interview.Headline)}
+                  {umlauteErsetzen(interview.interview.headline)}
                 </h1>
 
                 <div className="md:w-104 lg:w-128 xl:w-140 absolute bottom-8 left-12 text-black text-left shadow-2xl  p-4 z-20 bg-fm_weiss rounded-lg opacity-70">
-                  {interview.interview.TextTeaser}
+                  {interview.interview.textTeaser}
                 </div>
                 <FaQuoteRight
                   className="absolute top-14 rotate-180 text-4xl  z-10 left-2 "
                   size={70}
-                  style={{ color: interview.interview["Hex2(card)"] }}
+                  style={{ color: interview.interview.quotationMarkColor }}
                 />
               </div>
             </div>
@@ -100,7 +85,7 @@ const CurrentInterview = (interview) => {
       <div className="md:hidden">
         <div
           className="w-full h-fit"
-          style={{ backgroundColor: interview.interview["Hex1(background)"] }}
+          style={{ backgroundColor: interview.interview.backgroundColor }}
         >
           <div
             className=" relative text-black font-bold rounded-lg text-2xl text-left p-8 z-10 heading-koulen-black "
@@ -109,20 +94,20 @@ const CurrentInterview = (interview) => {
             <FaQuoteRight
               className="absolute left-4 top-4 rotate-180  text-4xl  -z-10 "
               size={30}
-              style={{ color: interview.interview["Hex2(card)"] }}
+              style={{ color: interview.interview.quotationMarkColor }}
             />
-            {umlauteErsetzen(interview.interview.Headline)}
+            {umlauteErsetzen(interview.interview.headline)}
           </div>
 
           <div className="w-fit mx-auto">
             <img
               className="  h-64 object-cover p-4 pb-0"
-              src={interview.interview.Bild}
+              src={interview.interview.imageUrl}
               alt=""
             />
           </div>
           <div className=" bg-fm_weiss text-black text-left text-left bg-opacity-50 p-4">
-            {interview.interview.TextTeaser}
+            {interview.interview.textTeaser}
           </div>
         </div>
       </div>

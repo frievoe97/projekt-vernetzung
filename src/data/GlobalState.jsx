@@ -12,6 +12,7 @@ const SET_FOOTER_DATA = "SET_FOOTER_DATA";
 const SET_GLOSSARY_NEW_DATA = "SET_GLOSSARY_NEW_DATA";
 const SET_INTERVIEW_DATA = "SET_INTERVIEW_DATA";
 const SET_INTERVIEW_V_2_DATA = "SET_INTERVIEW_V_2_DATA";
+const SET_INTERVIEW_FROM_SANITY = "SET_INTERVIEW_FROM_SANITY";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -34,6 +35,8 @@ const reducer = (state, action) => {
       return { ...state, interviews: action.payload };
     case SET_INTERVIEW_V_2_DATA:
       return { ...state, interviewsV2: action.payload };
+    case SET_INTERVIEW_FROM_SANITY:
+      return { ...state, interviewFromSanity: action.payload };
     default:
       return state;
   }
@@ -50,6 +53,7 @@ const initialState = {
   footer: {},
   interviews: [],
   interviewsV2: {},
+  interviewFromSanity: [],
 };
 
 // Context erstellen

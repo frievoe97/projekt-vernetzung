@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Anlaufstellen_V2 from "./components/anlaufstellen/Anlaufstellen_V2";
@@ -16,15 +16,20 @@ import InterviewDetail from "./components/interviews/InterviewDetail";
 
 import ScrollToTop from "./components/ScrollToTop";
 
+import { useGlobalState } from "./data/GlobalState";
+
 /**
  * App ist die Hauptkomponente der Anwendung und definiert die Routing-Struktur.
  */
 function App() {
+  const { state, dispatch } = useGlobalState();
+
   return (
-    <Router>
-      <Layout>
-        {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
-        <GlobalStateProvider>
+    <GlobalStateProvider>
+      <Router>
+        <Layout>
+          {/* Fügen Sie den AnlaufstellenProvider hier hinzu */}
+
           <ScrollToTop />
           <Routes>
             {/* Startseite */}
@@ -65,9 +70,9 @@ function App() {
               }
             />
           </Routes>
-        </GlobalStateProvider>
-      </Layout>
-    </Router>
+        </Layout>
+      </Router>
+    </GlobalStateProvider>
   );
 }
 

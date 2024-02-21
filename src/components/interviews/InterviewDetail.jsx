@@ -16,6 +16,8 @@ import remarkGfm from "remark-gfm";
 import { Avatar } from "antd";
 import * as antd from "antd";
 
+import { getPosts } from "../../client";
+
 function InterviewDetail() {
   const { state, dispatch } = useGlobalState();
   const { organizationName } = useParams();
@@ -24,22 +26,85 @@ function InterviewDetail() {
   // const url =
   //   "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
 
-  let url =
-    "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
+  // let url =
+  //   "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
 
   let interview = {};
 
-  const fetchAndParseYamlData = (url, dispatch, actionType) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((yamlText) => {
-        const parsedData = yaml.load(yamlText);
+  // const fetchAndParseYamlData = (url, dispatch, actionType) => {
+  //   fetch(url)
+  //     .then((response) => response.text())
+  //     .then((yamlText) => {
+  //       const parsedData = yaml.load(yamlText);
 
-        dispatch({
-          type: actionType,
-          payload: parsedData,
-        });
-      });
+  //       dispatch({
+  //         type: actionType,
+  //         payload: parsedData,
+  //       });
+  //     });
+  // };
+
+  useEffect(() => {
+    if (state.interviewFromSanity.length === 0) {
+      async function fetchPosts() {
+        try {
+          let fetchedPosts = await getPosts();
+
+          fetchedPosts = prepareObjects(fetchedPosts);
+
+          dispatch({
+            type: "SET_INTERVIEW_FROM_SANITY",
+            payload: fetchedPosts,
+          });
+        } catch (error) {
+          console.error("Error fetching posts:", error);
+        }
+      }
+
+      fetchPosts();
+    }
+  }, []);
+
+  const prepareObjects = (array) => {
+    // Eine neue Array-Variable für die bearbeiteten Objekte erstellen
+    let preparedArray = [];
+
+    // Durch jedes Objekt im Array iterieren
+    array.forEach((obj) => {
+      // Ein neues Objekt erstellen, um die unerwünschten Eigenschaften zu entfernen und das Datum zu formatieren
+      let preparedObj = {
+        ...obj, // Alle Eigenschaften des ursprünglichen Objekts kopieren
+      };
+
+      // Unerwünschte Eigenschaften entfernen
+      delete preparedObj.createdAt;
+      delete preparedObj._id;
+      delete preparedObj._rev;
+      delete preparedObj._type;
+      delete preparedObj._updatedAt;
+
+      // launchDate in ein Date-Objekt konvertieren
+      if (preparedObj.launchDate) {
+        preparedObj.launchDate = new Date(preparedObj.launchDate);
+      }
+
+      if (preparedObj.quotationMarkColor) {
+        preparedObj.quotationMarkColor = preparedObj.quotationMarkColor.hex;
+      }
+
+      if (preparedObj.backgroundColor) {
+        preparedObj.backgroundColor = preparedObj.backgroundColor.hex;
+      }
+
+      // Das bearbeitete Objekt zum neuen Array hinzufügen
+      preparedArray.push(preparedObj);
+    });
+
+    // Das bearbeitete Array nach dem Datum in launchDate sortieren
+    preparedArray.sort((a, b) => a.launchDate - b.launchDate);
+
+    // Das bearbeitete Array zurückgeben
+    return preparedArray;
   };
 
   const processTextWithColon = (inputText) => {
@@ -156,26 +221,26 @@ function InterviewDetail() {
     });
   };
 
-  useEffect(() => {
-    fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
-      dispatch,
-      "SET_INTERVIEW_V_2_DATA"
-    );
-  }, [dispatch]);
+  // useEffect(() => {
+  //   fetchAndParseYamlData(
+  //     "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
+  //     dispatch,
+  //     "SET_INTERVIEW_V_2_DATA"
+  //   );
+  // }, [dispatch]);
 
-  useEffect(() => {
-    // Hier wird der Markdown-Text von der URL abgerufen
-    fetch(url)
-      .then((response) => response.text())
-      .then((data) => setMarkdown(data))
-      .catch((error) =>
-        console.error("Fehler beim Abrufen des Markdown:", error)
-      );
-    console.log("Markdown: ", markdown);
-    // Change Avatar
-    replaceStrongWithAvatar();
-  }, [url, interview]);
+  // useEffect(() => {
+  //   // Hier wird der Markdown-Text von der URL abgerufen
+  //   fetch(url)
+  //     .then((response) => response.text())
+  //     .then((data) => setMarkdown(data))
+  //     .catch((error) =>
+  //       console.error("Fehler beim Abrufen des Markdown:", error)
+  //     );
+  //   console.log("Markdown: ", markdown);
+  //   // Change Avatar
+  //   replaceStrongWithAvatar();
+  // }, [url, interview]);
 
   const convertToSlugOld = (inputString) => {
     return inputString.replace(/\s+/g, "-").toLowerCase();
@@ -201,25 +266,27 @@ function InterviewDetail() {
     return inputString;
   };
 
-  if (state.interviewsV2.interviews == undefined) {
+  if (state.interviewFromSanity.length == 0) {
     return null; // Verwenden Sie null statt undefined, um einen leeren Render zu verhindern
   }
 
+  // console.log(state.interviewFromSanity);
+
   // New URL
-  for (let i = 0; i < state.interviewsV2.interviews.length; i++) {
-    const title = state.interviewsV2.interviews[i].Headline;
+  for (let i = 0; i < state.interviewFromSanity.length; i++) {
+    const title = state.interviewFromSanity[i].headline;
     if (convertToSlug(title) === organizationName) {
-      interview = state.interviewsV2.interviews[i];
+      interview = state.interviewFromSanity[i];
     }
   }
 
   // Old URL -> could be removed in the future
   if (Object.keys(interview).length == 0) {
     // Falls interview immer noch null oder undefined ist, die Methode convertToSlugOld verwenden
-    for (let i = 0; i < state.interviewsV2.interviews.length; i++) {
-      const title = state.interviewsV2.interviews[i].Headline;
+    for (let i = 0; i < state.interviewFromSanity.length; i++) {
+      const title = state.interviewFromSanity[i].headline;
       if (convertToSlugOld(title) === organizationName) {
-        interview = state.interviewsV2.interviews[i];
+        interview = state.interviewFromSanity[i];
         break; // Interview gefunden, Schleife beenden
       }
     }
@@ -233,6 +300,8 @@ function InterviewDetail() {
         link={"/interviews"}
       />
     );
+  } else {
+    // setMarkdown(interview.Interview);
   }
 
   if (interview.TextInhaltInterview) {
@@ -245,6 +314,13 @@ function InterviewDetail() {
         {props.children}
       </a>
     );
+  }
+
+  // console.log("Interview: ", interview.Interview);
+  // setMarkdown(interview.Interview);
+
+  if (markdown.length == 0) {
+    setMarkdown(interview.Interview);
   }
 
   return (
