@@ -1,14 +1,10 @@
 import React, { useEffect } from "react";
 import { useGlobalState } from "../../data/GlobalState";
-
 import yaml from "js-yaml";
 import PictureHeader_V2 from "./PictureHeader_V2";
 import TextWithImage from "./TextWithImage";
 import Wissensvermittlung from "./Wissensvermittlung";
 import MotivationAusEigenerErfahrung from "./MotivationAusEigenerErfahrung";
-import TestAntd from "./TestAntd";
-import Numbers from "./Numbers";
-// import AnimatedSVG from "./AnimatedSVG";
 
 function Home_V2() {
   const { state, dispatch } = useGlobalState();
@@ -31,15 +27,11 @@ function Home_V2() {
       dispatch,
       "SET_STARTSEITE_DATA"
     );
-    // console.log("Load Startseite Data: ", state.startseiteData);
   }, [dispatch]);
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
-      {/* <AnimatedSVG /> */}
-      {/* <TestAntd /> */}
       <PictureHeader_V2 data={state.startseiteData.pictureHeader} />
-      {/* <Numbers /> */}
       <TextWithImage data={state.startseiteData.textWithImage} />
       <Wissensvermittlung data={state.startseiteData.wissensvermittlung} />
       <MotivationAusEigenerErfahrung

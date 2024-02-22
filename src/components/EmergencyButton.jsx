@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { EMERGENCY_CONTACTS } from "../utils/constants";
 
 const EmergencyButton = () => {
   const [showEmergencyDialog, setShowEmergencyDialog] = useState(false);
@@ -14,28 +15,6 @@ const EmergencyButton = () => {
     setShowEmergencyDialog(false);
     toggleScroll(true); // Aktiviert das Scrollen
   };
-
-  // Definiere eine Liste von Notrufnummern und deren Beschreibungen
-  const emergencyNumbers = [
-    {
-      title: "Weisser Ring",
-      number: "116 006",
-      description:
-        "Für in Not geratene Betroffene von Gewalt und Kriminalität.",
-    },
-    // {
-    //   title: "Hilfetelefon Gewalt gegen Frauen",
-    //   number: "116 016",
-    //   description:
-    //     "Für alle Frauen, die von Gewalt betroffenen oder bedroht sind – ganz gleich, ob die Gewalterfahrung in der Vergangenheit oder Gegenwart liegt. Darüber hinaus können sich auch Menschen aus dem sozialen Umfeld der Betroffenen jederzeit an das Hilfetelefon wenden.",
-    // },
-    {
-      title: "Patient:innenservice und Ärzt:innen",
-      number: "116 117",
-      description:
-        "Medizinische Hilfe von Ärztinnen und Ärzte sowie Psychotherapeutinnen und Psychotherapeuten.",
-    },
-  ];
 
   const toggleScroll = (enableScroll) => {
     if (enableScroll) {
@@ -75,7 +54,7 @@ const EmergencyButton = () => {
               zur Verfügung:
             </p>
             <ul className="space-y-4 text-sm md:text-lg">
-              {emergencyNumbers.map((emergency, index) => (
+              {EMERGENCY_CONTACTS.map((emergency, index) => (
                 <li key={index} className="flex flex-col items-center w-full">
                   <div className="flex flex-row w-full">
                     <span

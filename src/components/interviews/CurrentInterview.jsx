@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
-import { useGlobalState } from "../../data/GlobalState";
-import yaml from "js-yaml";
+import React from "react";
 import { FaQuoteRight } from "react-icons/fa6";
-import { Link } from "react-router-dom"; // Importiere die Link-Komponente
+import { Link } from "react-router-dom";
 import "./CurrentInterview.css";
 
 const CurrentInterview = (interview) => {
-  // const { state, dispatch } = useGlobalState();
-
   const convertToSlug = (inputString) => {
-    // Umlaute und große Umlaute ersetzen
     inputString = inputString
       .replace(/ä/g, "ae")
       .replace(/ö/g, "oe")
@@ -19,11 +14,10 @@ const CurrentInterview = (interview) => {
       .replace(/Ö/g, "oe")
       .replace(/Ü/g, "ue");
 
-    // Satzzeichen und Sonderzeichen entfernen und in Kleinbuchstaben umwandeln
     inputString = inputString
-      .replace(/[^\w\s-]/g, "") // Alle nicht-alphanumerischen Zeichen entfernen
-      .replace(/\s+/g, "-") // Leerzeichen durch Bindestriche ersetzen
-      .toLowerCase(); // In Kleinbuchstaben umwandeln
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .toLowerCase();
 
     return inputString;
   };
@@ -64,7 +58,6 @@ const CurrentInterview = (interview) => {
                 <h1
                   className="absolute top-20 text-5xl text-black p-2 font-bold rounded-lg w-140 text-left z-20 left-10"
                   id="current-interview-title"
-                  // style={{ textShadow: "3px 3px 20px black" }}
                 >
                   {umlauteErsetzen(interview.interview.headline)}
                 </h1>

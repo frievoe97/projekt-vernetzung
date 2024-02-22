@@ -5,15 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./IconSection.css";
 
-/**
- * Eine Komponente für eine Bild-Text-Slideshow.
- *
- * @param {Object} data - Die Daten für die Slideshow.
- * @param {Array} data.data - Ein Array von Slideshow-Einträgen.
- * @returns {JSX.Element|null} - Die Slideshow-Komponente oder null, wenn keine Daten vorhanden sind.
- */
 const IconTextRows = ({ data }) => {
-  // Wenn keine Daten vorhanden sind oder das Datenarray leer ist, gibt die Komponente null zurück.
   if (!data || data.data.length === 0) {
     return null;
   }
@@ -24,14 +16,10 @@ const IconTextRows = ({ data }) => {
   const [isWideScreen, setIsWideScreen] = useState(false);
   const [clickedCardIndexLaptop, setClickedCardIndexLaptop] = useState(-1);
 
-  // let prevIndex = null;
-
-  // Diese Funktion setzt den Zustand isWideScreen basierend auf der Bildschirmbreite
   const checkScreenWidth = () => {
     setIsWideScreen(window.innerWidth > 840);
   };
 
-  // Konfigurationseinstellungen für den Slider.
   const settings = {
     infinite: true,
     speed: 500,
@@ -44,7 +32,6 @@ const IconTextRows = ({ data }) => {
     adaptiveHeight: false,
   };
 
-  // Effekt für das Zurücksetzen des ausgewählten Index nach Inaktivität.
   useEffect(() => {
     checkScreenWidth();
     window.addEventListener("resize", checkScreenWidth);
@@ -58,7 +45,7 @@ const IconTextRows = ({ data }) => {
       }
     };
 
-    const cardTimeout = 2500; // 5 Sekunden Inaktivität (kann angepasst werden)
+    const cardTimeout = 2500;
     const resetTimer = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(resetClickedCardIndex, cardTimeout);
@@ -73,7 +60,6 @@ const IconTextRows = ({ data }) => {
   }, [clickedCardIndex, userClicked, data]);
 
   const handleUserClick = (index) => {
-    // console.log(index, prevIndex, clickedCardIndex);
     if (clickedCardIndex == null) {
       setClickedCardIndex(index);
     } else {
@@ -92,61 +78,12 @@ const IconTextRows = ({ data }) => {
   return (
     <div className="w-full bg-fm_helles_beige py-16">
       <div className="max-w-screen-xl mx-auto md:p-4">
-        {/* Desktop-Ansicht */}
         <div className="md:flex hidden flex flex-wrap justify-center">
           {data.data.map((item, index) => (
             <div
               key={index}
               className={`w-1/2 xl:w-1/3 px-10 py-8 cursor-pointer items-center
               ${index == data.data.length - 1 ? "mb-0" : "mb-0"}`}
-              onClick={() => setClickedCardIndexLaptop(index)}
-            >
-              <div className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all">
-                <ReactCardFlip
-                  className="h-full flex items-center" // Hier Flexbox hinzugefügt
-                  isFlipped={index === clickedCardIndexLaptop}
-                  flipDirection="horizontal"
-                  containerStyle={{
-                    height: "22rem",
-                    minHeight: "fit-content",
-                  }}
-                  cardStyles={{
-                    front: {
-                      alignItems: "center",
-                      display: "flex",
-                    },
-                    back: {
-                      // Styles für die Rückseite der Karte
-                      alignItems: "center",
-                      display: "flex",
-                      textAlign: "center",
-                    },
-                  }}
-                >
-                  <div className="flex mx-auto flex-col">
-                    <img
-                      className="h-20 object-cover p-4 pt-0 mx-auto"
-                      src={item.iconPath}
-                      alt={`Icon ${index + 1}`}
-                    />
-                    <h2 className="font-bold text-center mx-8">{item.title}</h2>
-                  </div>
-                  <div className="flex items-center flex-col">
-                    <h2 className="text-center mx-8 leading-7">{item.text}</h2>
-                  </div>
-                </ReactCardFlip>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* <div className="md:flex hidden grid grid-cols-2 md:grid-cols-3 gap-4">
-          {data.data.map((item, index) => (
-            <div
-              key={index}
-              className={`w-full px-10 py-8 cursor-pointer mx-auto items-center ${
-                index === data.data.length - 1 ? "mb-0" : "mb-0"
-              }`}
               onClick={() => setClickedCardIndexLaptop(index)}
             >
               <div className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all">
@@ -179,16 +116,14 @@ const IconTextRows = ({ data }) => {
                     <h2 className="font-bold text-center mx-8">{item.title}</h2>
                   </div>
                   <div className="flex items-center flex-col">
-                    <h2 className="font-bold text-center mx-8">{item.text}</h2>
+                    <h2 className="text-center mx-8 leading-7">{item.text}</h2>
                   </div>
                 </ReactCardFlip>
               </div>
             </div>
           ))}
-        </div> */}
-
-        {/* Mobile-Ansicht 
-        block md:hidden */}
+        </div>
+        {/* Mobile Ansicht */}
         <div className="md:hidden">
           <Slider {...settings} className="h-full" adaptiveHeight={false}>
             {data.data.map((item, index) => (

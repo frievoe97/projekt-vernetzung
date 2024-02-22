@@ -6,15 +6,12 @@ const TextWithImage = ({ data }) => {
     return null;
   }
 
-  const { title, text, imageUrls, buttonText, buttonLink, offlineImageUrl } =
-    data;
+  const { title, text, buttonText, buttonLink } = data;
 
   return (
     <div className="w-full bg-fm_weiss">
       <div className="py-8 md:py-14 max-w-screen-xl mx-auto">
-        {/* Auf Laptops (md) */}
         <div className="hidden md:flex">
-          {/* Linke Spalte mit Überschrift, Text und Button */}
           <div className="md:w-2/3 p-4">
             <h1 className="heading text-center md:text-left mb-4">{title}</h1>
             {text.map((paragraph, index) => (
@@ -26,19 +23,13 @@ const TextWithImage = ({ data }) => {
               <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
             </div>
           </div>
-
-          {/* Rechte Spalte mit Bild */}
           <div className="md:w-1/3 p-4 hidden md:block">
             <img src={data.imageUrls} alt="Bild" className="w-4/5 h-auto" />
           </div>
         </div>
-
-        {/* Auf mobilen Geräten (nicht md) */}
         <div className="md:hidden flex flex-col">
-          {/* Überschrift, Text und Button untereinander */}
           <div className="p-4 px-6">
             <h1 className="heading text-center">{title}</h1>
-            {/* Bild */}
             <div className="p-4 my-4">
               <img
                 src={data.imageUrls}

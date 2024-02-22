@@ -2,7 +2,7 @@ import React from "react";
 
 const WarumJetztWarumWir = ({ data }) => {
   if (!data) {
-    return null; // Wenn keine Daten vorhanden sind, nichts anzeigen
+    return null;
   }
 
   return (

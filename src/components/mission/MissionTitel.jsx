@@ -1,13 +1,5 @@
 import React from "react";
 
-/**
- * Diese Komponente rendert den Missionstitel.
- * @param {Object} props - Die Props für den Missionstitel.
- * @param {Object} props.data - Die Daten für den Missionstitel.
- * @param {string} props.data.title - Der Titel des Abschnitts.
- * @param {string[]} props.data.paragraphs - Ein Array von Textabschnitten.
- * @returns {JSX.Element} - Die gerenderte MissionTitel-Komponente.
- */
 const MissionTitel = ({ data }) => {
   if (!data) {
     return null;

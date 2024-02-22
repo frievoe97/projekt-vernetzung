@@ -1,12 +1,8 @@
-import React, { useEffect, useRef } from "react";
-
+import React, { useEffect } from "react";
 import InterviewContainer from "./InterviewContainer";
 import CurrentInterview from "./CurrentInterview";
 import { useGlobalState } from "../../data/GlobalState";
-import yaml from "js-yaml";
-
 import { getPosts } from "../../client";
-
 import { IoMailOutline, IoLogoInstagram } from "react-icons/io5";
 
 function Interviews() {
@@ -35,24 +31,19 @@ function Interviews() {
   }, []);
 
   const prepareObjects = (array) => {
-    // Eine neue Array-Variable für die bearbeiteten Objekte erstellen
     let preparedArray = [];
 
-    // Durch jedes Objekt im Array iterieren
     array.forEach((obj) => {
-      // Ein neues Objekt erstellen, um die unerwünschten Eigenschaften zu entfernen und das Datum zu formatieren
       let preparedObj = {
-        ...obj, // Alle Eigenschaften des ursprünglichen Objekts kopieren
+        ...obj,
       };
 
-      // Unerwünschte Eigenschaften entfernen
       delete preparedObj.createdAt;
       delete preparedObj._id;
       delete preparedObj._rev;
       delete preparedObj._type;
       delete preparedObj._updatedAt;
 
-      // launchDate in ein Date-Objekt konvertieren
       if (preparedObj.launchDate) {
         preparedObj.launchDate = new Date(preparedObj.launchDate);
       }
@@ -65,20 +56,15 @@ function Interviews() {
         preparedObj.backgroundColor = preparedObj.backgroundColor.hex;
       }
 
-      // Das bearbeitete Objekt zum neuen Array hinzufügen
       preparedArray.push(preparedObj);
     });
 
-    // Das bearbeitete Array nach dem Datum in launchDate sortieren
     preparedArray.sort((a, b) => a.launchDate - b.launchDate);
 
-    // Das bearbeitete Array zurückgeben
     return preparedArray;
   };
 
   if (state.interviewFromSanity.length <= 0) return;
-
-  // console.log(state.interviewFromSanity[state.interviewFromSanity.length - 1]);
 
   return (
     <div>

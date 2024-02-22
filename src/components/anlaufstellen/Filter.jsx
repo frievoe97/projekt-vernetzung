@@ -1,17 +1,5 @@
-// import React from "react";
-
-// function Filter({}) {
-//   return (
-//     <div className="w-full mb-4 bg-fm_weiss">
-//       <h1>Filter Section</h1>
-//     </div>
-//   );
-// }
-
-// export default Filter;
-
-import React, { useState } from "react";
-import { Slider, Switch } from "antd";
+import React from "react";
+import { Slider } from "antd";
 const Filter = () => {
   const marks = {
     0: "0 km",

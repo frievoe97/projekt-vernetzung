@@ -1,48 +1,21 @@
 import React, { useEffect, useState } from "react";
-import * as ReactDOM from "react-dom";
 import { createRoot } from "react-dom/client";
 import { Link, useParams } from "react-router-dom";
 import { useGlobalState } from "../../data/GlobalState";
-import yaml from "js-yaml";
 import NotFoundComponent from "../NotFoundComponent";
 import CurrentInterview from "./CurrentInterview";
 import { IoArrowBackOutline } from "react-icons/io5";
 import "./InterviewDetail.css";
-
-// MARKDOWN TEST
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-
 import { Avatar } from "antd";
-import * as antd from "antd";
-
 import { getPosts } from "../../client";
 
 function InterviewDetail() {
   const { state, dispatch } = useGlobalState();
   const { organizationName } = useParams();
-  // MARKDOWNTEST
   const [markdown, setMarkdown] = useState("");
-  // const url =
-  //   "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
-
-  // let url =
-  //   "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/interviews/interview.md";
 
   let interview = {};
-
-  // const fetchAndParseYamlData = (url, dispatch, actionType) => {
-  //   fetch(url)
-  //     .then((response) => response.text())
-  //     .then((yamlText) => {
-  //       const parsedData = yaml.load(yamlText);
-
-  //       dispatch({
-  //         type: actionType,
-  //         payload: parsedData,
-  //       });
-  //     });
-  // };
 
   useEffect(() => {
     if (state.interviewFromSanity.length === 0) {
@@ -223,14 +196,6 @@ function InterviewDetail() {
   };
 
   // useEffect(() => {
-  //   fetchAndParseYamlData(
-  //     "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/interviews_v3.yaml",
-  //     dispatch,
-  //     "SET_INTERVIEW_V_2_DATA"
-  //   );
-  // }, [dispatch]);
-
-  // useEffect(() => {
   //   // Hier wird der Markdown-Text von der URL abgerufen
   //   fetch(url)
   //     .then((response) => response.text())
@@ -270,8 +235,6 @@ function InterviewDetail() {
   if (state.interviewFromSanity.length == 0) {
     return null; // Verwenden Sie null statt undefined, um einen leeren Render zu verhindern
   }
-
-  // console.log(state.interviewFromSanity);
 
   // New URL
   for (let i = 0; i < state.interviewFromSanity.length; i++) {
@@ -316,9 +279,6 @@ function InterviewDetail() {
       </a>
     );
   }
-
-  // console.log("Interview: ", interview.Interview);
-  // setMarkdown(interview.Interview);
 
   if (markdown.length == 0) {
     setMarkdown(interview.Interview);

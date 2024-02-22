@@ -2,30 +2,24 @@ import React, { useState, useEffect } from "react";
 import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import Tags from "../elements/Tags";
 import { Select } from "antd";
 import "./GlossaryContent.css";
+
+import { GLOSSARY_TAG_MAPPING } from "../../utils/constants";
 
 const GlossaryContent = ({ data }) => {
   const [eindeutigeTags, setEindeutigeTags] = useState([]);
   const [searchTags, setSearchTags] = useState([]);
 
-  const values = [
-    { title: "Allgemeine Begrifflichkeiten", value: "general" },
-    { title: "Psychische Gewalt", value: "psychologicalViolence" },
-    { title: "Körperliche Gewalt", value: "physicalViolence" },
-    { title: "Gewalt in der Arbeitswelt", value: "workplaceViolence" },
-    { title: "Häusliche Gewalt", value: "domesticViolence" },
-    { title: "Digitale Gewalt", value: "digitalViolence" },
-  ];
+  const letters = new Set();
 
   function getTitleByValue(targetValue) {
-    for (const item of values) {
+    for (const item of GLOSSARY_TAG_MAPPING) {
       if (item.value === targetValue) {
         return { label: item.title, value: item.value };
       }
     }
-    return null; // Wenn der Wert nicht gefunden wird
+    return null;
   }
 
   const sammleEindeutigeTags = () => {
@@ -34,12 +28,10 @@ const GlossaryContent = ({ data }) => {
     if (data) {
       data.forEach((objekt) => {
         objekt.category.forEach((tag) => {
-          // Überprüfe, ob das Tag bereits in eindeutigeTags vorhanden ist
           const tagExists = eindeutigeTags.some(
             (eindeutigerTag) => eindeutigerTag.label === tag
           );
 
-          // Füge das Tag dem Array der eindeutigen Tags hinzu, wenn es noch nicht vorhanden ist
           if (!tagExists) {
             eindeutigeTags.push({ label: tag, value: tag });
           }
@@ -47,20 +39,15 @@ const GlossaryContent = ({ data }) => {
       });
     }
 
-    // return sortObjectsByLabel(eindeutigeTags);
-    // console.log(eindeutigeTags);
     for (let i = 0; i < eindeutigeTags.length; i++) {
-      // item = getTitleByValue(item.value);
       eindeutigeTags[i] = getTitleByValue(eindeutigeTags[i].value);
     }
     return eindeutigeTags;
   };
 
   const sortObjectsByBegriff = (arrayOfObjects) => {
-    // Verwende die sort() Methode, um das Array zu sortieren
     arrayOfObjects.sort((a, b) => {
-      // Vergleiche die Werte des 'Begriff'-Schlüssels für die Sortierreihenfolge
-      const begriffA = a.term.toLowerCase(); // Vergleich ist nicht case-sensitive
+      const begriffA = a.term.toLowerCase();
       const begriffB = b.term.toLowerCase();
 
       if (begriffA < begriffB) {
@@ -69,35 +56,14 @@ const GlossaryContent = ({ data }) => {
       if (begriffA > begriffB) {
         return 1;
       }
-      return 0; // Die Werte sind gleich
+      return 0;
     });
 
-    return arrayOfObjects; // Das sortierte Array zurückgeben
+    return arrayOfObjects;
   };
   if (Object.keys(data).length > 0) {
     data = sortObjectsByBegriff(data);
   }
-
-  // const sortObjectsByLabel = (arrayOfObjects) => {
-  //   // Verwende die sort() Methode, um das Array zu sortieren
-  //   arrayOfObjects.sort((a, b) => {
-  //     // Vergleiche die Werte des 'label'-Schlüssels für die Sortierreihenfolge
-  //     const labelA = a.label.toLowerCase(); // Vergleich ist nicht case-sensitive
-  //     const labelB = b.label.toLowerCase();
-
-  //     if (labelA < labelB) {
-  //       return 1;
-  //     }
-  //     if (labelA > labelB) {
-  //       return -1;
-  //     }
-  //     return 0; // Die Werte sind gleich
-  //   });
-
-  //   return arrayOfObjects; // Das sortierte Array zurückgeben
-  // };
-
-  // console.log()
 
   useEffect(() => {
     setEindeutigeTags(sammleEindeutigeTags());
@@ -111,11 +77,7 @@ const GlossaryContent = ({ data }) => {
     setSearchTags(value);
   };
 
-  // Ein Array für die Buchstabenüberschriften erstellen
-  const letters = new Set();
-
   return (
-    // Kommentar früher: bg-color_4 jetzt: bg-gradient-to-r from-color_2 via-color_3 to-color_4
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
       <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0 pb-20">
         <div className="w-full px-6 md:px-0">
@@ -131,7 +93,6 @@ const GlossaryContent = ({ data }) => {
           </p>
           <Select
             mode="tags"
-            // value={"selected"}
             style={{
               width: "100%",
               marginBottom: "2rem",
@@ -154,10 +115,8 @@ const GlossaryContent = ({ data }) => {
             }
           });
 
-          // Buchstaben des aktuellen Begriffs ermitteln
           const firstLetter = item.term.charAt(0).toUpperCase();
 
-          // Die Buchstabenüberschrift nur einmal anzeigen
           if (!letters.has(firstLetter) && shouldDisplay) {
             letters.add(firstLetter);
             return (
@@ -169,9 +128,6 @@ const GlossaryContent = ({ data }) => {
                   <GlossaryItem
                     key={index}
                     term={item.term}
-                    // definition={
-                    //   "Die Definition von " + item.Begriff + " ist..."
-                    // }
                     definition={item.websiteText}
                     data={item}
                     tags={item.category}
@@ -183,12 +139,10 @@ const GlossaryContent = ({ data }) => {
               </div>
             );
           } else {
-            // Für die Begriffe ohne Überschrift
             return shouldDisplay ? (
               <GlossaryItem
                 key={index}
                 term={item.term}
-                // definition={"Die Definition von " + item.Begriff + " ist..."}
                 definition={item.websiteText}
                 data={item}
                 tags={item.category}
@@ -204,22 +158,11 @@ const GlossaryContent = ({ data }) => {
   );
 };
 
-function GlossaryItem({
-  term,
-  data,
-  definition,
-  searchTags,
-  tags,
-  source,
-  link,
-}) {
+function GlossaryItem({ term, definition, searchTags, source, link }) {
   const [isExpanded, setExpanded] = useState(searchTags.length > 0);
-
-  // console.log(isExpanded);
   const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
 
   useEffect(() => {
-    // Update isExpanded when searchTags changes
     setExpanded(searchTags.length > 0);
   }, [searchTags]);
 
@@ -228,23 +171,21 @@ function GlossaryItem({
       return text;
     }
 
-    // Teile den Text in Wörter auf
     const words = text.split(" ");
 
-    // Iteriere durch die Wörter und formatiere sie
     const formattedText = words.map((word) => {
       if (word.length === 0) {
-        return word; // Leere Wörter (z.B. doppelte Leerzeichen) behandeln
+        return word;
       }
 
       const wordParts = word.split("-");
       const capitalizedWordParts = wordParts.map((part) => {
         if (part.length === 0) {
-          return part; // Leere Teile (z.B. doppelte Bindestriche) behandeln
+          return part;
         }
 
-        const firstLetterUpperCase = part.charAt(0).toUpperCase(); // Erstes Zeichen groß
-        const restOfWordLowerCase = part.slice(1).toLowerCase(); // Rest des Teils klein
+        const firstLetterUpperCase = part.charAt(0).toUpperCase();
+        const restOfWordLowerCase = part.slice(1).toLowerCase();
 
         return firstLetterUpperCase + restOfWordLowerCase;
       });
@@ -252,18 +193,15 @@ function GlossaryItem({
       return capitalizedWordParts.join("-");
     });
 
-    // Die formatierten Wörter wieder zusammenfügen
     return formattedText.join(" ");
   };
 
   const highlightSearchTags = (text, searchTags) => {
-    // Prüfen, ob searchTags vorhanden sind und mindestens 3 Zeichen lang sind
     if (
       Array.isArray(searchTags) &&
       searchTags.length > 0 &&
       searchTags.every((tag) => tag.length >= 3)
     ) {
-      // Erstelle ein reguläres Ausdrucksmuster, um alle Suchbegriffe zu finden
       const regex = new RegExp(`(${searchTags.join("|")})`, "gi");
       return text.replace(regex, "<strong>$1</strong>");
     }

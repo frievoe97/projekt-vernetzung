@@ -1,57 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useGlobalState } from "../../data/GlobalState";
-import yaml from "js-yaml";
 import AnlaufstellenContentNetflix from "./AnlaufstellenContentNetflix";
-import AnlaufstellenContentGrid from "./AnlaufstellenContentGrid";
-import SearchBar from "./SearchBar";
 import SearchBarAnt from "./SearchBarAnt";
-import Filter from "./Filter";
 
 import { getAnlaufstellen } from "../../client";
 
-/**
- * Hauptkomponente für die Anlaufstellen-V2-Seite.
- */
+import { ANLAUFSTELLEN_CATEGORY_MAPPING } from "../../utils/constants";
+
 function Anlaufstellen_V2() {
-  // Verwende die 'useGlobalState'-Hook, um auf den globalen Zustand zuzugreifen
   const { state, dispatch } = useGlobalState();
 
   function getTitleByValue(targetValue) {
-    for (let i = 0; i < values.length; i++) {
-      if (values[i].value === targetValue) {
-        return { title: values[i].title, index: i };
+    for (let i = 0; i < ANLAUFSTELLEN_CATEGORY_MAPPING.length; i++) {
+      if (ANLAUFSTELLEN_CATEGORY_MAPPING[i].value === targetValue) {
+        return { title: ANLAUFSTELLEN_CATEGORY_MAPPING[i].title, index: i };
       }
     }
-    return null; // Wenn der Wert nicht gefunden wird
+    return null;
   }
-
-  const values = [
-    { title: "Erste Hilfe / Opferhilfe", value: "erste_hilfe_opferhilfe" },
-    { title: "Gewalt gegen Frauen", value: "gewalt_gegen_frauen" },
-    {
-      title: "Gewalt im eigenen Zuhause / in der Partnerschaft",
-      value: "gewalt_im_zuhause",
-    },
-    { title: "Gewalt am Arbeitsplatz", value: "gewalt_am_arbeitsplatz" },
-    { title: "Digitale Gewalt", value: "digitale_gewalt" },
-    {
-      title: "Gewalt an Kindern und Jugendlichen",
-      value: "gewalt_an_kindern_und_jugendlichen",
-    },
-    {
-      title: "Branchenspezifische Anlaufstellen",
-      value: "branchenspezifische_anlaufstellen",
-    },
-    {
-      title: "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)",
-      value: "diskriminierung",
-    },
-    { title: "Gewalt gegen Männer", value: "gewalt_gegen_maenner" },
-    {
-      title: "Beratungsstellen für (potenzielle) Täter",
-      value: "beratungsstellen_fuer_taeter",
-    },
-  ];
 
   // anlaufstellenFromSanity
   useEffect(() => {
@@ -62,6 +28,7 @@ function Anlaufstellen_V2() {
           let fetchedAnlaufstellen = await getAnlaufstellen();
 
           // fetchedPosts = prepareObjects(fetchedPosts);
+          console.log("fetchedAnlaufstellen", fetchedAnlaufstellen);
 
           fetchedAnlaufstellen = groupByCategory(fetchedAnlaufstellen);
 
@@ -77,26 +44,6 @@ function Anlaufstellen_V2() {
       fetchAnlaufstellen();
     }
   }, []);
-
-  /**
-   * Holt Daten aus einer YAML-Datei und aktualisiert den globalen Zustand.
-   * @param {string} url - Die URL zur YAML-Datei.
-   * @param {function} dispatch - Die Dispatch-Funktion aus dem globalen Zustand.
-   * @param {string} actionType - Der Typ der Aktion zum Aktualisieren des Zustands.
-   */
-  // const fetchAndParseYamlData = (url, dispatch, actionType) => {
-  //   fetch(url)
-  //     .then((response) => response.text())
-  //     .then((yamlText) => {
-  //       // Parst die YAML-Daten mit 'js-yaml' und aktualisiert den globalen Zustand
-  //       const parsedData = yaml.load(yamlText);
-  //       console.log(parsedData);
-  //       dispatch({
-  //         type: actionType,
-  //         payload: parsedData,
-  //       });
-  //     });
-  // };
 
   const groupByCategory = (inputArray) => {
     const groupedByCategory = {};
@@ -130,14 +77,6 @@ function Anlaufstellen_V2() {
 
     return resultArray2;
   };
-
-  // useEffect(() => {
-  //   fetchAndParseYamlData(
-  //     "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml",
-  //     dispatch,
-  //     "SET_ANLAUFSTELLEN_DATA"
-  //   );
-  // }, [dispatch]);
 
   return (
     <div className="text-center text-color_font mt-0 pt-16 bg-fm_helles_beige">

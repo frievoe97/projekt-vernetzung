@@ -2,24 +2,10 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalState } from "../data/GlobalState";
 import yaml from "js-yaml";
-import ButtonBigRounded from "./elements/ButtonBigRounded";
-import { data } from "autoprefixer";
 
-/**
- * Footer ist eine React-Komponente, die den Footer der Website darstellt.
- * Sie zeigt Kontaktinformationen, einen Newsletter-Anmeldeabschnitt und Links an.
- */
 function Footer() {
   const { state, dispatch } = useGlobalState();
 
-  /**
-   * fetchAndParseYamlData ist eine Funktion, die YAML-Daten von einer URL abruft und analysiert.
-   * Sie aktualisiert den globalen Zustand (state) mit den geparsten Daten.
-   *
-   * @param {string} url - Die URL, von der die YAML-Daten abgerufen werden sollen.
-   * @param {function} dispatch - Die Dispatch-Funktion, um den globalen Zustand zu aktualisieren.
-   * @param {string} actionType - Der Aktionstyp, der zum Aktualisieren des Zustands verwendet wird.
-   */
   const fetchAndParseYamlData = (url, dispatch, actionType) => {
     fetch(url)
       .then((response) => response.text())

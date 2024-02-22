@@ -1,17 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
-
+import React, { useEffect } from "react";
 import { useGlobalState } from "../../data/GlobalState";
-
 import yaml from "js-yaml";
 import PictureHeaderGlossary from "./PictureHeaderGlossary";
 import GlossaryContent from "./GlossaryContent";
-
 import { getGlossary } from "../../client";
 
 function Gloassar_V2() {
   const { state, dispatch } = useGlobalState();
-  const [isVisible, setIsVisible] = useState(false);
-  const motionRefs = useRef([]);
 
   useEffect(() => {
     if (state.glossaryFromSanity.length === 0) {
@@ -19,10 +14,6 @@ function Gloassar_V2() {
       async function fetchGlossary() {
         try {
           let fetchedGlossary = await getGlossary();
-
-          // fetchedPosts = prepareObjects(fetchedPosts);
-
-          // console.log(fetchedGlossary);
 
           dispatch({
             type: "SET_GLOSSARY_FROM_SANITY",
@@ -37,11 +28,6 @@ function Gloassar_V2() {
     }
   }, []);
 
-  const handleVisibilityChange = (index, isVisible) => {
-    setIsVisible(isVisible);
-    motionRefs.current[index].style.opacity = isVisible ? 1 : 0;
-  };
-
   const fetchAndParseYamlData = (url, dispatch, actionType) => {
     fetch(url)
       .then((response) => response.text())
@@ -55,8 +41,6 @@ function Gloassar_V2() {
       });
   };
 
-  // https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar_2.yaml
-
   useEffect(() => {
     fetchAndParseYamlData(
       "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar.yaml",
@@ -64,17 +48,6 @@ function Gloassar_V2() {
       "SET_GLOSSAR_PAGE_DATA"
     );
   }, [dispatch]);
-
-  useEffect(() => {
-    fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/glossar_2.yaml",
-      dispatch,
-      "SET_GLOSSARY_NEW_DATA"
-    );
-    // console.log(state.glossaryNew);
-  }, [dispatch]);
-
-  // console.log(state.glossaryNew);
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
@@ -85,5 +58,3 @@ function Gloassar_V2() {
 }
 
 export default Gloassar_V2;
-
-// Bei „pathologischer Narzissmus“ und Bossing fehlen die weiterführenden Links zu Drittanbietern

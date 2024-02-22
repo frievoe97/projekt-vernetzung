@@ -1,19 +1,11 @@
 import React from "react";
-import ButtonBigRounded from "../elements/ButtonBigRounded";
 
 const MotivationAusEigenerErfahrung = ({ data }) => {
   if (!data) {
     return null;
   }
 
-  const {
-    title,
-    imageUrl,
-    paragraphs,
-    buttonText,
-    buttonLink,
-    offlineImageUrl,
-  } = data;
+  const { title, imageUrl, paragraphs } = data;
 
   return (
     <div className="w-full bg-fm_weiss">
@@ -31,9 +23,6 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
                 {paragraph}
               </p>
             ))}
-            {/* <div className="flex justify-center md:justify-start">
-              <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
-            </div> */}
           </div>
         </div>
         <div className="md:hidden flex flex-col">
@@ -52,9 +41,6 @@ const MotivationAusEigenerErfahrung = ({ data }) => {
               {paragraph}
             </p>
           ))}
-          {/* <div className="flex justify-center md:justify-start">
-            <ButtonBigRounded buttonText={buttonText} link={buttonLink} />
-          </div> */}
         </div>
       </div>
     </div>
