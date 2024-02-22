@@ -1,4 +1,4 @@
-name: Upload the Website to the server of the domain projekt-vernetzung.org
+name: Upload the Sanity Studio to the server of the domain studio.projekt-vernetzung.org
 
 on:
   push:
