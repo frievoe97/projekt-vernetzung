@@ -19,7 +19,7 @@ jobs:
         run: |
           ls
           npm ci --legacy-peer-deps
-          npx sanity deploy
+          npx sanity build
 
       - name: 📂 SFTP uploader
         uses: wangyucode/sftp-upload-action@v1.4.8 # Danke an @https://github.com/wangyucode/sftp-upload-action
