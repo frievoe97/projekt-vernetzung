@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: 18
       - working-directory: ./studio
-        run: npx sanity deploy
+        run: |
+          npm install
+          npx sanity deploy
 
       - name: 📂 SFTP uploader
         uses: wangyucode/sftp-upload-action@v1.4.8 # Danke an @https://github.com/wangyucode/sftp-upload-action
