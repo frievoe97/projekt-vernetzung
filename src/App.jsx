@@ -14,6 +14,7 @@ import DataPrivacy from "./components/imprint/DataPrivacy";
 import Interviews from "./components/interviews/Interviews";
 import InterviewDetail from "./components/interviews/InterviewDetail";
 
+// App
 function App() {
   return (
     <GlobalStateProvider>
