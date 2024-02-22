@@ -16,3 +16,19 @@ export async function getPosts() {
   );
   return posts;
 }
+
+// {additionalLinkText, additionalLinkURL, sources, term, websiteLink, websiteText, category}
+export async function getGlossary() {
+  const glossary = await client.fetch(
+    '*[_type == "glossary"]{additionalLinkText, additionalLinkURL, sources, term, websiteLink, websiteText, category}'
+  );
+  return glossary;
+}
+
+// {additionalLinkText, additionalLinkURL, sources, term, websiteLink, websiteText, category}
+export async function getAnlaufstellen() {
+  const glossary = await client.fetch(
+    '*[_type == "anlaufstellen"]{category, link, logo, tags, title}'
+  );
+  return glossary;
+}

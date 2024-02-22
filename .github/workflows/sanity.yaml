@@ -1,0 +1,31 @@
+name: Upload the Website to the server of the domain projekt-vernetzung.org
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  Upload-to-SFTP:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: cd studio
+      - run: npm sanity build
+
+      - name: 📂 SFTP uploader
+        uses: wangyucode/sftp-upload-action@v1.4.8 # Danke an @https://github.com/wangyucode/sftp-upload-action
+        with:
+          host: ${{ secrets.ORG_SFTP_HOST }}
+          username: ${{ secrets.ORG_SFTP_USERNAME }}
+          password: ${{ secrets.ORG_SFTP_PASSWORD }}
+          dryRun: false
+          forceUpload: true
+          localDir: "./studio/dist"
+          remoteDir: "/studio"
+          exclude: ".git*,.DS_Store"

@@ -6,10 +6,36 @@ import yaml from "js-yaml";
 import PictureHeaderGlossary from "./PictureHeaderGlossary";
 import GlossaryContent from "./GlossaryContent";
 
+import { getGlossary } from "../../client";
+
 function Gloassar_V2() {
   const { state, dispatch } = useGlobalState();
   const [isVisible, setIsVisible] = useState(false);
   const motionRefs = useRef([]);
+
+  useEffect(() => {
+    if (state.glossaryFromSanity.length === 0) {
+      console.log("Fetching glossary from sanity");
+      async function fetchGlossary() {
+        try {
+          let fetchedGlossary = await getGlossary();
+
+          // fetchedPosts = prepareObjects(fetchedPosts);
+
+          // console.log(fetchedGlossary);
+
+          dispatch({
+            type: "SET_GLOSSARY_FROM_SANITY",
+            payload: fetchedGlossary,
+          });
+        } catch (error) {
+          console.error("Error fetching posts:", error);
+        }
+      }
+
+      fetchGlossary();
+    }
+  }, []);
 
   const handleVisibilityChange = (index, isVisible) => {
     setIsVisible(isVisible);
@@ -48,12 +74,12 @@ function Gloassar_V2() {
     // console.log(state.glossaryNew);
   }, [dispatch]);
 
-  // console.log(sortObjectsByBegriff(state.glossaryNew.glossaryData));
+  // console.log(state.glossaryNew);
 
   return (
     <div className="text-center text-color_font bg-transparent pt-16">
       <PictureHeaderGlossary data={state.glossarData.pictureHeaderGlossary} />
-      <GlossaryContent data={state.glossaryNew} />
+      <GlossaryContent data={state.glossaryFromSanity} />
     </div>
   );
 }

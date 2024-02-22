@@ -3,34 +3,36 @@ import Tags from "../elements/Tags";
 import { Select } from "antd";
 import "./SearchBarAnt.css";
 
-function SearchBarAnt({
-  onTagsChange,
-  allTags,
-  addTagFromSuggestion,
-  searchData,
-}) {
-  const options = [];
-
-  for (let i = 0; i < allTags.length; i++) {
-    options.push({
-      value: allTags[i],
-      label: allTags[i],
-    });
+function SearchBarAnt(
+  {
+    // onTagsChange,
+    // allTags,
+    // addTagFromSuggestion,
+    // searchData,
   }
+) {
+  // const options = [];
+
+  // for (let i = 0; i < allTags.length; i++) {
+  //   options.push({
+  //     value: allTags[i],
+  //     label: allTags[i],
+  //   });
+  // }
 
   // State für die ausgewählten Tags
-  const [selected, setSelected] = useState([]);
+  // const [selected, setSelected] = useState([]);
 
   // useEffect, um das `selected`-Array zu aktualisieren, wenn `searchData` geändert wird
-  useEffect(() => {
-    // Hier kannst du die Logik implementieren, um `selected` basierend auf `searchData` zu aktualisieren.
-    // Zum Beispiel:
-    setSelected(searchData.tags);
-  }, [searchData]); // Der Effekt wird ausgelöst, wenn sich `searchData` ändert
+  // useEffect(() => {
+  //   // Hier kannst du die Logik implementieren, um `selected` basierend auf `searchData` zu aktualisieren.
+  //   // Zum Beispiel:
+  //   setSelected(searchData.tags);
+  // }, [searchData]); // Der Effekt wird ausgelöst, wenn sich `searchData` ändert
 
-  const handleChangeTest = (value) => {
-    setTimeout(() => onTagsChange(value, ""), 0);
-  };
+  // const handleChangeTest = (value) => {
+  //   setTimeout(() => onTagsChange(value, ""), 0);
+  // };
 
   return (
     <div className="w-full mb-4 bg-fm_weiss">

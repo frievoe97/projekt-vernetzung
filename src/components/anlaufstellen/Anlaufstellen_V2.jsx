@@ -7,6 +7,8 @@ import SearchBar from "./SearchBar";
 import SearchBarAnt from "./SearchBarAnt";
 import Filter from "./Filter";
 
+import { getAnlaufstellen } from "../../client";
+
 /**
  * Hauptkomponente für die Anlaufstellen-V2-Seite.
  */
@@ -14,11 +16,67 @@ function Anlaufstellen_V2() {
   // Verwende die 'useGlobalState'-Hook, um auf den globalen Zustand zuzugreifen
   const { state, dispatch } = useGlobalState();
 
-  // Definiere den Zustand 'searchData' mit Standardwerten für Tags und Eingabetext
-  const [searchData, setSearchData] = useState({ tags: [], inputText: "" });
+  function getTitleByValue(targetValue) {
+    for (let i = 0; i < values.length; i++) {
+      if (values[i].value === targetValue) {
+        return { title: values[i].title, index: i };
+      }
+    }
+    return null; // Wenn der Wert nicht gefunden wird
+  }
 
-  // Definiere den Zustand 'allTags' für alle eindeutigen Tags aus den Daten
-  const [allTags, setAllTags] = useState([]);
+  const values = [
+    { title: "Erste Hilfe / Opferhilfe", value: "erste_hilfe_opferhilfe" },
+    { title: "Gewalt gegen Frauen", value: "gewalt_gegen_frauen" },
+    {
+      title: "Gewalt im eigenen Zuhause / in der Partnerschaft",
+      value: "gewalt_im_zuhause",
+    },
+    { title: "Gewalt am Arbeitsplatz", value: "gewalt_am_arbeitsplatz" },
+    { title: "Digitale Gewalt", value: "digitale_gewalt" },
+    {
+      title: "Gewalt an Kindern und Jugendlichen",
+      value: "gewalt_an_kindern_und_jugendlichen",
+    },
+    {
+      title: "Branchenspezifische Anlaufstellen",
+      value: "branchenspezifische_anlaufstellen",
+    },
+    {
+      title: "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)",
+      value: "diskriminierung",
+    },
+    { title: "Gewalt gegen Männer", value: "gewalt_gegen_maenner" },
+    {
+      title: "Beratungsstellen für (potenzielle) Täter",
+      value: "beratungsstellen_fuer_taeter",
+    },
+  ];
+
+  // anlaufstellenFromSanity
+  useEffect(() => {
+    if (state.anlaufstellenFromSanity.length === 0) {
+      console.log("Fetching anlaufstellen from sanity");
+      async function fetchAnlaufstellen() {
+        try {
+          let fetchedAnlaufstellen = await getAnlaufstellen();
+
+          // fetchedPosts = prepareObjects(fetchedPosts);
+
+          fetchedAnlaufstellen = groupByCategory(fetchedAnlaufstellen);
+
+          dispatch({
+            type: "SET_ANLAUFSTELLEN_FROM_SANITY",
+            payload: fetchedAnlaufstellen,
+          });
+        } catch (error) {
+          console.error("Error fetching posts:", error);
+        }
+      }
+
+      fetchAnlaufstellen();
+    }
+  }, []);
 
   /**
    * Holt Daten aus einer YAML-Datei und aktualisiert den globalen Zustand.
@@ -26,132 +84,65 @@ function Anlaufstellen_V2() {
    * @param {function} dispatch - Die Dispatch-Funktion aus dem globalen Zustand.
    * @param {string} actionType - Der Typ der Aktion zum Aktualisieren des Zustands.
    */
-  const fetchAndParseYamlData = (url, dispatch, actionType) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((yamlText) => {
-        // Parst die YAML-Daten mit 'js-yaml' und aktualisiert den globalen Zustand
-        const parsedData = yaml.load(yamlText);
-        // console.log(parsedData);
-        dispatch({
-          type: actionType,
-          payload: parsedData,
-        });
+  // const fetchAndParseYamlData = (url, dispatch, actionType) => {
+  //   fetch(url)
+  //     .then((response) => response.text())
+  //     .then((yamlText) => {
+  //       // Parst die YAML-Daten mit 'js-yaml' und aktualisiert den globalen Zustand
+  //       const parsedData = yaml.load(yamlText);
+  //       console.log(parsedData);
+  //       dispatch({
+  //         type: actionType,
+  //         payload: parsedData,
+  //       });
+  //     });
+  // };
+
+  const groupByCategory = (inputArray) => {
+    const groupedByCategory = {};
+
+    // Gruppieren nach Kategorie
+    inputArray.forEach((item) => {
+      item.category.forEach((category) => {
+        if (!groupedByCategory[category]) {
+          groupedByCategory[category] = [];
+        }
+        groupedByCategory[category].push(item);
       });
+    });
+
+    // Formatierung des Rückgabe-Arrays
+    const resultArray = Object.keys(groupedByCategory).map((category) => ({
+      Anlaufstelle: groupedByCategory[category],
+      Kategorie: category,
+    }));
+
+    resultArray.forEach((item) => {
+      item.index = getTitleByValue(item.Kategorie).index;
+      item.Kategorie = getTitleByValue(item.Kategorie).title;
+    });
+
+    let resultArray2 = [];
+
+    resultArray.forEach((item) => {
+      resultArray2[item.index] = item;
+    });
+
+    return resultArray2;
   };
 
-  /**
-   * Behandelt Änderungen an den Tags und dem Eingabetext.
-   * @param {array} tags - Die ausgewählten Tags.
-   * @param {string} inputText - Der eingegebene Text.
-   */
-  const handleTagsChange = (tags, inputText) => {
-    // Aktualisiert den Zustand 'searchData' mit den neuen Tags und dem Text
-    setSearchData({ tags, inputText });
-  };
-
-  /**
-   * Entfernt ein Tag aus dem aktuellen 'searchData'.
-   * @param {string} tag - Das zu entfernende Tag.
-   */
-  const removeTag = (tag) => {
-    // Filtert das Tag aus dem aktuellen Zustand 'searchData' und aktualisiert ihn
-    const filteredArray = searchData.tags.filter(
-      (element) => element.toLowerCase() !== tag.toLowerCase()
-    );
-
-    setSearchData({ tags: filteredArray, inputText: "" });
-    console.log("Updated Tags ", filteredArray);
-  };
-
-  /**
-   * Fügt ein Tag aus der Vorschlagsliste zum aktuellen 'searchData' hinzu.
-   * @param {string} tag - Das hinzuzufügende Tag.
-   */
-  const addTagFromSuggestion = (tag) => {
-    // Erstellt ein neues Array mit dem hinzuzufügenden Tag und aktualisiert den Zustand
-    const newTags = [...searchData.tags, tag];
-    setSearchData({ tags: newTags, inputText: "" });
-  };
-
-  // Wenn 'searchData' sich ändert, führe useEffect aus
-  //   useEffect(() => {
-  //     console.log("searchData has changed:", searchData);
-  //   }, [searchData]);
-
-  // Lade die Daten aus der YAML-Datei, wenn die Komponente montiert wird
-  // https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml
-  useEffect(() => {
-    fetchAndParseYamlData(
-      "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml",
-      dispatch,
-      "SET_ANLAUFSTELLEN_DATA"
-    );
-  }, [dispatch]);
-
-  // Erstelle eine Liste eindeutiger Tags aus den Daten und aktualisiere 'allTags'
-  useEffect(() => {
-    const createUniqueTagsList = (data) => {
-      const tagsSet = new Set();
-
-      const extractTags = (array) => {
-        array.forEach((item) => {
-          if (item.Anlaufstelle && Array.isArray(item.Anlaufstelle)) {
-            item.Anlaufstelle.forEach((tags) => {
-              tags.Tags.forEach((tag) => {
-                if (
-                  tag === "Anlaufstelle" ||
-                  tag === "Name" ||
-                  tag === "Kategorie"
-                )
-                  return;
-                tagsSet.add(tag);
-              });
-            });
-          }
-        });
-      };
-
-      if (
-        data.anlaufstellenData.googleDoc &&
-        Array.isArray(data.anlaufstellenData.googleDoc)
-      ) {
-        extractTags(data.anlaufstellenData.googleDoc);
-      }
-
-      setAllTags(Array.from(tagsSet));
-    };
-
-    // Wenn 'state.anlaufstellenData' verfügbar ist, rufe 'createUniqueTagsList' auf
-    if (state.anlaufstellenData) {
-      createUniqueTagsList(state);
-    }
-  }, [state.anlaufstellenData]);
+  // useEffect(() => {
+  //   fetchAndParseYamlData(
+  //     "https://raw.githubusercontent.com/frievoe97/projekt-vernetzung/main/src/data/pages/anlaufstellenData.yaml",
+  //     dispatch,
+  //     "SET_ANLAUFSTELLEN_DATA"
+  //   );
+  // }, [dispatch]);
 
   return (
     <div className="text-center text-color_font mt-0 pt-16 bg-fm_helles_beige">
-      {/* Rendere die Suchleiste und übergebe die entsprechenden Funktionen und Daten */}
-
-      <SearchBarAnt
-        onTagsChange={handleTagsChange}
-        allTags={allTags}
-        searchData={searchData}
-        addTagFromSuggestion={addTagFromSuggestion}
-      />
-
-      {/* <Filter /> */}
-
-      {/* Rendere den Inhalt basierend auf searchData */}
-      {searchData.tags != undefined &&
-      searchData.tags.length === 0 &&
-      (searchData.inputText == "" || searchData.inputText == null) ? (
-        <AnlaufstellenContentNetflix />
-      ) : (
-        <AnlaufstellenContentGrid
-          searchData={searchData}
-          onTagsChange={removeTag}
-        />
-      )}
+      <SearchBarAnt />
+      <AnlaufstellenContentNetflix />
     </div>
   );
 }

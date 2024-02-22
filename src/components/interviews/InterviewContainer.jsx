@@ -31,7 +31,7 @@ const InterviewContainer = (interview) => {
     return;
   }
 
-  console.log(interview.interviews);
+  // console.log(interview.interviews);
 
   // Hex1(background)
 

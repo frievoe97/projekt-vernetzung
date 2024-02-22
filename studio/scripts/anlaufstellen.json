@@ -1,0 +1,792 @@
+[
+  {
+    "_type": "anlaufstellen",
+    "title": "Weißer Ring",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://weisser-ring.de/",
+    "logo": "https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Ärzt:innensuche der Kassenärztlichen Bundesvereinigung",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://arztsuche.116117.de/",
+    "logo": "https://arztsuche.116117.de/media/images/content/logo.svg",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexueller Missbrauch"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Psychotherapeut:innensuche der Kassenärztlichen Bundesvereinigung",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://arztsuche.116117.de/",
+    "logo": "https://arztsuche.116117.de/media/images/content/logo.svg",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Atlas der Opferhilfen",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://www.beratungsstellen-opferhilfen.de/beratungsstellen/",
+    "logo": "https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Anwaltssuche der Bundesrechtsanwaltskammer",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://www.brak.de/service/verbraucherinformationen/anwaltssuche/",
+    "logo": "https://th.bing.com/th/id/OIP.CB54yo2JCTagRTRYEWy60gHaBo?pid=ImgDet&rs=1",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Telefonseelsorge ",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://www.telefonseelsorge.de/",
+    "logo": "https://th.bing.com/th/id/OIP.ntu2oH7cO2QXl-w41M-VsQHaDb?pid=ImgDet&rs=1",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Nationale Selbsthilfegruppensuche",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://www.nakos.de/adressen/datenbanksuche/",
+    "logo": "https://www.nakos.de/images/logo.png",
+    "tags": [
+      "Opferhilfe"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Krisenchat",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://krisenchat.de/",
+    "logo": "https://th.bing.com/th/id/OIP.BiS_t-uSQAAzgzIhTtLDmwHaB8?pid=ImgDet&rs=1",
+    "tags": [
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Berliner Krisendienst (nur Berlin)",
+    "category": [
+      "Erste Hilfe / Opferhilfe"
+    ],
+    "link": "https://www.berliner-krisendienst.de/",
+    "logo": "https://www.berliner-krisendienst.de/wp-content/uploads/2019/11/Logo.png",
+    "tags": [
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfetelefon Gewalt gegen Frauen",
+    "category": [
+      "Gewalt gegen Frauen"
+    ],
+    "link": "https://www.hilfetelefon.de/",
+    "logo": "https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Bff: Frauen gegen Gewalt e.V.",
+    "category": [
+      "Gewalt gegen Frauen"
+    ],
+    "link": "https://www.frauen-gegen-gewalt.de/de/hilfe-beratung.html",
+    "logo": "https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Frauenhaussuche",
+    "category": [
+      "Gewalt gegen Frauen"
+    ],
+    "link": "https://www.frauenhaus-suche.de/",
+    "logo": "https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg",
+    "tags": [
+      "Opferhilfe",
+      "Körperliche Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Antidiskriminierungsstelle des Bundes",
+    "category": [
+      "Gewalt gegen Frauen"
+    ],
+    "link": "https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html",
+    "logo": "https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Gewalt am Arbeitsplatz",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfetelefon Gewalt gegen Frauen",
+    "category": [
+      "Gewalt im eigenen Zuhause / in der Partnerschaft"
+    ],
+    "link": "https://www.hilfetelefon.de/",
+    "logo": "https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Bff: Frauen gegen Gewalt e.V.",
+    "category": [
+      "Gewalt im eigenen Zuhause / in der Partnerschaft"
+    ],
+    "link": "https://www.frauen-gegen-gewalt.de/de/hilfe-beratung.html",
+    "logo": "https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Frauenhaussuche",
+    "category": [
+      "Gewalt im eigenen Zuhause / in der Partnerschaft"
+    ],
+    "link": "https://www.frauenhaus-suche.de/",
+    "logo": "https://www.frauenhaus-suche.de/fileadmin/templates/img/ZIF_Logo_pink.svg",
+    "tags": [
+      "Opferhilfe",
+      "Körperliche Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfetelefon Gewalt gegen Frauen",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.hilfetelefon.de/",
+    "logo": "https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/Logo_Hilfetelefon_2023.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Antidiskriminierungsstelle des Bundes",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html",
+    "logo": "https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Gewalt am Arbeitsplatz",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Landkarte für Mobbingberatungsstellen",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.ifb.de/wissen/kommunikation/konfliktmanagement/mobbing-landkarte",
+    "logo": "https://www.ifb.de/bundles/s5applayout/images/ifb_og.jpg?20200623091549",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "ver.di",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://macht-immer-sinn.de/mobbing-am-arbeitsplatz/",
+    "logo": "https://www.extremnews.com/images/max_image_view-0ce988e6e8cc493a820574a84ba1f17f.png",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "WorkWatch",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.work-watch.de/",
+    "logo": "https://pbs.twimg.com/profile_images/1302953068666015747/bMT2IBSs_400x400.jpg",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Beratung des Whistleblower Netzwerk",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.whistleblower-net.de/beratung/",
+    "logo": "https://th.bing.com/th/id/OIP.cUI21245ELMbXz08zjS4iQAAAA?pid=ImgDet&rs=1",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Externe Hinweisgebermeldestelle beim Bundesamt für Justiz",
+    "category": [
+      "Gewalt am Arbeitsplatz"
+    ],
+    "link": "https://www.bundesjustizamt.de/DE/MeldestelledesBundes/MeldestelledesBundes_node.html",
+    "logo": "https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F08%2FLogo_Bundesamt_f%25C3%25BCr_Justiz.svg%2Flangde-1500px-Logo_Bundesamt_f%25C3%25BCr_Justiz.svg.png&w=1080&q=50",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "HateAid",
+    "category": [
+      "Digitale Gewalt"
+    ],
+    "link": "https://hateaid.org/betroffenenberatung/",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo-HateAid.svg/2560px-Logo-HateAid.svg.png",
+    "tags": [
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Cybermobbing-Hilfe",
+    "category": [
+      "Digitale Gewalt"
+    ],
+    "link": "https://www.cybermobbing-hilfe.de/",
+    "logo": "https://www.cybermobbing-hilfe.de/wp-content/uploads/2021/04/logo-cybermobbinghilfe-retina.png",
+    "tags": [
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Suche nach Aufsichtsbehörden für Datenschutz in den Bundesländern",
+    "category": [
+      "Digitale Gewalt"
+    ],
+    "link": "https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_table.html",
+    "logo": "https://www.bfdi.bund.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=3",
+    "tags": [
+      "Digitale Gewalt"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfe-Portal Sexueller Missbrauch",
+    "category": [
+      "Digitale Gewalt"
+    ],
+    "link": "https://www.hilfe-portal-missbrauch.de/startseite",
+    "logo": "https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg",
+    "tags": [
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Unabhängige Beauftragte für Fragen des sexuellen Kindesmissbrauchs (UBSKM)",
+    "category": [
+      "Gewalt an Kindern und Jugendlichen"
+    ],
+    "link": "https://beauftragte-missbrauch.de/",
+    "logo": "https://assets.beauftragte-missbrauch.de//images/logo.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Prozessbegleitung",
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Betroffenenrat ",
+    "category": [
+      "Gewalt an Kindern und Jugendlichen"
+    ],
+    "link": "https://beauftragte-missbrauch.de/betroffenenrat/betroffenenrat-bei-der-ubskm",
+    "logo": "https://assets.beauftragte-missbrauch.de//images/logo-additional.svg",
+    "tags": [
+      "Opferhilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Sexueller Missbrauch",
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfe-Portal Sexueller Missbrauch",
+    "category": [
+      "Gewalt an Kindern und Jugendlichen"
+    ],
+    "link": "https://www.hilfe-portal-missbrauch.de/startseite",
+    "logo": "https://www.hilfe-portal-missbrauch.de/typo3conf/ext/pb_ubskm/Resources/Public/Images/branding/logo.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Zartbitter e.V.",
+    "category": [
+      "Gewalt an Kindern und Jugendlichen"
+    ],
+    "link": "https://www.zartbitter.de/gegen_sexuellen_missbrauch/Aktuell/100_index.php",
+    "logo": "https://www.zartbitter.de/gegen_sexuellen_missbrauch/wLayout/images/layout/zb_logo.gif",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Prozessbegleitung",
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Musik, Kultur und Medien: Themis Vertrauensstelle gegen sexuelle Belästigung und Gewalt",
+    "category": [
+      "Branchenspezifische Anlaufstellen"
+    ],
+    "link": "https://themis-vertrauensstelle.de/",
+    "logo": "https://themis-vertrauensstelle.de/wp-content/uploads/2023/05/cropped-Unbenannt.png",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Sport: Safe Sport",
+    "category": [
+      "Branchenspezifische Anlaufstellen"
+    ],
+    "link": "https://www.ansprechstelle-safe-sport.de/",
+    "logo": "https://6xc492.n3cdn1.secureserver.net/wp-content/uploads/SafeSport_Logo_2z-1.svg?time=1699361971",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Antidiskrimierungsstelle des Bundes",
+    "category": [
+      "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)"
+    ],
+    "link": "https://www.antidiskriminierungsstelle.de/DE/startseite/startseite-node.html",
+    "logo": "https://www.antidiskriminierungsstelle.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=1",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Gewalt am Arbeitsplatz",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Verband der Beratungsstellen für Betroffene rechter, rassistischer und antisemitischer Gewalt",
+    "category": [
+      "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)"
+    ],
+    "link": "https://verband-brg.de/",
+    "logo": "https://verband-brg.de/wp-content/uploads/2019/01/logo_vbrg_m3.png",
+    "tags": [
+      "Erste Hilfe",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Ombudsstelle / Landesstelle für Gleichbehandlung (nur Berlin)",
+    "category": [
+      "Diskriminierung (Geschlecht, LGBTQI+, Rassismus)"
+    ],
+    "link": "https://www.berlin.de/sen/lads/recht/ladg/ombudsstelle/",
+    "logo": "https://www.berlin.de/imgscaler/UerXchZFAzAEZCYuy102OEqjmgkhCZ6YQ1oabi9hGnc/rbig2zu1/L3N5czExLXByb2Qvc2VuL2xhZHMvX2Fzc2V0cy9yZWNodC9sb2dvX29tYnVkc3N0ZWxsZS5qcGc.jpg?ts=1684994881",
+    "tags": [
+      "Gewalt gegen Frauen",
+      "Gewalt gegen LGBTQI",
+      "Rassismus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Bundesfach- und Koordinierungsstelle Männergewaltschutz ",
+    "category": [
+      "Gewalt gegen Männer"
+    ],
+    "link": "https://www.maennergewaltschutz.de/beratungsangebote/maennerschutzeinrichtungen/",
+    "logo": "https://www.maennersache-ol.de/wp-content/uploads/2022/09/bundesweite-fach-und-koordinierungsstelle-maennergewaltschutz.jpg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung",
+      "Kindesmissbrauch"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Hilfetelefon Gewalt an Männern",
+    "category": [
+      "Gewalt gegen Männer"
+    ],
+    "link": "https://www.maennerhilfetelefon.de/",
+    "logo": "https://www.maennerhilfetelefon.de/themes/custom/maennerhilfe/logo-mht-web.png",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Kindesmissbrauch"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Weisser Ring",
+    "category": [
+      "Gewalt gegen Männer"
+    ],
+    "link": "https://weisser-ring.de/hilfe-fuer-opfer/opfer-telefon",
+    "logo": "https://weisser-ring.de/sites/all/themes/dreist/images/logo_mobile.svg",
+    "tags": [
+      "Opferhilfe",
+      "Erste Hilfe",
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Häusliche Gewalt",
+      "Gewalt am Arbeitsplatz",
+      "Mobbing",
+      "Sexuelle Belästigung",
+      "Digitale Gewalt",
+      "Sexueller Missbrauch",
+      "Gewalt gegen LGBTQI",
+      "Rassismus",
+      "Prozessbegleitung",
+      "Kindesmissbrauch"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Bundesarbeits­gemeinschaft Täterarbeit Häusliche Gewalt e.V.",
+    "category": [
+      "Beratungsstellen für (potenzielle) Täter"
+    ],
+    "link": "https://www.bag-taeterarbeit.de/",
+    "logo": "https://www.bag-taeterarbeit.de/wp-content/uploads/2023/03/logo-bag.jpg",
+    "tags": [
+      "Körperliche Gewalt",
+      "Psychische Gewalt",
+      "Gewalt gegen Frauen",
+      "Häusliche Gewalt",
+      "Mobbing",
+      "Sexueller Missbrauch",
+      "Narzissmus"
+    ]
+  },
+  {
+    "_type": "anlaufstellen",
+    "title": "Präventionsnetzwerk \"Kein Täter werden\"",
+    "category": [
+      "Beratungsstellen für (potenzielle) Täter"
+    ],
+    "link": "https://www.kein-taeter-werden.de/",
+    "logo": "https://www.kein-taeter-werden.de/wp-content/uploads/ktw-1.svg",
+    "tags": [
+      "Kindesmissbrauch",
+      "Kind"
+    ]
+  }
+]

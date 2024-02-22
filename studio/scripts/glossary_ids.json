@@ -1,0 +1,623 @@
+Not in project directory, assuming context of project at /Users/friedrichvoelkers/GIT/projekt-vernetzung-sanity
+[
+  {
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "physicalViolence",
+      "workplaceViolence",
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Nicht nur körperliche Übergriffe wie Vergewaltigung, sexuelle Nötigung oder sexueller Missbrauch zählen zu dieser Form von Gewalt. Auch jede Form unerwünschter sexueller Kommunikation zählen dazu - obszöne Worte und Gesten, aufdringliche und unangenehme Blicke, das Zeigen oder Zusenden sexueller Inhalte und/oder von Pornografie.",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_id": "00e969b3-809e-4e71-82e4-7d031601e5c4",
+    "_type": "glossary",
+    "term": "Sexuelle Belästigung",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen ",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0"
+  },
+  {
+    "websiteText": "Manipulation meint die gezielte Beeinflussung eines anderen Menschen mit dem Ziel, dass die Person nach dem eigenen Willen handelt. Wenn diese Beeinflussung so geschickt passiert, dass die andere Person gar nicht merkt, dass sie in eine bestimmte Richtung gelenkt wird, nennt man dies Manipulation. Diese kann mit unterschiedlichsten Methoden begangen werden, die in diesem Glossar dargestellt sind.",
+    "additionalLinkURL": "",
+    "sources": "Vgl. Bundeszentrale für politische Bildung 2023, Manipulation",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Manipulation",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteLink": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/320758/manipulation/",
+    "_type": "glossary",
+    "_id": "103c69d7-a1af-48ec-b7bf-2c0f988a850c",
+    "category": []
+  },
+  {
+    "_id": "139ca181-85aa-462e-8b08-d9fc0cdee0c2",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkURL": "",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Wirtschaftliche Gewalt",
+    "sources": "Vgl. Gewalt INFO at, Ökonomische Gewalt",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "category": [
+      "domesticViolence"
+    ],
+    "additionalLinkText": "",
+    "websiteText": "Wirtschaftliche Gewalt bezeichnet jene Situationen, in denen eine Person über kein eigenes bzw. ein unzureichendes Einkommen verfügt und der Partner diese Situation ausnutzt, indem er ungenügende Geldmittel für Haushaltsangelegenheiten bereitstellt und/oder Einkommen, Vermögen und Ausgaben geheim hält. Die Beschränkungen sollen darauf abzielen, das erzielte Einkommen zu kontrollieren. Wie bei anderen Formen von Gewalt besteht ihre Funktion darin, Abhängigkeit und Angst zu erzeugen.",
+    "websiteLink": "https://www.gewaltinfo.at/fachwissen/formen/oekonomische_gewalt.php"
+  },
+  {
+    "additionalLinkText": "",
+    "websiteText": "Machtmissbrauch ist der Missbrauch einer (ggf. nur gefühlten) Machtposition, um anderen Personen - über welche man Macht ausüben kann - zu schaden, sie zu schikanieren oder zu benachteiligen, oder um sich selbst oder Günstlingen persönliche Vorteile zu verschaffen.",
+    "websiteLink": "https://www.antidiskriminierungsstelle.de/SharedDocs/downloads/DE/praxisbeispiele/praxisbeispiel-ufa-handl-leitfaden-machtmissbrauch.pdf?__blob=publicationFile&v=4#:~:text=Systemische%20Einordnung%3A%20Machtmissbrauch%20ist%20der,G%C3%BCnstlingen%20pers%C3%B6nliche%20Vorteile%20zu%20verschaffen.",
+    "term": "Machtmissbrauch",
+    "category": [],
+    "_id": "1519f166-1a91-4a2e-aaca-4852a654aa69",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkURL": "",
+    "sources": "Vgl. Antidiskriminierungsstelle des Bundes, Handlungsleitfaden UFA zum Thema \"Machtmissbrauch\"",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary"
+  },
+  {
+    "term": "Misogynie ",
+    "websiteText": "Der aus dem Altgriechischen stammende Begriff Misogynie lässt sich am genauesten als Frauenhass oder Frauenfeindlichkeit übersetzen. Misogynie beschreibt die Annahme einer gegebenen Minderwertigkeit von Frauen, wie sie seit der Antike in verschiedenen Schriften der Philosophie und Literatur, aber letztlich auch im christlichen Glauben, der Hexenverfolgung und wissenschaftlichen Abhandlungen zum Ausdruck gebracht wurde. Während der Begriff zwar etwas sehr Konkretes bezeichnet – nämlich die Abwertung von Frauen –, wird er gleichwohl seit vielen Jahren auch in einer allgemeineren Form als strukturelle Entwertung oder Benachteiligung von Weiblichkeit gebraucht.",
+    "websiteLink": "https://www.bpb.de/shop/zeitschriften/apuz/267942/frauenfeindlich-sexistisch-antifeministisch/#footnote-target-2",
+    "sources": "Vgl. Bundeszentrale für politische Bildung 2018, Aus Politik und Zeitgeschichte",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_id": "15cadbed-979d-4d3d-831f-44ef40cd74a3",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "additionalLinkURL": "",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary"
+  },
+  {
+    "additionalLinkText": "",
+    "websiteLink": "https://www.aufarbeitungskommission.de/service-presse/service/glossar/grooming/",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_id": "16777f1f-9039-442b-80a2-198ee6833a0c",
+    "category": [
+      "general"
+    ],
+    "websiteText": "Grooming (engl.= anbahnen, vorbereiten) bedeutet, eine sexuelle Grenzüberschreitung bei Kindern geplant vorzubereiten. Dieses geplante Vorgehen umfasst in der Regel folgende Aspekte: Vertrauen des Kindes gewinnen, es bevorzugen, isolieren, zum Schweigen und Geheimhalten bringen und gefügig machen, indem nach und nach die Grenzen des Opfers überschritten werden.",
+    "additionalLinkURL": "",
+    "sources": "Vgl. Unabhängige Kommission zur Aufarbeitung sexuellen Kindesmissbrauchs, Glossar",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "term": "Grooming",
+    "_updatedAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Eine Vergewaltigung ist jegliches Eindringen in den Körper oder der Versuch des Eindringens in den Körper einer Person ohne deren Einverständnis. Vergewaltigung beschreibt die extremste Form sexualisierter Gewalt, bei der Sexualität als Mittel zur Machtdemonstration, Demütigung und Unterwerfung von Menschen eingesetzt wird. Nach der Sexualstrafrechtsreform vom  Jahr 2016 kommt es für die Strafbarkeit einer sexuellen Handlung nicht mehr darauf an, ob körperliche Gewalt angewendet wurde oder ob eine betroffene Person sich gewehrt hat. Ein sexueller Übergriff ist dann strafbar, wenn er gegen den erkennbaren Willen einer Person ausgeübt wird (Grundsatz „Nein heißt Nein“).",
+    "term": "Vergewaltigung",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "_id": "1e7c1d5c-e783-4efa-9a13-efe3deaaa3ba",
+    "category": [
+      "general",
+      "physicalViolence"
+    ],
+    "additionalLinkURL": "",
+    "websiteLink": "https://beratung-bonn.de/themen/vergewaltigung/",
+    "sources": "Vgl. Beratungsstelle gegen sexualisierte Gewalt"
+  },
+  {
+    "websiteText": "Das Strafgesetzbuch benennt einen sexuellen Übergriff, bei welchem körperliche oder psychische Gewalt hinzukommt, als sexuelle Nötigung. Um den Straftatbestand einer sexuellen Nötigung zu erfüllen, müssen Umstände wie die folgenden vorliegen: 1) Gewalt gegenüber dem Opfer: Das Opfer wird geschlagen, niedergedrückt oder am Schreien gehindert; 2) Drohungen: Dem Opfer wird beispielsweise mit Gewalt oder dem Tod gedroht; 3) Ausnutzung einer Situation: Das Opfer wird beispielsweise unter Drogen gesetzt, so dass es sich nicht mehr wehren kann oder ist mit dem oder der Täter:in in einem Raum eingesperrt. Die schwerste Form der sexuellen Nötigung gemäß Strafgesetzbuch ist die Vergewaltigung.",
+    "websiteLink": "https://www.klugo.de/blog/sexuelle-noetigung",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "category": [
+      "physicalViolence",
+      "domesticViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "sources": "Vgl. Klugo 2022, Was gilt als sexuelle Nötigung? Das sagt das StGB",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "term": "Sexuelle Nötigung",
+    "_id": "26b1cec0-c893-48d9-bb86-c0b30e4b68cc",
+    "additionalLinkURL": ""
+  },
+  {
+    "additionalLinkURL": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "_id": "2b5442e3-bce7-4987-976e-0e3bfcedfca5",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "term": "Psychische Gewalt",
+    "category": [
+      "psychologicalViolence"
+    ],
+    "additionalLinkText": "",
+    "websiteText": "Psychische Gewalt ist eine Form von Gewalt, die ohne Schläge auskommt. Ziel ist es dabei in der Regel, die andere Person zu schwächen, sie aus dem Gleichgewicht zu bringen und zu verunsichern. Opfer psychischer Gewalt beginnen, ihr Selbstbild zu ändern und das Vertrauen zu verlieren, sowohl in sich selbst, als auch in andere Personen. Gezielt ausgeübte psychische Gewalt ist dabei zu unterscheiden von der kurzfristigen Abreaktion von Frustration. In jedem Streit können Worte fallen, die im Eifer des Gefechts ausgesprochen werden. Mit psychischer Gewalt geht es jedoch nicht darum, sich kurzfristig „Luft zu machen“, sondern der Täter verfolgt dabei meist folgende Hauptziele: Macht, Kontrolle, Dominanz, Privilegien. Zudem beginnt diese Form von Gewalt oft subtil.",
+    "websiteLink": "https://www.juraforum.de/lexikon/psychische-gewalt#was-ist-psychische-gewalt",
+    "sources": "Vgl. Jura Forum, Was ist psychische Gewalt?",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0"
+  },
+  {
+    "term": "Geschlechtsspezifische Gewalt",
+    "_id": "2feabcd3-b7af-487b-bbeb-76e616d5326a",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Geschlechtsspezifische Gewalt gegen Frauen ist Gewalt, die Betroffene erfahren, weil sie weiblichen Geschlechts sind. Gemeint sind damit alle Handlungen, durch die Frauen körperliches, sexuelles oder psychisches Leid erfahren oder wirtschaftlich Schaden nehmen. Schon die Androhung von Gewalt zählt dazu, genauso wie Nötigung oder willkürliche Freiheitsentziehung.",
+    "sources": "Vgl. Frauenhauskoordinierung, Geschlechtsspezifische Gewalt",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.frauenhauskoordinierung.de/themenportal/gewalt-gegen-frauen/gewaltformen/geschlechtsspezifische-gewalt/",
+    "_createdAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "category": [
+      "psychologicalViolence"
+    ],
+    "additionalLinkText": "Zum Glossar \"Narzissmus A - Z\"",
+    "additionalLinkURL": "https://projekt-echo.de/narzissmus-a-bis-z/",
+    "sources": "Vgl. Onmeda 2022, Narzissmus: Definition, Symptome und Typen",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "websiteText": "Bei der krankhaften Form von Narzissmus, also der narzisstischen Persönlichkeitsstörung, handelt es sich um eine psychosomatische Erkrankung mit funktionalen Störungen der eigenen Selbstwertregulation. Menschen mit narzisstischer Persönlichkeitsstörung zeichnet ein krankhaft übertriebenes Selbstwertgefühl und Aufmerksamkeitsbedürfnis aus. Typische Kennzeichen von pathologischem Narzissmus sind: Selbstüberschätzung, Überlegenheitsgefühle, Aufmerksamkeitssuche, ausbeuterisches, manipulatives und intrigantes Verhalten, Mangel an Empathie und Neid. Das Glossar \"Narzissmus A - Z\" von Projekt Echo beschreibt typische Handlungen, Muster und Auswirkungen bei narzisstischem Missbrauch.",
+    "websiteLink": "https://www.onmeda.de/krankheiten/narzissmus-id202498/",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Pathologischer Narzissmus",
+    "_id": "315c99ab-f520-4e67-a0ae-b5313e061063"
+  },
+  {
+    "websiteLink": "https://www.polizei-beratung.de/themen-und-tipps/gefahren-im-internet/cybergrooming/",
+    "sources": "Vgl. Polizei-Beratung ",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Cybergrooming",
+    "category": [
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Beim Cybergrooming suchen Personen über das Internet Kontakt zu Kindern und Jugendlichen, um diese sexuell zu belästigen, zum Bildertausch oder zu Treffen zu überreden. Manche Personen tun dies mit dem Ziel, die angesprochenen Minderjährigen zu belästigen, sie zu sexuellen Handlungen zu bewegen oder zum Versand von Nacktbildern aufzufordern.",
+    "additionalLinkURL": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "_id": "37b31749-527b-432f-9d6b-36a79493863d"
+  },
+  {
+    "websiteText": "Das Allgemeine Gleichbehandlungsgesetz (AGG) spricht nicht von Diskriminierung sondern von Benachteiligung. Nicht jede unterschiedliche Behandlung, die einen Nachteil zur Folge hat, muss diskriminierend sein. Eine unmittelbare (direkte oder offene) Benachteiligung liegt vor, wenn eine Person eine weniger günstige Behandlung als eine Vergleichsperson erfährt. Das ist zum Beispiel der Fall, wenn eine Person mit Migrationshintergrund trotz gleicher Qualifikationen nicht zu einem Bewerbungsgespräch eingeladen wird, Personen ohne Migrationshintergrund hingegen schon.",
+    "additionalLinkURL": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteLink": "https://www.antidiskriminierungsstelle.de/DE/ueber-diskriminierung/was-ist-diskriminierung/was-ist-diskriminierung-node.html",
+    "sources": "Vgl. Antidiskriminierungsstelle des Bundes, Was ist Diskriminierung?",
+    "_type": "glossary",
+    "term": "Diskriminierung",
+    "_id": "3f0c1a70-fb36-4dcf-adbf-7b50e714f851"
+  },
+  {
+    "term": "Frauenfeindlichkeit",
+    "_id": "3f0fd4f0-693d-4916-a67f-ec5eda400dbf",
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "physicalViolence",
+      "workplaceViolence",
+      "domesticViolence",
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.bpb.de/shop/zeitschriften/apuz/267942/frauenfeindlich-sexistisch-antifeministisch/#footnote-target-2",
+    "sources": "Vgl. Bundeszentrale für politische Bildung 2018, Aus Politik und Zeitgeschichte",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "websiteText": "Frauenfeindlichkeit bzw. Misogynie beschreibt die Annahme einer gegebenen Minderwertigkeit von Frauen, wie sie seit der Antike in verschiedenen Schriften der Philosophie und Literatur, aber letztlich auch im christlichen Glauben, der Hexenverfolgung und wissenschaftlichen Abhandlungen zum Ausdruck gebracht wurde. Während der Begriff zwar etwas sehr Konkretes bezeichnet – nämlich die Abwertung von Frauen –, wird er gleichwohl seit vielen Jahren auch in einer allgemeineren Form als strukturelle Entwertung oder Benachteiligung von Weiblichkeit gebraucht."
+  },
+  {
+    "additionalLinkText": "",
+    "websiteText": "Mikroaggressionen sind alltägliche Kommentare, Fragen, verbale oder nonverbale Handlungen, die überwiegend marginalisierte Gruppen treffen und negative Stereotypen verfestigen. Sie können sowohl absichtlich als auch unabsichtlich geäußert oder getätigt werden. Obwohl sie oft nicht verletzend gemeint sind, können sie dazu führen, dass sich Menschen unsicher und unwohl fühlen.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://vielfalt.uni-koeln.de/antidiskriminierung/glossar-diskriminierung-rassismuskritik/mikroagressionen",
+    "sources": "Vgl. Universität zu Köln, Mikroaggressionen",
+    "_type": "glossary",
+    "term": "Mikroaggressionen",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_id": "4a06f0ab-a3ea-4090-a5bd-e6f8c98abdde",
+    "category": [
+      "psychologicalViolence",
+      "workplaceViolence",
+      "domesticViolence"
+    ]
+  },
+  {
+    "additionalLinkURL": "https://www.anti-mobbing-zollernalb.de/files/Katalog-der-100-Mobbing-Handlungen-Esser-Wolmerath.pdf",
+    "sources": "Vgl. Bundeszentrale für politische Bildung 2016",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_id": "4e28f0a0-b455-49ef-ad2b-ff4facbf2b94",
+    "category": [
+      "workplaceViolence"
+    ],
+    "additionalLinkText": "Zum Katalog der 100 Mobbinghandlungen",
+    "websiteText": "Bossing steht für die über einen längeren Zeitraum vorgenommenen feindlichen, systematischen, häufig nicht sofort erkennbaren Handlungen von Vorgesetzten (»Bossen«) gegenüber Untergebenen, um sie loszuwerden. Die einzelnen Formen von Bossing sind oftmals nicht klar von anderen Gewaltformen abzugrenzen. Eine umfassende Übersicht enthält der Katalog der 100 Mobbinghandlungen nach Esser & Wolmerath (der Personalrat 2000, S. 448)",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "term": "Bossing",
+    "websiteLink": "https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/18930/bossing/",
+    "_type": "glossary"
+  },
+  {
+    "category": [
+      "psychologicalViolence",
+      "domesticViolence"
+    ],
+    "websiteText": "Soziale Gewalt zählt mit zur Kategorie der psychischen Gewalt und geht oft einher mit einer Isolation der Betroffenen. Es handelt sich um ein Verhalten, das darauf abzielt, sie zu isolieren und beinhaltet zum Beispiel die oft subtile Abwertung von Kontakten zu Familie oder Freunden, sowie weniger subtile Handlungen wie das Einsperren zu Hause, das Absperren des Telefons. ",
+    "additionalLinkURL": "",
+    "websiteLink": "https://link.springer.com/chapter/10.1007/978-3-531-93127-2_3",
+    "sources": "Vgl. Lamnek/Luedtke/Ottermann/Vogl 2012, Soziale Bedingungen häuslicher Gewalt",
+    "_id": "50db574b-e45a-4131-8d50-aa3d7467f912",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Soziale Gewalt"
+  },
+  {
+    "category": [
+      "general",
+      "psychologicalViolence"
+    ],
+    "websiteText": "Unter einem Trauma verstehen Fachleute eine schwere seelische Verletzung, die durch ein extrem belastendes persönliches Erlebnis ausgelöst werden kann. Traumatisierend können verschiedene Situationen und Ereignisse wirken, die bedrohend bis katastrophal sind und bei fast jedem Menschen eine tiefe Verzweiflung auslösen würden. Hierzu zählen unter anderem: Naturkatastrophen, schwere Unfälle, Kriege, Tod naher Angehöriger, lebensbedrohliche Erkrankungen, körperliche, psychische oder sexuelle Gewalt, Mobbing. Ein Trauma hat jedoch nichts mit Schwäche zu tun. Es handelt sich bei einer Traumatisierung um eine komplexe Reaktion auf extreme äußere Einflüsse, welche von verschiedenen Faktoren beeinflusst wird.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.aok.de/pk/magazin/koerper-psyche/psychologie/trauma-wenn-die-seele-verletzt-wird/",
+    "sources": "Vgl. AOK 2022, Trauma: Wenn die Seele verletzt wird",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "term": "Trauma",
+    "_id": "5ee2cef6-1a63-4b84-a039-94bfa8541567",
+    "additionalLinkText": "",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "_updatedAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "category": [
+      "physicalViolence",
+      "domesticViolence"
+    ],
+    "additionalLinkText": "",
+    "websiteText": "Die körperliche Gewalt wird auch physische Gewalt genannt. Diese Form meint ein nach außen gerichtetes, aggressives Verhalten, welches die Schädigung und/oder Verletzung eines anderen zur Folge hat. Beispiele: Schubsen, Treten und Schlagen, Ohrfeigen, Anspucken, Festhalten, Einsperren / Aussperren, Würgen.",
+    "sources": "Vgl. Jura Forum ",
+    "_type": "glossary",
+    "term": "Körperliche Gewalt",
+    "_id": "69b8ebe8-5f1e-4cb7-940d-11c0d585d222",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.juraforum.de/lexikon/gewalt#koerperliche-physische-gewalt"
+  },
+  {
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Ehrenmorde",
+    "additionalLinkText": "",
+    "websiteText": "Unter Gewalt im Namen der \"Ehre\" werden gewalttätige Handlungen verstanden, die Täter damit begründen, die \"Familienehre\" aufrechterhalten oder wiederherstellen zu wollen. Diese Form der Gewalt beginnt oftmals mit emotionalem Druck und Erpressung. Sie kann darüber hinaus aber auch Formen von körperlicher und sexualisierter Gewalt annehmen, bis hin zu Zwangsverheiratungen und Mord, der dann als \"Ehrenmord\" bezeichnet wird.",
+    "additionalLinkURL": "",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen",
+    "_id": "78e467e1-c12d-4bcd-81a1-436070cce02a",
+    "category": [
+      "physicalViolence"
+    ]
+  },
+  {
+    "additionalLinkURL": "",
+    "sources": "Vgl. Bundeszentrale für politische Bildung 2022, einfach POLITIK: Lexikon",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "additionalLinkText": "",
+    "websiteLink": "https://www.bpb.de/kurz-knapp/lexika/lexikon-in-einfacher-sprache/331402/sexismus/",
+    "_type": "glossary",
+    "term": "Sexismus",
+    "_id": "8281ce48-869f-40ee-9493-cde84fb2a20c",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "websiteText": "Sexismus ist eine Art von Diskriminierung und bedeutet die Benachteiligung, Abwertung, Verletzung und Unterdrückung einer Person oder einer Gruppe aufgrund des Geschlechts. Sexismus ist auch die Vorstellung, dass Geschlechter eine naturgegebene Ordnung oder Reihenfolge haben. Zum Beispiel die Vorstellung, dass Männer mehr wert sind als Frauen. Wer sexistisch denkt, beachtet nicht die Persönlichkeit des einzelnen Menschen, sondern zum Beispiel: Sie ist eine Frau, dann muss sie auf eine bestimmte Art aussehen, sich verhalten oder fühlen / Sie ist eine Frau, dann hat sie bestimmte Aufgaben / Er ist ein Mann, dann muss er etwas besonders gut können. Es geht nicht darum, ob eine Person wirklich bestimmte Dinge gut kann oder gern machen möchte."
+  },
+  {
+    "websiteText": "Sexismus und sexuelle Belästigung am Arbeitsplatz kommen in zahlreichen Unternehmen und Organisationen vor. Ein Viertel aller Frauen zwischen 16 und 65 Jahren war bereits am Arbeits- oder Ausbildungsplatz betroffen. Betroffene können sich direkt gegen Täter oder Täterinnen wehren und bei zuständigen Stellen Schutz und Hilfe einfordern. Darüber hinaus sind manche Formen der sexuellen Belästigung auch strafrechtlich relevant - nämlich dann, wenn sie mit körperlichen Übergriffen einhergehen.",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "_type": "glossary",
+    "_id": "849284e8-897a-470c-ab4f-8169704d08f2",
+    "category": [
+      "workplaceViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "additionalLinkURL": "",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen ",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Sexuelle Belästigung am Arbeitsplatz"
+  },
+  {
+    "sources": "Vgl. renk Magazin 15.03.2022, Was ist Silencing? ",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "_id": "8e87eeee-d743-4171-a5ce-7ca10e93095c",
+    "category": [
+      "general",
+      "psychologicalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkURL": "",
+    "websiteText": "Silencing (dt. \"zum Schweigen bringen\") bringt Bevölkerungsgruppen, Kulturen, Lebensweisen und Perspektiven zum Schweigen. Gerade in Diskriminierungs- und Rassismus-Kontexten, in denen People of Color zugehört und wahrgenommen werden müssen, kommt es vermehrt dazu. Dabei wird ihnen vorgeschrieben, wie sie über ihre Erfahrungen und Emotionen zu sprechen haben, um nicht z.B. zu wütend oder zu laut zu erscheinen. So werden Stereotype gegen marginalisierte Personen reproduziert und Machtstrukturen geschaffen.",
+    "websiteLink": "https://renk-magazin.de/was-ist-silencing/",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Silencing",
+    "additionalLinkText": ""
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Sexualisierte Gewalt",
+    "_id": "8f67b336-05a9-44ad-b9fa-dd3207ffbdff",
+    "additionalLinkURL": "",
+    "websiteText": "Sexualisierte Gewalt bezeichnet jeden Übergriff auf die sexuelle Selbstbestimmung. Die Täter - weit überwiegend sind es Männer, auch wenn sexualisierte Gewalt ebenfalls von Frauen ausgehen kann - zwingen den Betroffenen ihren Willen auf. Es geht also um Machtverhalten. Sexualisierte Gewalt wertet Menschen durch sexuelle Handlungen oder Kommunikation gezielt ab, demütigt und erniedrigt sie.",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen ",
+    "_type": "glossary",
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "physicalViolence",
+      "workplaceViolence",
+      "domesticViolence",
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": ""
+  },
+  {
+    "term": "Love Bombing",
+    "_id": "9e1959cc-e12c-4d82-a06c-ddae98070461",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "sources": "Vgl. AOK 2023, Warum Love Bombing so gefährlich ist",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "category": [
+      "general",
+      "psychologicalViolence"
+    ],
+    "websiteText": "Love Bombing (zu Deutsch Liebesbombardement) ist eine manipulative Taktik in zwischenmenschlichen Beziehungen oder am Arbeitsplatz, bei der „Love Bomber“ eine Person mit Aufmerksamkeit, Geschenken, Komplimenten und Versprechen regelrecht überschütten. Sie täuschen ernste Absichten vor und zielen darauf ab, die Person schnellstmöglich von sich abhängig zu machen. Es handelt sich dabei um eine Form von emotionalem Missbrauch. ",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.aok.de/pk/magazin/familie/liebe-sexualitaet/love-bombing-bedeutung-anzeichen-und-praevention/"
+  },
+  {
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Catcalling meint das Hinterherrufen oder -pfeifen einer Person im öffentlichen Raum. Auch Hupen, Sprüche, Geräusche oder andere unerwünschte Äußerungen zählen hierzu. Diese finden nicht auf eine respektvolle Weise statt und sind häufig sexuell aufgeladen.",
+    "websiteLink": "https://praxistipps.focus.de/was-ist-catcalling-einfach-erklaert_129851",
+    "sources": "Vgl. FOCUS Online 2021, Was ist Catcalling? Einfach erklärt. ",
+    "term": "Catcalling",
+    "_id": "9fcb7bb4-cf2a-4bbb-a67a-3facb59f2cae",
+    "category": [
+      "general"
+    ],
+    "additionalLinkURL": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary"
+  },
+  {
+    "term": "Femizide",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "sources": "Vgl. Yamina Lourghi/Elisabeth Gernhardt: Femizid oder \"Ehren\"-Mord? EIne Begriffsdefinition ",
+    "_type": "glossary",
+    "_id": "a40674b7-ee32-4af3-8605-22bb3b518194",
+    "category": [
+      "physicalViolence"
+    ],
+    "websiteText": "Die Tötung von Frauen wegen ihres Geschlechts oder wegen bestimmter Vorstellungen von Weiblichkeit wird als Femizid oder Feminizid bezeichnet. Femizide sind durch hierarchische Geschlechterverhältnisse motiviert und resultieren aus ungleichen Machtstrukturen.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://frauenrechte.de/fileadmin/Redaktion/Unsere_Arbeit/Gewalt_im_Namen_der_Ehre/GNE_Materialien/2022_Femizid_Ehrenmord_Definition.pdf"
+  },
+  {
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/kinder-und-jugend/medienkompetenz/was-ist-cybermobbing--86484",
+    "category": [
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Cybermobbing",
+    "additionalLinkText": "",
+    "websiteText": "Unter Cyberbullying oder Cybermobbing versteht man die Beleidigung, Bedrohung, Bloßstellung oder Belästigung von Personen mithilfe von Kommunikationsmedien, beispielsweise über Smartphones, E-Mails, Websites, Foren, Chats und Communities.",
+    "additionalLinkURL": "",
+    "sources": "Vgl. BMFSFJ 2019, Was ist Cybermobbing?",
+    "_id": "abdddcdd-16ae-4c8f-a207-09a0896cad93"
+  },
+  {
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "_id": "b671a20a-b2a8-4261-b17d-914094fc7dcd",
+    "additionalLinkText": "Zum Katalog der 100 Mobbinghandlungen",
+    "additionalLinkURL": "https://www.anti-mobbing-zollernalb.de/files/Katalog-der-100-Mobbing-Handlungen-Esser-Wolmerath.pdf",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "websiteText": "Mobbing ist fortgesetzte Gewalt einer Person oder Gruppe gegenüber einer anderen Person. Hinter Mobbing steckt eine Dynamik, die auf Macht und Kontrolle in größeren Gruppen abzielt. Normalerweise gibt es eine:n oder wenige Angreifer:innen - und eine größere Zahl Unbeteiligter, die stillschweigend dazu beitragen. Die einzelnen Formen von Mobbing sind oftmals nicht klar von anderen Gewaltformen abzugrenzen. Eine umfassende Übersicht enthält der Katalog der 100 Mobbinghandlungen nach Esser & Wolmerath (der Personalrat 2000, S. 448)",
+    "term": "Mobbing",
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "workplaceViolence",
+      "domesticViolence",
+      "digitalViolence"
+    ]
+  },
+  {
+    "websiteText": "Bei consent (sexueller Konsens) geht es darum zu fragen, was das Gegenüber möchte, und sich die Zustimmung, also den Konsens, einzuholen. Die Idee der Zustimmung ist einfach: Um Sex zu haben, müssen wir wissen, dass die Person, mit der wir Sex haben möchten, auch Sex mit uns haben will. Das bedeutet, dass wir verbal oder nonverbal mit der Partner*in kommunizieren und dafür sorgen, dass alle sexuellen Aktivitäten mit voller gegenseitiger Zustimmung stattfinden.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.amnesty.ch/de/themen/frauenrechte/sexualisierte-gewalt/gegenseitige-zustimmung",
+    "sources": "Vgl. Amnestiy International Schweiz 2022, Konsens in sexuellen Beziheungen - Worum geht es?",
+    "_type": "glossary",
+    "term": "Consent",
+    "category": [],
+    "additionalLinkText": "",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_id": "b8103e9b-85f1-4128-997b-0f47df451298",
+    "_updatedAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "_id": "b927288d-66e9-4690-8c81-60f313d871bd",
+    "additionalLinkText": "",
+    "sources": "Vgl. Polizei-Beratung",
+    "_type": "glossary",
+    "term": "Täter-Opfer-Umkehr",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "websiteText": "Täter-Opfer-Umkehr ist ein Begriff aus der Kriminologie und bezieht sich auf eine Situation, in der das Opfer einer Straftat als Täter:in, bzw. als Mittäter:in dargestellt oder behandelt wird. Der englische Begriff „Victim Blaming“ bedeutet wörtlich übersetzt „Opfer beschuldigen“. Die Ursache für einen Übergriff wird dabei nicht bei der Tatperson, sondern im vermeintlich „provokativen“ Verhalten des Opfers gesucht. Man spricht von einer möglichen „Mitschuld“, wo es keine gibt. Es wird suggeriert, hätte das Opfer selbst sich \"richtig\" verhalten, könnte nichts passieren. ",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.polizei-beratung.de/infos-fuer-betroffene/victim-blaming/",
+    "_createdAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen ",
+    "websiteText": "Der englische Begriff \"to stalk\" kommt aus der Jagd und bedeutet so viel wie anschleichen oder anpirschen. Stalking bezeichnet das intensive und andauernde Nachstellen, Belästigen und Bedrohen der ausgewählten Person mit dem Ziel der Macht und Kontrolle. Stalking kann viele Formen annehmen. Dazu gehören die ständige unerwünschte Kommunikation über Briefe, E-Mails, Telefon, Messenger oder das Beobachten und Auskundschaften von Tagesabläufen und Gewohnheiten. Auch die indirekte Kontaktaufnahme über dritte Personen, Beschimpfungen sowie das Eindringen in Wohnräume oder Lebensbereiche zählen dazu. Unerwünschte Geschenke oder Bestellungen im Namen der Betroffenen, das Zerstören von Eigentum sowie das Androhen von Gewalt bis hin zu tatsächlichen körperlichen oder sexuellen Übergriffen können ebenfalls als Stalking bezeichnet werden.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Stalking",
+    "_id": "c310cc25-d731-40a5-9908-e5045853e2a9",
+    "additionalLinkText": "",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "digitalViolence"
+    ]
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Intersektionalität",
+    "websiteLink": "https://www.deutschlandfunknova.de/beitrag/mehrfach-diskriminiert-das-konzept-intersektionalitaet",
+    "sources": "Vgl. Deutschlandfunk Nova 2022: Mehrfach diskriminiert: Das Konzept Intersektionalität",
+    "additionalLinkURL": "",
+    "_id": "cb744dc4-49e4-4367-88e4-15fe7544d601",
+    "category": [
+      "general"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "websiteText": "Mit dem Ansatz Intersektionalität wird berücksichtigt, dass verschiedene Diskriminierungen nicht getrennt voneinander existieren. So sind Menschen, die von Armut betroffen sind, häufig außerdem weiblich und People of Color."
+  },
+  {
+    "additionalLinkText": "",
+    "websiteText": "Der Begriff „Gaslighting“ bezeichnet eine Methode der psychischen Gewalt, bei der die Opfer so stark durch Lügen, Leugnen und Einschüchterungstaktiken manipuliert werden. Das Heimtückische beim „Gaslighting“: eine Lüge hier, eine Lüge da, ab und zu ein abfälliger Kommentar. Die stete Kritik am Handeln oder Aussehen, die Einschüchterungen und Versteckspiele haben über die Dauer verheerende Folgen: Der oder die Betroffene misstraut der eigenen Wahrnehmung, wird zunehmend verwirrt und emotional erschöpft. ",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.barmer.de/gesundheit-verstehen/psyche/psychische-gesundheit/gaslighting-1072304",
+    "sources": "Vgl. Barmer, Psychische Gesundheit - Gaslighting - so erkennt man die gezielte Manipulation",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_id": "db6d385c-9a81-4180-aafd-71f2ff60857d",
+    "_type": "glossary",
+    "term": "Gaslighting",
+    "category": [
+      "general",
+      "psychologicalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_type": "glossary",
+    "_id": "f8c8ebdb-e98b-4247-89fc-b1471760a983",
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkText": "",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Häusliche Gewalt",
+    "category": [
+      "general",
+      "domesticViolence"
+    ],
+    "websiteText": "Häusliche Gewalt bezeichnet wie Partnerschaftsgewalt Gewalttaten zwischen Menschen, die in einer häuslichen Gemeinschaft leben, beispielsweise in einer Ehe oder intimen Beziehung. Schläge sind hierbei nur eine Facette eines komplexen Verhaltensmusters, das umfassend auf Macht und Kontrolle zielt. Betroffene sind häufig auch psychischer Gewalt wie Demütigungen, Drohungen, Einschüchterungen, sozialer Isolation oder wirtschaftlichem Druck durch Täter:innen ausgesetzt."
+  },
+  {
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_id": "f9d45fc6-620e-44a3-9a39-e4d8b6c3df52",
+    "additionalLinkText": "",
+    "websiteText": "Sexueller Missbrauch von Kindern ist gemäß § 176 Strafgesetzbuch (StGB) eine Straftat gegen die sexuelle Selbstbestimmung. Das bedeutet, dass sich ein Erwachsener oder Jugendlicher (14 Jahre und älter) strafbar macht, wenn er sexuelle Handlungen an einem Kind (Person unter 14 Jahren) vornimmt oder an sich vornehmen lässt. Diese Handlungen können mit und ohne Körperkontakt stattfinden. Somit fallen nicht nur Berührungen im Intimbereich und alle Formen von Vergewaltigungen darunter. Auch das Zeigen oder gemeinsame Betrachten pornografischer Bilder oder das Entblößen und Manipulieren von Geschlechtsteilen sind nach dem Strafgesetzbuch Missbrauchshandlungen, wenn ein Erwachsener oder Jugendlicher mit oder vor einem Kind agiert.",
+    "additionalLinkURL": "",
+    "websiteLink": "https://www.polizei-beratung.de/infos-fuer-betroffene/sexueller-missbrauch-von-kindern/",
+    "sources": "Vgl. Polizei-Beratung ",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "_type": "glossary",
+    "term": "Sexueller Missbrauch von Kindern",
+    "category": [
+      "general",
+      "psychologicalViolence",
+      "physicalViolence",
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z"
+  },
+  {
+    "category": [
+      "digitalViolence"
+    ],
+    "_updatedAt": "2024-02-22T10:49:22Z",
+    "additionalLinkURL": "",
+    "sources": "Vgl. BMFSFJ 2023, Formen der Gewalt erkennen",
+    "_type": "glossary",
+    "_createdAt": "2024-02-22T10:49:22Z",
+    "_rev": "zP6Su74MV2RdcEAS2rv4p0",
+    "term": "Digitale Gewalt ",
+    "_id": "fc43bfbf-1e88-4322-8b3e-5294bd7c4357",
+    "additionalLinkText": "",
+    "websiteText": "Bei digitaler Gewalt greifen Täter:innen im Internet an - per Chat, E-Mail oder in sozialen Netzwerken. Bei digitaler Gewalt geht es den meisten Tatpersonen darum, die ausgewählte Person zu ängstigen oder zum Schweigen zu bringen. Dafür nutzen sie das Internet oder verschaffen sich zum Beispiel direkt Zugriff auf das Mobiltelefon oder den Computer des Opfers.",
+    "websiteLink": "https://www.bmfsfj.de/bmfsfj/themen/gleichstellung/frauen-vor-gewalt-schuetzen/haeusliche-gewalt/formen-der-gewalt-erkennen-80642"
+  }
+]

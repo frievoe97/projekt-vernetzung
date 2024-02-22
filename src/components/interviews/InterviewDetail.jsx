@@ -46,6 +46,7 @@ function InterviewDetail() {
 
   useEffect(() => {
     if (state.interviewFromSanity.length === 0) {
+      console.log("Fetching interviews from sanity");
       async function fetchPosts() {
         try {
           let fetchedPosts = await getPosts();

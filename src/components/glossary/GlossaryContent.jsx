@@ -10,12 +10,30 @@ const GlossaryContent = ({ data }) => {
   const [eindeutigeTags, setEindeutigeTags] = useState([]);
   const [searchTags, setSearchTags] = useState([]);
 
-  const sammleEindeutigeTags = () => {
-    const eindeutigeTags = [];
+  const values = [
+    { title: "Allgemeine Begrifflichkeiten", value: "general" },
+    { title: "Psychische Gewalt", value: "psychologicalViolence" },
+    { title: "Körperliche Gewalt", value: "physicalViolence" },
+    { title: "Gewalt in der Arbeitswelt", value: "workplaceViolence" },
+    { title: "Häusliche Gewalt", value: "domesticViolence" },
+    { title: "Digitale Gewalt", value: "digitalViolence" },
+  ];
 
-    if (data && data.glossaryData) {
-      data.glossaryData.forEach((objekt) => {
-        objekt.Tags.forEach((tag) => {
+  function getTitleByValue(targetValue) {
+    for (const item of values) {
+      if (item.value === targetValue) {
+        return { label: item.title, value: item.value };
+      }
+    }
+    return null; // Wenn der Wert nicht gefunden wird
+  }
+
+  const sammleEindeutigeTags = () => {
+    let eindeutigeTags = [];
+
+    if (data) {
+      data.forEach((objekt) => {
+        objekt.category.forEach((tag) => {
           // Überprüfe, ob das Tag bereits in eindeutigeTags vorhanden ist
           const tagExists = eindeutigeTags.some(
             (eindeutigerTag) => eindeutigerTag.label === tag
@@ -30,6 +48,11 @@ const GlossaryContent = ({ data }) => {
     }
 
     // return sortObjectsByLabel(eindeutigeTags);
+    // console.log(eindeutigeTags);
+    for (let i = 0; i < eindeutigeTags.length; i++) {
+      // item = getTitleByValue(item.value);
+      eindeutigeTags[i] = getTitleByValue(eindeutigeTags[i].value);
+    }
     return eindeutigeTags;
   };
 
@@ -37,8 +60,8 @@ const GlossaryContent = ({ data }) => {
     // Verwende die sort() Methode, um das Array zu sortieren
     arrayOfObjects.sort((a, b) => {
       // Vergleiche die Werte des 'Begriff'-Schlüssels für die Sortierreihenfolge
-      const begriffA = a.Begriff.toLowerCase(); // Vergleich ist nicht case-sensitive
-      const begriffB = b.Begriff.toLowerCase();
+      const begriffA = a.term.toLowerCase(); // Vergleich ist nicht case-sensitive
+      const begriffB = b.term.toLowerCase();
 
       if (begriffA < begriffB) {
         return -1;
@@ -52,7 +75,7 @@ const GlossaryContent = ({ data }) => {
     return arrayOfObjects; // Das sortierte Array zurückgeben
   };
   if (Object.keys(data).length > 0) {
-    data.glossaryData = sortObjectsByBegriff(data.glossaryData);
+    data = sortObjectsByBegriff(data);
   }
 
   // const sortObjectsByLabel = (arrayOfObjects) => {
@@ -118,13 +141,13 @@ const GlossaryContent = ({ data }) => {
             options={eindeutigeTags}
           />
         </div>
-        {data.glossaryData.map((item, index) => {
+        {data.map((item, index) => {
           const shouldDisplay = searchTags.every((tag) => {
             if (tag.length >= 3) {
               return (
-                item.Tags.includes(tag) ||
-                item.Begriff.toLowerCase().includes(tag.toLowerCase()) ||
-                item.Definition.toLowerCase().includes(tag.toLowerCase())
+                item.category.includes(tag) ||
+                item.term.toLowerCase().includes(tag.toLowerCase()) ||
+                item.websiteText.toLowerCase().includes(tag.toLowerCase())
               );
             } else {
               return true;
@@ -132,7 +155,7 @@ const GlossaryContent = ({ data }) => {
           });
 
           // Buchstaben des aktuellen Begriffs ermitteln
-          const firstLetter = item.Begriff.charAt(0).toUpperCase();
+          const firstLetter = item.term.charAt(0).toUpperCase();
 
           // Die Buchstabenüberschrift nur einmal anzeigen
           if (!letters.has(firstLetter) && shouldDisplay) {
@@ -145,16 +168,16 @@ const GlossaryContent = ({ data }) => {
                 {shouldDisplay && (
                   <GlossaryItem
                     key={index}
-                    term={item.Begriff}
+                    term={item.term}
                     // definition={
                     //   "Die Definition von " + item.Begriff + " ist..."
                     // }
-                    definition={item.Definition}
+                    definition={item.websiteText}
                     data={item}
-                    tags={item.Tags}
-                    source={item.Quellen}
+                    tags={item.category}
+                    source={item.sources}
                     searchTags={searchTags}
-                    link={item["Website-Verlinkung"]}
+                    link={item.websiteLink}
                   />
                 )}
               </div>
@@ -164,14 +187,14 @@ const GlossaryContent = ({ data }) => {
             return shouldDisplay ? (
               <GlossaryItem
                 key={index}
-                term={item.Begriff}
+                term={item.term}
                 // definition={"Die Definition von " + item.Begriff + " ist..."}
-                definition={item.Definition}
+                definition={item.websiteText}
                 data={item}
-                tags={item.Tags}
-                source={item.Quellen}
+                tags={item.category}
+                source={item.sources}
                 searchTags={searchTags}
-                link={item["Website-Verlinkung"]}
+                link={item.websiteLink}
               />
             ) : null;
           }

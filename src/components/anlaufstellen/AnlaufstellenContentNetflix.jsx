@@ -33,9 +33,11 @@ const AnlaufstellenContentNetflix = () => {
   }, [isOverlayVisible]);
 
   // Ladeanzeige, wenn die Daten noch nicht geladen wurden
-  if (!state.anlaufstellenData.googleDoc) {
+  if (!state.anlaufstellenFromSanity) {
     return <div></div>;
   }
+
+  console.log(state.anlaufstellenFromSanity);
 
   return (
     <div>
@@ -43,7 +45,7 @@ const AnlaufstellenContentNetflix = () => {
         <div className="">
           <div className="max-w-screen-xl mx-auto my-20">
             {/* <div className="w-full"> */}
-            {state.anlaufstellenData.googleDoc.map((row, rowIndex) => (
+            {state.anlaufstellenFromSanity.map((row, rowIndex) => (
               <div key={rowIndex} className="mb-0 divide-y-2 divide-fm_rosa">
                 {/* Rendere den Abschnitt nur, wenn row.Name nicht leer ist */}
                 {row.Anlaufstelle != null && row.Anlaufstelle.length > 0 && (
@@ -56,10 +58,10 @@ const AnlaufstellenContentNetflix = () => {
                       {row.Anlaufstelle.map((card, index) => (
                         <div key={index} onClick={() => openOverlay(card)}>
                           <CustomCard
-                            imageUrl={card.Logo}
-                            title={card.Name}
+                            imageUrl={card.logo}
+                            title={card.title}
                             text={card.text}
-                            link={card.Link}
+                            link={card.link}
                             tags={card.Tags}
                           />
                         </div>
