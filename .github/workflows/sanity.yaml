@@ -18,7 +18,7 @@ jobs:
       - working-directory: ./studio
         run: |
           ls
-          npm install
+          npm ci
           npx sanity deploy
 
       - name: 📂 SFTP uploader
