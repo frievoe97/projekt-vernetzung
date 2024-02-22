@@ -17,7 +17,6 @@ jobs:
           node-version: 20
       - working-directory: ./studio
         run: |
-          ls
           npm ci --legacy-peer-deps
           npx sanity build
 
@@ -30,5 +29,5 @@ jobs:
           dryRun: false
           forceUpload: true
           localDir: "./studio/dist"
-          remoteDir: "/studio"
+          remoteDir: "/public_html/studio"
           exclude: ".git*,.DS_Store"
