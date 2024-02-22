@@ -17,6 +17,7 @@ jobs:
           node-version: 18
       - working-directory: ./studio
         run: |
+          ls
           npm install
           npx sanity deploy
 
