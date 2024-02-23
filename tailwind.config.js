@@ -1,5 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-
 const colors = require("tailwindcss/colors");
 
 export default {
@@ -80,5 +78,5 @@ export default {
       },
     },
   },
-  plugins: [require("flowbite/plugin"), require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")], // require("flowbite/plugin"),
 };

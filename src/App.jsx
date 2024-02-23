@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Anlaufstellen_V2 from "./components/anlaufstellen/Anlaufstellen_V2";
@@ -14,8 +14,26 @@ import DataPrivacy from "./components/imprint/DataPrivacy";
 import Interviews from "./components/interviews/Interviews";
 import InterviewDetail from "./components/interviews/InterviewDetail";
 
-// App
+// import { getAllData } from "./client";
+// import { splitDataByType } from "./utils/functions";
+
 function App() {
+  // useEffect(() => {
+  //   // if (state.anlaufstellenFromSanity.length === 0) {
+  //   console.log("Fetching all data from sanity");
+  //   async function fetchAnlaufstellen() {
+  //     try {
+  //       let combinedData = await getAllData();
+  //       console.log("combinedData", splitDataByType(combinedData));
+  //     } catch (error) {
+  //       console.error("Error fetching posts:", error);
+  //     }
+  //   }
+
+  //   fetchAnlaufstellen();
+  //   // }
+  // }, []);
+
   return (
     <GlobalStateProvider>
       <Router>

@@ -5,8 +5,6 @@ import {markdownSchema} from 'sanity-plugin-markdown'
 import {colorInput} from '@sanity/color-input'
 
 import {deskTool} from 'sanity/desk'
-import {StructureBuilder} from 'sanity/desk'
-import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 
 import './custom.css'
 
@@ -17,22 +15,7 @@ export default defineConfig({
   projectId: 'bd249yuo',
   dataset: 'production',
 
-  plugins: [
-    // deskTool({
-    //   structure: (S, context) => {
-    //     return S.list()
-    //       .title('Content')
-    //       .items([
-    //         // Minimum required configuration
-    //         orderableDocumentListDeskItem({type: 'glossary', S, context}),
-    //       ])
-    //   },
-    // }),
-    deskTool(),
-    visionTool(),
-    markdownSchema(),
-    colorInput(),
-  ],
+  plugins: [deskTool(), visionTool(), markdownSchema(), colorInput()],
 
   schema: {
     types: schemaTypes,

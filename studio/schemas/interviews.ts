@@ -24,6 +24,21 @@ export default {
         required: () => {(): any; new (): any; max: {(arg0: number): any; new (): any}}
       }) => Rule.required().max(200),
     },
+    // https://projekt-vernetzung.org/#/interviews-und-beitraege/bei-partnerschaftlicher-gewalt-geht-es-nicht-um-strafe-oder-die-gewalt-an-sich-es-geht-immer-einzig-und-alleine-um-macht
+    // bei-partnerschaftlicher-gewalt-geht-es-nicht-um-strafe-oder-die-gewalt-an-sich,-es-geht-immer-einzig-und-alleine-um-macht.
+    {
+      title: 'URL des Interviews (beta)',
+      description: 'Gibt die URL des Interviews an, welche auf der Website angezeigt wird.',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'headline',
+        // maxLength: 200, // will be ignored if slugify is set
+        slugify: (input: string) =>
+          'https://projekt-vernetzung.org/#/interviews-und-beitraege/' +
+          input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
+      },
+    },
     {
       title: 'Veröffentlichungsdatum',
       description: 'Gibt an, wann das Interview veröffentlicht wird',

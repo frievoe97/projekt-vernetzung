@@ -2,7 +2,8 @@ import {CogIcon} from '@sanity/icons'
 
 export default {
   name: 'websiteSettings',
-  title: 'Webseiten-Einstellungen',
+  // title: 'Webseiten-Einstellungen',
+  title: 'Webseiten-Einstellungen (AKTUELL NICHT IN VERWENDUNG!)',
   type: 'document',
   icon: CogIcon,
   fields: [

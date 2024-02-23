@@ -77,6 +77,10 @@ const GlossaryContent = ({ data }) => {
     setSearchTags(value);
   };
 
+  console.log("data", data);
+  console.log("eindeutigeTags", eindeutigeTags);
+  console.log("searchTags", searchTags);
+
   return (
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
       <div className="grid text-left gap-0 mx-auto px-0 md:px-6 lg:px-8 max-w-screen-xl my-0 md:my-0 pb-20">

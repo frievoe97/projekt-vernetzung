@@ -64,15 +64,28 @@ function Interviews() {
     return preparedArray;
   };
 
+  const letztesInterviewVorDatum = (interviews) => {
+    // Filtere die Interviews, um nur diejenigen zu behalten, die vor dem angegebenen Datum liegen
+    const passendeInterviews = interviews.filter(
+      (interview) => new Date(interview.launchDate) < new Date()
+    );
+
+    // Sortiere die passenden Interviews absteigend nach dem Startdatum
+    passendeInterviews.sort(
+      (a, b) => new Date(b.launchDate) - new Date(a.launchDate)
+    );
+
+    // Gib das letzte Interview zurück (das zuerst in der sortierten Liste steht)
+    return passendeInterviews[0];
+  };
+
   if (state.interviewFromSanity.length <= 0) return;
 
   return (
     <div>
       <div className="text-center text-color_font bg-fm_weiss pt-16">
         <CurrentInterview
-          interview={
-            state.interviewFromSanity[state.interviewFromSanity.length - 1]
-          }
+          interview={letztesInterviewVorDatum(state.interviewFromSanity)}
         />
         <div className="flex  max-w-screen-xl mx-auto justify-between px-8  pt-8">
           <div className="flex flex-col  grow justify-between">

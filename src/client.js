@@ -5,6 +5,8 @@ import {
   SANITY_API_VERSION,
   SANITY_USE_CDN,
 } from "./utils/constants";
+import combineQuery from "graphql-combine-query";
+import gql from "graphql-tag";
 
 const client = createClient({
   projectId: SANITY_PROJECT_ID,
@@ -32,6 +34,13 @@ export async function getGlossary() {
 export async function getAnlaufstellen() {
   const glossary = await client.fetch(
     '*[_type == "anlaufstellen"]{category, link, logo, tags, title}'
+  );
+  return glossary;
+}
+
+export async function getAllData() {
+  const glossary = await client.fetch(
+    '*[_type == "interview" || _type == "glossary" || _type == "anlaufstellen"]{_type, "imageUrl": image.asset->url, Interview, backgroundColor, headline, launchDate, quotationMarkColor, textTeaser, title, additionalLinkText, additionalLinkURL, sources, term, websiteLink, websiteText, category, link, logo, tags}'
   );
   return glossary;
 }
