@@ -17,7 +17,8 @@ jobs:
           node-version: 20
       - working-directory: ./studio
         run: |
-          npm ci --legacy-peer-deps
+          # npm ci --legacy-peer-deps
+          npm install
           npx sanity build
 
       - name: 📂 SFTP uploader
