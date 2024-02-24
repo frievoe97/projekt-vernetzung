@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
 
       - name: 📂 SFTP uploader
-        uses: wangyucode/sftp-upload-action@v1.4.8 # Danke an @https://github.com/wangyucode/sftp-upload-action
+        uses: wangyucode/sftp-upload-action@v2.0.2 # Danke an @https://github.com/wangyucode/sftp-upload-action
         with:
           host: ${{ secrets.ORG_SFTP_HOST }}
           username: ${{ secrets.ORG_SFTP_USERNAME }}
