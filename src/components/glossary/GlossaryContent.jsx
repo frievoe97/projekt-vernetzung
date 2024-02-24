@@ -3,83 +3,17 @@ import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Select } from "antd";
+import { useGlobalState } from "../../data/GlobalState";
 import "./GlossaryContent.css";
 
-import { GLOSSARY_TAG_MAPPING } from "../../utils/constants";
-
 const GlossaryContent = ({ data }) => {
-  const [eindeutigeTags, setEindeutigeTags] = useState([]);
   const [searchTags, setSearchTags] = useState([]);
-
+  const { state } = useGlobalState();
   const letters = new Set();
-
-  function getTitleByValue(targetValue) {
-    for (const item of GLOSSARY_TAG_MAPPING) {
-      if (item.value === targetValue) {
-        return { label: item.title, value: item.value };
-      }
-    }
-    return null;
-  }
-
-  const sammleEindeutigeTags = () => {
-    let eindeutigeTags = [];
-
-    if (data) {
-      data.forEach((objekt) => {
-        objekt.category.forEach((tag) => {
-          const tagExists = eindeutigeTags.some(
-            (eindeutigerTag) => eindeutigerTag.label === tag
-          );
-
-          if (!tagExists) {
-            eindeutigeTags.push({ label: tag, value: tag });
-          }
-        });
-      });
-    }
-
-    for (let i = 0; i < eindeutigeTags.length; i++) {
-      eindeutigeTags[i] = getTitleByValue(eindeutigeTags[i].value);
-    }
-    return eindeutigeTags;
-  };
-
-  const sortObjectsByBegriff = (arrayOfObjects) => {
-    arrayOfObjects.sort((a, b) => {
-      const begriffA = a.term.toLowerCase();
-      const begriffB = b.term.toLowerCase();
-
-      if (begriffA < begriffB) {
-        return -1;
-      }
-      if (begriffA > begriffB) {
-        return 1;
-      }
-      return 0;
-    });
-
-    return arrayOfObjects;
-  };
-  if (Object.keys(data).length > 0) {
-    data = sortObjectsByBegriff(data);
-  }
-
-  useEffect(() => {
-    setEindeutigeTags(sammleEindeutigeTags());
-  }, [data]);
-
-  if (Object.keys(data).length === 0) {
-    return <div></div>;
-  }
 
   const handleChangeTest = (value) => {
     setSearchTags(value);
   };
-
-  console.log("data", data);
-  console.log("eindeutigeTags", eindeutigeTags);
-  console.log("searchTags", searchTags);
 
   return (
     <div className="p-0 md:p-6 text-center z-0 bg-fm_weiss text-color_font">
@@ -103,7 +37,7 @@ const GlossaryContent = ({ data }) => {
             }}
             placeholder="Tippe deinen Suchbegriff in die Suchmaske"
             onChange={handleChangeTest}
-            options={eindeutigeTags}
+            options={state.glossaryTagsFromSanity}
           />
         </div>
         {data.map((item, index) => {

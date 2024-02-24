@@ -18,22 +18,6 @@ import InterviewDetail from "./components/interviews/InterviewDetail";
 // import { splitDataByType } from "./utils/functions";
 
 function App() {
-  // useEffect(() => {
-  //   // if (state.anlaufstellenFromSanity.length === 0) {
-  //   console.log("Fetching all data from sanity");
-  //   async function fetchAnlaufstellen() {
-  //     try {
-  //       let combinedData = await getAllData();
-  //       console.log("combinedData", splitDataByType(combinedData));
-  //     } catch (error) {
-  //       console.error("Error fetching posts:", error);
-  //     }
-  //   }
-
-  //   fetchAnlaufstellen();
-  //   // }
-  // }, []);
-
   return (
     <GlobalStateProvider>
       <Router>

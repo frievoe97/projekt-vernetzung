@@ -15,6 +15,7 @@ const SET_INTERVIEW_V_2_DATA = "SET_INTERVIEW_V_2_DATA";
 const SET_INTERVIEW_FROM_SANITY = "SET_INTERVIEW_FROM_SANITY";
 const SET_GLOSSARY_FROM_SANITY = "SET_GLOSSARY_FROM_SANITY";
 const SET_ANLAUFSTELLEN_FROM_SANITY = "SET_ANLAUFSTELLEN_FROM_SANITY";
+const SET_GLOSSARY_TAGS_FROM_SANITY = "SET_GLOSSARY_TAGS_FROM_SANITY";
 
 // Reducer-Funktion
 const reducer = (state, action) => {
@@ -43,6 +44,8 @@ const reducer = (state, action) => {
       return { ...state, glossaryFromSanity: action.payload };
     case SET_ANLAUFSTELLEN_FROM_SANITY:
       return { ...state, anlaufstellenFromSanity: action.payload };
+    case SET_GLOSSARY_TAGS_FROM_SANITY:
+      return { ...state, glossaryTagsFromSanity: action.payload };
     default:
       return state;
   }
@@ -61,6 +64,7 @@ const initialState = {
   interviewsV2: {},
   interviewFromSanity: [],
   glossaryFromSanity: [],
+  glossaryTagsFromSanity: [],
   anlaufstellenFromSanity: [],
 };
 

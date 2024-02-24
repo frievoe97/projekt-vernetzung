@@ -2,67 +2,67 @@ import React, { useEffect } from "react";
 import InterviewContainer from "./InterviewContainer";
 import CurrentInterview from "./CurrentInterview";
 import { useGlobalState } from "../../data/GlobalState";
-import { getPosts } from "../../client";
+// import { getPosts } from "../../client";
 import { IoMailOutline, IoLogoInstagram } from "react-icons/io5";
 
 function Interviews() {
   const { state, dispatch } = useGlobalState();
 
-  useEffect(() => {
-    if (state.interviewFromSanity.length === 0) {
-      console.log("Fetching interviews from sanity");
-      async function fetchPosts() {
-        try {
-          let fetchedPosts = await getPosts();
+  // useEffect(() => {
+  //   if (state.interviewFromSanity.length === 0) {
+  //     console.log("Fetching interviews from sanity");
+  //     async function fetchPosts() {
+  //       try {
+  //         let fetchedPosts = await getPosts();
 
-          fetchedPosts = prepareObjects(fetchedPosts);
+  //         fetchedPosts = prepareObjects(fetchedPosts);
 
-          dispatch({
-            type: "SET_INTERVIEW_FROM_SANITY",
-            payload: fetchedPosts,
-          });
-        } catch (error) {
-          console.error("Error fetching posts:", error);
-        }
-      }
+  //         // dispatch({
+  //         //   type: "SET_INTERVIEW_FROM_SANITY",
+  //         //   payload: fetchedPosts,
+  //         // });
+  //       } catch (error) {
+  //         console.error("Error fetching posts:", error);
+  //       }
+  //     }
 
-      fetchPosts();
-    }
-  }, []);
+  //     fetchPosts();
+  //   }
+  // }, []);
 
-  const prepareObjects = (array) => {
-    let preparedArray = [];
+  // const prepareObjects = (array) => {
+  //   let preparedArray = [];
 
-    array.forEach((obj) => {
-      let preparedObj = {
-        ...obj,
-      };
+  //   array.forEach((obj) => {
+  //     let preparedObj = {
+  //       ...obj,
+  //     };
 
-      delete preparedObj.createdAt;
-      delete preparedObj._id;
-      delete preparedObj._rev;
-      delete preparedObj._type;
-      delete preparedObj._updatedAt;
+  //     delete preparedObj.createdAt;
+  //     delete preparedObj._id;
+  //     delete preparedObj._rev;
+  //     delete preparedObj._type;
+  //     delete preparedObj._updatedAt;
 
-      if (preparedObj.launchDate) {
-        preparedObj.launchDate = new Date(preparedObj.launchDate);
-      }
+  //     if (preparedObj.launchDate) {
+  //       preparedObj.launchDate = new Date(preparedObj.launchDate);
+  //     }
 
-      if (preparedObj.quotationMarkColor) {
-        preparedObj.quotationMarkColor = preparedObj.quotationMarkColor.hex;
-      }
+  //     if (preparedObj.quotationMarkColor) {
+  //       preparedObj.quotationMarkColor = preparedObj.quotationMarkColor.hex;
+  //     }
 
-      if (preparedObj.backgroundColor) {
-        preparedObj.backgroundColor = preparedObj.backgroundColor.hex;
-      }
+  //     if (preparedObj.backgroundColor) {
+  //       preparedObj.backgroundColor = preparedObj.backgroundColor.hex;
+  //     }
 
-      preparedArray.push(preparedObj);
-    });
+  //     preparedArray.push(preparedObj);
+  //   });
 
-    preparedArray.sort((a, b) => a.launchDate - b.launchDate);
+  //   preparedArray.sort((a, b) => a.launchDate - b.launchDate);
 
-    return preparedArray;
-  };
+  //   return preparedArray;
+  // };
 
   const letztesInterviewVorDatum = (interviews) => {
     // Filtere die Interviews, um nur diejenigen zu behalten, die vor dem angegebenen Datum liegen
