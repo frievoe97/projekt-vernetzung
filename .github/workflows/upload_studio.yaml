@@ -1,8 +1,10 @@
-name: Upload the Sanity Studio to the server of the domain studio.projekt-vernetzung.org
+name: Upload Studio
 
 on:
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ["Upload Website"]
+    types:
+      - completed
 
 jobs:
   Upload-to-SFTP:

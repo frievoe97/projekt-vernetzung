@@ -33,8 +33,6 @@
     "slick-carousel": "^1.8.1"
   },
 
-  // plugin-transform-async-generator-functions
-
   "devDependencies": {
     "@babel/plugin-proposal-async-generator-functions": "^7.20.7", 
     "@babel/plugin-proposal-class-properties": "^7.18.6",
